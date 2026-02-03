@@ -9,17 +9,17 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
 
-    private Queue<string> sentences;
+    private List<string> sentences;
 
     void Start()
     {
-        sentences = new Queue<string>();
+        sentences = new List<string>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -32,25 +32,34 @@ public class DialogueManager : MonoBehaviour
 
         foreach (string sentence in dialogue.sentences)
         {
-            sentences.Enqueue(sentence);
+            sentences.Add(sentence);
         }
 
-        DisplayNextSentence();
+        DisplayFirstSentence();
     }
 
-    public void DisplayNextSentence()
+    public void DisplayFirstSentence()
     {
-        if (sentences.Count == 0) 
-        {
-            EndDialogue();
-            return;
-        }
-
-        string sentence = sentences.Dequeue();
+        string sentence = sentences[0];
         dialogueText.text = sentence;
     }
 
-    public void EndDialogue() 
+    //make function that can have option script pass info into to play a specific line
+
+    public void DisplayLine2()
+    {
+        string sentence = sentences[1];
+        dialogueText.text = sentence;
+    }
+
+    public void DisplayLine3()
+    {
+        string sentence = sentences[2];
+        dialogueText.text = sentence;
+    }
+
+
+    public void EndDialogue()
     {
         Debug.Log("end convo");
     }

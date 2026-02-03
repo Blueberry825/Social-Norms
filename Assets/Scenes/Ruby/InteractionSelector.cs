@@ -25,6 +25,7 @@ public class InteractionSelector : MonoBehaviour
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
         Debug.Log("date scene alien number" + alienNumber);
         StartDialogue();
+        SpawnLocationSelector();
     }
 
     //alien number 0-4 purple, 5-9 green, 10-14 orange
