@@ -26,7 +26,7 @@ public class DateSceneSpawner : MonoBehaviour
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
         currentBackground = backgroundList[alienNumber];
         Debug.Log("Current background is " +currentBackground.name);
-        Instantiate(currentBackground, gameObject.transform);
+        //Instantiate(currentBackground, gameObject.transform);
         Instantiate(currentAlienDate, gameObject.transform);
     }
 }
