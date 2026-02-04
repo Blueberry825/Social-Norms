@@ -15,6 +15,7 @@ public class DateRandomiser_Script : MonoBehaviour
 
     private void Start() //replace to 'open dating app' function when tablet picked up 
     {
+        ////if scene name=title, then find spawn loc, else, blank
         spawnLocation = GameObject.Find("AlienSpawn_Location");
         getAlienList = gameObject.GetComponent<ListOfAliens_Script>().singleAlienList;
         listOfAliensScript = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
