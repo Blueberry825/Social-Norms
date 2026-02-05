@@ -11,11 +11,13 @@ public class InteractionSelector : MonoBehaviour
     public GameObject[] Dialogues;
     public GameObject interactionTarget;
     public GameObject textBox;
-    public Transform canvasTransform; 
+    public Transform canvasTransform;
 
-     private ListOfAliens_Script listAlien_Script;
-     private GameObject currentAlienDate;
-     private int alienNumber;
+    public OptionSelector OptionSelector_scr;
+
+    private ListOfAliens_Script listAlien_Script;
+    private GameObject currentAlienDate;
+    private int alienNumber;
 
     private void Start()
     {
@@ -41,14 +43,15 @@ public class InteractionSelector : MonoBehaviour
         Dialogues[alienNumber].SetActive(true);
     }
 
-    public void SpawnLocationSelector()
+    public void SpawnLocationSelector() //add to id of each spawn point each time? so they spawn 1,2,3,4,5,6? 
     {     
         if (alienNumber < 5) // purple
         {
             for (int i = 0; i < spawnPurple.Length; i++)
             {
                 Debug.Log(spawnPurple[i]);
-                Instantiate(interactionTarget, (spawnPurple[i].transform.position), Quaternion.identity);  
+                Instantiate(interactionTarget, (spawnPurple[i].transform.position), Quaternion.identity);
+                OptionSelector_scr.interactionID++;
             }     
         }
         else if (alienNumber > 4 && alienNumber < 10) // green

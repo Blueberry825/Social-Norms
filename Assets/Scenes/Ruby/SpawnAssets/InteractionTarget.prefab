@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8097023563745527418}
   - component: {fileID: 6082266270734259044}
+  - component: {fileID: -8350919163577277193}
   - component: {fileID: 3704689301522498955}
   m_Layer: 0
   m_Name: InteractionTarget
@@ -88,6 +89,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-8350919163577277193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267856600552922614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb81c66b5b6e1874a875b9381fc30561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &3704689301522498955
 CircleCollider2D:
   m_ObjectHideFlags: 0
