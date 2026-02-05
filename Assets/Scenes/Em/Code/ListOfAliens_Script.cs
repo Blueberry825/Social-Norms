@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 
+//hold dialogue for each alien
 public class ListOfAliens_Script : MonoBehaviour
 {
     public List<GameObject> singleAlienList;
