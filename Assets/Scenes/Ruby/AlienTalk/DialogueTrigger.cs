@@ -18,4 +18,11 @@ public class DialogueTrigger : MonoBehaviour
     {
         FindAnyObjectByType<DialogueManager>().StartDialogueActions(dialogue);
     }
+
+    private void Start()
+    {
+
+        TriggerDialogueAction();
+        TriggerDialogueOptions();
+    }
 }

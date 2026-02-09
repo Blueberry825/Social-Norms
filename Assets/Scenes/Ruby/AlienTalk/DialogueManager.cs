@@ -3,14 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
-    public TMP_Text[] optionsTMP;
 
-    public DialogueTrigger DialogueTrigger_scr;
+    private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
 
     public int round;
@@ -28,8 +28,11 @@ public class DialogueManager : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
-        DialogueTrigger_scr.TriggerDialogueAction();
-        DialogueTrigger_scr.TriggerDialogueOptions();
+    }
+
+    public void LoadTabletScreenTemp()
+    {
+        SceneManager.LoadScene("Title_Scene");
     }
 
     // Update is called once per frame
