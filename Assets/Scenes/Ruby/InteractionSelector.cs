@@ -7,13 +7,11 @@ using UnityEngine.EventSystems;
 
 public class InteractionSelector : MonoBehaviour
 {
-    public GameObject[] spawnPurple, spawnGreen, spawnOrange; //empty objects that act as coordinates for the interaction points to spawn in
+    public GameObject[] currentTransformPositions; //empty objects that act as coordinates for the interaction points to spawn in
     public GameObject[] Dialogues;
-    public GameObject interactionTarget;
+    public List<GameObject> optionTextBoxes;
     public GameObject textBox;
-    public Transform canvasTransform;
 
-    public OptionSelector OptionSelector_scr;
     public DialogueManager DialogueManager_scr;
 
     private ListOfAliens_Script listAlien_Script;
@@ -22,7 +20,8 @@ public class InteractionSelector : MonoBehaviour
 
     private void Start()
     {
-        canvasTransform = GameObject.Find("Canvas").transform;
+        currentTransformPositions = GameObject.FindGameObjectsWithTag("transformLocation");
+
         listAlien_Script = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         currentAlienDate = listAlien_Script.currentDate;
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
@@ -31,11 +30,10 @@ public class InteractionSelector : MonoBehaviour
         SpawnLocationSelector();
     }
 
-    //alien number 0-4 purple, 5-9 green, 10-14 orange
 
     private void Update()
     {
-        
+
     }
 
     public void StartDialogue()
@@ -45,32 +43,9 @@ public class InteractionSelector : MonoBehaviour
     }
 
     public void SpawnLocationSelector() //add to id of each spawn point each time? so they spawn 1,2,3,4,5,6? 
-    {     
-        if (alienNumber < 5) // purple
-        {
-            for (int i = 0; i < spawnPurple.Length; i++)
-            {
-                Debug.Log(spawnPurple[i]);
-                GameObject temp = Instantiate(interactionTarget, (spawnPurple[i].transform.position), Quaternion.identity);
-                OptionSelector_scr.interactionID++;
-                DialogueManager_scr.optionTextBoxes.Add(temp);
-            }     
-        }
-        else if (alienNumber > 4 && alienNumber < 10) // green
-        {
-            for (int i = 0; i < spawnGreen.Length; i++)
-            {
-                Debug.Log(spawnGreen[i]);
-                Instantiate(interactionTarget, (spawnGreen[i].transform.position), Quaternion.identity);
-            }
-        }
-        else if (alienNumber > 9) // orange
-        {
-            for (int i = 0; i < spawnOrange.Length; i++)
-            {
-                Debug.Log(spawnOrange[i]);
-                Instantiate(interactionTarget, (spawnOrange[i].transform.position), Quaternion.identity);
-            }
-        }
+    {
+        optionTextBoxes[0].transform.position = currentTransformPositions[0].transform.position;
+        optionTextBoxes[1].transform.position = currentTransformPositions[1].transform.position;
+        optionTextBoxes[2].transform.position = currentTransformPositions[2].transform.position;
     }
 }
