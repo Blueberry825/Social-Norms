@@ -14,6 +14,7 @@ public class InteractionSelector : MonoBehaviour
     public Transform canvasTransform;
 
     public OptionSelector OptionSelector_scr;
+    public DialogueManager DialogueManager_scr;
 
     private ListOfAliens_Script listAlien_Script;
     private GameObject currentAlienDate;
@@ -50,8 +51,9 @@ public class InteractionSelector : MonoBehaviour
             for (int i = 0; i < spawnPurple.Length; i++)
             {
                 Debug.Log(spawnPurple[i]);
-                Instantiate(interactionTarget, (spawnPurple[i].transform.position), Quaternion.identity);
+                GameObject temp = Instantiate(interactionTarget, (spawnPurple[i].transform.position), Quaternion.identity);
                 OptionSelector_scr.interactionID++;
+                DialogueManager_scr.optionTextBoxes.Add(temp);
             }     
         }
         else if (alienNumber > 4 && alienNumber < 10) // green

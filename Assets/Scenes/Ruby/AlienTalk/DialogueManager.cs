@@ -8,12 +8,20 @@ public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    [SerializeField]public List<GameObject> optionTextBoxes;
 
-    private List<string> sentences;
+    public int round = 0; //each round of talking ?
+
+    private List<string> actions;
+    private List<string> options;
+    private List<string> respones; 
 
     void Start()
     {
-        sentences = new List<string>();
+        options = new List<string>();
+        respones = new List<string>();
+        actions = new List<string>();  
+
     }
 
     // Update is called once per frame
@@ -22,17 +30,41 @@ public class DialogueManager : MonoBehaviour
 
     }
 
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogueRespones(Dialogue dialogue)
+    {
+        respones.Clear();
+
+        foreach (string sentence in dialogue.respones)
+        {
+            respones.Add(sentence);
+        }
+
+        DisplayFirstSentence();
+    }
+
+    public void StartDialogueOptions(Dialogue dialogue)
+    {
+        options.Clear();
+
+        foreach (string sentence in dialogue.options)
+        {
+            options.Add(sentence);
+        }
+
+        DisplayFirstSentence();
+    }
+
+    public void StartDialogueActions(Dialogue dialogue) //first spawn in opening dialogue and name
     {
         Debug.Log("starting convo with " + dialogue.name);
 
         nameText.text = dialogue.name;
 
-        sentences.Clear();
+        actions.Clear();
 
-        foreach (string sentence in dialogue.sentences)
+        foreach (string sentence in dialogue.actions)
         {
-            sentences.Add(sentence);
+            actions.Add(sentence);
         }
 
         DisplayFirstSentence();
@@ -40,24 +72,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayFirstSentence()
     {
-        string sentence = sentences[0];
+        string sentence = actions[0];
         dialogueText.text = sentence;
     }
 
     //make function that can have option script pass info into to play a specific line
-
-    public void DisplayLine2()
-    {
-        string sentence = sentences[1];
-        dialogueText.text = sentence;
-    }
-
-    public void DisplayLine3()
-    {
-        string sentence = sentences[2];
-        dialogueText.text = sentence;
-    }
-
 
     public void EndDialogue()
     {
