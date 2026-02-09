@@ -4,8 +4,18 @@ public class DialogueTrigger : MonoBehaviour
 {
     public Dialogue dialogue;
 
-    public void TriggerDialogue()
+    public void TriggerDialogueOptions()
     {
-        FindAnyObjectByType<DialogueManager>().StartDialogue(dialogue);
+        FindAnyObjectByType<DialogueManager>().StartDialogueOptions(dialogue);
+    }
+
+    public void TriggerDialogueResponses()
+    {
+        FindAnyObjectByType<DialogueManager>().StartDialogueRespones(dialogue);
+    }
+
+    public void TriggerDialogueAction()
+    {
+        FindAnyObjectByType<DialogueManager>().StartDialogueActions(dialogue);
     }
 }
