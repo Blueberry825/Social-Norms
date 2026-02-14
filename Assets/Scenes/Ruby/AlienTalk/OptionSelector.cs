@@ -3,9 +3,8 @@ using UnityEngine;
 public class OptionSelector : MonoBehaviour
 {
     //make int that is the current line you want to play/pass though this script
-    [SerializeField]
-    public int interactionID;
 
+    [SerializeField] public int interactionID;
 
     private DialogueManager dialogueManager_scr;
     private InteractionSelector interactionSelector_scr;

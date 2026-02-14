@@ -21,7 +21,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void Start()
     {
-
+        TriggerDialogueResponses();
         TriggerDialogueAction();
         TriggerDialogueOptions();
     }

@@ -61,13 +61,13 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void ResponseBox()//switch case 
+    public void ResponseBox(int selection)//switch case 
     {
         switch (alienLines)
         {
             case 0:
-                //populate response lines 123
-
+                //populate response line basd on 
+                dialogueText.text = respones[selection];
                 break;
             case 1:
                 
