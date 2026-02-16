@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,9 +14,14 @@ public class DialogueManager : MonoBehaviour
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
 
-    public int round;
+    public int round = 0;
     public int meLines = 0; //each round of talking ?
     public int alienLines = 0;
+    private int maxlines;
+
+    private int meLinesAdd3;
+
+    public bool LinesEmpty;
 
     private List<string> actions;
     private List<string> options;
@@ -28,6 +34,10 @@ public class DialogueManager : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
+        Debug.Log("count of options: " + options.Count);
+
+        for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+            InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
     }
 
     public void LoadTabletScreenTemp()
@@ -43,40 +53,47 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
-        switch(meLines)
+        meLinesAdd3 = meLines * 3;
+        maxlines = meLinesAdd3 + 3;
+        Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
+       
+        if (options.Count >= maxlines)
         {
-            case 0:
-                //populate text lines 123
-                for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                {
-                    InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i];
-                }
-                
-                break;
-            case 1:
-                //
-            break;
-
-
+            
+            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
+           
+            switch (meLines)
+            {
+                case 0:
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                    break;
+                case 1://figure out randomising placement
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                    break;
+                case 2:
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];                     
+                    break;
+            }       
         }
+        else
+        {
+            Debug.Log("ran out of options");
+        }
+        meLines++;
     }
 
     public void ResponseBox(int selection)//switch case 
     {
-        switch (alienLines)
-        {
-            case 0:
-                //populate response line basd on 
-                dialogueText.text = respones[selection];
-                break;
-            case 1:
-                
-                break;
+ 
+        var alienLines3 = alienLines * 3;
 
+        dialogueText.text = respones[selection + alienLines3];
 
-        }
-
-
+        alienLines++;
     }
 
     public void StartDialogueRespones(Dialogue dialogue)
@@ -115,13 +132,24 @@ public class DialogueManager : MonoBehaviour
             actions.Add(sentence);
         }
 
-        DisplayFirstSentence();
+        DisplayNextAction();
+
     }
 
-    public void DisplayFirstSentence()
+    public void DisplayNextAction()
     {
-        string sentence = actions[0];
-        dialogueText.text = sentence;
+        round++;
+        Debug.Log("round: " + round);
+
+        if (round <= actions.Count)
+        {
+            string sentence = actions[round - 1];
+            dialogueText.text = sentence;
+        }
+        else
+        {
+            dialogueText.text = "i am getting tired of talking to you..";
+        }
     }
 
     //make function that can have option script pass info into to play a specific line
