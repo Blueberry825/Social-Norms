@@ -12,6 +12,7 @@ public class MouseTracking : MonoBehaviour
 
     private DialogueManager DialogueManager_scr;
     private InteractionSelector InteractionSelector_scr;
+    private LoveMeter LoveMeter_scr;
 
     public int optionID;
 
@@ -23,6 +24,7 @@ public class MouseTracking : MonoBehaviour
         mainCamera = Camera.main;
         DialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
         InteractionSelector_scr = GameObject.Find("GameManager").GetComponent<InteractionSelector>();
+        LoveMeter_scr = GameObject.Find("LoveMeter").GetComponent<LoveMeter>();
     }
 
     private void Update()
@@ -37,6 +39,7 @@ public class MouseTracking : MonoBehaviour
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
             DialogueManager_scr.ResponseBox(optionID);
+            LoveMeter_scr.LoveChange(optionID);
         }
     }
 

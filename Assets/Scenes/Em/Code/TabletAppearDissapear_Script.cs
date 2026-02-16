@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class TabletAppearDissapear_Script : MonoBehaviour
 {
@@ -18,7 +19,10 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
+        bool spaceKeyPressed = Keyboard.current.spaceKey.wasPressedThisFrame;
+        bool spaceKeyPressed2 = Keyboard.current.spaceKey.wasPressedThisFrame;
+
+        if (spaceKeyPressed || spaceKeyPressed2) 
         {
             SwapTabletVisibility();
         }

@@ -93,31 +93,6 @@ public class DialogueManager : MonoBehaviour
 
         dialogueText.text = respones[selection + alienLines3];
 
-        /*switch (alienLines)          //unneeded?
-        {
-            case 0:
-                //populate response line basd on 
-                dialogueText.text = respones[selection + alienLines3];
-                break;
-            case 1:
-                 //populate response line basd on 
-                 dialogueText.text = respones[selection + alienLines3];
-                 break;
-            case 2:
-                 //populate response line basd on 
-                 dialogueText.text = respones[selection + alienLines3];
-                 break;
-            case 3:
-                 //populate response line basd on 
-                  dialogueText.text = respones[selection + alienLines3];
-                 break;
-            case 4:
-                 //populate response line basd on 
-                 dialogueText.text = respones[selection + alienLines3];
-                 break;
-
-         }*/
-
         alienLines++;
     }
 
