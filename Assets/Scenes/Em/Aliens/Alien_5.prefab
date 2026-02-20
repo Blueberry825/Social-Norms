@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3944442877414920579}
   - component: {fileID: 1900248147776650248}
   m_Layer: 5
-  m_Name: Alien_4
+  m_Name: Alien_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPlayerDatedThisAlien: 0
-  alienNumber: 4
+  alienNumber: 5
 --- !u!212 &1900248147776650248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,7 +105,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.6307237, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.20883322, g: 0.8113208, b: 0.10332859, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

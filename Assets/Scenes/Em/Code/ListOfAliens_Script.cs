@@ -11,9 +11,11 @@ public class ListOfAliens_Script : MonoBehaviour
     public GameObject currentDate;
     public List<GameObject> datedAlienList;
 
+    private Level_Location_Script levelLocationScript;
+
     private void Start()
     {
-        DontDestroyOnLoad(this.gameObject);
+        levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
     }
 
     //function called once dated
@@ -25,5 +27,6 @@ public class ListOfAliens_Script : MonoBehaviour
         singleAlienList.Remove(alien);
 
         //remove as current date each time
+        levelLocationScript.MoveLocation();
     }
 }
