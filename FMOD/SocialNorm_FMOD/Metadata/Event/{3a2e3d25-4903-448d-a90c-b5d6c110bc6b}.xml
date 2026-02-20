@@ -5,7 +5,7 @@
 			<value>PurpleAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -62,7 +62,6 @@
 	<object class="MarkerTrack" id="{6c9a4362-b6d0-4f5e-9720-29d928e71356}" />
 	<object class="GroupTrack" id="{ddf2b43e-cc6c-413d-b52f-0367c98057a9}">
 		<relationship name="modules">
-			<destination>{8a4909ef-da99-42d5-968b-452050d10f9b}</destination>
 			<destination>{c8443806-5d11-4400-8749-9d6b8f4a085b}</destination>
 			<destination>{a41ce28c-ae54-4a76-b7db-afcd36773cfe}</destination>
 		</relationship>
@@ -71,9 +70,6 @@
 		</relationship>
 	</object>
 	<object class="Timeline" id="{f21258fa-eb66-4aa5-8b67-f9fa848bfdf1}">
-		<relationship name="modules">
-			<destination>{8a4909ef-da99-42d5-968b-452050d10f9b}</destination>
-		</relationship>
 		<relationship name="markers">
 			<destination>{6c4846cb-10ac-40ab-a7ec-c9c92a205ba1}</destination>
 			<destination>{c21a16ff-4237-4495-b072-9e399e54bd85}</destination>
@@ -111,14 +107,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{2bc793b9-e26a-4dc2-b5c5-45504691b9f9}" />
-	<object class="SingleSound" id="{8a4909ef-da99-42d5-968b-452050d10f9b}">
-		<property name="length">
-			<value>45.75</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{f9c7405d-3723-44a9-8c30-e3c3e8d0b2ca}</destination>
-		</relationship>
-	</object>
 	<object class="TransitionSourceSound" id="{c8443806-5d11-4400-8749-9d6b8f4a085b}">
 		<property name="length">
 			<value>1.5</value>
