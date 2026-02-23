@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
+    private LoveMeter LoveMeter_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -32,6 +33,7 @@ public class DialogueManager : MonoBehaviour
     {
         GameOver = GameObject.Find("GameOver");
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", true);
+        LoveMeter_scr = GameObject.Find("Canvas/LoveMeter").GetComponent<LoveMeter>();
         DialogueTrigger_scr = InteractionSelector_scr.Dialogues[0].GetComponent<DialogueTrigger>();
         options = new List<string>();
         respones = new List<string>();
@@ -98,10 +100,17 @@ public class DialogueManager : MonoBehaviour
         else
         {
             Debug.Log("ran out of options");
+            LoveMeter_scr.decaying = false;
             LoseState2();
         }
         meLines++;
     }
+
+    public void HideObj(GameObject Obj)
+    {
+        Obj.SetActive(false);
+    }
+
 
     public void ResponseBox(int selection)//switch case 
     {
