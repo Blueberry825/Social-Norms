@@ -14,6 +14,14 @@ public class DateRandomiser_Script : MonoBehaviour
 
     private GameObject lastAlien;
 
+    [SerializeField] private List<GameObject> aliensInLocation0;
+    [SerializeField] private List<GameObject> aliensInLocation1;
+    [SerializeField] private List<GameObject> aliensInLocation2;
+    [SerializeField] private List<GameObject> aliensInLocation3;
+    [SerializeField] private List<GameObject> aliensInLocation4;
+    private Animator refreshAnimator;
+    private GameObject slider;
+
     #region Location info
     private Level_Location_Script levelLocationScript;
     private int getLocation;
@@ -28,7 +36,14 @@ public class DateRandomiser_Script : MonoBehaviour
         tabletAnimsScript = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
 
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
+        refreshAnimator = GameObject.Find("Refesh_TXT").GetComponent<Animator>();
+        slider = GameObject.Find("LoveHeart_Slide");
 
+        aliensInLocation0 = getAlienList.GetRange(0, 3);
+        aliensInLocation1 = getAlienList.GetRange(3, 3);
+        aliensInLocation2 = getAlienList.GetRange(6, 3);
+        aliensInLocation3 = getAlienList.GetRange(9, 3);
+        aliensInLocation4 = getAlienList.GetRange(12, 3);
         RandomiseDate();
     }
 
@@ -49,24 +64,65 @@ public class DateRandomiser_Script : MonoBehaviour
                 Debug.Log("Default case");
                 break;
         case 0:
-                Debug.Log("Case 0");
-                alienOnScreen = getAlienList[Random.Range(0, 3)]; //(choosing 1st date)
+                if (aliensInLocation0.Count != 0)
+                {
+                    alienOnScreen = aliensInLocation0[Random.Range(0, aliensInLocation0.Count)]; //(choosing 1st date)
+                    aliensInLocation0.Remove(alienOnScreen);
+                }
+                else 
+                {
+                    Debug.Log("0 left.");
+                    RefreshTXTAnim();
+                }
                 break;
         case 1:
-                Debug.Log("Case 1");
-                alienOnScreen = getAlienList[Random.Range(3, 6)]; //(choosing 2nd date)
+                if (aliensInLocation1.Count != 0)
+                {
+                    alienOnScreen = aliensInLocation1[Random.Range(0, aliensInLocation1.Count)]; //(choosing 1st date)
+                    aliensInLocation1.Remove(alienOnScreen);
+                }
+                else
+                {
+                    Debug.Log("0 left.");
+                    RefreshTXTAnim();
+                }
                 break;
         case 2:
-                Debug.Log("Case 2");
-                alienOnScreen = getAlienList[Random.Range(6, 9)]; //(choosing 3rd date)
+
+                if (aliensInLocation2.Count != 0)
+                {
+                    alienOnScreen = aliensInLocation2[Random.Range(0, aliensInLocation2.Count)]; //(choosing 1st date)
+                    aliensInLocation2.Remove(alienOnScreen);
+                }
+                else
+                {
+                    Debug.Log("0 left.");
+                    RefreshTXTAnim();
+                }
                 break;
         case 3:
-                Debug.Log("Case 3");
-                alienOnScreen = getAlienList[Random.Range(9, 12)]; //(choosing 4th date)
+                if (aliensInLocation3.Count != 0)
+                {
+                    alienOnScreen = aliensInLocation3[Random.Range(0, aliensInLocation3.Count)]; //(choosing 1st date)
+                    aliensInLocation3.Remove(alienOnScreen);
+                }
+                else
+                {
+                    Debug.Log("0 left.");
+                    RefreshTXTAnim();
+                }
                 break;
         case 4:
-                Debug.Log("Case 4");
-                alienOnScreen = getAlienList[Random.Range(12, 15)]; //(choosing 5th date)
+                if (aliensInLocation4.Count != 0)
+                {
+                    alienOnScreen = aliensInLocation4[Random.Range(0, aliensInLocation4.Count)]; //(choosing 1st date)
+                    aliensInLocation4.Remove(alienOnScreen);
+                }
+                else
+                {
+                    Debug.Log("0 left.");
+                    RefreshTXTAnim();
+                }
                 break;
         case 5:
                 Debug.Log("Case 5. Queen is next."); //then date the queen is next!
@@ -76,16 +132,39 @@ public class DateRandomiser_Script : MonoBehaviour
                 break;
         }
         Debug.Log(alienOnScreen.name);
-
         Instantiate(alienOnScreen, spawnLocation.transform);
     }
 
+    private void RefreshTXTAnim() 
+    {
+        refreshAnimator.ResetTrigger("Reset");
+        refreshAnimator.SetTrigger("RefreshTXT_Trigger");
 
+        slider.SetActive(false);
+        alienOnScreen.SetActive(false);
+    }
+
+    public void RefreshDatesButton() 
+    {
+        aliensInLocation0 = getAlienList.GetRange(0, 3);
+        aliensInLocation1 = getAlienList.GetRange(3, 3);
+        aliensInLocation2 = getAlienList.GetRange(6, 3);
+        aliensInLocation3 = getAlienList.GetRange(9, 3);
+        aliensInLocation4 = getAlienList.GetRange(12, 3);
+
+        refreshAnimator.SetTrigger("Reset");
+        slider.SetActive(true);
+        if (alienOnScreen != null) //if it DOES exist
+        {
+            alienOnScreen.SetActive(true);
+        }
+        RandomiseDate();
+    }
 
     public void GoOnDateWith() 
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
-        Debug.Log("Going on date with " +alienOnScreen.name);
+        Debug.Log("Going on date with " + alienOnScreen.name);
 
 
         tabletAnimsScript.SwapTabletVisibility();
