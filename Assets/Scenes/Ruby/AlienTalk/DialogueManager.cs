@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour
 {
     public TMP_Text nameText;
     public TMP_Text dialogueText;
+    private GameObject GameOver;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -29,6 +30,8 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        GameOver = GameObject.Find("GameOver");
+        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", true);
         DialogueTrigger_scr = InteractionSelector_scr.Dialogues[0].GetComponent<DialogueTrigger>();
         options = new List<string>();
         respones = new List<string>();
@@ -45,10 +48,23 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("Title_Scene");
     }
 
-    // Update is called once per frame
-    void Update()
-    {
 
+    public void LoseState()
+    {
+        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You lost";
+    }
+
+    public void LoseState2()
+    {
+        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion";
+    }
+
+    public void WinState()
+    {
+        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You won!";
     }
 
     public void OptionBubbles()//switch case 
@@ -82,6 +98,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             Debug.Log("ran out of options");
+            LoseState2();
         }
         meLines++;
     }
