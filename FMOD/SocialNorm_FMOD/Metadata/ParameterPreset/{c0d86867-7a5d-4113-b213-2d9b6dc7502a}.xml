@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{c0d86867-7a5d-4113-b213-2d9b6dc7502a}">
+		<property name="name">
+			<value>Tablet_Movement_Param</value>
+		</property>
+		<relationship name="folder">
+			<destination>{06245423-565d-4e6f-99b3-52acb31b49f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{9b2c0e9a-7b64-4edd-bdd7-618e41910edc}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{9b2c0e9a-7b64-4edd-bdd7-618e41910edc}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Coming_On_Screen</value>
+			<value>Going_Off_Screen</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

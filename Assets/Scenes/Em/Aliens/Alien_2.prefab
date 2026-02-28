@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd027e5835f9be4db2538a260fea182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPlayerDatedThisAlien: 0
+  hasPlayerDatedThisAlien: 1
   alienNumber: 2
 --- !u!212 &5449157816006738429
 SpriteRenderer:

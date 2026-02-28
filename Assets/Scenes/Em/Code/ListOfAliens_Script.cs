@@ -13,6 +13,8 @@ public class ListOfAliens_Script : MonoBehaviour
 
     private Level_Location_Script levelLocationScript;
 
+
+
     private void Start()
     {
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();

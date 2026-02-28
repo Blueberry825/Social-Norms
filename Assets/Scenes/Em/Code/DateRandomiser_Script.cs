@@ -22,10 +22,13 @@ public class DateRandomiser_Script : MonoBehaviour
     private Animator refreshAnimator;
     private GameObject slider;
 
+    private GameObject current;
+
     #region Location info
     private Level_Location_Script levelLocationScript;
     private int getLocation;
     #endregion
+
 
     private void Start() //replace to 'open dating app' function when tablet picked up. dont want to be able to choose new date whilst still on one
     {
@@ -132,7 +135,7 @@ public class DateRandomiser_Script : MonoBehaviour
                 break;
         }
         Debug.Log(alienOnScreen.name);
-        Instantiate(alienOnScreen, spawnLocation.transform);
+        current = Instantiate(alienOnScreen, spawnLocation.transform);
     }
 
     private void RefreshTXTAnim() 
@@ -161,13 +164,17 @@ public class DateRandomiser_Script : MonoBehaviour
         RandomiseDate();
     }
 
+
+
     public void GoOnDateWith() 
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
 
+        current.SetActive(false); //this sets prefab, not whats acc on screen??
+        slider.SetActive(false);
 
-        tabletAnimsScript.SwapTabletVisibility();
-        SceneManager.LoadScene("Date_Scene");
+        tabletAnimsScript.MatchedAnimations();
+
     }
 }
