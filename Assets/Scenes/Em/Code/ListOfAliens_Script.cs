@@ -12,11 +12,12 @@ public class ListOfAliens_Script : MonoBehaviour
     public List<GameObject> datedAlienList;
 
     private Level_Location_Script levelLocationScript;
-
+    private SaveAndLoad SaveAndLoad_scr;
 
 
     private void Start()
     {
+        SaveAndLoad_scr = gameObject.GetComponent<SaveAndLoad>();
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
     }
 
@@ -27,6 +28,9 @@ public class ListOfAliens_Script : MonoBehaviour
         currentDate = alien;
         datedAlienList.Add(alien);
         singleAlienList.Remove(alien);
+
+        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
+        print($"AAAAAAAAAAAAAAAAAAAAA {PlayerPrefs.GetInt("Location0")}");
 
         //remove as current date each time
         levelLocationScript.MoveLocation();

@@ -170,9 +170,8 @@ public class DateRandomiser_Script : MonoBehaviour
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
-
         current.SetActive(false); //this sets prefab, not whats acc on screen??
-        slider.SetActive(false);
+        slider.SetActive(false);   
 
         tabletAnimsScript.MatchedAnimations();
 
