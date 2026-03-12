@@ -14,8 +14,6 @@ public class SaveAndLoad : MonoBehaviour
     }
 
     private ListOfAliens_Script listAlien_Script_scr;
-    private GameObject currentAlienDate;
-    public int alienNumber;
 
     private Level_Location_Script Level_Location_Script_scr;
     public int currentLocation;
@@ -25,8 +23,6 @@ public class SaveAndLoad : MonoBehaviour
     {
         Level_Location_Script_scr = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         listAlien_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-        currentAlienDate = listAlien_Script_scr.currentDate;
      
     }
 
