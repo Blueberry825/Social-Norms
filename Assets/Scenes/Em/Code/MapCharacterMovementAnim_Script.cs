@@ -14,14 +14,10 @@ public class MapCharacterMovementAnim_Script : MonoBehaviour
         levelLocationScript = gameObject.GetComponent<Level_Location_Script>();
     }
 
-    public void MapCharacterMovementAnims() 
+    public void MapCharacterMovementAnims()
     {
         thisCurrentLocation = levelLocationScript.currentLocation;
         characterAnimator.SetInteger("Location_INT_Anim", thisCurrentLocation);
-
-
-
-        //once done
-        //SceneManager.LoadScene("Date_Scene");
     }
+
 }
