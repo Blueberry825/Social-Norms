@@ -14,7 +14,6 @@ public class SaveAndLoad : MonoBehaviour
     }
 
     private ListOfAliens_Script listAlien_Script_scr;
-    private AliensDated_Script AliensDated_Script_scr;
     private GameObject currentAlienDate;
     public int alienNumber;
 
@@ -26,9 +25,9 @@ public class SaveAndLoad : MonoBehaviour
     {
         Level_Location_Script_scr = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         listAlien_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        AliensDated_Script_scr = currentAlienDate.GetComponent<AliensDated_Script>();
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-        currentAlienDate = listAlien_Script_scr.currentDate;        
+        currentAlienDate = listAlien_Script_scr.currentDate;
+     
     }
 
     // Update is called once per frame
