@@ -31,12 +31,7 @@ public class ListOfAliens_Script : MonoBehaviour
         singleAlienList.Remove(alien);
 
         SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
-<<<<<<< HEAD
-        //SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
-        //print($"AAAAAAAAAAAAAAAAAAAAA {PlayerPrefs.GetInt("Location0")}");
-=======
         print($"AAAAAAAAAAAAAAAAAAAAA {PlayerPrefs.GetInt("Location0")}");
->>>>>>> main
 
         //remove as current date each time
         levelLocationScript.MoveLocation();
