@@ -246,6 +246,7 @@ GameObject:
   - component: {fileID: 3178596}
   - component: {fileID: 3178599}
   - component: {fileID: 3178598}
+  - component: {fileID: 3178601}
   - component: {fileID: 3178597}
   - component: {fileID: 3178600}
   m_Layer: 5
@@ -287,7 +288,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 818b8f8e47a8aa444b5b43591292e19f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -344,6 +345,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f120be4eb0311fe4da00c2d7afccc34a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3178601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3178595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e33f85c88e06a4784edd0ecce838e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7737039
