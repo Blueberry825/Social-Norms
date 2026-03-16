@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36732119}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.4835764, w: 0.8753022}
+  m_LocalRotation: {x: 0, y: 0, z: -0.48171115, w: 0.8763301}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -442,7 +442,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99096071}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.24404646, w: 0.9697636}
+  m_LocalRotation: {x: 0, y: 0, z: -0.24441138, w: 0.96967167}
   m_LocalPosition: {x: 0.9805682, y: -0.000000027825745, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -901,7 +901,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 215798292}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.03645556, w: 0.99933535}
+  m_LocalRotation: {x: 0, y: 0, z: -0.03629063, w: 0.9993413}
   m_LocalPosition: {x: 1.0589303, y: -0.000000013509296, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3954,7 +3954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034864496}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.07128066, w: 0.9974563}
+  m_LocalRotation: {x: 0, y: 0, z: -0.07160989, w: 0.99743277}
   m_LocalPosition: {x: 1.0800847, y: -0.016527511, z: 0.00000018156564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4742,7 +4742,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083411890}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.20472544, w: 0.9788195}
+  m_LocalRotation: {x: 0, y: 0, z: 0.20491265, w: 0.9787803}
   m_LocalPosition: {x: 0.8630649, y: 0.00000012308834, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5070,7 +5070,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157653399}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.1785283, w: -0.9839348}
+  m_LocalRotation: {x: 0, y: 0, z: 0.18170151, w: -0.98335373}
   m_LocalPosition: {x: 0.7545943, y: -0.000000082635495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5998,7 +5998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506469141}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.18376943, w: 0.9829694}
+  m_LocalRotation: {x: 0, y: 0, z: -0.18337372, w: 0.9830433}
   m_LocalPosition: {x: 0.9975599, y: -0.000000078736086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7550,18 +7550,18 @@ MonoBehaviour:
     - {x: 0, y: 0, z: 0.00000012784481, w: 1}
     - {x: 0, y: 0, z: 0.9265657, w: 0.37613302}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.03645556, w: 0.99933535}
+    - {x: 0, y: 0, z: -0.03629063, w: 0.9993413}
     - {x: 0, y: 0, z: 0.011870227, w: 0.9999296}
     - {x: 0, y: 0, z: -0.045582086, w: 0.9989606}
-    - {x: 0, y: 0, z: -0.18376943, w: 0.9829694}
-    - {x: 0, y: 0, z: -0.24404646, w: 0.9697636}
-    - {x: 0, y: 0, z: -0.07128066, w: 0.9974563}
-    - {x: 0, y: 0, z: 0.12634085, w: 0.99198693}
-    - {x: 0, y: 0, z: 0.20472544, w: 0.9788195}
-    - {x: 0, y: 0, z: -0.076059416, w: -0.9971033}
-    - {x: 0, y: 0, z: 0.1785283, w: -0.9839348}
+    - {x: 0, y: 0, z: -0.18337372, w: 0.9830433}
+    - {x: 0, y: 0, z: -0.24441138, w: 0.96967167}
+    - {x: 0, y: 0, z: -0.07160989, w: 0.99743277}
+    - {x: 0, y: 0, z: 0.12540545, w: 0.9921056}
+    - {x: 0, y: 0, z: 0.20491265, w: 0.9787803}
+    - {x: 0, y: 0, z: -0.07804032, w: -0.9969502}
+    - {x: 0, y: 0, z: 0.18170151, w: -0.98335373}
     - {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-    - {x: 0, y: 0, z: -0.4835764, w: 0.8753022}
+    - {x: 0, y: 0, z: -0.48171115, w: 0.8763301}
   m_Iterations: 1
   m_Tolerance: 0.0078
   m_Velocity: 0.822
@@ -7952,7 +7952,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933146346}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.076059416, w: -0.9971033}
+  m_LocalRotation: {x: 0, y: 0, z: -0.07804032, w: -0.9969502}
   m_LocalPosition: {x: 0.7067896, y: -0.00000007600241, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8619,7 +8619,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079592258}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.12634085, w: 0.99198693}
+  m_LocalRotation: {x: 0, y: 0, z: 0.12540545, w: 0.9921056}
   m_LocalPosition: {x: 0.81501377, y: 0.05343226, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9501,29 +9501,69 @@ MonoBehaviour:
   dialogue:
     name: Whale
     options:
-    - no
-    - yes
-    - i prefer ham
-    - kinda
-    - i like to give them
-    - "only if its chocolate!\t\t"
-    - oh no this one?
-    - here use these eye drops
-    - it will pass
+    - Gently shake their shoulder to wake them up
+    - Wait for them to wake up
+    - Excuse me... Do you want me to come back later?
+    - napping ruins my sleep schedule.
+    - You're funny hehe
+    - "I love a good nap, you seem like a good napping companion\t"
+    - No thanks, I don't like tea.
+    - Tea? how are you going to make it? with what?
+    - I'd love some! but are you sure its okay to... Steep... together on the first
+      date?
+    - '**Add the red grass**'
+    - '**Add the tree leaves** '
+    - '**Add the little herbs**'
+    - '**fail to take the cup and touch the alien** (ACTION)'
+    - 'No thanks... I don''t want tea... **Don''t take the cup** '
+    - '**succeed in taking the cup** (ACTION grab cup)'
+    - 'You: Does it itch? **reach out to itch Wills skin**'
+    - 'You: Is it reversable? I can get you some steroid cream?'
+    - 'You: or you could say you used to not like mushrooms, but they''re growing
+      on you now.'
     respones:
-    - ok then!
-    - me too
-    - oo i like ham too
-    - thats ok
-    - but i want to give them to you
-    - what's chocolate
-    - thats not my eye!
-    - mm yummy
-    - i guess so...
+    - "???: \"Hey gluhh dont you know it's rude to touch a sleeping glomp?\"\t"
+    - '*the whale keeps sleeping for a long while, but eventually slowly opens its
+      eyes, takes a moment to realise whats happening, and then smiles *'
+    - '*The whale slowly opens its eyes, takes a moment to realise whats happening,
+      and then smiles *'
+    - 'Will: Gluh, you''re too strung up, on this date, just let yourself relax with
+      me...'
+    - 'Will: laughing is such a good vibe gluhh'
+    - 'Will: You''re welcome to come nap with me anytime gluhh *Will winks at you
+      *'
+    - 'Will: Oh... really? okay then, but at least you wouldn''t  mind helping me
+      make it then. **Will starts pouting and tapping his foot**'
+    - 'Will: What? gluhh are you an alien or something? We''ll make it normally.'
+    - 'Will: HAHAHAHA I could get used to you,,, come help me make it!'
+    - 'Will: Umm...  you know Glerbles regularly eat that right gluh? I''ll just
+      do it myself...'
+    - 'Will: Gluh those are TREE leaves, not TEA leaves! never mind, i''ll get it
+      myself..'
+    - 'Will: mmm I can smell the herbs already, thanks gluhh'
+    - 'Will recoils... Will: I know my skin is diffent but don''t touch me..'
+    - 'Will: Oh... Well, it''s okay if someone doesn''t want tea....'
+    - 'Will: ahhhh... It doesn''t get better than this gluhh. Just you, me, and a
+      nice herbal tea...'
+    - 'Will: NO GLUH WHY DID YOU TOUCH ME?! IT''S CONTAGEOUS!!!..... Only joking,
+      but please don''t touch me without my permission.'
+    - 'Will: Steroid cream?... is that similar to glorp cream? I love glorp cream
+      but it gives me a brainfreeze...'
+    - 'Will:  You''re a really fun-guy you know, I hope we can get along more...'
     actions:
-    - do you like cheese
-    - do you like gifts
-    - ow my eye hurts suddenly
+    - '*You see a purple whale asleep in the shade under a tree, a small snot bubble,
+      rises and falls from a blowhole on the top of their head *'
+    - '???: Oh... Hey gluhh! I''m Will. Sorry about earlier, It''s just so relaxing
+      in this park that I fell asleep, I''m so good at relaxing that I could do it
+      in my sleep!'
+    - 'Will: Hey gluhh, how about a cup of lovely herbal tea? I''m sure it will make
+      this date even better than it already is. **(Will it make your avatar malfunction?)**'
+    - 'Will: Okay, here''s the pot, add our tea in.'
+    - 'Will: Mmm I love a good cup of herbal tea... Go on have a cup **Will offers
+      you a cup**'
+    - 'Will: Hey Gluhh... Are you looking at my skin? it''s okay, I dont mind. I
+      have a skin condition which causes a fungus like texture to spread, pretty
+      cool right.'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
