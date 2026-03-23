@@ -95,6 +95,18 @@ public class DialogueManager : MonoBehaviour
                     for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
                         InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];                     
                     break;
+                case 3:
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                    break;
+                case 4://figure out randomising placement
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                    break;
+                case 5:
+                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                    break;//uup to 6 rounds of responses
             }       
         }
         else
