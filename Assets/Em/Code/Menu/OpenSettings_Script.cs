@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class OpenSettings_Script : MonoBehaviour
 {
-    private Animator settingsAnimator;
+    [SerializeField] private Animator settingsAnimator;
 
     private void Start()
     {
