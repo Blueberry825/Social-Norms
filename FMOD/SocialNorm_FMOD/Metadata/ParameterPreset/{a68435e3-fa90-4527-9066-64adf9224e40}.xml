@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{a68435e3-fa90-4527-9066-64adf9224e40}">
+		<property name="name">
+			<value>MapMovement_Param</value>
+		</property>
+		<relationship name="folder">
+			<destination>{06245423-565d-4e6f-99b3-52acb31b49f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{719f733e-5c63-4ed5-93d9-0a2eeef584c0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{719f733e-5c63-4ed5-93d9-0a2eeef584c0}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>OpenMap</value>
+			<value>CloseMap</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

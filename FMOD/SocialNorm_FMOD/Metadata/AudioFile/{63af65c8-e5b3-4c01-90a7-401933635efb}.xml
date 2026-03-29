@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{63af65c8-e5b3-4c01-90a7-401933635efb}">
+		<property name="assetPath">
+			<value>New Folder/OpenTablet.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4747845804988662</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b35df7c-9ae0-49b8-add4-397f1875818c}</destination>
+		</relationship>
+	</object>
+</objects>
