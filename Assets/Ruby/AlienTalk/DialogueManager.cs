@@ -11,10 +11,13 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text nameText;
     public TMP_Text dialogueText;
     private GameObject GameOver;
+    private GameObject tablet;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
     private LoveMeter LoveMeter_scr;
+    private Level_Location_Script Level_Location_Script_scr;
+    private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -31,6 +34,10 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        tablet = GameObject.Find("Tablet");
+        Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
+        TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+
         GameOver = GameObject.Find("GameOver");
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", true);
         LoveMeter_scr = GameObject.Find("Canvas/LoveMeter").GetComponent<LoveMeter>();
@@ -50,24 +57,33 @@ public class DialogueManager : MonoBehaviour
         SceneManager.LoadScene("Title_Scene");
     }
 
+    public void RestartDate()
+    {
+        SceneManager.LoadScene("Date_Scene");
+    }
 
-    public void LoseState()
+    public void LoseState()//put different info for winning and losing
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You lost";
-    }
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
+        Level_Location_Script_scr.currentLocation--;
+        TabletAppearDissapear_Script_scr.isLevelOver = true;
+    }//minus 1 to the location when losing to turn back progress of dating
 
     public void LoseState2()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion";
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion soldier";
+        Level_Location_Script_scr.currentLocation--;
+        TabletAppearDissapear_Script_scr.isLevelOver = true;
     }
 
     public void WinState()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You won!";
-    }
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
+        TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
+    }//tell table that hasWon is true
 
     public void OptionBubbles()//switch case 
     {
@@ -113,7 +129,15 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
-            LoseState2();
+
+            if (LoveMeter_scr.isLoveFull)
+            {
+                WinState();
+            }
+            else
+            {
+                LoseState2();
+            }            
         }
         meLines++;
     }

@@ -174,6 +174,5 @@ public class DateRandomiser_Script : MonoBehaviour
         slider.SetActive(false);   
 
         tabletAnimsScript.MatchedAnimations();
-
     }
 }

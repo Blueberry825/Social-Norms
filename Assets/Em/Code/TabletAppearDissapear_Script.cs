@@ -16,6 +16,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     private GameObject slideBarGO;
     private DateRandomiser_Script dateRandomiserScript;
 
+    public bool isLevelOver;
+
 
     //will also have home page, to allow swapping between 
     // - dating app (can't be accessed whilst on date)
@@ -25,6 +27,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     private void Start()
     {
+        isLevelOver = true;
         tabletAnimator = GetComponent<Animator>();
         matchedTXTAnimator = GameObject.Find("Matched_TXT").GetComponent<Animator>();
 
@@ -42,10 +45,12 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         bool spaceKeyPressed = Keyboard.current.spaceKey.wasPressedThisFrame;
         bool spaceKeyPressed2 = Keyboard.current.spaceKey.wasPressedThisFrame;
 
-        if (spaceKeyPressed || spaceKeyPressed2) 
+        if (spaceKeyPressed || spaceKeyPressed2 && isLevelOver) 
         {
             SwapTabletVisibility();
         }
+
+
     }
 
     public void SwapTabletVisibility() 
@@ -73,7 +78,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     public void SwapMapVisibility() //called once matched txt anim ends
     {
-        datingAppGO.SetActive(false);
+        //datingAppGO.SetActive(false);
         mapOnScreenBool = levelMapAnimator.GetBool("MapOnScreen");
 
         if (mapOnScreenBool == true)

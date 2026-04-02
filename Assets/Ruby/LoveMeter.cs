@@ -15,6 +15,8 @@ public class LoveMeter : MonoBehaviour
 
     public int result;
 
+    public bool isLoveFull;
+
     public float loveAmount = 50f;
     public float decayAmount;
     public float decayTime;// how low between each decrease 
@@ -23,6 +25,7 @@ public class LoveMeter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        isLoveFull = false;
         loveAmount = 50f;
         decaying = true;
         dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
@@ -35,12 +38,18 @@ public class LoveMeter : MonoBehaviour
     // Update is called once per frame
     void Update() // decrease love amount each frame
     {
-        if (loveAmount > 100)
+        loveMeter.value = loveAmount;
+
+        if (loveAmount >= 100 || isLoveFull)
+        {
             loveAmount = 100;
+            isLoveFull = true;
+            result = 1;
+            decaying = false;
+        }
 
         if (decaying)
-        {
-            loveMeter.value = loveAmount;
+        {       
             loveAmount -= decayAmount * Time.deltaTime;
 
             armObject.SetActive(true);
@@ -49,18 +58,9 @@ public class LoveMeter : MonoBehaviour
                 dialogueManager_scr.LoseState();
                 result = 0;
                 decaying = false;
-            }
-            else if (loveAmount >= 100)
-            {
-                dialogueManager_scr.WinState();
-                result = 1;
-                decaying = false;
-            }
+            }         
         }
-        else
-        {
-            armObject.SetActive(false);
-        }
+
     }
 
     public void AfterLevel()//anthing that changes based on result?
@@ -99,7 +99,7 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 15;
+                loveAmount += 100;
                 break;
 
         }

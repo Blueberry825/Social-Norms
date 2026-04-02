@@ -40,20 +40,23 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 3554538221
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UIBelowAlien
+    uniqueID: 3642624599
     locked: 0
   - name: Alien
     uniqueID: 1730967801
     locked: 0
-  - name: Tentacle
-    uniqueID: 2252144119
-    locked: 0
   - name: UI
     uniqueID: 3843878151
     locked: 0
-  - name: Background
-    uniqueID: 3554538221
+  - name: Tentacle
+    uniqueID: 2252144119
     locked: 0
   m_RenderingLayers:
   - Default
