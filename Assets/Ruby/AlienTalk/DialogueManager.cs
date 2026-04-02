@@ -69,7 +69,7 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You won!";
     }
 
-    public void OptionBubbles()//switch case 
+    public void OptionBubbles()//switch case // should be improved in future
     {
         meLinesAdd3 = meLines * 3;
         maxlines = meLinesAdd3 + 3;
@@ -129,7 +129,7 @@ public class DialogueManager : MonoBehaviour
  
         var alienLines3 = alienLines * 3;
 
-        dialogueText.text = respones[selection + alienLines3];
+        dialogueText.text = respones[selection + alienLines3];//interaction ID plus current line * 3 for the extra three added each new line
 
         alienLines++;
     }

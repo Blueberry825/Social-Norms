@@ -84,9 +84,14 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             levelMapAnimator.SetBool("MapOnScreen", true);
         }
-        mapCharacterMovementAnimScript.MapCharacterMovementAnims();
-        
+        mapCharacterMovementAnimScript.MapCharacterMovementAnims();     
     }
+
+    public void MapOnOff(bool State) //called once matched txt anim ends
+    {
+        levelMapAnimator.SetBool("MapOnScreen", State);
+    }
+ 
 
     //public void RefreshAnimations()
     //{
