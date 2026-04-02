@@ -88,9 +88,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         
     }
 
-    //public void RefreshAnimations()
-    //{
-
-    //}
-
+    public void MapOnOff(bool OnOff) //called once matched txt anim ends
+    {
+        levelMapAnimator.SetBool("MapOnScreen", OnOff);
+    }
 }
