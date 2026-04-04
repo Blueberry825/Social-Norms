@@ -16,4 +16,5 @@ public class Level_Location_Script : MonoBehaviour
         currentLocation = currentLocation +1;
         Debug.Log("Current location = " + currentLocation.ToString());
     }
+
 }

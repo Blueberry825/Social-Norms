@@ -16,9 +16,12 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
 
     private Animator tabletAnimator;
 
+    private ListOfAliens_Script listAlienScript;
+    private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
 
     private void Start()
     {
+        TabletAppearDissapear_Script_scr = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
         dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         sliderAudio = FMODUnity.RuntimeManager.CreateInstance("event:/UI/Tablet/DatingApp/MoveSlider");
 
@@ -71,7 +74,10 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
         tabletAnimator.SetBool("Matched", true);
 
+        Debug.Log("Swiped right.");
+        TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
         dateScript.GoOnDateWith();
+        transform.localPosition = new Vector3(0, 0, 0);
     }
 
     private void ResetPosition(Vector3 position) 
