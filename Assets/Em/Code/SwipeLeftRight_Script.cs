@@ -4,26 +4,44 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
 public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private DateRandomiser_Script dateScript;
-    private ListOfAliens_Script listAlienScript;
+
+    private FMOD.Studio.EventInstance sliderAudio;
+    private bool hasAudioPlayed = false;
+
+    private Animator tabletAnimator;
 
 
     private void Start()
     {
         dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        sliderAudio = FMODUnity.RuntimeManager.CreateInstance("event:/UI/Tablet/DatingApp/MoveSlider");
+
+        tabletAnimator = GameObject.Find("Tablet").GetComponent<Animator>();
     }
     public void OnDrag(PointerEventData eventData)
     {
+        if (Mouse.current.leftButton.isPressed && hasAudioPlayed == false)
+        {
+            sliderAudio.start();
+            hasAudioPlayed = true;
+        }
+
+
         Vector3 position = transform.localPosition;
         transform.localPosition = new Vector3(Mathf.Clamp(position.x+eventData.delta.x, -200, 200), position.y, position.z);
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        hasAudioPlayed = false;
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Reset_Slider");
+
         Vector3 position = transform.localPosition;
         if (position.x < 200 && position.x > -200) 
         { 
@@ -43,20 +61,23 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
 
     public void SwipedLeft() 
     {
-        Debug.Log("Swiped left.");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Dismiss");
         dateScript.RandomiseDate();
         ResetPosition(gameObject.transform.position);
     }
 
     public void SwipedRight() 
     {
-        Debug.Log("Swiped right.");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
+        tabletAnimator.SetBool("Matched", true);
+
         dateScript.GoOnDateWith();
     }
 
     private void ResetPosition(Vector3 position) 
     {
-        Debug.Log("Reset slider position.");
+        Debug.Log("Reset slider position");
+        tabletAnimator.SetBool("Matched", false);
         transform.localPosition = new Vector3(0, position.y, position.z);
     }
 

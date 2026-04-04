@@ -26,7 +26,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 416
+  Length: 986
 --- !u!114 &-8277613680620154574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -53,7 +53,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 145
+  Length: 978
 --- !u!114 &-8157016176561471733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +81,32 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 218
+--- !u!114 &-8022127788731245027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Map_Movement/MapMovement_Param
+  m_EditorClassIdentifier: 
+  Name: MapMovement_Param
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2605743371
+    data2: 1604559336
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - OpenMap
+  - CloseMap
+  Exists: 1
 --- !u!114 &-7472375646618720671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,7 +133,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1375
+  Length: 978
 --- !u!114 &-7048535078465714171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,10 +176,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 639103900641764624
+  lastModified: 639109145908905212
   FileSizes:
   - Name: Desktop
-    Value: 191296
+    Value: 332320
   Exists: 1
 --- !u!114 &-6511690086580718601
 MonoBehaviour:
@@ -182,6 +208,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-6280444929021203080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/PauseMenu/PauseMenu_Play
+  m_EditorClassIdentifier: 
+  Path: event:/UI/PauseMenu/PauseMenu_Play
+  Guid:
+    Data1: 1421420978
+    Data2: 1264106147
+    Data3: -1872901712
+    Data4: -1072387845
+  Banks:
+  - {fileID: -6579001748066530345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1190
 --- !u!114 &-5695040709430992837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,12 +278,12 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639103900641744681
+  lastModified: 639109144819652070
   FileSizes:
   - Name: Desktop
-    Value: 2040
+    Value: 2248
   Exists: 1
---- !u!114 &-5379211621529397539
+--- !u!114 &-4482153671175393418
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,36 +293,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/Interaction_Click
+  m_Name: event:/UI/Clicking
   m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/Interaction_Click
-  Guid:
-    Data1: -321673137
-    Data2: 1081911194
-    Data3: -2108133977
-    Data4: -1725367090
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 843
---- !u!114 &-3864568555697159422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/Dialogue_NextButton
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/Dialogue_NextButton
+  Path: event:/UI/Clicking
   Guid:
     Data1: 1416335315
     Data2: 1318474484
@@ -305,7 +331,7 @@ MonoBehaviour:
     data1: 2018341617
     data2: 3391136101
   Type: 2
-  IsGlobal: 0
+  IsGlobal: 1
   Labels:
   - Title_Music
   - PurpleAlien_Music
@@ -328,12 +354,41 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639103900641734681
+  lastModified: 639109144819622034
   FileSizes:
   - Name: Desktop
-    Value: 1486
+    Value: 1944
   Exists: 1
---- !u!114 &-1463002748480582557
+--- !u!114 &-1645996340983718049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic_Param
+  m_EditorClassIdentifier: 
+  Name: BackgroundMusic_Param
+  StudioPath: parameter:/BackgroundMusic_Param
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2018341617
+    data2: 3391136101
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Title_Music
+  - PurpleAlien_Music
+  - GreenAlien_Music
+  - OrangeAlien_Music
+  - QueenAlien_Music
+  Exists: 1
+--- !u!114 &-1128420253483153281
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -343,14 +398,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/PauseMenu/PauseMenu_Movement
+  m_Name: event:/UI/Clicking_B
   m_EditorClassIdentifier: 
-  Path: event:/UI/PauseMenu/PauseMenu_Movement
+  Path: event:/UI/Clicking_B
   Guid:
-    Data1: -428926253
-    Data2: 1134163824
-    Data3: 759898240
-    Data4: -321549483
+    Data1: -1006048063
+    Data2: 1134471850
+    Data3: 1747508406
+    Data4: 607453583
   Banks:
   - {fileID: -6579001748066530345}
   IsStream: 0
@@ -359,7 +414,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 468
+  Length: 500
 --- !u!114 &-736485012821028056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -383,10 +438,11 @@ MonoBehaviour:
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -8022127788731245027}
   MinDistance: 1
   MaxDistance: 20
-  Length: 460
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -409,26 +465,31 @@ MonoBehaviour:
   - {fileID: -8277613680620154574}
   - {fileID: -5695040709430992837}
   - {fileID: -6511690086580718601}
-  - {fileID: -5379211621529397539}
   - {fileID: -7048535078465714171}
   - {fileID: 1104449963269603779}
   - {fileID: -8547606448730588564}
-  - {fileID: 2551911453711477986}
   - {fileID: -8157016176561471733}
   - {fileID: 1270880009700547184}
-  - {fileID: 7409533148610045616}
-  - {fileID: 3238883400173550618}
-  - {fileID: -1463002748480582557}
-  - {fileID: -3864568555697159422}
   - {fileID: -7472375646618720671}
   - {fileID: -736485012821028056}
-  EditorParameters: []
+  - {fileID: 2299969404301433705}
+  - {fileID: 4357930538560421105}
+  - {fileID: 753582034450366461}
+  - {fileID: -6280444929021203080}
+  - {fileID: 8171030297965959245}
+  - {fileID: 3519887748338721951}
+  - {fileID: -1128420253483153281}
+  - {fileID: -4482153671175393418}
+  - {fileID: 3440624490083597143}
+  EditorParameters:
+  - {fileID: 2785515986147301969}
+  - {fileID: -1645996340983718049}
   MasterBanks:
   - {fileID: -2006383260876074477}
   StringsBanks:
   - {fileID: -5536874041318841673}
   cacheVersion: 131858
-  cacheTime: 639103900641764624
+  cacheTime: 639109145908905212
   SerializableEventsDict:
   - key: event:/Music/BackgroundMusic_Music
     index: 0
@@ -438,32 +499,65 @@ MonoBehaviour:
     index: 2
   - key: event:/UI/Tablet/Map/Character_Movement
     index: 3
-  - key: event:/UI/Dates/Interaction_Click
-    index: 4
   - key: event:/UI/Dates/CharacterMovement
-    index: 5
+    index: 4
   - key: event:/UI/Dates/Interactions_Appear
-    index: 6
+    index: 5
   - key: event:/UI/Tablet/DatingApp/SlideButton_Accept
-    index: 7
-  - key: event:/UI/Tablet/DatingApp/Text_Movement
-    index: 8
+    index: 6
   - key: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
-    index: 9
+    index: 7
   - key: event:/UI/Dates/LoveMeter_Gain
-    index: 10
-  - key: event:/UI/PauseMenu/PauseMenu_Buttons
-    index: 11
-  - key: event:/UI/Dates/Dialogue_Appear
-    index: 12
-  - key: event:/UI/PauseMenu/PauseMenu_Movement
-    index: 13
-  - key: event:/UI/Dates/Dialogue_NextButton
-    index: 14
+    index: 8
   - key: event:/UI/Dates/LoveMeter_Lose
-    index: 15
+    index: 9
   - key: event:/UI/Tablet/Map/Map_Movement
+    index: 10
+  - key: event:/UI/Tablet/DatingApp/Refresh_Text
+    index: 11
+  - key: event:/UI/Tablet/DatingApp/MoveSlider
+    index: 12
+  - key: event:/UI/Tablet/DatingApp/Matched_Text
+    index: 13
+  - key: event:/UI/PauseMenu/PauseMenu_Play
+    index: 14
+  - key: event:/UI/PauseMenu/PauseMenu_Quit
+    index: 15
+  - key: event:/UI/PauseMenu/PauseMenu_AreYouSure
     index: 16
+  - key: event:/UI/Clicking_B
+    index: 17
+  - key: event:/UI/Clicking
+    index: 18
+  - key: event:/UI/Tablet/DatingApp/Reset_Slider
+    index: 19
+--- !u!114 &753582034450366461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/DatingApp/Matched_Text
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/DatingApp/Matched_Text
+  Guid:
+    Data1: -1537937505
+    Data2: 1213790395
+    Data3: 470917565
+    Data4: 1860873272
+  Banks:
+  - {fileID: -6579001748066530345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1312
 --- !u!114 &1104449963269603779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,7 +584,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 242
+  Length: 265
 --- !u!114 &1270880009700547184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,8 +611,8 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1500
---- !u!114 &2551911453711477986
+  Length: 986
+--- !u!114 &2299969404301433705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -528,14 +622,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/Text_Movement
+  m_Name: event:/UI/Tablet/DatingApp/Refresh_Text
   m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/Text_Movement
+  Path: event:/UI/Tablet/DatingApp/Refresh_Text
   Guid:
-    Data1: -1537937505
-    Data2: 1213790395
-    Data3: 470917565
-    Data4: 1860873272
+    Data1: -1462685319
+    Data2: 1099503642
+    Data3: 1343493263
+    Data4: 1123653931
   Banks:
   - {fileID: -6579001748066530345}
   IsStream: 0
@@ -544,8 +638,32 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 70
---- !u!114 &3238883400173550618
+  Length: 1095
+--- !u!114 &2785515986147301969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/IsGamePaused
+  m_EditorClassIdentifier: 
+  Name: IsGamePaused
+  StudioPath: parameter:/IsGamePaused
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 569709214
+    data2: 1962347730
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3440624490083597143
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -555,14 +673,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/Dialogue_Appear
+  m_Name: event:/UI/Tablet/DatingApp/Reset_Slider
   m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/Dialogue_Appear
+  Path: event:/UI/Tablet/DatingApp/Reset_Slider
   Guid:
-    Data1: 1327195855
-    Data2: 1119390346
-    Data3: 519574170
-    Data4: -1243436795
+    Data1: 874651536
+    Data2: 1217807221
+    Data3: 1603159182
+    Data4: -88450099
   Banks:
   - {fileID: -6579001748066530345}
   IsStream: 0
@@ -571,7 +689,61 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 93
+--- !u!114 &3519887748338721951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/PauseMenu/PauseMenu_AreYouSure
+  m_EditorClassIdentifier: 
+  Path: event:/UI/PauseMenu/PauseMenu_AreYouSure
+  Guid:
+    Data1: -859034910
+    Data2: 1300715575
+    Data3: 358666670
+    Data4: -336503950
+  Banks:
+  - {fileID: -6579001748066530345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1084
+--- !u!114 &4357930538560421105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/DatingApp/MoveSlider
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/DatingApp/MoveSlider
+  Guid:
+    Data1: 2101846414
+    Data2: 1297277341
+    Data3: 225017529
+    Data4: -373901494
+  Banks:
+  - {fileID: -6579001748066530345}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 121
 --- !u!114 &5871136497930289836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -597,9 +769,34 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -2647400077320424446}
+  - {fileID: 6377423467239059409}
   MinDistance: 1
   MaxDistance: 20
   Length: 18000
+--- !u!114 &6377423467239059409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic_Music/IsGamePaused
+  m_EditorClassIdentifier: 
+  Name: IsGamePaused
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 569709214
+    data2: 1962347730
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &6396792851387808322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,12 +812,12 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
   Name: BackgroundMusic_Bank
   StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639103900641716370
+  lastModified: 639109144819525510
   FileSizes:
   - Name: Desktop
-    Value: 1532480
+    Value: 13353408
   Exists: 1
---- !u!114 &7409533148610045616
+--- !u!114 &8171030297965959245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -630,9 +827,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/PauseMenu/PauseMenu_Buttons
+  m_Name: event:/UI/PauseMenu/PauseMenu_Quit
   m_EditorClassIdentifier: 
-  Path: event:/UI/PauseMenu/PauseMenu_Buttons
+  Path: event:/UI/PauseMenu/PauseMenu_Quit
   Guid:
     Data1: 358379467
     Data2: 1136952041
@@ -646,7 +843,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 93
+  Length: 784
 --- !u!114 &8787200575858189614
 MonoBehaviour:
   m_ObjectHideFlags: 0

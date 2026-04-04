@@ -35,6 +35,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         levelMapAnimator = levelMapGO.GetComponent<Animator>();
         slideBarGO = GameObject.Find("LoveHeart_Slide");
         dateRandomiserScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+
+
     }
 
     private void Update()
@@ -66,8 +68,6 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     public void MatchedAnimations() 
     {
-        matchedTXTAnimator.ResetTrigger("Reset");
-        matchedTXTAnimator.ResetTrigger("Matched_Trigger");
         matchedTXTAnimator.SetTrigger("Matched_Trigger");
     }
 
@@ -78,7 +78,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
         if (mapOnScreenBool == true)
         {
-            levelMapAnimator.SetBool("MapOnScreen", false );
+            levelMapAnimator.SetBool("MapOnScreen", false);
         }
         else 
         {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{1514a263-34ac-47dd-9562-fe910febc3a0}">
+		<property name="assetPath">
+			<value>New Folder/OpenTabletCombinedClose_Editted.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.50116666666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b35df7c-9ae0-49b8-add4-397f1875818c}</destination>
+		</relationship>
+	</object>
+</objects>

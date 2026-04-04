@@ -81,7 +81,7 @@ public class DateRandomiser_Script : MonoBehaviour
         case 1:
                 if (aliensInLocation1.Count != 0)
                 {
-                    alienOnScreen = aliensInLocation1[Random.Range(0, aliensInLocation1.Count)]; //(choosing 1st date)
+                    alienOnScreen = aliensInLocation1[Random.Range(0, aliensInLocation1.Count)]; //(choosing 2nd date)
                     aliensInLocation1.Remove(alienOnScreen);
                 }
                 else
@@ -94,7 +94,7 @@ public class DateRandomiser_Script : MonoBehaviour
 
                 if (aliensInLocation2.Count != 0)
                 {
-                    alienOnScreen = aliensInLocation2[Random.Range(0, aliensInLocation2.Count)]; //(choosing 1st date)
+                    alienOnScreen = aliensInLocation2[Random.Range(0, aliensInLocation2.Count)]; //(choosing 3rd date)
                     aliensInLocation2.Remove(alienOnScreen);
                 }
                 else
@@ -106,7 +106,7 @@ public class DateRandomiser_Script : MonoBehaviour
         case 3:
                 if (aliensInLocation3.Count != 0)
                 {
-                    alienOnScreen = aliensInLocation3[Random.Range(0, aliensInLocation3.Count)]; //(choosing 1st date)
+                    alienOnScreen = aliensInLocation3[Random.Range(0, aliensInLocation3.Count)]; //(choosing 4th date)
                     aliensInLocation3.Remove(alienOnScreen);
                 }
                 else
@@ -118,7 +118,7 @@ public class DateRandomiser_Script : MonoBehaviour
         case 4:
                 if (aliensInLocation4.Count != 0)
                 {
-                    alienOnScreen = aliensInLocation4[Random.Range(0, aliensInLocation4.Count)]; //(choosing 1st date)
+                    alienOnScreen = aliensInLocation4[Random.Range(0, aliensInLocation4.Count)]; //(choosing 5th date)
                     aliensInLocation4.Remove(alienOnScreen);
                 }
                 else
@@ -136,6 +136,7 @@ public class DateRandomiser_Script : MonoBehaviour
         }
         Debug.Log(alienOnScreen.name);
         current = Instantiate(alienOnScreen, spawnLocation.transform);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning");
     }
 
     private void RefreshTXTAnim() 
@@ -143,8 +144,8 @@ public class DateRandomiser_Script : MonoBehaviour
         refreshAnimator.ResetTrigger("Reset");
         refreshAnimator.SetTrigger("RefreshTXT_Trigger");
 
-        slider.SetActive(false);
-        alienOnScreen.SetActive(false);
+        //slider.SetActive(false);
+        //alienOnScreen.SetActive(false);
     }
 
     public void RefreshDatesButton() 
@@ -155,7 +156,10 @@ public class DateRandomiser_Script : MonoBehaviour
         aliensInLocation3 = getAlienList.GetRange(9, 3);
         aliensInLocation4 = getAlienList.GetRange(12, 3);
 
+        refreshAnimator.ResetTrigger("RefreshTXT_Trigger");
         refreshAnimator.SetTrigger("Reset");
+
+
         slider.SetActive(true);
         if (alienOnScreen != null) //if it DOES exist
         {
@@ -170,10 +174,9 @@ public class DateRandomiser_Script : MonoBehaviour
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
-        current.SetActive(false); //this sets prefab, not whats acc on screen??
-        slider.SetActive(false);   
+        //current.SetActive(false); //this sets prefab, not whats acc on screen??
+        //slider.SetActive(false);
 
         tabletAnimsScript.MatchedAnimations();
-
     }
 }
