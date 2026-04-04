@@ -52,11 +52,11 @@ TagManager:
   - name: Alien
     uniqueID: 1730967801
     locked: 0
-  - name: UI
-    uniqueID: 3843878151
-    locked: 0
   - name: Tentacle
     uniqueID: 2252144119
+    locked: 0
+  - name: UI
+    uniqueID: 3843878151
     locked: 0
   m_RenderingLayers:
   - Default

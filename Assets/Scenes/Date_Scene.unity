@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 36732120}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Efffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 44007282}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -427,7 +427,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 99096072}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -886,7 +886,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 215798293}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3501,6 +3501,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loveMeter: {fileID: 935069599}
   result: 0
+  isLoveFull: 0
   loveAmount: 100
   decayAmount: 0.5
   decayTime: 0
@@ -4056,7 +4057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1034864497}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4276,7 +4277,7 @@ GameObject:
   - component: {fileID: 1061182582}
   - component: {fileID: 1061182581}
   - component: {fileID: 1061182580}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tentacle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4392,7 +4393,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2042823177
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -230194567796169486, guid: 23e11660d45a3ac46ba500a7dc62fc47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4844,7 +4845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1083411891}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5172,7 +5173,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1157653400}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5204,7 +5205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1229045014}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5782,7 +5783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1357739573}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5817,7 +5818,7 @@ GameObject:
   - component: {fileID: 1359261234}
   - component: {fileID: 1359261233}
   - component: {fileID: 1359261232}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas - Arm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6100,7 +6101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506469142}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7598,7 +7599,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1875610206}
   - component: {fileID: 1875610207}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: New CCDSolver2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8054,7 +8055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1933146347}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8621,7 +8622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2066607896}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8737,7 +8738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2079592259}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8982,7 +8983,7 @@ GameObject:
   - component: {fileID: 2125010115}
   - component: {fileID: 2125010118}
   - component: {fileID: 2125010119}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}

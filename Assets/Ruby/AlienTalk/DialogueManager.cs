@@ -37,6 +37,8 @@ public class DialogueManager : MonoBehaviour
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+        
+        //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
         GameOver = GameObject.Find("GameOver");
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", true);
@@ -150,11 +152,9 @@ public class DialogueManager : MonoBehaviour
 
     public void ResponseBox(int selection)//switch case 
     {
- 
-        var alienLines3 = alienLines * 3;
+        var alienLines3 = alienLines * 3;//show animation in reponse? doing it on mouse tracking script
 
         dialogueText.text = respones[selection + alienLines3];
-
         alienLines++;
     }
 

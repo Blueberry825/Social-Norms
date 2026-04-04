@@ -99,7 +99,7 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 100;
+                loveAmount += 100;//TEMP 100 FOR TESTING
                 break;
 
         }
