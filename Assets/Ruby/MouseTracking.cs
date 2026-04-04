@@ -10,9 +10,11 @@ public class MouseTracking : MonoBehaviour
 
     public GameObject currentOptionObj;
     private GameObject nextButton;
+    private GameObject currentAlien;
 
     private DialogueManager DialogueManager_scr;
     private InteractionSelector InteractionSelector_scr;
+    private ListOfAliens_Script ListOfAliens_Script_scr;
     private LoveMeter LoveMeter_scr;
 
     public int optionID;
@@ -27,6 +29,9 @@ public class MouseTracking : MonoBehaviour
         DialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
         InteractionSelector_scr = GameObject.Find("GameManager").GetComponent<InteractionSelector>();
         LoveMeter_scr = GameObject.Find("LoveMeter").GetComponent<LoveMeter>();
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+
+        currentAlien = ListOfAliens_Script_scr.currentDate;//when scene starts get current alien 
     }
 
     private void Update()
@@ -35,7 +40,7 @@ public class MouseTracking : MonoBehaviour
 
             FollowMousePositionDelayed(maxSpeed);
 
-        if (interactable && mouse.leftButton.wasPressedThisFrame)
+        if (interactable && mouse.leftButton.wasPressedThisFrame)//this is where the animation should be?
         {
             optionID = currentOptionObj.GetComponent<OptionSelector>().interactionID;
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
@@ -43,6 +48,27 @@ public class MouseTracking : MonoBehaviour
             DialogueManager_scr.ResponseBox(optionID);
             LoveMeter_scr.LoveChange(optionID);
             nextButton.SetActive(true);
+
+            AnimationTrigger();//trigger animation depending on the ID of the option picked
+        }
+    }
+
+    public void AnimationTrigger()
+    {
+        switch (optionID)//0 NEGATIVE | 1 NEUTRAL | 2 POSITIVE
+        {
+            case 0:
+                currentAlien.GetComponent<Animator>().SetInteger("Mood", 0);
+
+                break;
+            case 1:
+                currentAlien.GetComponent<Animator>().SetInteger("Mood", 1);
+
+                break;
+            case 2:
+                currentAlien.GetComponent<Animator>().SetInteger("Mood", 2);
+
+                break;
         }
     }
 

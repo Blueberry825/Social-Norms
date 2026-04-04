@@ -10,10 +10,11 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
 {
     private DateRandomiser_Script dateScript;
     private ListOfAliens_Script listAlienScript;
-
+    private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
 
     private void Start()
     {
+        TabletAppearDissapear_Script_scr = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
         dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
     }
     public void OnDrag(PointerEventData eventData)
@@ -51,7 +52,9 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
     public void SwipedRight() 
     {
         Debug.Log("Swiped right.");
+        TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
         dateScript.GoOnDateWith();
+        transform.localPosition = new Vector3(0, 0, 0);
     }
 
     private void ResetPosition(Vector3 position) 
