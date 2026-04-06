@@ -7,17 +7,16 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     [SerializeField] private bool tabletClicked;
     private Animator matchedTXTAnimator;
     private GameObject levelMapGO;
-    private GameObject datingAppGO;
-    private bool mapOnScreenBool;
     private Animator levelMapAnimator;
+    private bool mapOnScreenBool;
+
 
     private MapCharacterMovementAnim_Script mapCharacterMovementAnimScript;
 
-    private GameObject slideBarGO;
-    private DateRandomiser_Script dateRandomiserScript;
 
     public bool isLevelOver;
 
+    public bool tabletOnScreenBool;
 
     //will also have home page, to allow swapping between 
     // - dating app (can't be accessed whilst on date)
@@ -34,12 +33,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         mapCharacterMovementAnimScript = gameObject.GetComponent<MapCharacterMovementAnim_Script>();
 
         levelMapGO = GameObject.Find("Level_Map");
-        datingAppGO = GameObject.Find("DatingApp");
         levelMapAnimator = levelMapGO.GetComponent<Animator>();
-        slideBarGO = GameObject.Find("LoveHeart_Slide");
-        dateRandomiserScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-
-
     }
 
     private void Update()
@@ -64,10 +58,12 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         if (tabletClicked == true)
         {
             tabletAnimator.SetBool("TabletOnScreen", false);
+            tabletOnScreenBool = false;
         }
         else 
         {
             tabletAnimator.SetBool("TabletOnScreen", true);
+            tabletOnScreenBool = true;
         }
     }
 
@@ -78,7 +74,6 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     public void SwapMapVisibility() //called once matched txt anim ends
     {
-        //datingAppGO.SetActive(false);
         mapOnScreenBool = levelMapAnimator.GetBool("MapOnScreen");
 
         if (mapOnScreenBool == true)
@@ -89,8 +84,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             levelMapAnimator.SetBool("MapOnScreen", true);
         }
-        mapCharacterMovementAnimScript.MapCharacterMovementAnims();
-        
+        mapCharacterMovementAnimScript.MapCharacterMovementAnims();        
     }
 
     public void MapOnOff(bool OnOff) //called once matched txt anim ends

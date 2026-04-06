@@ -24,6 +24,7 @@ public class DateRandomiser_Script : MonoBehaviour
 
     private GameObject current;
 
+
     #region Location info
     private Level_Location_Script levelLocationScript;
     private int getLocation;
@@ -136,7 +137,10 @@ public class DateRandomiser_Script : MonoBehaviour
         }
         Debug.Log(alienOnScreen.name);
         current = Instantiate(alienOnScreen, spawnLocation.transform);
-        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning");
+        if (tabletAnimsScript.tabletOnScreenBool == true) 
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning");
+        }
     }
 
     private void RefreshTXTAnim() 
