@@ -9,6 +9,7 @@ public class AliensDated_Script : MonoBehaviour
 {
     public bool hasPlayerDatedThisAlien;
     public int alienNumber;
+    [SerializeField] public string alienColour;
 
     private void Start()
     {

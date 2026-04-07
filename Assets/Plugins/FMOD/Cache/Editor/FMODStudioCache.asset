@@ -176,7 +176,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 639110752125669032
+  lastModified: 639111709389914317
   FileSizes:
   - Name: Desktop
     Value: 332320
@@ -278,7 +278,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639110723978529252
+  lastModified: 639111773823925493
   FileSizes:
   - Name: Desktop
     Value: 2248
@@ -331,7 +331,7 @@ MonoBehaviour:
     data1: 2018341617
     data2: 3391136101
   Type: 2
-  IsGlobal: 1
+  IsGlobal: 0
   Labels:
   - Title_Music
   - PurpleAlien_Music
@@ -354,39 +354,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639110723978499442
+  lastModified: 639111773823905530
   FileSizes:
   - Name: Desktop
-    Value: 1944
-  Exists: 1
---- !u!114 &-1645996340983718049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/BackgroundMusic_Param
-  m_EditorClassIdentifier: 
-  Name: BackgroundMusic_Param
-  StudioPath: parameter:/BackgroundMusic_Param
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 2018341617
-    data2: 3391136101
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Title_Music
-  - PurpleAlien_Music
-  - GreenAlien_Music
-  - OrangeAlien_Music
-  - QueenAlien_Music
+    Value: 1486
   Exists: 1
 --- !u!114 &-1128420253483153281
 MonoBehaviour:
@@ -481,15 +452,13 @@ MonoBehaviour:
   - {fileID: -1128420253483153281}
   - {fileID: -4482153671175393418}
   - {fileID: 3440624490083597143}
-  EditorParameters:
-  - {fileID: 2785515986147301969}
-  - {fileID: -1645996340983718049}
+  EditorParameters: []
   MasterBanks:
   - {fileID: -2006383260876074477}
   StringsBanks:
   - {fileID: -5536874041318841673}
   cacheVersion: 131858
-  cacheTime: 639110752125669032
+  cacheTime: 639111773823925493
   SerializableEventsDict:
   - key: event:/Music/BackgroundMusic_Music
     index: 0
@@ -639,30 +608,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1095
---- !u!114 &2785515986147301969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/IsGamePaused
-  m_EditorClassIdentifier: 
-  Name: IsGamePaused
-  StudioPath: parameter:/IsGamePaused
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 569709214
-    data2: 1962347730
-  Type: 0
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &3440624490083597143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +688,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 121
+  Length: 93
 --- !u!114 &5871136497930289836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -772,7 +717,7 @@ MonoBehaviour:
   - {fileID: 6377423467239059409}
   MinDistance: 1
   MaxDistance: 20
-  Length: 18000
+  Length: 0
 --- !u!114 &6377423467239059409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -794,7 +739,7 @@ MonoBehaviour:
     data1: 569709214
     data2: 1962347730
   Type: 0
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &6396792851387808322
@@ -812,10 +757,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
   Name: BackgroundMusic_Bank
   StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639110723978399063
+  lastModified: 639111773823825744
   FileSizes:
   - Name: Desktop
-    Value: 13353408
+    Value: 13349792
   Exists: 1
 --- !u!114 &8171030297965959245
 MonoBehaviour:
