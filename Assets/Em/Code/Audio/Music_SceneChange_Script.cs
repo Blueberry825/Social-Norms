@@ -12,7 +12,7 @@ public class Music_SceneChange_Script : MonoBehaviour
         sceneChanged_music();
     }
 
-    public void sceneChanged_music() 
+    public void sceneChanged_music()
     {
         currentScene = SceneManager.GetActiveScene();
         string currentSceneName = currentScene.name;

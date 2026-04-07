@@ -59,12 +59,11 @@ public class BackgroundMusic_Script : MonoBehaviour
         musicV_anim = musicVolume_icon.GetComponent<Animator>();
         sfxV_anim = sfxVolume_icon.GetComponent<Animator>();
 
-
-        StartBackgroundMusic();
         SetTo_Title_Music();
+        StartBackgroundMusic();
     }
 
-    public void MasterVolumeSliderChanged(float newMasterVolume) 
+    public void MasterVolumeSliderChanged(float newMasterVolume)
     {
         Master_Volume = newMasterVolume;
         Master_Bus.setVolume(Master_Volume);
@@ -105,41 +104,43 @@ public class BackgroundMusic_Script : MonoBehaviour
     }
 
     #region Start/Stop Music
-    public void StartBackgroundMusic() 
+    public void StartBackgroundMusic()
     {
-        if (IsPlaying(backgroundMusic_Instance) == false) 
+        if (IsPlaying(backgroundMusic_Instance) == false)
         {
             backgroundMusic_Instance.start();
         }
     }
-    
 
-    public void PauseMenuBackgroundMusic() 
+
+    public void PauseMenuBackgroundMusic()
     {
         pauseBool = !pauseBool;
 
-        if (pauseBool == false) 
-        { 
+        if (pauseBool == false)
+        {
             pauseValue = 0;
         }
-        else if (pauseBool == true) 
+        else if (pauseBool == true)
         {
             pauseValue = 1;
         }
 
-        backgroundMusic_Instance.setParameterByName("IsGamePaused", pauseValue);
+        //backgroundMusic_Instance.setParameterByName("IsGamePaused", pauseValue);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", pauseValue);
+
     }
     #endregion
 
-    public void SceneChanged_AudioCheck(string sceneName) 
+    public void SceneChanged_AudioCheck(string sceneName)
     {
-        if (sceneName == "Date_Scene") 
+        if (sceneName == "Date_Scene")
         {
             dateRandomiser_Script = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
             alienOnScreen_ = dateRandomiser_Script.alienOnScreen;
             string alienColour_ = alienOnScreen_.GetComponent<AliensDated_Script>().alienColour;
 
-            switch (alienColour_) 
+            switch (alienColour_)
             {
                 case "Purple":
                     SetTo_PurpleAlien_Music();
@@ -153,38 +154,46 @@ public class BackgroundMusic_Script : MonoBehaviour
             }
         }
 
-        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene") 
-        { 
+        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene")
+        {
             SetTo_Title_Music();
         }
     }
 
     #region Setting Background Music
-    public void SetTo_PurpleAlien_Music() 
+    public void SetTo_PurpleAlien_Music()
     {
-        //FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", purpleAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", purpleAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
 
-        backgroundMusic_Instance.setParameterByName("BackgroundMusic_Param", purpleAlien_Music);
         UnityEngine.Debug.Log("changing to purple music");
     }
-    public void SetTo_GreenAlien_Music() 
+    public void SetTo_GreenAlien_Music()
     {
-        backgroundMusic_Instance.setParameterByName("BackgroundMusic_Param", greenAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", greenAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+
         UnityEngine.Debug.Log("changing to green music");
     }
-    public void SetTo_OrangeAlien_Music() 
+    public void SetTo_OrangeAlien_Music()
     {
-        backgroundMusic_Instance.setParameterByName("BackgroundMusic_Param", orangeAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", orangeAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+
         UnityEngine.Debug.Log("changing to orange music");
     }
-    public void SetTo_QueenAlien_Music() 
+    public void SetTo_QueenAlien_Music()
     {
-        backgroundMusic_Instance.setParameterByName("BackgroundMusic_Param", queenAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", queenAlien_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+
         UnityEngine.Debug.Log("changing to queen music");
     }
-    public void SetTo_Title_Music() 
+    public void SetTo_Title_Music()
     {
-        backgroundMusic_Instance.setParameterByName("BackgroundMusic_Param", title_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", title_Music);
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+
         UnityEngine.Debug.Log("changing to title music");
 
     }
