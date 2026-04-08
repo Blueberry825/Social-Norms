@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b73dd2f4898fa8945b873622db990ad6
+guid: b2a30fcd4bee16649ac7e8276b683149
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7639973682733919845
-    second: layout2_0
+      213: -49714567654294548
+    second: DatingUI_Bar_Green_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: layout2_0
+      name: DatingUI_Bar_Green_0
       rect:
         serializedVersion: 2
         x: 2
-        y: 4
-        width: 1683
-        height: 891
+        y: 6
+        width: 57
+        height: 854
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b91df43f96c59f590800000000000000
-      internalID: -7639973682733919845
+      spriteID: cebbdc63dd06f4ff0800000000000000
+      internalID: -49714567654294548
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      layout2_0: -7639973682733919845
+      DatingUI_Bar_Green_0: -49714567654294548
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

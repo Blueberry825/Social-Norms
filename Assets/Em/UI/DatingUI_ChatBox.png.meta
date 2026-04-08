@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: cf55018f8216057478c04ca84cb1340a
+guid: c4e52f12b59af244eab271255ce7fe76
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -671403877320181610
-    second: DatingApp_Rocket_0
+      213: 4275848431506190970
+    second: DatingUI_ChatBox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DatingApp_Rocket_0
+      name: DatingUI_ChatBox_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 85
-        height: 146
+        x: 2
+        y: 3
+        width: 1141
+        height: 388
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 698b2871bb1bea6f0800000000000000
-      internalID: -671403877320181610
+      spriteID: a7276597e7dd65b30800000000000000
+      internalID: 4275848431506190970
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DatingApp_Rocket_0: -671403877320181610
+      DatingUI_ChatBox_0: 4275848431506190970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
