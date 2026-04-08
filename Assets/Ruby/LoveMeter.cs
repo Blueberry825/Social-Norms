@@ -92,8 +92,7 @@ public class LoveMeter : MonoBehaviour
         {
             case 0://love decrease
                 loveAmount -= 15;
-                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
-                break;
+            break;
 
             case 1: //love neutral?
 
@@ -101,7 +100,6 @@ public class LoveMeter : MonoBehaviour
 
             case 2://love increase
                 loveAmount += 100;//TEMP 100 FOR TESTING
-                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
 
         }

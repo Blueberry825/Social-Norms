@@ -155,33 +155,21 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{fcb75160-b5a1-4150-9646-d77948f148f0}">
-		<property name="volume">
-			<value>3</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{eb21c6e0-f3b9-4f05-902e-95f48a8725ef}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{b6b1d696-8814-45f7-9d8f-24fb54e9f5a1}">
-		<property name="volume">
-			<value>3</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{feaec9de-4fbf-47dd-bbcc-e97bb15ee42c}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f7c02b0a-e5d9-4137-91e8-b25f16fee002}">
-		<property name="volume">
-			<value>3</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{ea656266-39d7-450e-94d9-b97b3a500a2e}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{f6dae8a9-da20-4ea1-99be-84e4c33ced42}">
-		<property name="volume">
-			<value>3</value>
-		</property>
 		<relationship name="audioFile">
 			<destination>{edafc8ee-0123-40c0-84f2-e954523e685e}</destination>
 		</relationship>
