@@ -51,6 +51,11 @@ public class DateRandomiser_Script : MonoBehaviour
         RandomiseDate();
     }
 
+    public void CallingStart()
+    {
+        Start();
+    }
+
     public void RandomiseDate() 
     {
         //check if alien on screen, if no, add one, if yes, remove it THEN add one
@@ -169,12 +174,10 @@ public class DateRandomiser_Script : MonoBehaviour
         RandomiseDate();
     }
 
-
-
     public void GoOnDateWith() 
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
-        Debug.Log("Going on date with " + alienOnScreen.name);
+        Debug.Log("Going on date with " + alienOnScreen.name); //getting here
         tabletAnimsScript.MatchedAnimations();
     }
 }

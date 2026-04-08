@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     private GameObject GameOver;
     private GameObject tablet;
     private GameObject AlienList_Save;
+    private Transform activeAlien;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -97,7 +98,10 @@ public class DialogueManager : MonoBehaviour
 
     public void TriggerNewDate()//after date is won, trigger new date to be chosen and appear
     {
-        DateRandomiser_Script_scr.RandomiseDate();
+        activeAlien = GameObject.Find("AlienSpawn_Location").transform.GetChild(0);
+        Destroy(activeAlien.gameObject);
+        DateRandomiser_Script_scr.CallingStart();
+        TabletAppearDissapear_Script_scr.ResetMatchedAnimations();
         TabletAppearDissapear_Script_scr.SwapTabletVisibility();
     }
 
