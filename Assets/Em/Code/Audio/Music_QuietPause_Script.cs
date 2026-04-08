@@ -9,7 +9,7 @@ public class Music_QuietPause_Script : MonoBehaviour
         music_Script = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
     }
 
-    public void PauseMusic_Cue() 
+    public void PauseMusic_Cue()
     {
         music_Script.PauseMenuBackgroundMusic();
     }

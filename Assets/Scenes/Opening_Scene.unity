@@ -2553,6 +2553,7 @@ GameObject:
   - component: {fileID: 522756091}
   - component: {fileID: 522756090}
   - component: {fileID: 522756089}
+  - component: {fileID: 522756092}
   m_Layer: 5
   m_Name: RightArrow
   m_TagString: Untagged
@@ -2635,6 +2636,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 522756092}
+        m_TargetAssemblyTypeName: MusicUI_Click_Script, Assembly-CSharp
+        m_MethodName: Click_AudioCue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &522756090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2673,6 +2686,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 522756087}
   m_CullTransparentMesh: 1
+--- !u!114 &522756092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522756087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408788fcc51a5d34287c27419ef1b57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &533040749
 GameObject:
   m_ObjectHideFlags: 0
@@ -7482,6 +7507,7 @@ GameObject:
   - component: {fileID: 1535719827}
   - component: {fileID: 1535719823}
   - component: {fileID: 1535719826}
+  - component: {fileID: 1535719828}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7583,6 +7609,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorIdle: {fileID: 0}
   cursorPressed: {fileID: 0}
+--- !u!114 &1535719828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535719821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab4436b826e5585409df8c0306d1cee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1557465208
 GameObject:
   m_ObjectHideFlags: 0
@@ -9850,6 +9888,7 @@ GameObject:
   - component: {fileID: 2070022988}
   - component: {fileID: 2070022987}
   - component: {fileID: 2070022986}
+  - component: {fileID: 2070022989}
   m_Layer: 5
   m_Name: LeftArrow
   m_TagString: Untagged
@@ -9932,6 +9971,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2070022989}
+        m_TargetAssemblyTypeName: MusicUI_Click_Script, Assembly-CSharp
+        m_MethodName: Click_AudioCue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2070022987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9970,6 +10021,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2070022984}
   m_CullTransparentMesh: 1
+--- !u!114 &2070022989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2070022984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408788fcc51a5d34287c27419ef1b57c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2079205368
 GameObject:
   m_ObjectHideFlags: 0

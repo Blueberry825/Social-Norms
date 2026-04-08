@@ -147,9 +147,6 @@ public class DateRandomiser_Script : MonoBehaviour
     {
         refreshAnimator.ResetTrigger("Reset");
         refreshAnimator.SetTrigger("RefreshTXT_Trigger");
-
-        //slider.SetActive(false);
-        //alienOnScreen.SetActive(false);
     }
 
     public void RefreshDatesButton() 
@@ -178,10 +175,6 @@ public class DateRandomiser_Script : MonoBehaviour
     {
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
-        //current.SetActive(false); //this sets prefab, not whats acc on screen??
-        //slider.SetActive(false);
-
-
         tabletAnimsScript.MatchedAnimations();
     }
 }

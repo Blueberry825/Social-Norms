@@ -61,6 +61,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasPlayerDatedThisAlien: 0
   alienNumber: 5
+  alienColour: G
 --- !u!212 &1900248147776650248
 SpriteRenderer:
   m_ObjectHideFlags: 0
