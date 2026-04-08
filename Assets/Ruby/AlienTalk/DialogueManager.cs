@@ -98,7 +98,8 @@ public class DialogueManager : MonoBehaviour
             
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
-           
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
+
             switch (meLines)
             {
                 case 0:
