@@ -8,7 +8,7 @@ public class LoadMap_Script : MonoBehaviour
     {
         tabletAnimScript = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
     }
-    private void MatchedAnimDone() //found at the end of matchtxt appear animation
+    private void MatchedAnimDone() 
     {
         tabletAnimScript.SwapMapVisibility();
     }

@@ -72,11 +72,6 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         matchedTXTAnimator.SetTrigger("Matched_Trigger");
     }
 
-    public void ResetMatchedAnimations()
-    {
-        matchedTXTAnimator.SetTrigger("Reset");
-    }
-
     public void SwapMapVisibility() //called once matched txt anim ends
     {
         mapOnScreenBool = levelMapAnimator.GetBool("MapOnScreen");

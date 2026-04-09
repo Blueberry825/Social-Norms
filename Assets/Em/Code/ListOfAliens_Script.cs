@@ -23,18 +23,16 @@ public class ListOfAliens_Script : MonoBehaviour
     }
 
     //function called once dated
-    public void PlayerOnDateWith(GameObject alien)//getting here
+    public void PlayerOnDateWith(GameObject alien)
     {
         alien.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = true;
         currentDate = alien;
         datedAlienList.Add(alien);
-        //singleAlienList.Remove(alien); RUBY CHANGED THIS
+        singleAlienList.Remove(alien);
 
         SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
 
         //remove as current date each time
         levelLocationScript.MoveLocation();
-
-        Debug.Log("moving location to");
     }
 }
