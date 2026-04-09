@@ -1,5 +1,7 @@
+using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class TabletAppearDissapear_Script : MonoBehaviour
 {
@@ -9,14 +11,11 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     private GameObject levelMapGO;
     private Animator levelMapAnimator;
     private bool mapOnScreenBool;
-
-
     private MapCharacterMovementAnim_Script mapCharacterMovementAnimScript;
-
-
     public bool isLevelOver;
-
     public bool tabletOnScreenBool;
+
+    private Animator taskbar;
 
     //will also have home page, to allow swapping between 
     // - dating app (can't be accessed whilst on date)
@@ -34,6 +33,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
         levelMapGO = GameObject.Find("Level_Map");
         levelMapAnimator = levelMapGO.GetComponent<Animator>();
+
+        taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
     }
 
     private void Update()
@@ -45,13 +46,10 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             SwapTabletVisibility();
         }
-
-
     }
 
     public void SwapTabletVisibility() 
     {
-        Debug.Log("Tablet anims");
 
         tabletClicked = tabletAnimator.GetBool("TabletOnScreen");
 
@@ -59,11 +57,13 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             tabletAnimator.SetBool("TabletOnScreen", false);
             tabletOnScreenBool = false;
+            taskbar.SetBool("open", false);
         }
         else 
         {
             tabletAnimator.SetBool("TabletOnScreen", true);
             tabletOnScreenBool = true;
+            taskbar.SetBool("open", true);
         }
     }
 

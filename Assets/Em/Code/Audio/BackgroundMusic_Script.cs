@@ -30,6 +30,11 @@ public class BackgroundMusic_Script : MonoBehaviour
     private DateRandomiser_Script dateRandomiser_Script;
     private GameObject alienOnScreen_;
 
+    #region slider audio clicks
+    private string lastNum;
+    private string currentNum;
+    #endregion
+
     #region Background music parameter Numbers
     private int title_Music = 0;
     private int purpleAlien_Music = 1;
@@ -71,6 +76,17 @@ public class BackgroundMusic_Script : MonoBehaviour
         MasterVolume_Number.text = masterTXTNumber.ToString("F0");
 
         msV_anim.SetInteger("Volume", masterTXTNumber);
+
+        if (MasterVolume_Number.text == "0" || MasterVolume_Number.text == "1" || MasterVolume_Number.text == "2" || MasterVolume_Number.text == "3" || MasterVolume_Number.text == "4" || MasterVolume_Number.text == "5" || MasterVolume_Number.text == "6" || MasterVolume_Number.text == "7" || MasterVolume_Number.text == "8" || MasterVolume_Number.text == "9" || MasterVolume_Number.text == "10")
+        {
+            currentNum = MasterVolume_Number.text.ToString();
+
+            if (currentNum != lastNum)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Click_Low");
+            }
+            lastNum = currentNum;
+        }
     }
 
     public void MusicVolumeSliderChanged(float newMuiscVolume)
@@ -81,6 +97,17 @@ public class BackgroundMusic_Script : MonoBehaviour
         MusicVolume_Number.text = musicTXTNumber.ToString("F0");
 
         musicV_anim.SetInteger("Volume", musicTXTNumber);
+
+        if (MusicVolume_Number.text == "0" || MusicVolume_Number.text == "1" || MusicVolume_Number.text == "2" || MusicVolume_Number.text == "3" || MusicVolume_Number.text == "4" || MusicVolume_Number.text == "5" || MusicVolume_Number.text == "6" || MusicVolume_Number.text == "7" || MusicVolume_Number.text == "8" || MusicVolume_Number.text == "9" || MusicVolume_Number.text == "10")
+        {
+            currentNum = MusicVolume_Number.text.ToString();
+
+            if (currentNum != lastNum)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Click_Low");
+            }
+            lastNum = currentNum;
+        }
     }
 
     public void SFXVolumeSliderChanged(float newSFXVolume)
@@ -91,6 +118,17 @@ public class BackgroundMusic_Script : MonoBehaviour
         SFXVolume_Number.text = sfxTXTNumber.ToString("F0");
 
         sfxV_anim.SetInteger("Volume", sfxTXTNumber);
+
+        if (SFXVolume_Number.text == "0" || SFXVolume_Number.text == "1" || SFXVolume_Number.text == "2" || SFXVolume_Number.text == "3" || SFXVolume_Number.text == "4" || SFXVolume_Number.text == "5" || SFXVolume_Number.text == "6" || SFXVolume_Number.text == "7" || SFXVolume_Number.text == "8" || SFXVolume_Number.text == "9" || SFXVolume_Number.text == "10")
+        {
+            currentNum = SFXVolume_Number.text.ToString();
+
+            if (currentNum != lastNum)
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Click_Low");
+            }
+            lastNum = currentNum;
+        }
     }
 
 

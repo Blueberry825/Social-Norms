@@ -77,7 +77,7 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
         Debug.Log("Swiped right.");
         TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
         dateScript.GoOnDateWith();
-        transform.localPosition = new Vector3(0, 0, 0);
+        ResetPosition(gameObject.transform.position);
     }
 
     private void ResetPosition(Vector3 position) 

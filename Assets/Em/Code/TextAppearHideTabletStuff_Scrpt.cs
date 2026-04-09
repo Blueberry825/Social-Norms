@@ -9,13 +9,13 @@ public class TextAppearHideTabletStuff_Scrpt : MonoBehaviour
         datingAppAnimator = GameObject.Find("Tablet").GetComponent<Animator>();
     }
 
-    public void MatchedTextOnScreen_HideStuff() 
+    public void MatchedTextOnScreen_HideStuff() //called from animators
     {
         datingAppAnimator.SetBool("TextOnScreen", true);
     }
 
 
-    public void MatchedTextDone()
+    public void MatchedTextDone()//called from animators
     {
         datingAppAnimator.SetBool("TextOnScreen", false);
     }

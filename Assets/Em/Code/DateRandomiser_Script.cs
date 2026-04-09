@@ -23,6 +23,7 @@ public class DateRandomiser_Script : MonoBehaviour
     private GameObject slider;
 
     private GameObject current;
+    private GetAlienName_Script sendNameScript;
 
 
     #region Location info
@@ -38,6 +39,7 @@ public class DateRandomiser_Script : MonoBehaviour
         getAlienList = gameObject.GetComponent<ListOfAliens_Script>().singleAlienList;
         listOfAliensScript = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         tabletAnimsScript = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
+        sendNameScript = GameObject.Find("Tablet").GetComponent<GetAlienName_Script>();
 
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         refreshAnimator = GameObject.Find("Refesh_TXT").GetComponent<Animator>();
@@ -141,6 +143,9 @@ public class DateRandomiser_Script : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning");
         }
+
+        sendNameScript.setAlienName(alienOnScreen.name);
+
     }
 
     private void RefreshTXTAnim() 
