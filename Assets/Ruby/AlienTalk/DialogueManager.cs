@@ -12,12 +12,17 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     private GameObject GameOver;
     private GameObject tablet;
+    private GameObject AlienList_Save;
+    private Transform activeAlien;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
     private LoveMeter LoveMeter_scr;
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
+    private ListOfAliens_Script ListOfAliens_Script_scr;
+    private DateRandomiser_Script DateRandomiser_Script_scr;
+
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -37,7 +42,11 @@ public class DialogueManager : MonoBehaviour
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-        
+
+        AlienList_Save = GameObject.Find("AlienList_Save");
+        ListOfAliens_Script_scr = AlienList_Save.GetComponent<ListOfAliens_Script>();
+        DateRandomiser_Script_scr = AlienList_Save.GetComponent<DateRandomiser_Script>();
+
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
         GameOver = GameObject.Find("GameOver");
@@ -86,6 +95,15 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
     }//tell table that hasWon is true
+
+    public void TriggerNewDate()//after date is won, trigger new date to be chosen and appear
+    {
+        activeAlien = GameObject.Find("AlienSpawn_Location").transform.GetChild(0);
+        Destroy(activeAlien.gameObject);
+        DateRandomiser_Script_scr.CallingStart();
+        TabletAppearDissapear_Script_scr.ResetMatchedAnimations();
+        TabletAppearDissapear_Script_scr.SwapTabletVisibility();
+    }
 
     public void OptionBubbles()//switch case 
     {

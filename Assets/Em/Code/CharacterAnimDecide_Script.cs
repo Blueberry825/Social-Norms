@@ -20,11 +20,11 @@ public class CharacterAnimDecide_Script : MonoBehaviour
         loadSceneScript = gameObject.GetComponent<LoadScene_Script>();
     }
 
-    private void CharacterAnimationDecision()
+    private void CharacterAnimationDecision()//not being started?
     {
         thisCurrentLocation = levelLocationScript.currentLocation;
 
-        Debug.Log("Location is " + thisCurrentLocation);
+        Debug.Log("Moving character to " + thisCurrentLocation);
         //Debug.Log("Tag is " + characterAnimator
 
         if (characterAnimator.GetCurrentAnimatorStateInfo(0).IsName("CharacterAnim_1")) 
