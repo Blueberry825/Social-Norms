@@ -57,12 +57,17 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             tabletAnimator.SetBool("TabletOnScreen", false);
             tabletOnScreenBool = false;
+            taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+
             taskbar.SetBool("open", false);
+            matchedTXTAnimator.SetTrigger("Reset");
         }
         else 
         {
             tabletAnimator.SetBool("TabletOnScreen", true);
             tabletOnScreenBool = true;
+            taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+
             taskbar.SetBool("open", true);
         }
     }

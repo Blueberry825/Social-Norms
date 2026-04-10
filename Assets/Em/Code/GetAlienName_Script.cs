@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class GetAlienName_Script : MonoBehaviour
 {
-    private TextMeshProUGUI alienName_TXT;
+    [SerializeField] private TextMeshProUGUI alienName_TXT;
 
     private void Start()
     {

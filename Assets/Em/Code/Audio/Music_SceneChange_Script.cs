@@ -17,6 +17,5 @@ public class Music_SceneChange_Script : MonoBehaviour
         currentScene = SceneManager.GetActiveScene();
         string currentSceneName = currentScene.name;
         bkMusic.SceneChanged_AudioCheck(currentSceneName);
-        Debug.Log("scene change");
     }
 }

@@ -10,7 +10,7 @@ public class DateRandomiser_Script : MonoBehaviour
     public GameObject alienOnScreen;
     private GameObject spawnLocation;
     private ListOfAliens_Script listOfAliensScript;
-    private TabletAppearDissapear_Script tabletAnimsScript;
+    [SerializeField] private TabletAppearDissapear_Script tabletAnimsScript;
 
     private GameObject lastAlien;
 
@@ -156,11 +156,93 @@ public class DateRandomiser_Script : MonoBehaviour
 
     public void RefreshDatesButton() 
     {
-        aliensInLocation0 = getAlienList.GetRange(0, 3);
-        aliensInLocation1 = getAlienList.GetRange(3, 3);
-        aliensInLocation2 = getAlienList.GetRange(6, 3);
-        aliensInLocation3 = getAlienList.GetRange(9, 3);
-        aliensInLocation4 = getAlienList.GetRange(12, 3);
+        aliensInLocation0.Clear();
+        aliensInLocation1.Clear();
+        aliensInLocation2.Clear();
+        aliensInLocation3.Clear();
+        aliensInLocation4.Clear();
+
+        //get script from each alien that has their number
+
+        foreach (GameObject GO in getAlienList) 
+        { 
+            AliensDated_Script alienInfoScript = GO.GetComponent<AliensDated_Script>();
+            int number = alienInfoScript.alienNumber;
+            int positionInList = getAlienList.IndexOf(GO);
+
+            //switch case, if case = 1-3, alien in location = go
+
+
+            switch (number) 
+            {
+                case 0:
+                    aliensInLocation0.Add(getAlienList[positionInList]);
+                    break;
+
+                case 1:
+                    aliensInLocation0.Add(getAlienList[positionInList]);
+                    break;
+
+                case 2:
+                    aliensInLocation0.Add(getAlienList[positionInList]);
+                    break;
+
+                case 3:
+                    aliensInLocation1.Add(getAlienList[positionInList]);
+                    break;
+
+                case 4:
+                    aliensInLocation1.Add(getAlienList[positionInList]);
+                    break;
+
+                case 5:
+                    aliensInLocation1.Add(getAlienList[positionInList]);
+                    break;
+
+                case 6:
+                    aliensInLocation2.Add(getAlienList[positionInList]);
+                    break;
+
+                case 7:
+                    aliensInLocation2.Add(getAlienList[positionInList]);
+                    break;
+
+                case 8:
+                    aliensInLocation2.Add(getAlienList[positionInList]);
+                    break;
+
+                case 9:
+                    aliensInLocation3.Add(getAlienList[positionInList]);
+                    break;
+
+                case 10:
+                    aliensInLocation3.Add(getAlienList[positionInList]);
+                    break;
+
+                case 11:
+                    aliensInLocation3.Add(getAlienList[positionInList]);
+                    break;
+
+                case 12:
+                    aliensInLocation4.Add(getAlienList[positionInList]);
+                    break;
+
+                case 13:
+                    aliensInLocation4.Add(getAlienList[positionInList]);
+                    break;
+
+                case 14:
+                    aliensInLocation4.Add(getAlienList[positionInList]);
+                    break;
+
+            }
+        }
+
+        //aliensInLocation0 = getAlienList.GetRange(0, 3); //0 1 2
+        //aliensInLocation1 = getAlienList.GetRange(3, 3); // 3 4 5
+        //aliensInLocation2 = getAlienList.GetRange(6, 3); //6 7 8
+        //aliensInLocation3 = getAlienList.GetRange(9, 3); //9 10 11
+        //aliensInLocation4 = getAlienList.GetRange(12, 3); //12 13 14
 
         refreshAnimator.ResetTrigger("RefreshTXT_Trigger");
         refreshAnimator.SetTrigger("Reset");

@@ -20,7 +20,8 @@ public class CharacterAnimDecide_Script : MonoBehaviour
         loadSceneScript = gameObject.GetComponent<LoadScene_Script>();
     }
 
-    private void CharacterAnimationDecision()
+
+    private void CharacterAnimationDecision() //called in animator
     {
         thisCurrentLocation = levelLocationScript.currentLocation;
 
@@ -65,13 +66,6 @@ public class CharacterAnimDecide_Script : MonoBehaviour
         {
             loadSceneScript.SwapTabletVisability_();
             loadSceneScript.LoadDate();
-            Debug.Log("WAA current location is same number as the animation");
         }
-        else
-        {
-            Debug.Log("WAA current location is NOT same number as the animation");
-        }
-
-
     }
 }

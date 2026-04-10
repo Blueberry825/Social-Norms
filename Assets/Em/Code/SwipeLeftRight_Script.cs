@@ -48,7 +48,7 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
         Vector3 position = transform.localPosition;
         if (position.x < 200 && position.x > -200) 
         { 
-            ResetPosition(position);
+            ResetPosition();
         }
 
         if (position.x == 200) 
@@ -66,25 +66,21 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Dismiss");
         dateScript.RandomiseDate();
-        ResetPosition(gameObject.transform.position);
+        ResetPosition();
     }
 
     public void SwipedRight() 
     {
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
-        tabletAnimator.SetBool("Matched", true);
-
-        Debug.Log("Swiped right.");
         TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
+        dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         dateScript.GoOnDateWith();
-        ResetPosition(gameObject.transform.position);
+        ResetPosition();
     }
 
-    private void ResetPosition(Vector3 position) 
+    private void ResetPosition() 
     {
-        Debug.Log("Reset slider position");
-        tabletAnimator.SetBool("Matched", false);
-        transform.localPosition = new Vector3(0, position.y, position.z);
+        transform.localPosition = new Vector3(0, 0, 0);
     }
 
 }
