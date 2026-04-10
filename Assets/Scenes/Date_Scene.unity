@@ -6173,7 +6173,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -451089145
   m_SortingOrder: 10
@@ -8454,6 +8454,7 @@ GameObject:
   - component: {fileID: 1942227422}
   - component: {fileID: 1942227424}
   - component: {fileID: 1942227425}
+  - component: {fileID: 1942227426}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8610,6 +8611,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab4436b826e5585409df8c0306d1cee0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1942227426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942227418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8013221593e772419dcdf4f8008704a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1945645381
