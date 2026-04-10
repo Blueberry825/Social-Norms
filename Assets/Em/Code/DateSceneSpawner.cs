@@ -1,7 +1,10 @@
+using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class DateSceneSpawner : MonoBehaviour
 {
@@ -27,6 +30,11 @@ public class DateSceneSpawner : MonoBehaviour
         currentBackground = backgroundList[alienNumber];
         Debug.Log("Current background is " +currentBackground.name);
         Instantiate(currentBackground, gameObject.transform);
-        Instantiate(currentAlienDate, gameObject.transform);
+        GameObject spawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
+
+        spawnedAlien = GameObject.Find("Canvas").transform.GetChild(8).gameObject;//clone spawned in
+        spawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
+        spawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
+        spawnedAlien.transform.localScale = new Vector3(1000, 1000);
     }
 }
