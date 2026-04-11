@@ -3,6 +3,7 @@ using UnityEngine;
 public class OpenSettings_Script : MonoBehaviour
 {
     [SerializeField] private Animator settingsAnimator;
+    private bool settingsOpen;
 
     private void Start()
     {
@@ -18,5 +19,22 @@ public class OpenSettings_Script : MonoBehaviour
     public void CloseSettings() 
     {
         settingsAnimator.SetBool("OptionsMenu", false);
+    }
+
+    public void settingsButton() 
+    { 
+        //get details from settings carry
+
+        settingsOpen = !settingsOpen;
+
+        if (settingsOpen) 
+        {
+            settingsAnimator.SetBool("OptionsMenu", true);
+        }
+
+        if (!settingsOpen) 
+        {
+            settingsAnimator.SetBool("OptionsMenu", false);
+        }
     }
 }

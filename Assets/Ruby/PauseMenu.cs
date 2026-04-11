@@ -43,6 +43,20 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    public void pauseButton() 
+    {
+        isPaused = !isPaused;
+
+        if (isPaused)
+        {
+            ActivateMenu();
+        }
+        else
+        {
+            DeactivateMenu();
+        }
+    }
+
     public void ActivateMenu()
     {
         Time.timeScale = 0;
