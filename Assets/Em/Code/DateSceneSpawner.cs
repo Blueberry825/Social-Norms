@@ -34,7 +34,7 @@ public class DateSceneSpawner : MonoBehaviour
 
         GameObject spawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
         spawnedAlien = GameObject.Find("Canvas").transform.GetChild(9).gameObject;//clone spawned in
-        spawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
+        //spawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
         spawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
         spawnedAlien.transform.localScale = new Vector3(1000, 1000);
     }

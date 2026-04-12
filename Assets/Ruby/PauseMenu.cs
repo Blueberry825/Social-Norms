@@ -9,6 +9,12 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private bool isPaused;
 
+    [SerializeField] private Animator startAreaAnimator;
+
+    private void Start()
+    {
+        startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+    }
 
     void Awake()
     {
@@ -63,6 +69,9 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = true;
         pauseMenu.SetActive(true);
         pauseMenu.transform.SetAsLastSibling();
+
+        startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+        startAreaAnimator.SetBool("OnScreen", false);
     }
 
     public void DeactivateMenu()

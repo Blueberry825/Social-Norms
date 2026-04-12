@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class OpenSettings_Script : MonoBehaviour
 {
     [SerializeField] private Animator settingsAnimator;
+    [SerializeField] private Animator startAreaAnimator;
     private bool settingsOpen;
+    private Scene currentScene;
 
     private void Start()
     {
@@ -13,6 +16,14 @@ public class OpenSettings_Script : MonoBehaviour
     public void OpenSettings() 
     {
         settingsAnimator.SetBool("OptionsMenu", true);
+
+        currentScene = SceneManager.GetActiveScene();
+
+        if (currentScene.name != "Opening_Scene") 
+        {
+            startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+            startAreaAnimator.SetBool("OnScreen", false);
+        }
     }
 
 
@@ -29,12 +40,12 @@ public class OpenSettings_Script : MonoBehaviour
 
         if (settingsOpen) 
         {
-            settingsAnimator.SetBool("OptionsMenu", true);
+            OpenSettings();
         }
 
         if (!settingsOpen) 
         {
-            settingsAnimator.SetBool("OptionsMenu", false);
+            CloseSettings();
         }
     }
 }

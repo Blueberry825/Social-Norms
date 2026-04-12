@@ -3,15 +3,17 @@ using UnityEngine.SceneManagement;
 
 public class Music_SceneChange_Script : MonoBehaviour
 {
-    [SerializeField] private BackgroundMusic_Script bkMusic;
+    private BackgroundMusic_Script bkMusic;
     private Scene currentScene;
+    private settingsBackgroundAnim_Script settingsBGScript;
 
-    [SerializeField] private settingsBackgroundAnim_Script settingsBGScript;
+    private FullScreenToggle_Script screenToggle_Script;
 
     private void Start()
     {
         bkMusic = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
         settingsBGScript = GameObject.Find("Settings_Background").GetComponent<settingsBackgroundAnim_Script>();
+
 
         sceneChanged_music();
     }
@@ -24,5 +26,11 @@ public class Music_SceneChange_Script : MonoBehaviour
 
         settingsBGScript = GameObject.Find("Settings_Background").GetComponent<settingsBackgroundAnim_Script>();
         settingsBGScript.settingBackgroundCheck(currentScene);
+
+        if (currentSceneName != "Opening_Scene") 
+        {
+            screenToggle_Script = GameObject.Find("Settings_Area").GetComponent<FullScreenToggle_Script>();
+            screenToggle_Script.initialise();
+        }
     }
 }

@@ -1,12 +1,18 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ExitButton_Script : MonoBehaviour
 {
     private Animator AreYouSure_Animator;
+    private Scene currentScene;
 
     private void Start()
     {
-        AreYouSure_Animator = GameObject.Find("Exit_Area").GetComponent<Animator>();
+        currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Opening_Scene") 
+        {
+            AreYouSure_Animator = GameObject.Find("Exit_Area").GetComponent<Animator>();
+        }
     }
 
     public void AreYouSure() 
