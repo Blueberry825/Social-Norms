@@ -939,6 +939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3034589306314607958}
   - component: {fileID: 4199384939402325667}
+  - component: {fileID: 7518235567761633935}
   - component: {fileID: 2799944767514439966}
   - component: {fileID: 7610924970086388233}
   - component: {fileID: 7761877222989219804}
@@ -995,6 +996,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7518235567761633935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2408913133960975812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1bdc75cb6afa344be281b296e29770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2799944767514439966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1023,6 +1036,7 @@ MonoBehaviour:
   tabletClicked: 0
   isLevelOver: 0
   tabletOnScreenBool: 0
+  startAreaAnimator: {fileID: 0}
 --- !u!114 &7761877222989219804
 MonoBehaviour:
   m_ObjectHideFlags: 0

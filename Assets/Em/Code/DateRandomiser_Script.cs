@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class DateRandomiser_Script : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DateRandomiser_Script : MonoBehaviour
     private GameObject spawnLocation;
     private ListOfAliens_Script listOfAliensScript;
     [SerializeField] private TabletAppearDissapear_Script tabletAnimsScript;
+    private Animator characterAnim;
 
     private GameObject lastAlien;
 
@@ -25,6 +27,8 @@ public class DateRandomiser_Script : MonoBehaviour
     private GameObject current;
     private GetAlienName_Script sendNameScript;
 
+    public bool getRetryLocation;
+    private TextAppearHideTabletStuff_Scrpt textAnimScr;
 
     #region Location info
     private Level_Location_Script levelLocationScript;
@@ -44,12 +48,15 @@ public class DateRandomiser_Script : MonoBehaviour
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         refreshAnimator = GameObject.Find("Refesh_TXT").GetComponent<Animator>();
         slider = GameObject.Find("LoveHeart_Slide");
+        characterAnim = GameObject.Find("Character").GetComponent<Animator>();
 
         aliensInLocation0 = getAlienList.GetRange(0, 3);
         aliensInLocation1 = getAlienList.GetRange(3, 3);
         aliensInLocation2 = getAlienList.GetRange(6, 3);
         aliensInLocation3 = getAlienList.GetRange(9, 3);
         aliensInLocation4 = getAlienList.GetRange(12, 3);
+
+        //reset the retry
         RandomiseDate();
     }
 
@@ -263,5 +270,17 @@ public class DateRandomiser_Script : MonoBehaviour
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
         tabletAnimsScript.MatchedAnimations();
+
+        //characterAnim.SetBool("Retry?", getRetryLocation);
     }
+
+    public void RetryDateArea() 
+    {
+        tabletAnimsScript.SwapTabletVisibility();
+        textAnimScr = GameObject.Find("Matched_TXT").GetComponent<TextAppearHideTabletStuff_Scrpt>();
+        textAnimScr.MatchedTextDone();
+        listOfAliensScript.PlayerOnDateWith(alienOnScreen);
+        SceneManager.LoadScene("Date_Scene");
+    }
+
 }

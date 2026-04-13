@@ -5,11 +5,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandler
 {
     private DateRandomiser_Script dateScript;
+    private bool retry_Q;
 
     private FMOD.Studio.EventInstance sliderAudio;
     private bool hasAudioPlayed = false;
@@ -74,7 +76,20 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
         FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
         TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
         dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        dateScript.GoOnDateWith();
+        //check if retry, if retrying, load date, else, do that
+        retry_Q = dateScript.getRetryLocation;
+
+        if (retry_Q)
+        {
+            //SceneManager.LoadScene("Date_Scene");
+            dateScript.RetryDateArea();
+            //swap map
+            //right alien?
+        }
+        else 
+        {
+            dateScript.GoOnDateWith();
+        }
         ResetPosition();
     }
 
