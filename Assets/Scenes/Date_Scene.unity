@@ -305,7 +305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36732119}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.483733, w: 0.87521565}
+  m_LocalRotation: {x: 0, y: 0, z: -0.48468608, w: 0.8746882}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -336,7 +336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44007281}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.045582086, w: 0.9989606}
+  m_LocalRotation: {x: 0, y: 0, z: -0.045465507, w: 0.9989659}
   m_LocalPosition: {x: 0.9789714, y: 0.00000029245504, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2626,27 +2626,68 @@ MonoBehaviour:
   dialogue:
     name: cake
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - I brought you some nice fish to cheer you up!
+    - What's your name?
+    - What are you looking for?
+    - Ouch, it looks really painful. Here, let me kiss it better!
+    - When did you lose your fin?
+    - Don't worry Bruce, everyone has bad days. I'm sure you'll find it!
+    - At least you still have your really cool spring! idk what it is, there's just
+      somefin about it that's really attractive!
+    - Will the fin not grow back?
+    - How about we look together? Maybe you just need a fresh pair of eyes to find
+      it.
+    - I think that was my ship. I'm so sorry Bruce.
+    - A giant metal ship? are you sure you didn't just hit your head and you didn't
+      realise it broke off?
+    - That's awful. Do you think it was an alien?
+    - Let's split up and search!
+    - How about we get go and eat something?
+    - I'll stay here as long as it takes to find your fin.
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - GET THAT AWAY FROM ME! I'm allergic to seafood. You tryna kill me?
+    - Oh.. Already rushing instead of asking if I need help? No manners...
+    - It's not something you'll be able to find, i've been looking everywhere...
+      Sorry, guess i'm just in a bad mood since I lost it.
+    - Don't kiss me you freak! Do you normally go around kissing people?
+    - It broke off my head only yesterday, But i've been looking for it ever since...
+    - I guess so. I've been looking for ages, I'm starting to lose hope.
+    - you think my missing fin is something to joke about? What if I cut off your
+      your tentacle and started joking about that?
+    - No, a Springshark fin doesn't grow back, obviously.. What are you an alien?
+      Have you never met a Springshark?
+    - Nghh.. I guess it might be nice to have some company while looking for it...
+      Okay fine you can help me. Hey, You're kinder than you look, stranger. I'm
+      sorry about before.
+    - You... Did this? But... I was starting to like you... Why... WHY DID YOU DISFIGURE
+      ME?.... At least you were honest, but this DOESN'T mean
+    - You calling me a liar? Look, I know it sounds untrue, but it's what happened.
+      Nothing else to it.
+    - No... Probably some Glorp without a license who stole a ship and was going
+      for a joyride. Still... I'll eat them whole if I ever find them.
+    - Oh, you want to split up to search? okay then...
+    - I could go for some mountain tops right now.. Lets go, it's this way... OUGH,
+      careful there's a rock there... wait... is that... MY FIN!!!
+    - I was wrong about you... You're a real treasure... Hey, what's that over there....
+      my... MY... MY FIN!!!!!! THANK YOU THANK YOU!! You're a really blessing.. I'm
+      so lucky I met you today, I think there's a reason we met today. It's meant
+      to me.
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - '(You''re at the spot where you were supposed to meet. When suddenly... You
+      feel the ground beneath you tremble, as one of the mountains begins to rise
+      up..... )
+
+      Ughh.... Not under there either. Ahh I''ve checked every inch
+      of this landscape and not a single sight of my fin... Oh. It''s you.'
+    - Maybe I should've been a bit less harsh on you.. My name's Bruce.. I'm looking
+      for my fin... it broke off my head and I can't find it anywhere.
+    - I've been walking these fields for ages looking for my fin... It's hopeless...
+      I'll never be whole again...
+    - You wanna know how my fin broke off? I was hopping across this mountain  range,
+      when all of a sudden this giant metal rocket came out of nowhere and broke
+      my fin clean off. If I ever find out who was flying that ship i'll eat them
+      whole...
+    - I'm starting to lose hope... Do you think we'll ever find it?
 --- !u!1001 &715895052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4352,7 +4393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1034864496}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.07204348, w: 0.99740154}
+  m_LocalRotation: {x: 0, y: 0, z: -0.07218603, w: 0.9973912}
   m_LocalPosition: {x: 1.0800847, y: -0.016527511, z: 0.00000018156564}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5140,7 +5181,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083411890}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.20418423, w: 0.9789325}
+  m_LocalRotation: {x: 0, y: 0, z: 0.20434579, w: 0.9788988}
   m_LocalPosition: {x: 0.8630649, y: 0.00000012308834, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5467,7 +5508,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157653399}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.17924796, w: -0.9838039}
+  m_LocalRotation: {x: 0, y: 0, z: 0.17844939, w: -0.9839491}
   m_LocalPosition: {x: 0.7545943, y: -0.000000082635495, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6381,7 +6422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1506469141}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.18382476, w: 0.9829591}
+  m_LocalRotation: {x: 0, y: 0, z: -0.18390587, w: 0.9829439}
   m_LocalPosition: {x: 0.9975599, y: -0.000000078736086, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8014,16 +8055,16 @@ MonoBehaviour:
     m_StoredLocalRotations:
     - {x: 0, y: 0, z: -0.036373094, w: 0.9993383}
     - {x: 0, y: 0, z: 0.0117877135, w: 0.99993056}
-    - {x: 0, y: 0, z: -0.045582086, w: 0.9989606}
-    - {x: 0, y: 0, z: -0.18382476, w: 0.9829591}
+    - {x: 0, y: 0, z: -0.045465507, w: 0.9989659}
+    - {x: 0, y: 0, z: -0.18390587, w: 0.9829439}
     - {x: 0, y: 0, z: -0.24393329, w: 0.96979207}
-    - {x: 0, y: 0, z: -0.07204348, w: 0.99740154}
-    - {x: 0, y: 0, z: 0.1261578, w: 0.99201024}
-    - {x: 0, y: 0, z: 0.20418423, w: 0.9789325}
-    - {x: 0, y: 0, z: -0.07840475, w: -0.9969216}
-    - {x: 0, y: 0, z: 0.17924796, w: -0.9838039}
+    - {x: 0, y: 0, z: -0.07218603, w: 0.9973912}
+    - {x: 0, y: 0, z: 0.12601602, w: 0.99202824}
+    - {x: 0, y: 0, z: 0.20434579, w: 0.9788988}
+    - {x: 0, y: 0, z: -0.07876787, w: -0.996893}
+    - {x: 0, y: 0, z: 0.17844939, w: -0.9839491}
     - {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-    - {x: 0, y: 0, z: -0.483733, w: 0.87521565}
+    - {x: 0, y: 0, z: -0.48468608, w: 0.8746882}
   m_Iterations: 1
   m_Tolerance: 0.0078
   m_Velocity: 0.822
@@ -8649,7 +8690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1933146346}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.07840475, w: -0.9969216}
+  m_LocalRotation: {x: 0, y: 0, z: -0.07876787, w: -0.996893}
   m_LocalPosition: {x: 0.7067896, y: -0.00000007600241, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8830,8 +8871,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4436b826e5585409df8c0306d1cee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bkMusic: {fileID: 0}
-  settingsBGScript: {fileID: 0}
 --- !u!114 &1942227426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9487,27 +9526,55 @@ MonoBehaviour:
   dialogue:
     name: woody
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - Were you just.. speaking to that rock? I didn't know geologists did that...
+    - Flynnt like Flint? Are you a geologist?
+    - That's me! I like your rock collection! You must be a pretty impressive geologist
+    - A "geologist" is somebody who studies rocks, not collects them, so they probably
+      know more, but their collection isnt as big.
+    - How many rocks do you have?
+    - ' I don''t think anybody is as... in love... with rocks as you are.'
+    - Let me guess, Your Number 1 Is "The Rolling Stones"?
+    - That's amazing, i've never met anyone as passionate as you about rocks!
+    - There's a magazine called Rocks Monthly? I'll have to subscribe to that.
+    - Hey come on now, like you said, it's just one lousy emerald! Your collection
+      is still so impressive the queen wanted something!
+    - Wow, you got to meet the queen? I like a Glomp with status.
+    - how about this dusty rock on the floor here? it's not much but maybe it can
+      be a placeholder?
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - Uhhhh... no.... I was speaking to.. that........ rock. Yeah the rock.
+    - The one and only! I know, I know... It must be pretty overwhelming meeting
+      the guy with the most impressive rock collection on Glorth.
+    - It's pretty awesome isnt it 571 shlooms I've been collecting rocks!
+    - NOBODY knows more about rocks than me. Especially not this "Geologist" guy...
+    - Exactly 87 right now. One unique rock of every type.
+    - I only know one rock collection better than my first one.... MY SECOND ONE!
+      BOOM!
+    - What? Who's that? No. My favourite is  Weezer.
+    - I know, I tell myself that Every day, It's all thanks to my rocks, every single
+      is Sedimental to me.
+    - Well it's more of a brochoure, but it's still Impressive! I'm their top reader!
+    - Just a "Lousy emerald"? NO GEM IS LOUSY!! Don't you EVER say that about a gemstone
+      in my presence.
+    - I know. I'm pretty famous around here... I mean,,, I didn't MEET with her,
+      it was someone picking it up for her, BUT STILL. I try not to take it for grantie.
+    - Ah thanks bud, but i doubt it'll replace an emer..... wait.. THIS IS MY RARE
+      DIAMOND! I lost this yonks ago! THANK YOU SO MUCH!
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - '**Date start, A cave is a weird location for a first date... maybe this is
+      normal in this planet...  Up ahead you hear talking, and what looks to be humanoid
+      volcano polishing a rock.**
+
+      Shh.... Shh.... Easy there..... Daddy''s
+      got ya... OH UHHH HEY! Didn''t see ya there, You must be my date from Glompartner..
+      I''m Flynnt!'
+    - Who's this "Geologist" anyway? does he have a better rock collection than me?
+    - You know, my rock collection actually got me on the front page of Rocks Monthly!
+      You see, there's my interview, It has my rarest rocks, and my top 10 favourite
+      band!
+    - You know, the Queen once requested my best gem for her crown, You know what
+      I gave her? Just a lousy emerald!... Come to think of it... I only had one
+      emerald... AW DAMN IT!
 --- !u!1001 &2045067465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9710,7 +9777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079592258}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.1261578, w: 0.99201024}
+  m_LocalRotation: {x: 0, y: 0, z: 0.12601602, w: 0.99202824}
   m_LocalPosition: {x: 0.81501377, y: 0.05343226, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10415,27 +10482,74 @@ MonoBehaviour:
   dialogue:
     name: lamb
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - (Gently shake their shoulder to wake them up)
+    - (Wait for them to wake up)
+    - (Excuse me... Do you want me to come back later?)
+    - napping ruins my sleep schedule
+    - You're funny hehe
+    - I love a good nap, you seem like a good napping companion
+    - No thanks, I don't like tea.
+    - Tea? how are you going to make it? with what
+    - I'd love some! but are you sure its okay to... Steep... together on the first
+      date?
+    - '**Add the red grass**'
+    - '**Add the tree leaves**'
+    - '**Add the little herbs**'
+    - '*take the cup, and brush his hand flirtatiously*'
+    - '*Don''t take the cup*'
+    - '*take the cup*'
+    - Does it itch? *reach out to itch Wills skin*
+    - Is it reversable? I can get you some steroid cream?
+    - 'Or you could say you used to not like mushrooms, but they''re growing on you
+      now. '
+    - ' I prefer singing *start belting your favourite song*'
+    - My tentacle also has a condition where I can't control it.
+    - 'You''re the only person I want to dance with '
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - Hey gluhh dont you know it's rude to touch a sleeping glomp?
+    - '*the whale keeps sleeping for a long while, but eventually slowly opens its
+      eyes, takes a moment to realise whats happening, and then smiles *'
+    - '*The whale slowly opens its eyes, takes a moment to realise whats happening,
+      and then smiles*'
+    - Gluh, you're too strung up, on this date, just let yourself relax with me...
+    - Laughing is such a good vibe gluhh
+    - You're welcome to come nap with me anytime gluhh *Will winks at you*
+    - Oh... really? okay then, but at least you wouldn't  mind helping me make it
+      then. **Will starts pouting and tapping his foot**
+    - What? gluhh are you an alien or something? We'll make it normally.
+    - HAHAHAHA I could get used to you,,, come help me make it!
+    - Umm...  you know that's Glerble food... right? I'll just do it myself...
+    - Gluh those are TREE leaves, not TEA leaves! never mind, i'll get it myself..
+    - mmm I can smell the herbs already, thanks gluhh
+    - 'Will: I know my skin is diffent but don''t touch me..'
+    - Oh... Well, it's okay if someone doesn't want tea....
+    - ahhhh... It doesn't get better than this gluhh. Just you, me, and a nice herbal
+      tea...
+    - NO GLUH WHY DID YOU TOUCH ME?! IT'S CONTAGEOUS!!!..... Only joking, but please
+      don't touch me without my permission.
+    - Steroid cream?... is that similar to glorp cream? I looooove glorp cream but
+      it gives me a brainfreeze...
+    - You're a really fun-guy you know, I hope we can get along more...
+    - '*Will recoils and puts their hands over their ears* Will: That''s a bit too
+      loud for me gluhh. Let''s just dance in silence...'
+    - Embrace what your body is trying to tell you gluhh.. Come and dance with me!
+    - Gluhh, this is pretty fast for me, but come hold my hand and dance with me!
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - '*You see a purple whale asleep in the shade under a tree, a small snot bubble,
+      rises and falls from a blowhole on the top of their head *'
+    - Oh... Hey gluhh! I'm Will. Sorry about earlier, It's just so relaxing in this
+      park that I fell asleep, I'm so good at relaxing that I could do it in my sleep!
+    - Hey gluhh, how about a cup of lovely herbal tea? I'm sure it will make this
+      date even better than it already is.
+    - Okay, here's the pot, add our tea in.
+    - Mmm I love a good cup of herbal tea... Go on have a cup **Will offers you a
+      cup**
+    - Hey Gluhh... Are you looking at my skin? it's okay, I dont mind. I have a skin
+      condition which causes a fungus like texture to spread, pretty cool right.
+    - That tentacle of yours is trying to dance away from you, let's dance with it
+      together!
+    - Phew, I'm tired after all that dancing... I think.... I need another.... cup
+      of.......*snore* (Will seems to be asleep, Happy with the date.
 --- !u!1001 &7940291425650121912
 PrefabInstance:
   m_ObjectHideFlags: 0
