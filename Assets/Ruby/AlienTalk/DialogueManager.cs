@@ -18,6 +18,7 @@ public class DialogueManager : MonoBehaviour
     private LoveMeter LoveMeter_scr;
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
+    private DateRandomiser_Script DateRandomiser_Script_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -27,17 +28,21 @@ public class DialogueManager : MonoBehaviour
     private int meLinesAdd3;
 
     public bool LinesEmpty;
+    public bool retryLocation;
 
     private List<string> actions;
     private List<string> options;
     private List<string> respones; 
+
+    
 
     void Start()
     {
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-        
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
         GameOver = GameObject.Find("GameOver");
@@ -47,6 +52,8 @@ public class DialogueManager : MonoBehaviour
         options = new List<string>();
         respones = new List<string>();
         actions = new List<string>();
+
+        StayOnLocation(false);
 
         Debug.Log("count of options: " + options.Count);
 
@@ -61,7 +68,7 @@ public class DialogueManager : MonoBehaviour
 
     public void RestartDate()
     {
-        SceneManager.LoadScene("Date_Scene");
+        SceneManager.LoadScene("Date_Scene"); //adds alien again
     }
 
     public void LoseState()//put different info for winning and losing
@@ -70,6 +77,7 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
+        StayOnLocation(true);
     }//minus 1 to the location when losing to turn back progress of dating
 
     public void LoseState2()
@@ -78,6 +86,14 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion soldier";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
+        StayOnLocation(true);
+    }
+
+    public void StayOnLocation(bool value) 
+    {
+        retryLocation = value;
+        DateRandomiser_Script_scr.getRetryLocation = retryLocation;
+        //called to false if win
     }
 
     public void WinState()
@@ -85,6 +101,7 @@ public class DialogueManager : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
+        StayOnLocation(false);
     }//tell table that hasWon is true
 
     public void OptionBubbles()//switch case 

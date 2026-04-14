@@ -5,13 +5,42 @@ public class FullScreenToggle_Script : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI fullscreen_TXT;
     [SerializeField] private TextMeshProUGUI windowed_TXT;
-    private bool fullscreen_b;
+    [SerializeField] private bool fullscreen_b;
+    private BackgroundMusic_Script bgm_Script;
 
     private void Start()
     {
-        fullscreen_TXT.gameObject.SetActive(true);
-        windowed_TXT.gameObject.SetActive(false);
-        fullscreen_b = true;
+        bgm_Script = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
+        fullscreen_b = bgm_Script.fullScreen;
+
+        if (fullscreen_b == true)
+        {
+            fullscreen_TXT.gameObject.SetActive(true);
+            windowed_TXT.gameObject.SetActive(false);
+        }
+        else
+        {
+            fullscreen_TXT.gameObject.SetActive(false);
+            windowed_TXT.gameObject.SetActive(true);
+        }
+
+    }
+
+    public void initialise() 
+    {
+        bgm_Script = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
+        fullscreen_b = bgm_Script.fullScreen;
+
+        if (fullscreen_b == true)
+        {
+            fullscreen_TXT.gameObject.SetActive(true);
+            windowed_TXT.gameObject.SetActive(false);
+        }
+        else
+        {
+            fullscreen_TXT.gameObject.SetActive(false);
+            windowed_TXT.gameObject.SetActive(true);
+        }
     }
 
     public void FullScreen() 
@@ -19,7 +48,6 @@ public class FullScreenToggle_Script : MonoBehaviour
         Screen.fullScreen = !Screen.fullScreen;
         fullscreen_b = !fullscreen_b;
         Swap();
-        Debug.Log("Changed scene mode");
     }
 
     private void Swap() 
@@ -34,5 +62,6 @@ public class FullScreenToggle_Script : MonoBehaviour
             fullscreen_TXT.gameObject.SetActive(false);
             windowed_TXT.gameObject.SetActive(true);
         }
+        bgm_Script.fullScreen = fullscreen_b;
     }
 }

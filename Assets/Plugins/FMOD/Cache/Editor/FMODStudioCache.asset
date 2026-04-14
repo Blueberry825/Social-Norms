@@ -203,10 +203,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 639114423380000000
+  lastModified: 639117703538681617
   FileSizes:
   - Name: Desktop
-    Value: 334368
+    Value: 360000
   Exists: 1
 --- !u!114 &-6511690086580718601
 MonoBehaviour:
@@ -334,10 +334,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639114423380000000
+  lastModified: 639117720494186589
   FileSizes:
   - Name: Desktop
-    Value: 2294
+    Value: 2342
   Exists: 1
 --- !u!114 &-4482153671175393418
 MonoBehaviour:
@@ -410,7 +410,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639110815160000000
+  lastModified: 639117720494156648
   FileSizes:
   - Name: Desktop
     Value: 1944
@@ -517,7 +517,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5536874041318841673}
   cacheVersion: 131858
-  cacheTime: 639114423380000000
+  cacheTime: 639117720494186589
   SerializableEventsDict:
   - key: event:/Music/BackgroundMusic_Music
     index: 0
@@ -587,7 +587,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 1312
+  Length: 1531
 --- !u!114 &1104449963269603779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,9 +800,36 @@ MonoBehaviour:
   Parameters:
   - {fileID: -2647400077320424446}
   - {fileID: 6377423467239059409}
+  - {fileID: 5963222999327744575}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5963222999327744575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic_Music/skipTyping_Param
+  m_EditorClassIdentifier: 
+  Name: skipTyping_Param
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 600945497
+    data2: 2202546024
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - false
+  - true
+  Exists: 1
 --- !u!114 &6377423467239059409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -842,10 +869,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
   Name: BackgroundMusic_Bank
   StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639112502440000000
+  lastModified: 639117720494076859
   FileSizes:
   - Name: Desktop
-    Value: 13352288
+    Value: 13353504
   Exists: 1
 --- !u!114 &8171030297965959245
 MonoBehaviour:

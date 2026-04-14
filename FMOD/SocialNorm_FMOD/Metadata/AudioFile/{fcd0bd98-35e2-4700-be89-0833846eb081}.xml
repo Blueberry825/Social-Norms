@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fcd0bd98-35e2-4700-be89-0833846eb081}">
+		<property name="assetPath">
+			<value>New Folder/Kisses4.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.84112500000000001</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{9b35df7c-9ae0-49b8-add4-397f1875818c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -16,6 +16,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     public bool tabletOnScreenBool;
 
     private Animator taskbar;
+    [SerializeField] private Animator startAreaAnimator;
+
 
     //will also have home page, to allow swapping between 
     // - dating app (can't be accessed whilst on date)
@@ -35,6 +37,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         levelMapAnimator = levelMapGO.GetComponent<Animator>();
 
         taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+        startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+
     }
 
     private void Update()
@@ -50,7 +54,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     public void SwapTabletVisibility() 
     {
-
+        startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
         tabletClicked = tabletAnimator.GetBool("TabletOnScreen");
 
         if (tabletClicked == true)
@@ -69,6 +73,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
             taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
 
             taskbar.SetBool("open", true);
+            startAreaAnimator.SetBool("OnScreen", false);
         }
     }
 

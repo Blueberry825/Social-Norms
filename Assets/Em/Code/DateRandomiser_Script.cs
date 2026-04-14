@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.EventSystems.EventTrigger;
 
 public class DateRandomiser_Script : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class DateRandomiser_Script : MonoBehaviour
     private GameObject spawnLocation;
     private ListOfAliens_Script listOfAliensScript;
     [SerializeField] private TabletAppearDissapear_Script tabletAnimsScript;
+    private Animator characterAnim;
 
     private GameObject lastAlien;
 
@@ -19,12 +21,15 @@ public class DateRandomiser_Script : MonoBehaviour
     [SerializeField] private List<GameObject> aliensInLocation2;
     [SerializeField] private List<GameObject> aliensInLocation3;
     [SerializeField] private List<GameObject> aliensInLocation4;
+    [SerializeField] private List<GameObject> aliensInLocation5;
     private Animator refreshAnimator;
     private GameObject slider;
 
     private GameObject current;
     private GetAlienName_Script sendNameScript;
 
+    public bool getRetryLocation;
+    private TextAppearHideTabletStuff_Scrpt textAnimScr;
 
     #region Location info
     private Level_Location_Script levelLocationScript;
@@ -44,12 +49,15 @@ public class DateRandomiser_Script : MonoBehaviour
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         refreshAnimator = GameObject.Find("Refesh_TXT").GetComponent<Animator>();
         slider = GameObject.Find("LoveHeart_Slide");
+        characterAnim = GameObject.Find("Character").GetComponent<Animator>();
 
         aliensInLocation0 = getAlienList.GetRange(0, 3);
-        aliensInLocation1 = getAlienList.GetRange(3, 3);
-        aliensInLocation2 = getAlienList.GetRange(6, 3);
-        aliensInLocation3 = getAlienList.GetRange(9, 3);
-        aliensInLocation4 = getAlienList.GetRange(12, 3);
+        aliensInLocation1 = getAlienList.GetRange(3, 2);
+        aliensInLocation2 = getAlienList.GetRange(5, 3);
+        aliensInLocation3 = getAlienList.GetRange(8, 2);
+        aliensInLocation4 = getAlienList.GetRange(10, 3);
+        aliensInLocation5 = getAlienList.GetRange(13, 2);
+
         RandomiseDate();
     }
 
@@ -77,7 +85,6 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 else 
                 {
-                    Debug.Log("0 left.");
                     RefreshTXTAnim();
                 }
                 break;
@@ -89,7 +96,6 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("0 left.");
                     RefreshTXTAnim();
                 }
                 break;
@@ -102,7 +108,6 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("0 left.");
                     RefreshTXTAnim();
                 }
                 break;
@@ -114,7 +119,6 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("0 left.");
                     RefreshTXTAnim();
                 }
                 break;
@@ -126,15 +130,22 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("0 left.");
                     RefreshTXTAnim();
                 }
                 break;
         case 5:
-                Debug.Log("Case 5. Queen is next."); //then date the queen is next!
+                if (aliensInLocation5.Count != 0) 
+                { 
+                    alienOnScreen = aliensInLocation5[Random.Range(0, aliensInLocation5.Count)]; //choosing 6th date
+                    aliensInLocation5.Remove(alienOnScreen);
+                }
+                else
+                {
+                    RefreshTXTAnim();
+                }
                 break;
         case 6:
-                Debug.Log("Case 6. Currently at the queen.");  //currently at the queen
+                Debug.Log("Case 6. Currently at the queen.");  //queen time
                 break;
         }
         Debug.Log(alienOnScreen.name);
@@ -161,6 +172,7 @@ public class DateRandomiser_Script : MonoBehaviour
         aliensInLocation2.Clear();
         aliensInLocation3.Clear();
         aliensInLocation4.Clear();
+        aliensInLocation5.Clear();
 
         //get script from each alien that has their number
 
@@ -196,7 +208,7 @@ public class DateRandomiser_Script : MonoBehaviour
                     break;
 
                 case 5:
-                    aliensInLocation1.Add(getAlienList[positionInList]);
+                    aliensInLocation2.Add(getAlienList[positionInList]);
                     break;
 
                 case 6:
@@ -208,7 +220,7 @@ public class DateRandomiser_Script : MonoBehaviour
                     break;
 
                 case 8:
-                    aliensInLocation2.Add(getAlienList[positionInList]);
+                    aliensInLocation3.Add(getAlienList[positionInList]);
                     break;
 
                 case 9:
@@ -216,11 +228,11 @@ public class DateRandomiser_Script : MonoBehaviour
                     break;
 
                 case 10:
-                    aliensInLocation3.Add(getAlienList[positionInList]);
+                    aliensInLocation4.Add(getAlienList[positionInList]);
                     break;
 
                 case 11:
-                    aliensInLocation3.Add(getAlienList[positionInList]);
+                    aliensInLocation4.Add(getAlienList[positionInList]);
                     break;
 
                 case 12:
@@ -228,22 +240,15 @@ public class DateRandomiser_Script : MonoBehaviour
                     break;
 
                 case 13:
-                    aliensInLocation4.Add(getAlienList[positionInList]);
+                    aliensInLocation5.Add(getAlienList[positionInList]);
                     break;
 
                 case 14:
-                    aliensInLocation4.Add(getAlienList[positionInList]);
+                    aliensInLocation5.Add(getAlienList[positionInList]);
                     break;
 
             }
         }
-
-        //aliensInLocation0 = getAlienList.GetRange(0, 3); //0 1 2
-        //aliensInLocation1 = getAlienList.GetRange(3, 3); // 3 4 5
-        //aliensInLocation2 = getAlienList.GetRange(6, 3); //6 7 8
-        //aliensInLocation3 = getAlienList.GetRange(9, 3); //9 10 11
-        //aliensInLocation4 = getAlienList.GetRange(12, 3); //12 13 14
-
         refreshAnimator.ResetTrigger("RefreshTXT_Trigger");
         refreshAnimator.SetTrigger("Reset");
 
@@ -264,4 +269,14 @@ public class DateRandomiser_Script : MonoBehaviour
         Debug.Log("Going on date with " + alienOnScreen.name);
         tabletAnimsScript.MatchedAnimations();
     }
+
+    public void RetryDateArea() 
+    {
+        tabletAnimsScript.SwapTabletVisibility();
+        textAnimScr = GameObject.Find("Matched_TXT").GetComponent<TextAppearHideTabletStuff_Scrpt>();
+        textAnimScr.MatchedTextDone();
+        listOfAliensScript.PlayerOnDateWith(alienOnScreen);
+        SceneManager.LoadScene("Date_Scene");
+    }
+
 }

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{ebdce7a9-120a-485d-b700-dfb6b26f378f}">
+		<property name="name">
+			<value>skipTyping_Param</value>
+		</property>
+		<relationship name="folder">
+			<destination>{06245423-565d-4e6f-99b3-52acb31b49f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{dd49c3a4-b918-4df3-a4e1-15b7a92afa91}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{dd49c3a4-b918-4df3-a4e1-15b7a92afa91}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>false</value>
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

@@ -17,6 +17,13 @@ public class LoadScene_Script : MonoBehaviour
         tabletScript.SwapTabletVisibility();
     }
 
+    public void swapTablet2() 
+    {
+        tabletScript.SwapTabletVisibility();
+        tabletScript.SwapMapVisibility();
+
+    }
+
     public void LoadDatingAppScene() 
     {
         SceneManager.LoadScene("Title_Scene");

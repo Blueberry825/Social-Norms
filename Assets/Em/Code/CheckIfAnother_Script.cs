@@ -5,7 +5,6 @@ public class CheckIfAnother_Script : MonoBehaviour
 {
     private GameObject tabletCanvas;
     [SerializeField] private GameObject tabletPrefab;
-
     [SerializeField] private GameObject[] alienList;
 
     private void Start()
@@ -37,10 +36,9 @@ public class CheckIfAnother_Script : MonoBehaviour
                     }
                 }
             }
-            //destroy new alien list. hm. how?
-            //if theres one, ignore,
-            //if theres two, destroy one with 15 in the single alien list
         }
+
+
 
     }
 }
