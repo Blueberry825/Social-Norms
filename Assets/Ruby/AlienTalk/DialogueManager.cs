@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     private GameObject GameOver;
     private GameObject tablet;
+    private GameObject armObject;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -32,9 +33,13 @@ public class DialogueManager : MonoBehaviour
 
     private List<string> actions;
     private List<string> options;
-    private List<string> respones; 
+    private List<string> respones;
 
-    
+    private void Awake()
+    {
+        armObject = GameObject.Find("Tentacle_0");
+        armObject.SetActive(true);
+    }
 
     void Start()
     {
@@ -42,7 +47,7 @@ public class DialogueManager : MonoBehaviour
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-
+ 
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
         GameOver = GameObject.Find("GameOver");
@@ -73,11 +78,13 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
+
     }//minus 1 to the location when losing to turn back progress of dating
 
     public void LoseState2()
@@ -149,6 +156,8 @@ public class DialogueManager : MonoBehaviour
         {
             Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
+
+            armObject.SetActive(false);
 
             if (LoveMeter_scr.isLoveFull)
             {

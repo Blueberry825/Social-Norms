@@ -11,7 +11,6 @@ public class LoveMeter : MonoBehaviour
     private DialogueManager dialogueManager_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
-    private GameObject armObject;
 
     public int result;
 
@@ -31,7 +30,6 @@ public class LoveMeter : MonoBehaviour
         dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        armObject = GameObject.Find("Tentacle_0");
         loveMeter.value = loveAmount;//set to default love amount
     }
 
@@ -52,7 +50,6 @@ public class LoveMeter : MonoBehaviour
         {       
             loveAmount -= decayAmount * Time.deltaTime;
 
-            armObject.SetActive(true);
             if (loveAmount <= 0)
             {
                 dialogueManager_scr.LoseState();
