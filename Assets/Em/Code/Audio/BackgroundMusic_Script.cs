@@ -36,6 +36,7 @@ public class BackgroundMusic_Script : MonoBehaviour
     public bool fullScreen;
     public float mouseSensitivity;
     public bool bgm_crtToggle = true;
+    public bool bgmStartLoc_b;
 
     #region slider audio clicks
     private string lastNum;
@@ -69,6 +70,19 @@ public class BackgroundMusic_Script : MonoBehaviour
         GetAndSetSettings();
         SetTo_Title_Music();
         StartBackgroundMusic();
+    }
+
+    public void bgmStartLoc() 
+    {
+        if (bgmStartLoc_b)
+        {
+            backgroundMusic_Instance.setParameterByName("skipTyping_Param", 1);
+        }
+
+        else 
+        {
+            backgroundMusic_Instance.setParameterByName("skipTyping_Param", 0);
+        }
     }
 
     public void MasterVolumeSliderChanged(float newMasterVolume)

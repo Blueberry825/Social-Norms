@@ -27,10 +27,17 @@ public class Music_SceneChange_Script : MonoBehaviour
         settingsBGScript = GameObject.Find("Settings_Background").GetComponent<settingsBackgroundAnim_Script>();
         settingsBGScript.settingBackgroundCheck(currentScene);
 
-        if (currentSceneName != "Opening_Scene") 
+        if (currentSceneName != "Opening_Scene")
         {
             screenToggle_Script = GameObject.Find("Settings_Area").GetComponent<FullScreenToggle_Script>();
             screenToggle_Script.initialise();
+            bkMusic.bgmStartLoc_b = true;
+            bkMusic.bgmStartLoc();
+        }
+        else 
+        {
+            bkMusic.bgmStartLoc_b = false;
+            bkMusic.bgmStartLoc();
         }
     }
 }
