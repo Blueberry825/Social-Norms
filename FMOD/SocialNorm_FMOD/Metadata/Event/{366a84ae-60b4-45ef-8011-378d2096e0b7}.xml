@@ -212,6 +212,9 @@
 		<property name="overridingInputFormat">
 			<value>1</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{66a536a5-14c8-4175-a596-835826852f47}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{7ad90bd4-96c0-4864-8235-639c61434839}</destination>
 		</relationship>
@@ -743,6 +746,17 @@
 		<relationship name="triggerConditions">
 			<destination>{2294d5ec-e74f-4720-87ec-22d8be15fa2d}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{66a536a5-14c8-4175-a596-835826852f47}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{7ad90bd4-96c0-4864-8235-639c61434839}">
 		<relationship name="effects">
