@@ -312,6 +312,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 69523946}
+  - component: {fileID: 69523953}
   - component: {fileID: 69523949}
   - component: {fileID: 69523948}
   - component: {fileID: 69523945}
@@ -490,6 +491,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tabletPrefab: {fileID: 1708882767049121476, guid: a49579d03a1551e41a977250500c243c, type: 3}
   alienList: []
+--- !u!114 &69523953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69523943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10767873315cf5c4b8b021fad6949288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &143365012
 GameObject:
   m_ObjectHideFlags: 0
@@ -530,6 +543,8 @@ MonoBehaviour:
   aliensInLocation2: []
   aliensInLocation3: []
   aliensInLocation4: []
+  aliensInLocation5: []
+  getRetryLocation: 0
 --- !u!114 &143365014
 MonoBehaviour:
   m_ObjectHideFlags: 0

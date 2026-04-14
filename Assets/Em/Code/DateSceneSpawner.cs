@@ -27,15 +27,14 @@ public class DateSceneSpawner : MonoBehaviour
     {
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
         currentBackground = backgroundList[alienNumber];
-        Instantiate(currentBackground, gameObject.transform);
-        
+        GameObject bg = Instantiate(currentBackground, gameObject.transform);
+        bg.transform.localScale = new Vector3 (100, 100, 1);
 
 
 
         GameObject spawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
         spawnedAlien = GameObject.Find("Canvas").transform.GetChild(9).gameObject;//clone spawned in
-        //spawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
         spawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
-        spawnedAlien.transform.localScale = new Vector3(1000, 1000);
+        //spawnedAlien.transform.localScale = new Vector3(1000, 1000);
     }
 }

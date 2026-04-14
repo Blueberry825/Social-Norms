@@ -35,7 +35,7 @@ public class BackgroundMusic_Script : MonoBehaviour
 
     public bool fullScreen;
     public float mouseSensitivity;
-
+    public bool bgm_crtToggle = true;
 
     #region slider audio clicks
     private string lastNum;
