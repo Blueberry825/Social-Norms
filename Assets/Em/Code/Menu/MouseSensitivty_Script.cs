@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MouseSensitivty_Script : MonoBehaviour
@@ -8,6 +9,7 @@ public class MouseSensitivty_Script : MonoBehaviour
     private string lastNum;
     private string currentNum;
     private BackgroundMusic_Script bgm_Script;
+    private MouseTracking mouseTracking_script;
 
     private GameObject mouseScroll;
     [SerializeField] private float mouseValue;
@@ -24,6 +26,12 @@ public class MouseSensitivty_Script : MonoBehaviour
     public void MouseSensitvityChanged(float newMouseSensitivity) 
     {
         bgm_Script.mouseSensitivity = newMouseSensitivity;
+        //MOUSE SCRIPT IF DARE SXCENE
+        if (SceneManager.GetActiveScene().name == "Date_Scene") 
+        {
+            mouseTracking_script = GameObject.Find("Target").GetComponent<MouseTracking>();
+            mouseTracking_script.maxSpeed = newMouseSensitivity * 10;
+        }
 
         newMouseSensitivity = Mathf.RoundToInt(newMouseSensitivity * 10);
         mouseSensitivity_TXT.text = newMouseSensitivity.ToString("F0");

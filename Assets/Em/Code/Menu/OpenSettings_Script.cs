@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class OpenSettings_Script : MonoBehaviour
 {
     [SerializeField] private Animator settingsAnimator;
-    [SerializeField] private Animator startAreaAnimator;
+    [SerializeField] private StartAreaAnimator_Script startAreaAnimator;
     private bool settingsOpen;
     private Scene currentScene;
 
@@ -21,8 +21,8 @@ public class OpenSettings_Script : MonoBehaviour
 
         if (currentScene.name != "Opening_Scene") 
         {
-            startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
-            startAreaAnimator.SetBool("OnScreen", false);
+            startAreaAnimator = GameObject.Find("Taskbar").GetComponent<StartAreaAnimator_Script>();
+            startAreaAnimator.startButtonClicked();
         }
     }
 
@@ -30,6 +30,14 @@ public class OpenSettings_Script : MonoBehaviour
     public void CloseSettings() 
     {
         settingsAnimator.SetBool("OptionsMenu", false);
+
+        currentScene = SceneManager.GetActiveScene();
+
+        //if (currentScene.name != "Opening_Scene")
+        {
+            //startAreaAnimator = GameObject.Find("Taskbar").GetComponent<StartAreaAnimator_Script>();
+            //startAreaAnimator.startButtonClicked();
+        }
     }
 
     public void settingsButton() 

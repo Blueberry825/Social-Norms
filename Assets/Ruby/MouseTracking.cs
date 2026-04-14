@@ -16,11 +16,12 @@ public class MouseTracking : MonoBehaviour
     private InteractionSelector InteractionSelector_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private LoveMeter LoveMeter_scr;
+    private BackgroundMusic_Script backgroundMusic_scr;
 
     public int optionID;
 
     [SerializeField]
-    private float maxSpeed;
+    public float maxSpeed;
 
     private void Start()
     {
@@ -30,6 +31,9 @@ public class MouseTracking : MonoBehaviour
         InteractionSelector_scr = GameObject.Find("GameManager").GetComponent<InteractionSelector>();
         LoveMeter_scr = GameObject.Find("LoveMeter").GetComponent<LoveMeter>();
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        backgroundMusic_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
+
+        maxSpeed = backgroundMusic_scr.mouseSensitivity * 10;
 
         currentAlien = ListOfAliens_Script_scr.currentDate;//when scene starts get current alien 
     }
@@ -96,8 +100,7 @@ public class MouseTracking : MonoBehaviour
 
     private void FollowMousePositionDelayed(float maxSpeed)
     {
-        transform.position = Vector2.MoveTowards(transform.position, GetWorldPositionFromMouse(),
-            maxSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, GetWorldPositionFromMouse(),maxSpeed * Time.deltaTime);
     }
 
     private Vector2 GetWorldPositionFromMouse()

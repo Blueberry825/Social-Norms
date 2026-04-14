@@ -1291,6 +1291,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1868600369}
     m_Modifications:
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 580702086}
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MouseSensitvityChanged
+      objectReference: {fileID: 0}
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MouseSensitivty_Script, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 611472060284224782, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 660827147402535621, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 100
@@ -2406,6 +2430,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1868600369}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &580702086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3035432849710263510, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+  m_PrefabInstance: {fileID: 267605925}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676352570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a35ce856136ed6449da6813a70a98eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &592118836
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2794,6 +2794,7 @@ MonoBehaviour:
   crtToggle: 0
   off_TXT: {fileID: 0}
   on_TXT: {fileID: 0}
+  crtCam: {fileID: 0}
 --- !u!1 &4444288251871080103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3446,7 +3447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Mouse Sensitivity
+  m_text: Mouse Speed
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 62d695980ec59c4499fef07a299999a4, type: 2}
   m_sharedMaterial: {fileID: 3027861898236556353, guid: 62d695980ec59c4499fef07a299999a4, type: 2}
