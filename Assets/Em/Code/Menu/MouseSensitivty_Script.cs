@@ -20,13 +20,11 @@ public class MouseSensitivty_Script : MonoBehaviour
         mouseScroll = GameObject.Find("MouseSensitivity__Scroll");
         mouseValue = bgm_Script.mouseSensitivity;
         mouseScroll.GetComponent<Scrollbar>().value = mouseValue;
-        MouseSensitvityChanged(mouseValue);
     }
 
     public void MouseSensitvityChanged(float newMouseSensitivity) 
     {
         bgm_Script.mouseSensitivity = newMouseSensitivity;
-        //MOUSE SCRIPT IF DARE SXCENE
         if (SceneManager.GetActiveScene().name == "Date_Scene") 
         {
             mouseTracking_script = GameObject.Find("Target").GetComponent<MouseTracking>();

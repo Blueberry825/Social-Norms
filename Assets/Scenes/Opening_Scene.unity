@@ -3474,6 +3474,7 @@ MonoBehaviour:
   fullScreen: 1
   mouseSensitivity: 0.5
   bgm_crtToggle: 1
+  bgmStartLoc_b: 0
   Master_Volume: 1
   Music_Volume: 1
   SFX_Volume: 1
@@ -6236,6 +6237,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 868159734}
+    - target: {fileID: 3452038024569291556, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3743024302952790474, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
@@ -6392,7 +6397,9 @@ PrefabInstance:
       propertyPath: fullscreen_b
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 529879653545665287, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+    - {fileID: 3704935147665112683, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
