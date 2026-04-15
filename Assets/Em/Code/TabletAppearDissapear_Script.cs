@@ -15,7 +15,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     public bool isLevelOver;
     public bool tabletOnScreenBool;
 
-    private Animator taskbar;
+    private Taskbar_AppOpenAnim_Script datingApp;
     [SerializeField] private Animator startAreaAnimator;
 
 
@@ -36,7 +36,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         levelMapGO = GameObject.Find("Level_Map");
         levelMapAnimator = levelMapGO.GetComponent<Animator>();
 
-        taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+        datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
 
     }
@@ -61,18 +61,18 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             tabletAnimator.SetBool("TabletOnScreen", false);
             tabletOnScreenBool = false;
-            taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+            datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
 
-            taskbar.SetBool("open", false);
+            datingApp.Taskbar_SwapDatingAppClose();
             matchedTXTAnimator.SetTrigger("Reset");
         }
         else 
         {
             tabletAnimator.SetBool("TabletOnScreen", true);
             tabletOnScreenBool = true;
-            taskbar = GameObject.Find("Taskbar_AppOpen").GetComponent<Animator>();
+            datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
 
-            taskbar.SetBool("open", true);
+            datingApp.Taskbar_SwapDatingAppOpen();
             startAreaAnimator.SetBool("OnScreen", false);
         }
     }
