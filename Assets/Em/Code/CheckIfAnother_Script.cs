@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class CheckIfAnother_Script : MonoBehaviour
@@ -16,7 +17,6 @@ public class CheckIfAnother_Script : MonoBehaviour
             Instantiate(tabletPrefab);
         }
 
-
         alienList = GameObject.FindGameObjectsWithTag("alienList"); 
         
         if (alienList != null) //if there is an alien list
@@ -25,16 +25,8 @@ public class CheckIfAnother_Script : MonoBehaviour
 
             if (alienListLength > 1) //if theres more than one alien list
             {
-                foreach (GameObject GO in alienList) 
-                {
-                    ListOfAliens_Script alienScript = GO.GetComponent<ListOfAliens_Script>();
-                    int singleAlien_L = alienScript.singleAlienList.Count;
-
-                    if (singleAlien_L == 15) 
-                    {
-                        Destroy(GO);
-                    }
-                }
+                //check length against another
+                Destroy(alienList[1]);
             }
         }
 
