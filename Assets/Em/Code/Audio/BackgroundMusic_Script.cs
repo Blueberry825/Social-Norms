@@ -179,7 +179,6 @@ public class BackgroundMusic_Script : MonoBehaviour
             pauseValue = 1;
         }
 
-        //backgroundMusic_Instance.setParameterByName("IsGamePaused", pauseValue);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", pauseValue);
 
     }

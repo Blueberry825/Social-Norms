@@ -1430,7 +1430,7 @@ PrefabInstance:
     - target: {fileID: 3452038024569291556, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 267605928}
+      objectReference: {fileID: 0}
     - target: {fileID: 3452038024569291556, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -1537,7 +1537,9 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3704935147665112683, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+    - {fileID: 529879653545665287, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1567,17 +1569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 408788fcc51a5d34287c27419ef1b57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &267605928 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3704935147665112683, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
-  m_PrefabInstance: {fileID: 267605925}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 267605929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bd475df6046064da0e716c4429db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &267605929 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1803255008238594598, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
@@ -1593,17 +1584,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8439180806274054806, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
   m_PrefabInstance: {fileID: 267605925}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &267605932 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 529879653545665287, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
-  m_PrefabInstance: {fileID: 267605925}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 676352570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bd475df6046064da0e716c4429db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &267605933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8080,6 +8060,7 @@ GameObject:
   - component: {fileID: 1893308622}
   - component: {fileID: 1893308621}
   - component: {fileID: 1893308620}
+  - component: {fileID: 1893308624}
   m_Layer: 5
   m_Name: DatingSoftware_Button
   m_TagString: Untagged
@@ -8163,9 +8144,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1893308622}
-        m_TargetAssemblyTypeName: LoadScene_Script, Assembly-CSharp
-        m_MethodName: LoadDatingAppScene
+      - m_Target: {fileID: 1893308623}
+        m_TargetAssemblyTypeName: MusicUI_Quit_Script, Assembly-CSharp
+        m_MethodName: Quit_AudioCue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8175,9 +8156,21 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1893308623}
-        m_TargetAssemblyTypeName: MusicUI_Quit_Script, Assembly-CSharp
-        m_MethodName: Quit_AudioCue
+      - m_Target: {fileID: 1893308624}
+        m_TargetAssemblyTypeName: RemoveAlien_Script, Assembly-CSharp
+        m_MethodName: removeAlien
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1893308622}
+        m_TargetAssemblyTypeName: LoadScene_Script, Assembly-CSharp
+        m_MethodName: LoadDatingAppScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8272,6 +8265,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9cbfbd003e7654e4b887187a44231a7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1893308624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893308615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96250f8f48110914fade9cad9648968e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1899850855
@@ -9263,7 +9268,7 @@ PrefabInstance:
     - target: {fileID: 3470631686451239579, guid: 3ac6a961796459d44957c74459dd86bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 267605932}
+      objectReference: {fileID: 0}
     - target: {fileID: 3470631686451239579, guid: 3ac6a961796459d44957c74459dd86bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 

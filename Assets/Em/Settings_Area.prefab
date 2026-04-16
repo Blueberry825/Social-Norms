@@ -826,7 +826,6 @@ GameObject:
   - component: {fileID: 4100249338201087596}
   - component: {fileID: 6532638987362206678}
   - component: {fileID: 3452038024569291556}
-  - component: {fileID: 3704935147665112683}
   - component: {fileID: 5739066332361128351}
   m_Layer: 5
   m_Name: Back_Button
@@ -961,30 +960,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3704935147665112683}
-        m_TargetAssemblyTypeName: Music_QuietPause_Script, Assembly-CSharp
-        m_MethodName: PauseMusic_Cue
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &3704935147665112683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1803255008238594598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bd475df6046064da0e716c4429db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5739066332361128351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2669,7 +2644,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2773762482324036844}
   - component: {fileID: 6540499847544555162}
-  - component: {fileID: 529879653545665287}
   - component: {fileID: 3035432849710263510}
   - component: {fileID: 8847008039703619043}
   - component: {fileID: 7040808796959048752}
@@ -2726,18 +2700,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &529879653545665287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4440465919408699200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bd475df6046064da0e716c4429db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3035432849710263510
 MonoBehaviour:
   m_ObjectHideFlags: 0

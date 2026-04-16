@@ -35,4 +35,10 @@ public class ListOfAliens_Script : MonoBehaviour
         //remove as current date each time
         levelLocationScript.MoveLocation();
     }
+
+    public void PlayerFailedDate_RemoveAlien() 
+    {
+        datedAlienList.Remove(currentDate);
+        singleAlienList.Add(currentDate);
+    }
 }
