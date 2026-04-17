@@ -1251,7 +1251,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.00051498}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793691692
@@ -1274,7 +1274,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8314521447113207497, guid: 299d866e3cbf46e4b9fee69ec5623ca6, type: 3}
+  m_Sprite: {fileID: -7684819569401578932, guid: 6e34b03a12f64164ca07a15c9bb7ed01, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1602,17 +1602,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2773762482324036844, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
   m_PrefabInstance: {fileID: 1269205925}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1269205927 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 529879653545665287, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
-  m_PrefabInstance: {fileID: 1269205925}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9bd475df6046064da0e716c4429db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1397007529
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,7 +1832,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1269205927}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Music_QuietPause_Script, Assembly-CSharp
         m_MethodName: PauseMusic_Cue
         m_Mode: 1
