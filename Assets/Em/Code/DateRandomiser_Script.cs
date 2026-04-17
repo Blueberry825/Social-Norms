@@ -268,6 +268,7 @@ public class DateRandomiser_Script : MonoBehaviour
         listOfAliensScript.PlayerOnDateWith(alienOnScreen);
         Debug.Log("Going on date with " + alienOnScreen.name);
         tabletAnimsScript.MatchedAnimations();
+        tabletAnimsScript.isLevelOver = false;
     }
 
     public void RetryDateArea() 

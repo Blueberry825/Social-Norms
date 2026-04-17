@@ -46,7 +46,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         bool spaceKeyPressed = Keyboard.current.spaceKey.wasPressedThisFrame;
         bool spaceKeyPressed2 = Keyboard.current.spaceKey.wasPressedThisFrame;
 
-        if (spaceKeyPressed || spaceKeyPressed2 && isLevelOver) 
+        if (spaceKeyPressed && isLevelOver || spaceKeyPressed2 && isLevelOver) 
         {
             SwapTabletVisibility();
         }
