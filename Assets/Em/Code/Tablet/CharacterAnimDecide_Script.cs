@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterAnimDecide_Script : MonoBehaviour
 {
@@ -62,10 +63,20 @@ public class CharacterAnimDecide_Script : MonoBehaviour
         }
 
 
-        if (thisCurrentLocation == currentAnimPlaying) //if current location is same number as the animation, load
+        if (currentAnimPlaying != 7)
+        {
+            if (thisCurrentLocation == currentAnimPlaying) //if current location is same number as the animation, load
+            {
+                loadSceneScript.SwapTabletVisability_();
+                loadSceneScript.LoadDate();
+
+            }
+        }
+        else
         {
             loadSceneScript.SwapTabletVisability_();
-            loadSceneScript.LoadDate();
+            SceneManager.LoadScene("Queen_Scene");
         }
+  
     }
 }

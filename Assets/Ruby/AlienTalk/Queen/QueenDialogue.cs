@@ -14,8 +14,8 @@ public class QueenDialogue : MonoBehaviour
     private GameObject tablet;
     private GameObject armObject;
 
-    private DialogueTrigger DialogueTrigger_scr;
-    public InteractionSelector InteractionSelector_scr;
+    private QueenDialogueTrigger QueenDialogueTrigger_scr;
+    public QueenInteractionSelector QueenInteractionSelector_scr;
     private LoveMeter LoveMeter_scr;
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
@@ -43,27 +43,31 @@ public class QueenDialogue : MonoBehaviour
 
     void Start()
     {
-        tablet = GameObject.Find("Tablet");
-        Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
-        TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
- 
-        //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name != "Queen_Scene")//TEMP
+        {
+
+            tablet = GameObject.Find("Tablet");
+            Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
+            TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+            DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+
+            StayOnLocation(false);
+        }
+
+
+        for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
+            QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
 
         GameOver = GameObject.Find("GameOver");
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", true);
         LoveMeter_scr = GameObject.Find("Canvas/LoveMeter").GetComponent<LoveMeter>();
-        DialogueTrigger_scr = InteractionSelector_scr.Dialogues[0].GetComponent<DialogueTrigger>();
+        QueenDialogueTrigger_scr = QueenInteractionSelector_scr.QueenDialogue.GetComponent<QueenDialogueTrigger>();
         options = new List<string>();
         respones = new List<string>();
         actions = new List<string>();
 
-        StayOnLocation(false);
-
-        Debug.Log("count of options: " + options.Count);
-
-        for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-            InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
+        //Debug.Log("count of options: " + options.Count);
     }
 
     public void LoadTabletScreenTemp()
@@ -81,7 +85,7 @@ public class QueenDialogue : MonoBehaviour
         armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
-        Level_Location_Script_scr.currentLocation--;
+        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
 
@@ -90,8 +94,8 @@ public class QueenDialogue : MonoBehaviour
     public void LoseState2()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion soldier";
-        Level_Location_Script_scr.currentLocation--;
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You";
+        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
     }
@@ -113,44 +117,19 @@ public class QueenDialogue : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
-        meLinesAdd3 = meLines * 3;
-        maxlines = meLinesAdd3 + 3;
+        meLinesAdd3 = meLines * 5;
+        maxlines = meLinesAdd3 + 5;
         Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
        
         if (options.Count >= maxlines)
         {
             
-            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
+            for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
+                QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(true);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
 
-            switch (meLines)
-            {
-                case 0:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 1://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 2:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];                     
-                    break;
-                case 3:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 4://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 5:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;//uup to 6 rounds of responses
-            }       
+            for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
+                QueenInteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
         }
         else
         {
@@ -179,13 +158,13 @@ public class QueenDialogue : MonoBehaviour
 
     public void ResponseBox(int selection)//switch case 
     {
-        var alienLines3 = alienLines * 3;//show animation in reponse? doing it on mouse tracking script
+        var alienLines5 = alienLines * 5;//(if round one option 4, response will be 4 etc)
 
-        dialogueText.text = respones[selection + alienLines3];
+        dialogueText.text = respones[selection + alienLines5];
         alienLines++;
     }
 
-    public void StartDialogueRespones(Dialogue dialogue)
+    public void StartDialogueRespones(QueenDialogueHolder dialogue)
     {
         respones.Clear();
 
@@ -194,9 +173,10 @@ public class QueenDialogue : MonoBehaviour
             respones.Add(sentence);
         }
 
+        print("responses length" + respones.Count);
     }
 
-    public void StartDialogueOptions(Dialogue dialogue)
+    public void StartDialogueOptions(QueenDialogueHolder dialogue)
     {
         options.Clear();
 
@@ -208,7 +188,7 @@ public class QueenDialogue : MonoBehaviour
         OptionBubbles();
     }
 
-    public void StartDialogueActions(Dialogue dialogue) //first spawn in opening dialogue and name
+    public void StartDialogueActions(QueenDialogueHolder dialogue) //first spawn in opening dialogue and name
     {
         Debug.Log("starting convo with " + dialogue.name);
 

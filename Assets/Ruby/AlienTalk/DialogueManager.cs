@@ -60,7 +60,7 @@ public class DialogueManager : MonoBehaviour
 
         StayOnLocation(false);
 
-        Debug.Log("count of options: " + options.Count);
+       //Debug.Log("count of options: " + options.Count);
 
         for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
             InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
@@ -120,37 +120,12 @@ public class DialogueManager : MonoBehaviour
         if (options.Count >= maxlines)
         {
             
-            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//show option boxes
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
 
-            switch (meLines)
-            {
-                case 0:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 1://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 2:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];                     
-                    break;
-                case 3:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 4://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 5:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;//uup to 6 rounds of responses
-            }       
+            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//add text to option boxes
+                InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
         }
         else
         {

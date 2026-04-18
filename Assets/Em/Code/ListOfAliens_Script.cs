@@ -36,6 +36,14 @@ public class ListOfAliens_Script : MonoBehaviour
         levelLocationScript.MoveLocation();
     }
 
+    public void PlayerDateQueen()
+    {
+        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
+
+        //remove as current date each time
+        levelLocationScript.MoveLocation();
+    }
+
     public void PlayerFailedDate_RemoveAlien() 
     {
         datedAlienList.Remove(currentDate);

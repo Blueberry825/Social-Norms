@@ -26,16 +26,20 @@ public class DateSceneSpawner : MonoBehaviour
     private void BackgroundPicker()
     {
         currentAlienDate = listAlien_Script.currentDate;
-        alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-        currentBackground = backgroundList[alienNumber];
-        GameObject bg = Instantiate(currentBackground, gameObject.transform);
-        bg.transform.localScale = new Vector3(100, 100, 1);
+        if (currentAlienDate.name != "Queen")
+        {
+            alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
+            currentBackground = backgroundList[alienNumber];
+            GameObject bg = Instantiate(currentBackground, gameObject.transform);
+            bg.transform.localScale = new Vector3(100, 100, 1);
 
-        tempSpawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
-        tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
-        tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
-        tempSpawnedAlien.transform.localScale = new Vector3(1000, 1000);
-        Debug.Log("changing spriterender");
+            tempSpawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
+            tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
+            tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
+            tempSpawnedAlien.transform.localScale = new Vector3(1000, 1000);
+            Debug.Log("changing spriterender");
+        }
+
     }
 
 }

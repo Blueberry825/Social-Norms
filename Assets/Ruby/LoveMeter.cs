@@ -27,10 +27,20 @@ public class LoveMeter : MonoBehaviour
         isLoveFull = false;
         loveAmount = 50f;
         decaying = true;
-        dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        loveMeter.value = loveAmount;//set to default love amount
+
+        Scene scene = SceneManager.GetActiveScene();
+        if(scene.name != "Queen_Scene")
+        {
+            dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+            ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+            DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        }
+        else //during queen scene
+        {
+
+        }
+
+            loveMeter.value = loveAmount;//set to default love amount
     }
 
     // Update is called once per frame
@@ -100,7 +110,11 @@ public class LoveMeter : MonoBehaviour
                 loveAmount += 100;//TEMP 100 FOR TESTING
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
+            case 3://for queen only
+                break;
 
+            case 4://for queen only
+                break;
         }
     }
 }
