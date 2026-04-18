@@ -203,7 +203,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 639119652200000000
+  lastModified: 639120343689630733
   FileSizes:
   - Name: Desktop
     Value: 360000
@@ -334,7 +334,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639117895140000000
+  lastModified: 639120343689595674
   FileSizes:
   - Name: Desktop
     Value: 2342
@@ -410,7 +410,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639119652200000000
+  lastModified: 639120343689595674
   FileSizes:
   - Name: Desktop
     Value: 1944
@@ -517,7 +517,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: -5536874041318841673}
   cacheVersion: 131858
-  cacheTime: 639119652200000000
+  cacheTime: 639120343689630733
   SerializableEventsDict:
   - key: event:/Music/BackgroundMusic_Music
     index: 0
@@ -869,7 +869,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
   Name: BackgroundMusic_Bank
   StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639119652200000000
+  lastModified: 639120343689585727
   FileSizes:
   - Name: Desktop
     Value: 17777280
