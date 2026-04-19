@@ -1,9 +1,12 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SaveAndLoad : MonoBehaviour
 {
     [SerializeField]public static SaveAndLoad instance;
+
+    public Image[] alienThumbnailHolders;
 
     private void Awake()
     {
@@ -70,7 +73,8 @@ public class SaveAndLoad : MonoBehaviour
             {           
                 switch (i) //set the location images for each location here
                 {     
-                    case 0:
+                    case 0://if location 0, 
+                        alienThumbnailHolders[0].sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
                         break;
                     case 1:
                         break;

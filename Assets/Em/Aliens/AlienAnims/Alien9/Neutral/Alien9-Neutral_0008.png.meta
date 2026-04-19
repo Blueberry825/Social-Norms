@@ -1,0 +1,3224 @@
+fileFormatVersion: 2
+guid: 41b31b0add2e2e8418edd25003774a75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8577286376933350803
+    second: Alien9-Neutral_0008_0
+  - first:
+      213: 8900176783131684058
+    second: Alien9-Neutral_0008_1
+  - first:
+      213: -2264371670354300031
+    second: Alien9-Neutral_0008_2
+  - first:
+      213: 3821298745862686638
+    second: Alien9-Neutral_0008_3
+  - first:
+      213: -8909603353608364492
+    second: Alien9-Neutral_0008_4
+  - first:
+      213: -6741304379924440869
+    second: Alien9-Neutral_0008_5
+  - first:
+      213: -29602827858052297
+    second: Alien9-Neutral_0008_6
+  - first:
+      213: 3529630718724531502
+    second: Alien9-Neutral_0008_7
+  - first:
+      213: -236951389082014913
+    second: Alien9-Neutral_0008_8
+  - first:
+      213: 2379436770464952731
+    second: Alien9-Neutral_0008_9
+  - first:
+      213: 6635144617416924305
+    second: Alien9-Neutral_0008_10
+  - first:
+      213: 8692527440463187980
+    second: Alien9-Neutral_0008_11
+  - first:
+      213: 2931490162979858705
+    second: Alien9-Neutral_0008_12
+  - first:
+      213: -6852513357290692840
+    second: Alien9-Neutral_0008_13
+  - first:
+      213: -8799798643508204890
+    second: Alien9-Neutral_0008_14
+  - first:
+      213: 676708968134527144
+    second: Alien9-Neutral_0008_15
+  - first:
+      213: 7746594853287832948
+    second: Alien9-Neutral_0008_16
+  - first:
+      213: -8831267513967707450
+    second: Alien9-Neutral_0008_17
+  - first:
+      213: -1578508351980243958
+    second: Alien9-Neutral_0008_18
+  - first:
+      213: -3978991948467558063
+    second: Alien9-Neutral_0008_19
+  - first:
+      213: 7123407688090820417
+    second: Alien9-Neutral_0008_20
+  - first:
+      213: 412379642771558668
+    second: Alien9-Neutral_0008_21
+  - first:
+      213: -5800913590777289577
+    second: Alien9-Neutral_0008_22
+  - first:
+      213: -856070521559688042
+    second: Alien9-Neutral_0008_23
+  - first:
+      213: 1447678965268473839
+    second: Alien9-Neutral_0008_24
+  - first:
+      213: 3725844849683864922
+    second: Alien9-Neutral_0008_25
+  - first:
+      213: 1097216485806585463
+    second: Alien9-Neutral_0008_26
+  - first:
+      213: -2795919223410958879
+    second: Alien9-Neutral_0008_27
+  - first:
+      213: 8659344255384421105
+    second: Alien9-Neutral_0008_28
+  - first:
+      213: -8650175418615210847
+    second: Alien9-Neutral_0008_29
+  - first:
+      213: 8535798302841050968
+    second: Alien9-Neutral_0008_30
+  - first:
+      213: -7548758643735477591
+    second: Alien9-Neutral_0008_31
+  - first:
+      213: -6942122238666146720
+    second: Alien9-Neutral_0008_32
+  - first:
+      213: -7855359570037342887
+    second: Alien9-Neutral_0008_33
+  - first:
+      213: 7585258731262169110
+    second: Alien9-Neutral_0008_34
+  - first:
+      213: -9055059615146032564
+    second: Alien9-Neutral_0008_35
+  - first:
+      213: -6868586133508133557
+    second: Alien9-Neutral_0008_36
+  - first:
+      213: 5277867637330802307
+    second: Alien9-Neutral_0008_37
+  - first:
+      213: -4075563204436576829
+    second: Alien9-Neutral_0008_38
+  - first:
+      213: -2785367139689950157
+    second: Alien9-Neutral_0008_39
+  - first:
+      213: 7768298045207751559
+    second: Alien9-Neutral_0008_40
+  - first:
+      213: 9003060750655464563
+    second: Alien9-Neutral_0008_41
+  - first:
+      213: 2798335457726853281
+    second: Alien9-Neutral_0008_42
+  - first:
+      213: 4776361325735836519
+    second: Alien9-Neutral_0008_43
+  - first:
+      213: 1205009458421750333
+    second: Alien9-Neutral_0008_44
+  - first:
+      213: -7937514733775479449
+    second: Alien9-Neutral_0008_45
+  - first:
+      213: -6384394608406233502
+    second: Alien9-Neutral_0008_46
+  - first:
+      213: -327939194609179138
+    second: Alien9-Neutral_0008_47
+  - first:
+      213: 6677535163851132173
+    second: Alien9-Neutral_0008_48
+  - first:
+      213: 6441241294339053923
+    second: Alien9-Neutral_0008_49
+  - first:
+      213: 2873339196128194367
+    second: Alien9-Neutral_0008_50
+  - first:
+      213: -6882770842870906386
+    second: Alien9-Neutral_0008_51
+  - first:
+      213: 8378263888166268964
+    second: Alien9-Neutral_0008_52
+  - first:
+      213: 6126931387825866651
+    second: Alien9-Neutral_0008_53
+  - first:
+      213: -6117526661614405998
+    second: Alien9-Neutral_0008_54
+  - first:
+      213: -5524665534183720779
+    second: Alien9-Neutral_0008_55
+  - first:
+      213: -1003923736174355556
+    second: Alien9-Neutral_0008_56
+  - first:
+      213: -7838105669388188392
+    second: Alien9-Neutral_0008_57
+  - first:
+      213: -1031066968725956019
+    second: Alien9-Neutral_0008_58
+  - first:
+      213: 2425955729386336734
+    second: Alien9-Neutral_0008_59
+  - first:
+      213: -5938891351330104303
+    second: Alien9-Neutral_0008_60
+  - first:
+      213: -6943760784033543168
+    second: Alien9-Neutral_0008_61
+  - first:
+      213: -3981884951641319724
+    second: Alien9-Neutral_0008_62
+  - first:
+      213: -7995479631499519546
+    second: Alien9-Neutral_0008_63
+  - first:
+      213: -4990171525622952352
+    second: Alien9-Neutral_0008_64
+  - first:
+      213: 2283721703069686664
+    second: Alien9-Neutral_0008_65
+  - first:
+      213: 4913877659425834399
+    second: Alien9-Neutral_0008_66
+  - first:
+      213: -8067086939088941767
+    second: Alien9-Neutral_0008_67
+  - first:
+      213: -5532929709459930594
+    second: Alien9-Neutral_0008_68
+  - first:
+      213: -5193962772961178898
+    second: Alien9-Neutral_0008_69
+  - first:
+      213: 6954695875605501251
+    second: Alien9-Neutral_0008_70
+  - first:
+      213: 5839633743780361719
+    second: Alien9-Neutral_0008_71
+  - first:
+      213: 7724075704596949413
+    second: Alien9-Neutral_0008_72
+  - first:
+      213: 3602513807992964863
+    second: Alien9-Neutral_0008_73
+  - first:
+      213: 2947667854691387547
+    second: Alien9-Neutral_0008_74
+  - first:
+      213: -7280503409725924580
+    second: Alien9-Neutral_0008_75
+  - first:
+      213: -1750325021720914458
+    second: Alien9-Neutral_0008_76
+  - first:
+      213: -3391564870376595838
+    second: Alien9-Neutral_0008_77
+  - first:
+      213: -1229752438269912188
+    second: Alien9-Neutral_0008_78
+  - first:
+      213: -4271939994022275698
+    second: Alien9-Neutral_0008_79
+  - first:
+      213: -5555571861400462338
+    second: Alien9-Neutral_0008_80
+  - first:
+      213: -4503508946502354330
+    second: Alien9-Neutral_0008_81
+  - first:
+      213: 1626107543755575027
+    second: Alien9-Neutral_0008_82
+  - first:
+      213: -4085651093565674687
+    second: Alien9-Neutral_0008_83
+  - first:
+      213: 3110096898173013129
+    second: Alien9-Neutral_0008_84
+  - first:
+      213: -4234862439073819993
+    second: Alien9-Neutral_0008_85
+  - first:
+      213: -4799622570608626411
+    second: Alien9-Neutral_0008_86
+  - first:
+      213: 1865604877975401430
+    second: Alien9-Neutral_0008_87
+  - first:
+      213: 1999686567344994262
+    second: Alien9-Neutral_0008_88
+  - first:
+      213: -8024213459366638713
+    second: Alien9-Neutral_0008_89
+  - first:
+      213: -1805974898010968867
+    second: Alien9-Neutral_0008_90
+  - first:
+      213: 4630896742941797136
+    second: Alien9-Neutral_0008_91
+  - first:
+      213: 2314085490214037671
+    second: Alien9-Neutral_0008_92
+  - first:
+      213: -4577503103944759079
+    second: Alien9-Neutral_0008_93
+  - first:
+      213: -3348307292840726676
+    second: Alien9-Neutral_0008_94
+  - first:
+      213: 3906431007810502199
+    second: Alien9-Neutral_0008_95
+  - first:
+      213: 9043188980868778868
+    second: Alien9-Neutral_0008_96
+  - first:
+      213: -5282045763762217803
+    second: Alien9-Neutral_0008_97
+  - first:
+      213: -2844427215871219292
+    second: Alien9-Neutral_0008_98
+  - first:
+      213: 2064635862991941173
+    second: Alien9-Neutral_0008_99
+  - first:
+      213: -4696950585167279586
+    second: Alien9-Neutral_0008_100
+  - first:
+      213: 443465950948915176
+    second: Alien9-Neutral_0008_101
+  - first:
+      213: 478781668656141980
+    second: Alien9-Neutral_0008_102
+  - first:
+      213: 5713697303000765350
+    second: Alien9-Neutral_0008_103
+  - first:
+      213: 8428749226786333550
+    second: Alien9-Neutral_0008_104
+  - first:
+      213: -9197896608774288522
+    second: Alien9-Neutral_0008_105
+  - first:
+      213: 8115660463685415387
+    second: Alien9-Neutral_0008_106
+  - first:
+      213: -4596832444039982602
+    second: Alien9-Neutral_0008_107
+  - first:
+      213: 2209229262708501676
+    second: Alien9-Neutral_0008_108
+  - first:
+      213: 7165135674803554023
+    second: Alien9-Neutral_0008_109
+  - first:
+      213: 8854176585518818755
+    second: Alien9-Neutral_0008_110
+  - first:
+      213: -3344376415404941044
+    second: Alien9-Neutral_0008_111
+  - first:
+      213: -2337938284115486585
+    second: Alien9-Neutral_0008_112
+  - first:
+      213: -1159574910666501247
+    second: Alien9-Neutral_0008_113
+  - first:
+      213: -3676724748553107208
+    second: Alien9-Neutral_0008_114
+  - first:
+      213: -3266930683603064683
+    second: Alien9-Neutral_0008_115
+  - first:
+      213: 154564338288334871
+    second: Alien9-Neutral_0008_116
+  - first:
+      213: 802678973418739503
+    second: Alien9-Neutral_0008_117
+  - first:
+      213: -7252750670556421275
+    second: Alien9-Neutral_0008_118
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_0
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1043
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39dd8e1f384a80770800000000000000
+      internalID: 8577286376933350803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_1
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1049
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adc2ebc01a7c38b70800000000000000
+      internalID: 8900176783131684058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_2
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 1028
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183f21586f55390e0800000000000000
+      internalID: -2264371670354300031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_3
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 1035
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea78ac796faf70530800000000000000
+      internalID: 3821298745862686638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_4
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 1007
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e5b8a74faba5480800000000000000
+      internalID: -8909603353608364492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_5
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1005
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd891d722631272a0800000000000000
+      internalID: -6741304379924440869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_6
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 1016
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73b7c298264d69ff0800000000000000
+      internalID: -29602827858052297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_7
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 983
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25e1e91074cbf030800000000000000
+      internalID: 3529630718724531502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_8
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 995
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b2bb097fd26bcf0800000000000000
+      internalID: -236951389082014913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_9
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 989
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b91f01dc225750120800000000000000
+      internalID: 2379436770464952731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_10
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 986
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c1b7200e4c41c50800000000000000
+      internalID: 6635144617416924305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_11
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 972
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00d421f6af02a870800000000000000
+      internalID: 8692527440463187980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_12
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 982
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11967f285cebea820800000000000000
+      internalID: 2931490162979858705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_13
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 977
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81f9110686bf6e0a0800000000000000
+      internalID: -6852513357290692840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_14
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 974
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aaaabec1c5d0e580800000000000000
+      internalID: -8799798643508204890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_15
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 970
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a8cafd9837246900800000000000000
+      internalID: 676708968134527144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_16
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 953
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d2711d9fe618b60800000000000000
+      internalID: 7746594853287832948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_17
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 950
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6caf1817cf8017580800000000000000
+      internalID: -8831267513967707450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_18
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 758
+        width: 124
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04fa356403081ae0800000000000000
+      internalID: -1578508351980243958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_19
+      rect:
+        serializedVersion: 2
+        x: 1161
+        y: 956
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159a37b87e7c7c8c0800000000000000
+      internalID: -3978991948467558063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_20
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 175
+        width: 124
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14f90f60d8d6bd260800000000000000
+      internalID: 7123407688090820417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_21
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 612
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c015008a91119b500800000000000000
+      internalID: 412379642771558668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_22
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 547
+        width: 37
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794ebf0e2d30f7fa0800000000000000
+      internalID: -5800913590777289577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_23
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 358
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c50c37560ae14f0800000000000000
+      internalID: -856070521559688042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_24
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 59
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe7e1a94950371410800000000000000
+      internalID: 1447678965268473839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_25
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 62
+        width: 277
+        height: 891
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d10a1862cd4b330800000000000000
+      internalID: 3725844849683864922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_26
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 59
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 776343e94981a3f00800000000000000
+      internalID: 1097216485806585463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_27
+      rect:
+        serializedVersion: 2
+        x: 577
+        y: 802
+        width: 94
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ed57eb9746e239d0800000000000000
+      internalID: -2795919223410958879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_28
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 253
+        width: 30
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2020a98bb2c2870800000000000000
+      internalID: 8659344255384421105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_29
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 234
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1acdf90994764f780800000000000000
+      internalID: -8650175418615210847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_30
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 329
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8571933f45f357670800000000000000
+      internalID: 8535798302841050968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_31
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 320
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2ccf0320c6d3790800000000000000
+      internalID: -7548758643735477591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_32
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 611
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf6f8da90a8af90800000000000000
+      internalID: -6942122238666146720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_33
+      rect:
+        serializedVersion: 2
+        x: 753
+        y: 446
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95d75fc27182cf290800000000000000
+      internalID: -7855359570037342887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_34
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 430
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610df4ea0a0444960800000000000000
+      internalID: 7585258731262169110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_35
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 492
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c424c3b7147f55280800000000000000
+      internalID: -9055059615146032564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_36
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 452
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4de21b8d41eda0a0800000000000000
+      internalID: -6868586133508133557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_37
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 461
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386f1ae17a0ce3940800000000000000
+      internalID: 5277867637330802307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_38
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 476
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5b7ebdbd0b077c0800000000000000
+      internalID: -4075563204436576829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_39
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 4
+        width: 576
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3341cbd08536859d0800000000000000
+      internalID: -2785367139689950157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_40
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 230
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b28f5f9e98ecb60800000000000000
+      internalID: 7768298045207751559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_41
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 638
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 374a41e6d0c41fc70800000000000000
+      internalID: 9003060750655464563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_42
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 514
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a07038c54fa5d620800000000000000
+      internalID: 2798335457726853281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_43
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 508
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76bf56bc15b094240800000000000000
+      internalID: 4776361325735836519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_44
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 498
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3ad630d7bd09b010800000000000000
+      internalID: 1205009458421750333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_45
+      rect:
+        serializedVersion: 2
+        x: 811
+        y: 798
+        width: 60
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d12e5876848d190800000000000000
+      internalID: -7937514733775479449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_46
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 879
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26ef60cfde21667a0800000000000000
+      internalID: -6384394608406233502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_47
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 895
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef5646d3a0de27bf0800000000000000
+      internalID: -327939194609179138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_48
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 894
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0dc6883ade5bac50800000000000000
+      internalID: 6677535163851132173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_49
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 895
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36918ad74d2e36950800000000000000
+      internalID: 6441241294339053923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_50
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 940
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f6d6876c620e720800000000000000
+      internalID: 2873339196128194367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_51
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 813
+        width: 49
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee18348826c7b70a0800000000000000
+      internalID: -6882770842870906386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_52
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 898
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42032a8cd92954470800000000000000
+      internalID: 8378263888166268964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_53
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 766
+        width: 140
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b974d86a2ab370550800000000000000
+      internalID: 6126931387825866651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_54
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 925
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 296fd7ec9ed2a1ba0800000000000000
+      internalID: -6117526661614405998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_55
+      rect:
+        serializedVersion: 2
+        x: 990
+        y: 915
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b8b224b7f17453b0800000000000000
+      internalID: -5524665534183720779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_56
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 894
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b9eb35ea85112f0800000000000000
+      internalID: -1003923736174355556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_57
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 837
+        width: 23
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8154428fb64793390800000000000000
+      internalID: -7838105669388188392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_58
+      rect:
+        serializedVersion: 2
+        x: 1124
+        y: 922
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a53750e0ae0b1f0800000000000000
+      internalID: -1031066968725956019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_59
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 298
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed175e2f1e9baa120800000000000000
+      internalID: 2425955729386336734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_60
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 693
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c545418c1d49da0800000000000000
+      internalID: -5938891351330104303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_61
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 215
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c84664b5ec2af90800000000000000
+      internalID: -6943760784033543168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_62
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 481
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d612f0cbb08db8c0800000000000000
+      internalID: -3981884951641319724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_63
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 453
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c9999313a95a0190800000000000000
+      internalID: -7995479631499519546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_64
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 245
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06e89febf695fbab0800000000000000
+      internalID: -4990171525622952352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_65
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 275
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b915d0ac861bf10800000000000000
+      internalID: 2283721703069686664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_66
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 474
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f950ec742b9913440800000000000000
+      internalID: 4913877659425834399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_67
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 692
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93d096f8b23fb0090800000000000000
+      internalID: -8067086939088941767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_68
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 392
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e128f647eb51733b0800000000000000
+      internalID: -5532929709459930594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_69
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 281
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeacb0570665be7b0800000000000000
+      internalID: -5193962772961178898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_70
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 259
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34517522d0b048060800000000000000
+      internalID: 6954695875605501251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_71
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 365
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f5b96443fb8a0150800000000000000
+      internalID: 5839633743780361719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_72
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 251
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a9e9beeded613b60800000000000000
+      internalID: 7724075704596949413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_73
+      rect:
+        serializedVersion: 2
+        x: 1244
+        y: 291
+        width: 37
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff64cdfa833bef130800000000000000
+      internalID: 3602513807992964863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_74
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 642
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98c7b2eb4838e820800000000000000
+      internalID: 2947667854691387547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_75
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 705
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b144df8b476fa90800000000000000
+      internalID: -7280503409725924580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_76
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 326
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5d8d69aa895b7e0800000000000000
+      internalID: -1750325021720914458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_77
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 765
+        width: 64
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28e528c38bdbee0d0800000000000000
+      internalID: -3391564870376595838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_78
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 523
+        width: 40
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b50434caa0feee0800000000000000
+      internalID: -1229752438269912188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_79
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 688
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e85948a853507b4c0800000000000000
+      internalID: -4271939994022275698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_80
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 398
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efbd115a3d4a6e2b0800000000000000
+      internalID: -5555571861400462338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_81
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 671
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66afee849725081c0800000000000000
+      internalID: -4503508946502354330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_82
+      rect:
+        serializedVersion: 2
+        x: 1269
+        y: 698
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe42201238119610800000000000000
+      internalID: 1626107543755575027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_83
+      rect:
+        serializedVersion: 2
+        x: 1270
+        y: 223
+        width: 19
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14be4d32af9dc47c0800000000000000
+      internalID: -4085651093565674687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_84
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 385
+        width: 221
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98c85a0a6a8492b20800000000000000
+      internalID: 3110096898173013129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_85
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 237
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a25c568c0fba35c0800000000000000
+      internalID: -4234862439073819993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_86
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 691
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 515fce693b0546db0800000000000000
+      internalID: -4799622570608626411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_87
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 326
+        width: 17
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3b5fa80c5f3e910800000000000000
+      internalID: 1865604877975401430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_88
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 155
+        width: 206
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7f7b4965050cb10800000000000000
+      internalID: 1999686567344994262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_89
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 390
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b0b807f5444a090800000000000000
+      internalID: -8024213459366638713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_90
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 670
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddca8c21663efe6e0800000000000000
+      internalID: -1805974898010968867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_91
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 265
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b2f8a5d00444040800000000000000
+      internalID: 4630896742941797136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_92
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 277
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a8e7182e784d1020800000000000000
+      internalID: 2314085490214037671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_93
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 349
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d8ef1bfd217970c0800000000000000
+      internalID: -4577503103944759079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_94
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 278
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6fe06bd14c6881d0800000000000000
+      internalID: -3348307292840726676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_95
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 703
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ebd10fd4e663630800000000000000
+      internalID: 3906431007810502199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_96
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 331
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b0969177cdf7d70800000000000000
+      internalID: 9043188980868778868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_97
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 659
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bc98930d5762b6b0800000000000000
+      internalID: -5282045763762217803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_98
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 666
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9ea8084809688d0800000000000000
+      internalID: -2844427215871219292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_99
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 301
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53eaa24e06f07ac10800000000000000
+      internalID: 2064635862991941173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_100
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 715
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1a8a8b045411deb0800000000000000
+      internalID: -4696950585167279586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_101
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 837
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e77a4ccee1872600800000000000000
+      internalID: 443465950948915176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_102
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 376
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c96d7351469f4a600800000000000000
+      internalID: 478781668656141980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_103
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 670
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3d773bc612b4f40800000000000000
+      internalID: 5713697303000765350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_104
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 300
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e63a27ba3cee8f470800000000000000
+      internalID: 8428749226786333550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_105
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 724
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b0d3154c18a5080800000000000000
+      internalID: -9197896608774288522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_106
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 381
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd1b6af613e90a070800000000000000
+      internalID: 8115660463685415387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_107
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 872
+        width: 23
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f191094f35c430c0800000000000000
+      internalID: -4596832444039982602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_108
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 193
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac63273f42c8ae10800000000000000
+      internalID: 2209229262708501676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_109
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 176
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e605280fecaf6360800000000000000
+      internalID: 7165135674803554023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_110
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 392
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c52e6e61ba50ea70800000000000000
+      internalID: 8854176585518818755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_111
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 781
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0128949e536691d0800000000000000
+      internalID: -3344376415404941044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_112
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 606
+        width: 29
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 788928c7489fd8fd0800000000000000
+      internalID: -2337938284115486585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_113
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 554
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 183944f23cc58efe0800000000000000
+      internalID: -1159574910666501247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_114
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 316
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8ca914256a9fcc0800000000000000
+      internalID: -3676724748553107208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_115
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 604
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598e30a2ad789a2d0800000000000000
+      internalID: -3266930683603064683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_116
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 326
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7189e9e527f152200800000000000000
+      internalID: 154564338288334871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_117
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 621
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f279c470640b32b00800000000000000
+      internalID: 802678973418739503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien9-Neutral_0008_118
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 40
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563220d11bd095b90800000000000000
+      internalID: -7252750670556421275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alien9-Neutral_0008_0: 8577286376933350803
+      Alien9-Neutral_0008_1: 8900176783131684058
+      Alien9-Neutral_0008_10: 6635144617416924305
+      Alien9-Neutral_0008_100: -4696950585167279586
+      Alien9-Neutral_0008_101: 443465950948915176
+      Alien9-Neutral_0008_102: 478781668656141980
+      Alien9-Neutral_0008_103: 5713697303000765350
+      Alien9-Neutral_0008_104: 8428749226786333550
+      Alien9-Neutral_0008_105: -9197896608774288522
+      Alien9-Neutral_0008_106: 8115660463685415387
+      Alien9-Neutral_0008_107: -4596832444039982602
+      Alien9-Neutral_0008_108: 2209229262708501676
+      Alien9-Neutral_0008_109: 7165135674803554023
+      Alien9-Neutral_0008_11: 8692527440463187980
+      Alien9-Neutral_0008_110: 8854176585518818755
+      Alien9-Neutral_0008_111: -3344376415404941044
+      Alien9-Neutral_0008_112: -2337938284115486585
+      Alien9-Neutral_0008_113: -1159574910666501247
+      Alien9-Neutral_0008_114: -3676724748553107208
+      Alien9-Neutral_0008_115: -3266930683603064683
+      Alien9-Neutral_0008_116: 154564338288334871
+      Alien9-Neutral_0008_117: 802678973418739503
+      Alien9-Neutral_0008_118: -7252750670556421275
+      Alien9-Neutral_0008_12: 2931490162979858705
+      Alien9-Neutral_0008_13: -6852513357290692840
+      Alien9-Neutral_0008_14: -8799798643508204890
+      Alien9-Neutral_0008_15: 676708968134527144
+      Alien9-Neutral_0008_16: 7746594853287832948
+      Alien9-Neutral_0008_17: -8831267513967707450
+      Alien9-Neutral_0008_18: -1578508351980243958
+      Alien9-Neutral_0008_19: -3978991948467558063
+      Alien9-Neutral_0008_2: -2264371670354300031
+      Alien9-Neutral_0008_20: 7123407688090820417
+      Alien9-Neutral_0008_21: 412379642771558668
+      Alien9-Neutral_0008_22: -5800913590777289577
+      Alien9-Neutral_0008_23: -856070521559688042
+      Alien9-Neutral_0008_24: 1447678965268473839
+      Alien9-Neutral_0008_25: 3725844849683864922
+      Alien9-Neutral_0008_26: 1097216485806585463
+      Alien9-Neutral_0008_27: -2795919223410958879
+      Alien9-Neutral_0008_28: 8659344255384421105
+      Alien9-Neutral_0008_29: -8650175418615210847
+      Alien9-Neutral_0008_3: 3821298745862686638
+      Alien9-Neutral_0008_30: 8535798302841050968
+      Alien9-Neutral_0008_31: -7548758643735477591
+      Alien9-Neutral_0008_32: -6942122238666146720
+      Alien9-Neutral_0008_33: -7855359570037342887
+      Alien9-Neutral_0008_34: 7585258731262169110
+      Alien9-Neutral_0008_35: -9055059615146032564
+      Alien9-Neutral_0008_36: -6868586133508133557
+      Alien9-Neutral_0008_37: 5277867637330802307
+      Alien9-Neutral_0008_38: -4075563204436576829
+      Alien9-Neutral_0008_39: -2785367139689950157
+      Alien9-Neutral_0008_4: -8909603353608364492
+      Alien9-Neutral_0008_40: 7768298045207751559
+      Alien9-Neutral_0008_41: 9003060750655464563
+      Alien9-Neutral_0008_42: 2798335457726853281
+      Alien9-Neutral_0008_43: 4776361325735836519
+      Alien9-Neutral_0008_44: 1205009458421750333
+      Alien9-Neutral_0008_45: -7937514733775479449
+      Alien9-Neutral_0008_46: -6384394608406233502
+      Alien9-Neutral_0008_47: -327939194609179138
+      Alien9-Neutral_0008_48: 6677535163851132173
+      Alien9-Neutral_0008_49: 6441241294339053923
+      Alien9-Neutral_0008_5: -6741304379924440869
+      Alien9-Neutral_0008_50: 2873339196128194367
+      Alien9-Neutral_0008_51: -6882770842870906386
+      Alien9-Neutral_0008_52: 8378263888166268964
+      Alien9-Neutral_0008_53: 6126931387825866651
+      Alien9-Neutral_0008_54: -6117526661614405998
+      Alien9-Neutral_0008_55: -5524665534183720779
+      Alien9-Neutral_0008_56: -1003923736174355556
+      Alien9-Neutral_0008_57: -7838105669388188392
+      Alien9-Neutral_0008_58: -1031066968725956019
+      Alien9-Neutral_0008_59: 2425955729386336734
+      Alien9-Neutral_0008_6: -29602827858052297
+      Alien9-Neutral_0008_60: -5938891351330104303
+      Alien9-Neutral_0008_61: -6943760784033543168
+      Alien9-Neutral_0008_62: -3981884951641319724
+      Alien9-Neutral_0008_63: -7995479631499519546
+      Alien9-Neutral_0008_64: -4990171525622952352
+      Alien9-Neutral_0008_65: 2283721703069686664
+      Alien9-Neutral_0008_66: 4913877659425834399
+      Alien9-Neutral_0008_67: -8067086939088941767
+      Alien9-Neutral_0008_68: -5532929709459930594
+      Alien9-Neutral_0008_69: -5193962772961178898
+      Alien9-Neutral_0008_7: 3529630718724531502
+      Alien9-Neutral_0008_70: 6954695875605501251
+      Alien9-Neutral_0008_71: 5839633743780361719
+      Alien9-Neutral_0008_72: 7724075704596949413
+      Alien9-Neutral_0008_73: 3602513807992964863
+      Alien9-Neutral_0008_74: 2947667854691387547
+      Alien9-Neutral_0008_75: -7280503409725924580
+      Alien9-Neutral_0008_76: -1750325021720914458
+      Alien9-Neutral_0008_77: -3391564870376595838
+      Alien9-Neutral_0008_78: -1229752438269912188
+      Alien9-Neutral_0008_79: -4271939994022275698
+      Alien9-Neutral_0008_8: -236951389082014913
+      Alien9-Neutral_0008_80: -5555571861400462338
+      Alien9-Neutral_0008_81: -4503508946502354330
+      Alien9-Neutral_0008_82: 1626107543755575027
+      Alien9-Neutral_0008_83: -4085651093565674687
+      Alien9-Neutral_0008_84: 3110096898173013129
+      Alien9-Neutral_0008_85: -4234862439073819993
+      Alien9-Neutral_0008_86: -4799622570608626411
+      Alien9-Neutral_0008_87: 1865604877975401430
+      Alien9-Neutral_0008_88: 1999686567344994262
+      Alien9-Neutral_0008_89: -8024213459366638713
+      Alien9-Neutral_0008_9: 2379436770464952731
+      Alien9-Neutral_0008_90: -1805974898010968867
+      Alien9-Neutral_0008_91: 4630896742941797136
+      Alien9-Neutral_0008_92: 2314085490214037671
+      Alien9-Neutral_0008_93: -4577503103944759079
+      Alien9-Neutral_0008_94: -3348307292840726676
+      Alien9-Neutral_0008_95: 3906431007810502199
+      Alien9-Neutral_0008_96: 9043188980868778868
+      Alien9-Neutral_0008_97: -5282045763762217803
+      Alien9-Neutral_0008_98: -2844427215871219292
+      Alien9-Neutral_0008_99: 2064635862991941173
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -15,10 +15,13 @@ public class DateSceneSpawner : MonoBehaviour
     [SerializeField] private List<GameObject> backgroundList;
     [SerializeField] private GameObject currentBackground;
 
+    private MouseTracking MouseTracking_scr;
+
     public GameObject tempSpawnedAlien;
 
     private void Start()
     {
+        MouseTracking_scr = GameObject.Find("Target").GetComponent<MouseTracking>();
         listAlien_Script = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         BackgroundPicker();
     }
@@ -36,8 +39,10 @@ public class DateSceneSpawner : MonoBehaviour
             tempSpawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
             tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
             tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
-            tempSpawnedAlien.transform.localScale = new Vector3(1000, 1000);
+            tempSpawnedAlien.transform.localScale = new Vector3(60, 60);
             Debug.Log("changing spriterender");
+
+            MouseTracking_scr.currentAlienClone = tempSpawnedAlien;//ensuring mouse has acess to clones animator
         }
 
     }

@@ -10,7 +10,7 @@ public class MouseTracking : MonoBehaviour
 
     public GameObject currentOptionObj;
     private GameObject nextButton;
-    private GameObject currentAlien;
+    public GameObject currentAlienClone;
 
     private DialogueManager DialogueManager_scr;
     private InteractionSelector InteractionSelector_scr;
@@ -35,7 +35,7 @@ public class MouseTracking : MonoBehaviour
 
         maxSpeed = backgroundMusic_scr.mouseSensitivity * 10;
 
-        currentAlien = ListOfAliens_Script_scr.currentDate;//when scene starts get current alien 
+        currentAlienClone = GameObject.Find("Canvas").GetComponent<DateSceneSpawner>().tempSpawnedAlien;
     }
 
     private void Update()
@@ -62,19 +62,20 @@ public class MouseTracking : MonoBehaviour
         switch (optionID)//0 NEGATIVE | 1 NEUTRAL | 2 POSITIVE
         {
             case 0:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 0);
+                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 0);
 
                 break;
             case 1:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 1);
+                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 1);
 
                 break;
             case 2:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 2);
+                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 2);
 
                 break;
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)//enter trigger space 
     {

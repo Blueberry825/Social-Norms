@@ -20,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
+    private SaveAndLoad SaveAndLoad_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -46,8 +47,11 @@ public class DialogueManager : MonoBehaviour
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
- 
+        SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
+
+
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
         GameOver = GameObject.Find("GameOver");
@@ -66,9 +70,10 @@ public class DialogueManager : MonoBehaviour
             InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
     }
 
-    public void LoadTabletScreenTemp()
+    public void StuffToDoAfterDate()//when going back to date screen after date
     {
-        SceneManager.LoadScene("Title_Scene");
+        DateRandomiser_Script_scr.RandomiseDate();
+        SaveAndLoad_scr.LoadLocationsAndAliens();
     }
 
     public void RestartDate()
