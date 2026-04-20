@@ -12,14 +12,20 @@ public class MouseSensitivty_Script : MonoBehaviour
     private MouseTracking mouseTracking_script;
 
     private GameObject mouseScroll;
-    [SerializeField] private float mouseValue;
+    private float mouseValue;
+    private int newMouse;
 
     private void Start()
     {
         bgm_Script = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
         mouseScroll = GameObject.Find("MouseSensitivity__Scroll");
+
+
         mouseValue = bgm_Script.mouseSensitivity;
         mouseScroll.GetComponent<Scrollbar>().value = mouseValue;
+        newMouse = Mathf.RoundToInt(mouseValue * 10);
+        mouseSensitivity_TXT.text = newMouse.ToString();
+        bgm_Script.mouseSensitivity = mouseValue;
     }
 
     public void MouseSensitvityChanged(float newMouseSensitivity) 

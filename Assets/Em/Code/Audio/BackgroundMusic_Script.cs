@@ -34,7 +34,7 @@ public class BackgroundMusic_Script : MonoBehaviour
     private GameObject alienOnScreen_;
 
     public bool fullScreen;
-    public float mouseSensitivity;
+    public float mouseSensitivity = 0.5f;
     public bool bgm_crtToggle = true;
     public bool bgmStartLoc_b;
 
