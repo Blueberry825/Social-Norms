@@ -12,6 +12,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     private GameObject GameOver;
     private GameObject tablet;
+    private GameObject armObject;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -19,6 +20,7 @@ public class DialogueManager : MonoBehaviour
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
+    private SaveAndLoad SaveAndLoad_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -32,16 +34,23 @@ public class DialogueManager : MonoBehaviour
 
     private List<string> actions;
     private List<string> options;
-    private List<string> respones; 
+    private List<string> respones;
 
-    
+    private void Awake()
+    {
+        armObject = GameObject.Find("Tentacle_0");
+        armObject.SetActive(true);
+    }
 
     void Start()
     {
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
+
 
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
@@ -55,15 +64,16 @@ public class DialogueManager : MonoBehaviour
 
         StayOnLocation(false);
 
-        Debug.Log("count of options: " + options.Count);
+       //Debug.Log("count of options: " + options.Count);
 
         for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
             InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
     }
 
-    public void LoadTabletScreenTemp()
+    public void StuffToDoAfterDate()//when going back to date screen after date
     {
-        SceneManager.LoadScene("Title_Scene");
+        DateRandomiser_Script_scr.RandomiseDate();
+        SaveAndLoad_scr.LoadLocationsAndAliens();
     }
 
     public void RestartDate()
@@ -73,11 +83,13 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
+
     }//minus 1 to the location when losing to turn back progress of dating
 
     public void LoseState2()
@@ -113,42 +125,19 @@ public class DialogueManager : MonoBehaviour
         if (options.Count >= maxlines)
         {
             
-            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
+            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//show option boxes
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
 
-            switch (meLines)
-            {
-                case 0:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 1://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 2:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];                     
-                    break;
-                case 3:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 4://figure out randomising placement
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;
-                case 5:
-                    for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
-                        InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
-                    break;//uup to 6 rounds of responses
-            }       
+            for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//add text to option boxes
+                InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
         }
         else
         {
             Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
+
+            armObject.SetActive(false);
 
             if (LoveMeter_scr.isLoveFull)
             {

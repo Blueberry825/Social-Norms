@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -2368774596785162777}
   - component: {fileID: -8679744037827128448}
   - component: {fileID: 1692290503204504636}
+  - component: {fileID: -8379304331983377387}
   m_Layer: 5
   m_Name: Alien_3
   m_TagString: Untagged
@@ -60,7 +61,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd027e5835f9be4db2538a260fea182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPlayerDatedThisAlien: 0
+  hasPlayerDatedThisAlien: 1
   alienNumber: 3
   alienColour: Purple
 --- !u!212 &-2368774596785162777
@@ -170,3 +171,15 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-8379304331983377387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603048764201989246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b241b13f038a3641b5d7420c01eb23b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

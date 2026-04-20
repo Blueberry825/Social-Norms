@@ -538,6 +538,7 @@ MonoBehaviour:
   getAlienList: []
   alienOnScreen: {fileID: 0}
   tabletAnimsScript: {fileID: 0}
+  queen: {fileID: 0}
   aliensInLocation0: []
   aliensInLocation1: []
   aliensInLocation2: []
@@ -614,6 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36f8f38f5917374288bd11974a84091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  alienThumbnailHolders: []
   currentLocation: 0
 --- !u!1 &168813222
 GameObject:

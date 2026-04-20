@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
@@ -12,29 +11,40 @@ public class DateSceneSpawner : MonoBehaviour
     [SerializeField] private GameObject currentAlienDate;
     [SerializeField] private int alienNumber;
 
-    [SerializeField] private GameObject blankBackground; 
+    [SerializeField] private GameObject blankBackground;
     [SerializeField] private List<GameObject> backgroundList;
     [SerializeField] private GameObject currentBackground;
 
+    private MouseTracking MouseTracking_scr;
+
+    public GameObject tempSpawnedAlien;
+
     private void Start()
     {
+        MouseTracking_scr = GameObject.Find("Target").GetComponent<MouseTracking>();
         listAlien_Script = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        currentAlienDate = listAlien_Script.currentDate;
         BackgroundPicker();
     }
 
-    private void BackgroundPicker() 
+    private void BackgroundPicker()
     {
-        alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-        currentBackground = backgroundList[alienNumber];
-        GameObject bg = Instantiate(currentBackground, gameObject.transform);
-        bg.transform.localScale = new Vector3 (100, 100, 1);
+        currentAlienDate = listAlien_Script.currentDate;
+        if (currentAlienDate.name != "Queen")
+        {
+            alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
+            currentBackground = backgroundList[alienNumber];
+            GameObject bg = Instantiate(currentBackground, gameObject.transform);
+            bg.transform.localScale = new Vector3(100, 100, 1);
 
+            tempSpawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
+            tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
+            tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
+            tempSpawnedAlien.transform.localScale = new Vector3(60, 60);
+            Debug.Log("changing spriterender");
 
+            MouseTracking_scr.currentAlienClone = tempSpawnedAlien;//ensuring mouse has acess to clones animator
+        }
 
-        GameObject spawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
-        spawnedAlien = GameObject.Find("Canvas").transform.GetChild(9).gameObject;//clone spawned in
-        spawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
-        //spawnedAlien.transform.localScale = new Vector3(1000, 1000);
     }
+
 }

@@ -16,6 +16,8 @@ public class DateRandomiser_Script : MonoBehaviour
 
     private GameObject lastAlien;
 
+    public GameObject queen;
+
     [SerializeField] private List<GameObject> aliensInLocation0;
     [SerializeField] private List<GameObject> aliensInLocation1;
     [SerializeField] private List<GameObject> aliensInLocation2;
@@ -145,6 +147,7 @@ public class DateRandomiser_Script : MonoBehaviour
                 }
                 break;
         case 6:
+                alienOnScreen = queen;
                 Debug.Log("Case 6. Currently at the queen.");  //queen time
                 break;
         }
@@ -265,9 +268,18 @@ public class DateRandomiser_Script : MonoBehaviour
 
     public void GoOnDateWith() 
     {
-        listOfAliensScript.PlayerOnDateWith(alienOnScreen);
-        Debug.Log("Going on date with " + alienOnScreen.name);
+        if(alienOnScreen.name != "Queen")
+        {
+            listOfAliensScript.PlayerOnDateWith(alienOnScreen);
+            Debug.Log("Going on date with " + alienOnScreen.name);
+        }
+        else
+        {
+            listOfAliensScript.PlayerDateQueen();
+        }
+
         tabletAnimsScript.MatchedAnimations();
+        tabletAnimsScript.isLevelOver = false;
     }
 
     public void RetryDateArea() 
