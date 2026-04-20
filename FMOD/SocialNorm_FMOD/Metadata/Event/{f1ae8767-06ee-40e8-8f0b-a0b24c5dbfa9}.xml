@@ -5,7 +5,7 @@
 			<value>OpenMap</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d8fb7dfa-c686-42c5-a568-82d611dfaad5}</destination>
@@ -76,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{05e8981a-a301-4e22-97ae-48a492352081}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{8377eaf7-c0f4-45d5-8e94-eee7f1c0d03f}</destination>
 		</relationship>
@@ -147,7 +150,11 @@
 			<destination>{423769b0-1d3c-415b-bd9f-05605a21e2c5}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{2fa49628-054c-4561-bc2a-eb762d2a4864}" />
+	<object class="MixerBusPanner" id="{2fa49628-054c-4561-bc2a-eb762d2a4864}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{bef72299-de51-4ec2-8c7f-4139337ab809}" />
 	<object class="MixerBusEffectChain" id="{3d0c4ad5-7043-4e7c-ac73-cbc58d575308}">
 		<relationship name="effects">

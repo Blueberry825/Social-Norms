@@ -708,6 +708,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Ambiance_Bank
   - BackgroundMusic_Bank
   - SFX_Bank
   BanksToLoad: []

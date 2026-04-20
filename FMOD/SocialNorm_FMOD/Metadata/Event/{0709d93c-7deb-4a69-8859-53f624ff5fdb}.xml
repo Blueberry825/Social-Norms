@@ -5,7 +5,7 @@
 			<value>CloseMap</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d8fb7dfa-c686-42c5-a568-82d611dfaad5}</destination>
@@ -76,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{fc4f47d4-84c1-43d1-ada5-174c15b033e1}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{19311922-f428-4844-a8de-d9e718802ddb}</destination>
 		</relationship>
@@ -147,7 +150,11 @@
 			<destination>{9f0b9b47-36ef-4802-ba92-4723d76f52a1}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{7877560d-eef0-407d-92f9-79e0f0c96d41}" />
+	<object class="MixerBusPanner" id="{7877560d-eef0-407d-92f9-79e0f0c96d41}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{32f6b1d2-758c-44d9-9b6f-9680a6c1147d}" />
 	<object class="MixerBusEffectChain" id="{30a05306-d3e2-4c76-9d9b-7b7c39557a16}">
 		<relationship name="effects">

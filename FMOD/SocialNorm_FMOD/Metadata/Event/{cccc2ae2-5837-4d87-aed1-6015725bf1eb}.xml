@@ -5,7 +5,7 @@
 			<value>PauseMenu_AreYouSure</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{1d843f0b-fd8c-43d9-8d6e-1a151b1a3ab2}</destination>
@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{c2a6dc6b-f041-4eb1-8378-99f1ce8e4acf}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{b53b0edc-55a7-4f20-9cd9-f5be8c2366a7}</destination>
 		</relationship>
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{072ae59e-399f-4fc8-b517-c33c793256f4}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{d6e32f73-c140-40e2-97cf-3faa9bd706bd}</destination>
 		</relationship>
@@ -115,7 +121,11 @@
 			<destination>{4e36bf27-049b-4238-a353-c907655bea7d}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{f3d5a113-ed0b-46c5-9a69-e313c4e6c6b9}" />
+	<object class="MixerBusPanner" id="{f3d5a113-ed0b-46c5-9a69-e313c4e6c6b9}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{91bf3748-1617-4dc8-83f3-e1f91f5b7a39}" />
 	<object class="MixerBusEffectChain" id="{01792b73-41c6-473f-a4b0-c1aa1bf53fe7}">
 		<relationship name="effects">

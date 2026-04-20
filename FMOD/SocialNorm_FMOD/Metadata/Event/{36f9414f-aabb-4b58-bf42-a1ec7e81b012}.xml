@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{be0b39fb-b682-4d72-a8f5-9d870dae8b6b}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{7b154ea3-7140-4860-8391-4af76b4e1b80}</destination>
 		</relationship>
@@ -65,6 +68,9 @@
 	</object>
 	<object class="Timeline" id="{5e342621-d293-478c-b1d2-d6a6ef4c048d}" />
 	<object class="EventMixerMaster" id="{714caf09-3e97-4360-9527-6023c5090dc7}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{c2cd9b46-a34e-4eab-bfcf-48c95288cf0d}</destination>
 		</relationship>
@@ -100,7 +106,11 @@
 			<destination>{139f7525-6e6a-4a70-a8d9-225e4bf63ae0}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{6760835f-89c0-46f9-98df-df36bd1890d6}" />
+	<object class="MixerBusPanner" id="{6760835f-89c0-46f9-98df-df36bd1890d6}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0d8d58ce-1d07-4d30-9276-a3775c65af4a}" />
 	<object class="MixerBusEffectChain" id="{faa42d5f-4e9b-4433-b904-25083dd831a2}">
 		<relationship name="effects">

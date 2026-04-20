@@ -5,7 +5,7 @@
 			<value>Tablet_ComingOffScreen</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{35e42b4f-658c-44fc-9f5a-637f5fafb352}</destination>
@@ -76,6 +76,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{147c301d-fce4-4931-aad7-d64b52e230ee}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{87410f4d-d905-4c75-ae58-4f6d7d6736f0}</destination>
 		</relationship>
@@ -144,7 +147,11 @@
 			<destination>{2ec01d3f-19c9-4288-bb71-27bbfee591fb}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{6e165012-abb1-42c8-be01-205d02777377}" />
+	<object class="MixerBusPanner" id="{6e165012-abb1-42c8-be01-205d02777377}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{3e0ac6b7-3f12-4044-bd87-2811cf901110}" />
 	<object class="MixerBusEffectChain" id="{b0d8deb6-9833-4e34-b682-36a4516e1e39}">
 		<relationship name="effects">

@@ -5,7 +5,7 @@
 			<value>SlideButton_Accept</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{e3486047-e484-4358-8888-a7e749be151c}</destination>
@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{22a808db-90d8-484e-a46c-2a3e36bbb0c7}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{83b83d44-cefe-44e7-b952-35ec8753abde}</destination>
 		</relationship>
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{305cf974-32cc-44ac-90ae-56c73c3a71bc}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{7ce63c9c-3568-479b-9e0c-183860b6e62c}</destination>
 		</relationship>
@@ -118,7 +124,11 @@
 			<destination>{4adaad0c-342a-420b-9263-7fcd02648d1a}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{444a5ad3-8f63-4a75-b815-04c4d7c1f6fe}" />
+	<object class="MixerBusPanner" id="{444a5ad3-8f63-4a75-b815-04c4d7c1f6fe}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{db0f0911-8a6e-481b-989e-11e88a6e0d9f}" />
 	<object class="MixerBusEffectChain" id="{0adfe0e1-6030-41be-b30c-410dd7e39892}">
 		<relationship name="effects">

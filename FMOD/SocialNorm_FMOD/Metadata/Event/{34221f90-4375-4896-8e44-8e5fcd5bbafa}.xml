@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{4e21c65a-f974-4516-8135-c5c4babd2c68}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{b74ece3d-d2df-4cf8-8f93-acaaffbfeb49}</destination>
 		</relationship>
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{8c8cc4d0-3df9-4f1d-b99f-9ded89f6bfd8}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{3ba1591c-72bb-4b81-bdaf-27165fe67f70}</destination>
 		</relationship>
@@ -128,7 +134,11 @@
 			<destination>{ea7d8c5a-d569-4e42-b80b-e45dadca1dbc}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{bc77f3e7-8592-468d-a0be-ff6a1d9a4937}" />
+	<object class="MixerBusPanner" id="{bc77f3e7-8592-468d-a0be-ff6a1d9a4937}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{b0a6121d-2c84-4ec8-96f2-e8bd36bb0f14}" />
 	<object class="RandomizerModulator" id="{9d6dd84e-02ad-4e10-9c6c-2e2c110bb8ca}">
 		<property name="nameOfPropertyBeingModulated">
