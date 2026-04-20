@@ -107,6 +107,9 @@
 		<property name="name">
 			<value>Beach</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{17db9285-39d9-4a86-ae97-5703f0a90a7d}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{e2ce4ebd-ece7-4935-81cf-0e291fec2087}</destination>
 		</relationship>
@@ -145,6 +148,17 @@
 			<destination>{fe658f6e-627c-40dd-91c9-4d3d8919bfec}</destination>
 			<destination>{9a33cb05-68e7-43e5-adb2-c2a8fdbc5953}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{17db9285-39d9-4a86-ae97-5703f0a90a7d}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{e2ce4ebd-ece7-4935-81cf-0e291fec2087}">
 		<relationship name="effects">

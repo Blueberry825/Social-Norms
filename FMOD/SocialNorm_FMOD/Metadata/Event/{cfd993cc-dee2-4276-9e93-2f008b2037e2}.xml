@@ -113,6 +113,9 @@
 		<property name="name">
 			<value>OutsideCafe_Ambi</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{1a00243c-b176-4429-942a-6dc4c3946206}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{c5a8973f-51c2-4b68-a9be-c72bbf72588e}</destination>
 		</relationship>
@@ -153,6 +156,9 @@
 		<property name="name">
 			<value>InCafe</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{09a59897-5c1d-4028-b81c-759f2f8d8e82}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4c5a94ef-0f27-4e30-a2db-c8dcfa139a9b}</destination>
 		</relationship>
@@ -176,6 +182,17 @@
 			<destination>{0d8570b3-a00a-4123-96e4-036582bd7059}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{1a00243c-b176-4429-942a-6dc4c3946206}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{c5a8973f-51c2-4b68-a9be-c72bbf72588e}">
 		<relationship name="effects">
 			<destination>{0e8de93f-88b7-4a9a-a2bd-d8dfd14eebc8}</destination>
@@ -190,6 +207,17 @@
 		<relationship name="sounds">
 			<destination>{132af1e2-adbd-4a11-8663-a69bc99480ae}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{09a59897-5c1d-4028-b81c-759f2f8d8e82}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{4c5a94ef-0f27-4e30-a2db-c8dcfa139a9b}">
 		<relationship name="effects">

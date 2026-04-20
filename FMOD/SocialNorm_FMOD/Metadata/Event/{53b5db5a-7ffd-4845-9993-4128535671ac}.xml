@@ -117,6 +117,9 @@
 		<property name="name">
 			<value>Drips</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{1f8da3c6-3ad9-4a8e-8a1d-a87aa5b96c90}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{784f117b-490a-4d52-a71a-14b0e7e5c2e7}</destination>
 		</relationship>
@@ -152,6 +155,9 @@
 		<property name="name">
 			<value>Ambi</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{23ef06b7-3164-48d8-955a-23bb897c88c8}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{4a7e5c9e-f1cb-41d9-9127-e2f1792b32fb}</destination>
 		</relationship>
@@ -196,6 +202,17 @@
 			<destination>{b9750fab-d49d-48e4-ba16-486063d8381d}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{1f8da3c6-3ad9-4a8e-8a1d-a87aa5b96c90}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{784f117b-490a-4d52-a71a-14b0e7e5c2e7}">
 		<relationship name="effects">
 			<destination>{038f726d-6dfc-4a11-a034-2934d3fa42b4}</destination>
@@ -227,6 +244,17 @@
 			<destination>{fb92f7c0-2a27-43bc-a0a1-85f4a9f734cc}</destination>
 			<destination>{fea663cd-7356-4564-8d93-0d6febccaa24}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{23ef06b7-3164-48d8-955a-23bb897c88c8}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{4a7e5c9e-f1cb-41d9-9127-e2f1792b32fb}">
 		<relationship name="effects">

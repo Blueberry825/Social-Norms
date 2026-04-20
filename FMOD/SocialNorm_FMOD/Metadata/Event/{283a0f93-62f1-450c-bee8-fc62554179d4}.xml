@@ -5,7 +5,7 @@
 			<value>Ambi_Alien10</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{917eedfe-ec8e-4431-a1a1-530601d7ba25}</destination>
@@ -86,6 +86,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{49c8f793-7199-455f-9513-9fea682a8117}">
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{d67937bf-221b-4a7b-a197-0efc2ea4a2c1}</destination>
 		</relationship>
@@ -127,6 +130,9 @@
 		<property name="name">
 			<value>InCafe_Ambi</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{88999b3a-2d98-4b98-89b4-cfc65703d363}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{36982dd8-22ac-4358-95a9-9ddb15ba44a2}</destination>
 		</relationship>
@@ -171,6 +177,9 @@
 		<property name="name">
 			<value>OutCafe_Ambi</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{99d7843d-2da1-4541-8d58-fdceba716089}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{fa542f7b-09c7-452a-a7e5-2d25b98e45d8}</destination>
 		</relationship>
@@ -203,9 +212,15 @@
 		<property name="volume">
 			<value>-3</value>
 		</property>
+		<property name="overridingInputFormat">
+			<value>1</value>
+		</property>
 		<property name="name">
 			<value>Cutlery</value>
 		</property>
+		<relationship name="modulators">
+			<destination>{d5a3eb96-3fe3-499e-86ce-8c0257cd7bae}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{a3a90474-ba46-404e-93cf-072c4490f2b3}</destination>
 		</relationship>
@@ -221,7 +236,11 @@
 			<destination>{59823bbd-a092-4b04-b94e-2521fc0d998d}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{2679c628-28bf-40f5-96d5-db84070889f2}" />
+	<object class="MixerBusPanner" id="{2679c628-28bf-40f5-96d5-db84070889f2}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{c2b729be-82ca-4a1d-9cdc-9329ceaf2e6a}" />
 	<object class="RandomizerModulator" id="{a625d7a7-ad33-41cc-81ee-084c5a0067c4}">
 		<property name="nameOfPropertyBeingModulated">
@@ -243,6 +262,17 @@
 		<relationship name="sounds">
 			<destination>{ddfefa3e-9085-48b8-8c7a-005269909f66}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{88999b3a-2d98-4b98-89b4-cfc65703d363}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{36982dd8-22ac-4358-95a9-9ddb15ba44a2}">
 		<relationship name="effects">
@@ -275,6 +305,17 @@
 			<destination>{63c8c60d-22c9-4dfd-8a9f-2cad960506e6}</destination>
 			<destination>{f9def915-38af-487e-9952-1f73797be749}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{99d7843d-2da1-4541-8d58-fdceba716089}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{fa542f7b-09c7-452a-a7e5-2d25b98e45d8}">
 		<relationship name="effects">
@@ -314,12 +355,27 @@
 			<destination>{180929e7-6a13-493a-aa3d-0f5df44d23c4}</destination>
 		</relationship>
 	</object>
+	<object class="ADSRModulator" id="{d5a3eb96-3fe3-499e-86ce-8c0257cd7bae}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
+	</object>
 	<object class="MixerBusEffectChain" id="{a3a90474-ba46-404e-93cf-072c4490f2b3}">
 		<relationship name="effects">
 			<destination>{52bae5fa-70e3-4a5f-b9a9-da4a71f0ce8a}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{c89f120a-c4f9-4ffb-b2bf-ab9b06a8e7d8}" />
+	<object class="MixerBusPanner" id="{c89f120a-c4f9-4ffb-b2bf-ab9b06a8e7d8}">
+		<property name="overridingOutputFormat">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{59823bbd-a092-4b04-b94e-2521fc0d998d}" />
 	<object class="SingleSound" id="{ddfefa3e-9085-48b8-8c7a-005269909f66}">
 		<relationship name="audioFile">
