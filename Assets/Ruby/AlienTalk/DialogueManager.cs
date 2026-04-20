@@ -1,10 +1,12 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using static System.Net.Mime.MediaTypeNames;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -13,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     private GameObject GameOver;
     private GameObject tablet;
     private GameObject armObject;
+    private GameObject nextButton;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -51,6 +54,7 @@ public class DialogueManager : MonoBehaviour
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
 
+        nextButton = GameObject.Find("Next");
 
         //get the current alien at the start of the scene// SCENE MUST START TO DATE EACH NEW ALIEN
 
@@ -204,6 +208,21 @@ public class DialogueManager : MonoBehaviour
         DisplayNextAction();
 
     }
+
+    private void Update()
+    {
+        Mouse mouse = Mouse.current;
+
+
+        if (InteractionSelector_scr.optionTextBoxes[0].activeSelf == false && mouse.leftButton.wasPressedThisFrame)//if waiting for newbubbles and player clicks anywhere
+        {
+            DisplayNextAction();
+            OptionBubbles();
+            nextButton.SetActive(false);
+            nextButton.GetComponent<MusicUI_Click_Script>().ClickB_AudioCue();
+        }
+    }
+
 
     public void DisplayNextAction()
     {

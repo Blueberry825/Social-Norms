@@ -148,7 +148,7 @@ public class DateRandomiser_Script : MonoBehaviour
                 break;
         case 6:
                 alienOnScreen = queen;
-                Debug.Log("Case 6. Currently at the queen.");  //queen time
+                Debug.Log("Case 6. Currently at the queen. location 7");  //queen time
                 break;
         }
         Debug.Log(alienOnScreen.name);

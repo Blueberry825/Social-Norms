@@ -2,13 +2,14 @@ using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TabletAppearDissapear_Script : MonoBehaviour
 {
     [SerializeField] private Animator tabletAnimator;
     [SerializeField] private bool tabletClicked;
     private Animator matchedTXTAnimator;
-    private GameObject levelMapGO;
+    [SerializeField] private GameObject levelMapGO;
     private Animator levelMapAnimator;
     private bool mapOnScreenBool;
     private MapCharacterMovementAnim_Script mapCharacterMovementAnimScript;
@@ -38,6 +39,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
         datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+
+        MapOnOff(false);
 
     }
 
@@ -89,10 +92,12 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         if (mapOnScreenBool == true)
         {
             levelMapAnimator.SetBool("MapOnScreen", false);
+            levelMapGO.SetActive(false);
         }
         else 
         {
             levelMapAnimator.SetBool("MapOnScreen", true);
+            levelMapGO.SetActive(true);
         }
         mapCharacterMovementAnimScript.MapCharacterMovementAnims();        
     }
@@ -100,5 +105,14 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     public void MapOnOff(bool OnOff) //called once matched txt anim ends
     {
         levelMapAnimator.SetBool("MapOnScreen", OnOff);
+
+        if (levelMapAnimator.GetBool("MapOnScreen") == true)
+        {
+            levelMapGO.GetComponent<GraphicRaycaster>().enabled = true;
+        }
+        else if (levelMapAnimator.GetBool("MapOnScreen") == false)
+        {
+            levelMapGO.GetComponent<GraphicRaycaster>().enabled = false;
+        }
     }
 }

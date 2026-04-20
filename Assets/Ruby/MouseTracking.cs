@@ -62,15 +62,15 @@ public class MouseTracking : MonoBehaviour
         switch (optionID)//0 NEGATIVE | 1 NEUTRAL | 2 POSITIVE
         {
             case 0:
-                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 0);
+                currentAlienClone.GetComponent<Animator>().SetTrigger("Negative");
 
                 break;
             case 1:
-                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 1);
+                currentAlienClone.GetComponent<Animator>().SetTrigger("Neutral");
 
                 break;
             case 2:
-                currentAlienClone.GetComponent<Animator>().SetInteger("Mood", 2);
+                currentAlienClone.GetComponent<Animator>().SetTrigger("Positive");
 
                 break;
         }

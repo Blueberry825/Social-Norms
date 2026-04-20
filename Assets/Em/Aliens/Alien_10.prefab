@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1900248147776650248}
   - component: {fileID: 7698323956530789769}
   - component: {fileID: 5975410463430691546}
-  - component: {fileID: 2942604394914094288}
   m_Layer: 5
   m_Name: Alien_10
   m_TagString: Untagged
@@ -171,15 +170,3 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2942604394914094288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1603048764201989246}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b241b13f038a3641b5d7420c01eb23b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

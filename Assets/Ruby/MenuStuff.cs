@@ -1,14 +1,25 @@
+using FMOD;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class MenuStuff : MonoBehaviour
+public class MenuStuff : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public void HideObj(GameObject Obj)
+    [SerializeField]private bool onScreen;
+    [SerializeField] GameObject locationDetails;
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
-        Obj.SetActive(false);
+        onScreen = true;
+        locationDetails.SetActive(true);
+        print("true");
     }
 
-    public void ShowObj(GameObject Obj)
+    public void OnPointerExit(PointerEventData eventData)
     {
-        Obj.SetActive(true);
+        onScreen = false;
+        locationDetails.SetActive(false);
+        print("false");
     }
+
 }
+

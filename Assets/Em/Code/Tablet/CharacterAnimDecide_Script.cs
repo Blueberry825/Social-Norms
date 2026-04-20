@@ -69,14 +69,13 @@ public class CharacterAnimDecide_Script : MonoBehaviour
             {
                 loadSceneScript.SwapTabletVisability_();
                 loadSceneScript.LoadDate();
-
             }
         }
         else
         {
             loadSceneScript.SwapTabletVisability_();
             SceneManager.LoadScene("Queen_Scene");
+            print("loading queen scene");
         }
-  
     }
 }
