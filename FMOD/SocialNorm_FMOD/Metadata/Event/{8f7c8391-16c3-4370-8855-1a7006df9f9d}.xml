@@ -5,7 +5,7 @@
 			<value>Interactions_Appear</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d1d73193-31df-4e00-86ad-13b68fd72048}</destination>
@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{faf11237-d749-4c18-8eff-793b023eaf1f}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{c48d8bef-8c32-41f9-8a20-f72b4c8b63aa}</destination>
 		</relationship>
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{c67d455e-0dac-486e-b743-99e0669167fb}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{1295890f-08cf-4ce7-8e84-f1b0d9aec692}</destination>
 		</relationship>
@@ -128,7 +134,11 @@
 			<destination>{ffdbbb10-0e72-4e08-8482-e0683b788b7c}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{86133d05-7ca3-48af-b93a-0a01a83a05b5}" />
+	<object class="MixerBusPanner" id="{86133d05-7ca3-48af-b93a-0a01a83a05b5}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{c1bb882c-eb1d-45d8-aa74-854c642605ff}" />
 	<object class="RandomizerModulator" id="{8ff338a3-dd67-4959-8434-f6647312bf07}">
 		<property name="nameOfPropertyBeingModulated">

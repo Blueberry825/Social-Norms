@@ -5,7 +5,7 @@
 			<value>OrangeAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -139,6 +139,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{61150fc1-9b68-446c-8739-9760aa13c70d}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{53c5eb44-feab-4712-9a1b-b82e34a21ced}</destination>
 		</relationship>
@@ -223,8 +226,14 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{e47998b1-abb1-4c69-b23d-84b0bb921875}">
+		<property name="start">
+			<value>12</value>
+		</property>
 		<property name="length">
-			<value>109.89843537414966</value>
+			<value>97.898435374149642</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>12</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{891f74c0-e933-40f8-8419-12c3ee0e16e2}</destination>
@@ -269,8 +278,14 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{284ead3f-2e25-4aeb-9ced-c675e31e9f30}">
+		<property name="start">
+			<value>36</value>
+		</property>
 		<property name="length">
-			<value>109.89843537414966</value>
+			<value>73.898435374149614</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>36</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{0aefce3d-f44d-4881-a23e-dba2b747538d}</destination>
@@ -315,8 +330,14 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{55ba5422-1c43-4da4-ae7b-824239e19171}">
+		<property name="start">
+			<value>60</value>
+		</property>
 		<property name="length">
-			<value>109.89843537414966</value>
+			<value>49.89843537414967</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>60</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{f5057cbd-6498-4a32-8828-a3b4e5135e6a}</destination>
@@ -450,7 +471,11 @@
 			<destination>{972786b2-c2e6-444c-82e1-394c20561917}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{38356fb4-161b-4b4c-979e-89f6d43dc668}" />
+	<object class="MixerBusPanner" id="{38356fb4-161b-4b4c-979e-89f6d43dc668}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{0383aab4-1dbb-476b-9a3b-4ca203bb8245}" />
 	<object class="TransitionSourceFadeOutCurve" id="{42c944d2-b4ff-4c6d-ad6e-b5853229e000}">
 		<relationship name="startPoint">

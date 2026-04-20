@@ -5,7 +5,7 @@
 			<value>GreenAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -124,6 +124,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{29f2f7a2-2021-4bf1-a45c-26e8adf4bf93}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="modulators">
 			<destination>{91a57277-57b3-4044-8931-cd8d03fd7f96}</destination>
 		</relationship>
@@ -163,7 +166,7 @@
 	</object>
 	<object class="SingleSound" id="{3e1d1b6c-7020-4b1f-8765-314569394adb}">
 		<property name="length">
-			<value>79.343741496598639</value>
+			<value>74.25</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{21fb4294-91b8-402a-b73d-8e0ee26c2299}</destination>
@@ -209,7 +212,7 @@
 	</object>
 	<object class="SingleSound" id="{b651b571-7d6a-476a-bcc8-b30796e1d02c}">
 		<property name="length">
-			<value>79.343741496598639</value>
+			<value>74.25</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{83a45c5a-3500-43cb-9c20-f75f5728cc36}</destination>
@@ -255,7 +258,7 @@
 	</object>
 	<object class="SingleSound" id="{40838c96-c8b1-4fab-9197-548efb7351df}">
 		<property name="length">
-			<value>79.343741496598639</value>
+			<value>74.25</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{8a6d7e51-6299-4aae-97cc-5a64ced2a418}</destination>
@@ -324,7 +327,7 @@
 	</object>
 	<object class="NamedMarker" id="{cfde7007-9090-485b-b850-355fbfa25a77}">
 		<property name="position">
-			<value>79.343741496598639</value>
+			<value>75</value>
 		</property>
 		<property name="name">
 			<value>End</value>
@@ -355,7 +358,7 @@
 			<value>0</value>
 		</property>
 		<property name="length">
-			<value>79.343741496598639</value>
+			<value>74.25</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{651aa758-2f29-43c7-a70b-15bc8b6ce511}</destination>
@@ -389,7 +392,11 @@
 			<destination>{ad55d450-f024-4085-b007-99ac86e191b4}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{e47f8f47-329b-4b64-9e18-52b192d9644c}" />
+	<object class="MixerBusPanner" id="{e47f8f47-329b-4b64-9e18-52b192d9644c}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{7179c1ab-dd84-4ad2-9a75-a1414cca1d0a}" />
 	<object class="TransitionSourceFadeOutCurve" id="{083eb7a4-8eb7-4af4-8a4e-0b448e3b1f0f}">
 		<relationship name="startPoint">

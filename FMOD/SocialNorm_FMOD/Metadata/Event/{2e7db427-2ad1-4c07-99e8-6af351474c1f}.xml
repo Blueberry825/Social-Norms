@@ -5,7 +5,7 @@
 			<value>BackgroundMusic_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5508303d-fea7-496a-8900-16a8efda8c70}</destination>
@@ -50,6 +50,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{ab25e95b-4ec7-4dca-9ca8-025feb464cf3}">
+		<relationship name="masters">
+			<destination>{3c9f3937-41ce-4d1e-b334-86506cc5323b}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{23849136-5d59-4dc7-82e5-7a0640da846f}</destination>
 		</relationship>
@@ -151,8 +154,11 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b289234c-7d46-422a-b540-881af7ade7ae}">
+		<property name="volume">
+			<value>-3</value>
+		</property>
 		<property name="overridingInputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<property name="name">
 			<value>Music</value>
@@ -181,7 +187,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{0e328eb2-5e8a-4290-9884-2e8cdd898f9a}">
 		<property name="overridingOutputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f19c34d1-cfe5-4702-aaef-94aeb5780823}" />

@@ -5,7 +5,7 @@
 			<value>Tablet_Movement</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{42607167-1669-4a97-b6ea-f57d81659219}</destination>
@@ -49,6 +49,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{dbe5ad66-d8b7-44c2-91f0-50f6729081b4}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{fc979b11-5da9-44ef-9c9c-8ed71d700230}</destination>
 		</relationship>
@@ -85,6 +88,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{0307eed2-81ab-48bf-9fa1-403a94567926}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{32200fbd-3d32-4359-b1a1-641d69783ca6}</destination>
 		</relationship>
@@ -139,7 +145,11 @@
 			<destination>{c0bed036-9770-4682-9772-7c1c9b458333}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{4420f1e6-edc5-45fb-8ac4-bb3346a81406}" />
+	<object class="MixerBusPanner" id="{4420f1e6-edc5-45fb-8ac4-bb3346a81406}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{d6073324-ba80-4767-8554-689e4371bac9}" />
 	<object class="MixerBusEffectChain" id="{0238a9f2-a436-4624-a321-98ccec97fbc6}">
 		<relationship name="effects">

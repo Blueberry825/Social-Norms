@@ -5,7 +5,7 @@
 			<value>LoveMeter_Lose</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{d1d73193-31df-4e00-86ad-13b68fd72048}</destination>
@@ -46,6 +46,9 @@
 		</relationship>
 	</object>
 	<object class="MixerInput" id="{fad4b44b-cff2-4e56-ab5c-69099982e67f}">
+		<relationship name="masters">
+			<destination>{48500ca3-4582-47bc-aa6b-529eea7d36ea}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{f237bacd-673a-4d50-af92-c4dcb9b0d226}</destination>
 		</relationship>
@@ -72,6 +75,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{a8e03211-6ac3-4795-90df-06c3ba352b88}">
+		<property name="overridingInputFormat">
+			<value>0</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{8ef774d2-8cbd-4064-9a6e-af9f44198f4c}</destination>
 		</relationship>
@@ -122,7 +128,11 @@
 			<destination>{678ab45f-39fd-4c9d-94bd-567c23f3a337}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{76e46710-76b4-42b7-b62b-b4bb93c35303}" />
+	<object class="MixerBusPanner" id="{76e46710-76b4-42b7-b62b-b4bb93c35303}">
+		<property name="overridingOutputFormat">
+			<value>0</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{12c9579b-179c-42eb-9c2e-64dc25cf5312}" />
 	<object class="RandomizerModulator" id="{7ecdeb5b-47cf-4363-b24f-bd95debd01d7}">
 		<property name="nameOfPropertyBeingModulated">
