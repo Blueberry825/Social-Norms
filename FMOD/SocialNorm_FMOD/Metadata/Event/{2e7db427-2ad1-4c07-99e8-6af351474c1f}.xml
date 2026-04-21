@@ -5,7 +5,7 @@
 			<value>BackgroundMusic_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5508303d-fea7-496a-8900-16a8efda8c70}</destination>
@@ -158,7 +158,7 @@
 			<value>-7</value>
 		</property>
 		<property name="overridingInputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 		<property name="name">
 			<value>Music</value>
@@ -187,7 +187,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{0e328eb2-5e8a-4290-9884-2e8cdd898f9a}">
 		<property name="overridingOutputFormat">
-			<value>1</value>
+			<value>0</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f19c34d1-cfe5-4702-aaef-94aeb5780823}" />
