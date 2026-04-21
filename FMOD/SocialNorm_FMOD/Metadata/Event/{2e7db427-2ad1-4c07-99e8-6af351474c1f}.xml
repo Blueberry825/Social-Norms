@@ -5,7 +5,7 @@
 			<value>BackgroundMusic_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{5508303d-fea7-496a-8900-16a8efda8c70}</destination>
@@ -155,10 +155,10 @@
 	</object>
 	<object class="EventMixerGroup" id="{b289234c-7d46-422a-b540-881af7ade7ae}">
 		<property name="volume">
-			<value>-7</value>
+			<value>0.5</value>
 		</property>
 		<property name="overridingInputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<property name="name">
 			<value>Music</value>
@@ -187,7 +187,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{0e328eb2-5e8a-4290-9884-2e8cdd898f9a}">
 		<property name="overridingOutputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{f19c34d1-cfe5-4702-aaef-94aeb5780823}" />
