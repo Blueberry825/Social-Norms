@@ -89,7 +89,8 @@ public class DialogueManager : MonoBehaviour
     {
         armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
+        GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission unsuccessful.";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
@@ -99,7 +100,8 @@ public class DialogueManager : MonoBehaviour
     public void LoseState2()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion soldier";
+        GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
+        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion, soldier.";
         Level_Location_Script_scr.currentLocation--;
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
@@ -115,6 +117,7 @@ public class DialogueManager : MonoBehaviour
     public void WinState()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
+        GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date successful";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
         StayOnLocation(false);
