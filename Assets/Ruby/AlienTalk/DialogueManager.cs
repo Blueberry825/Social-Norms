@@ -24,6 +24,7 @@ public class DialogueManager : MonoBehaviour
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
     private SaveAndLoad SaveAndLoad_scr;
+    private GameOverResultText_Script gameoverResultText_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -87,6 +88,9 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+        gameoverResultText_scr.BadDate();
+
         armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
@@ -99,6 +103,9 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState2()
     {
+        gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+        gameoverResultText_scr.BadDate();
+
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion, soldier.";
@@ -116,6 +123,9 @@ public class DialogueManager : MonoBehaviour
 
     public void WinState()
     {
+        gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+        gameoverResultText_scr.GoodDate();
+
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date successful";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
