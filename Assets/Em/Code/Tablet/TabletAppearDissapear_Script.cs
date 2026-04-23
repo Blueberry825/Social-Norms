@@ -18,6 +18,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
     private Taskbar_AppOpenAnim_Script datingApp;
     [SerializeField] private Animator startAreaAnimator;
+    private PlaySlideAnim_Script slideAnim_Script;
 
 
     //will also have home page, to allow swapping between 
@@ -39,6 +40,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
         datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+        slideAnim_Script = GameObject.Find("HeartShadowAnim").GetComponent<PlaySlideAnim_Script>();
 
         MapOnOff(false);
 
@@ -60,11 +62,15 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
         tabletClicked = tabletAnimator.GetBool("TabletOnScreen");
 
+
         if (tabletClicked == true)
         {
             tabletAnimator.SetBool("TabletOnScreen", false);
             tabletOnScreenBool = false;
             datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
+
+            slideAnim_Script.playSlideAnim(false);
+
 
             datingApp.Taskbar_SwapDatingAppClose();
             matchedTXTAnimator.SetTrigger("Reset");
@@ -74,6 +80,9 @@ public class TabletAppearDissapear_Script : MonoBehaviour
             tabletAnimator.SetBool("TabletOnScreen", true);
             tabletOnScreenBool = true;
             datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
+
+
+            slideAnim_Script.playSlideAnim(true);
 
             datingApp.Taskbar_SwapDatingAppOpen();
             startAreaAnimator.SetBool("OnScreen", false);

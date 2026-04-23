@@ -477,7 +477,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab4436b826e5585409df8c0306d1cee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ambiPlaying: 0
 --- !u!114 &69523952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1545,7 +1544,7 @@ PrefabInstance:
       objectReference: {fileID: 613510898}
     - target: {fileID: 3452038024569291556, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: settingsButton
+      value: CloseSettings
       objectReference: {fileID: 0}
     - target: {fileID: 4440465919408699200, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_Name
