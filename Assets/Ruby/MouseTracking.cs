@@ -46,6 +46,7 @@ public class MouseTracking : MonoBehaviour
 
         if (interactable && mouse.leftButton.wasPressedThisFrame)//this is where the animation should be?
         {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Click_Low");
             optionID = currentOptionObj.GetComponent<OptionSelector>().interactionID;
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
