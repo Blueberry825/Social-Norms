@@ -7,6 +7,7 @@ public class SaveAndLoad : MonoBehaviour
     [SerializeField] public static SaveAndLoad instance;
 
     public GameObject[] alienThumbnailHolders;
+    public Image testingImage;
 
     private void Awake()
     {
@@ -27,10 +28,11 @@ public class SaveAndLoad : MonoBehaviour
         Level_Location_Script_scr = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
         listAlien_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         alienThumbnailHolders = GameObject.FindGameObjectsWithTag("Thumbnail");
+        var locationHolders = GameObject.FindGameObjectsWithTag("holder");
 
-        for (int i = 0; i < alienThumbnailHolders.Length; i++)
+        for (int i = 0; i < locationHolders.Length; i++)
         {
-            alienThumbnailHolders[i].SetActive(false);
+            locationHolders[i].SetActive(false);
         }
     }
 
@@ -76,22 +78,23 @@ public class SaveAndLoad : MonoBehaviour
             switch (currentLocation - 1) //set the location images for each location here
             {
                 case 0://if location 0(1), 
-                    alienThumbnailHolders[0].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[0].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    print("getting here");
                     break;
                 case 1:
-                    alienThumbnailHolders[1].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[1].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[1].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 2:
-                    alienThumbnailHolders[2].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[2].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[2].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 3:
-                    alienThumbnailHolders[3].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[3].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[3].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 4:
-                    alienThumbnailHolders[4].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[4].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[4].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 5:
-                    alienThumbnailHolders[5].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[5].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[5].gameObject.GetComponent<Image>().sprite;
                     break;
 
             }

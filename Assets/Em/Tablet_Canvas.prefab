@@ -184,7 +184,7 @@ GameObject:
   - component: {fileID: 6137229259996530342}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 7417876071987919423}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1201,7 +1201,7 @@ GameObject:
   - component: {fileID: 4024994807124135138}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1253,7 +1253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1568,7 +1568,7 @@ GameObject:
   - component: {fileID: 4960261850119981583}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1620,7 +1620,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 5325577201960751710}
   m_Layer: 5
   m_Name: LocationDetails (3)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2088,7 +2088,7 @@ GameObject:
   - component: {fileID: 1097172815051462076}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2140,7 +2140,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2786,7 +2786,7 @@ GameObject:
   - component: {fileID: 2136039990088127589}
   m_Layer: 5
   m_Name: LocationDetails (4)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 1654223908212170456}
   m_Layer: 5
   m_Name: AlienAtLocation1
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3932,7 +3932,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 4f932e5a1c44ebe448fe3f0888fa213a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4072,7 +4072,7 @@ GameObject:
   - component: {fileID: 2193261479936134176}
   m_Layer: 5
   m_Name: LocationDetails (2)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4361,7 +4361,7 @@ GameObject:
   - component: {fileID: 8775556728839208456}
   m_Layer: 5
   m_Name: LocationDetails (5)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4626,7 +4626,7 @@ GameObject:
   - component: {fileID: 6284958613539814602}
   m_Layer: 5
   m_Name: LocationDetails (6)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4907,7 +4907,7 @@ GameObject:
   - component: {fileID: 2099852739191181514}
   m_Layer: 5
   m_Name: LocationDetails (1)
-  m_TagString: Thumbnail
+  m_TagString: holder
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
