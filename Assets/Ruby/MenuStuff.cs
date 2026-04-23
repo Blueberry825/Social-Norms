@@ -11,14 +11,12 @@ public class MenuStuff : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         onScreen = true;
         locationDetails.SetActive(true);
-        print("true");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         onScreen = false;
         locationDetails.SetActive(false);
-        print("false");
     }
 
 }
