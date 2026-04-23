@@ -15,6 +15,8 @@ public class DateSceneSpawner : MonoBehaviour
     [SerializeField] private List<GameObject> backgroundList;
     [SerializeField] private GameObject currentBackground;
 
+    private Vector3 Scale, Location;
+
     private MouseTracking MouseTracking_scr;
 
     public GameObject tempSpawnedAlien;
@@ -35,15 +37,69 @@ public class DateSceneSpawner : MonoBehaviour
             currentBackground = backgroundList[alienNumber];
             GameObject bg = Instantiate(currentBackground, gameObject.transform);
             bg.transform.localScale = new Vector3(100, 100, 1);
-
-            tempSpawnedAlien = Instantiate(currentAlienDate, gameObject.transform);
-            tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
-            tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
-            tempSpawnedAlien.transform.localScale = new Vector3(60, 60);
-            Debug.Log("changing spriterender");
-
-            MouseTracking_scr.currentAlienClone = tempSpawnedAlien;//ensuring mouse has acess to clones animator
         }
+    }
+
+    public void CloneSizeAndLocation()
+    {
+        alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
+
+        switch(alienNumber)//set individual location and scale for each 
+        {
+            case 0:
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
+                break;
+            case 1:
+
+                break;
+            case 2:
+
+                break;
+            case 3:
+
+                break;
+            case 4:
+
+                break;
+            case 5:
+
+                break;
+            case 6:
+
+                break;
+            case 7:
+
+                break;
+            case 8:
+
+                break;
+            case 9:
+
+                break;
+            case 10:
+
+                break;
+            case 11:
+
+                break;
+            case 12:
+
+                break;
+            case 13:
+
+                break;
+            case 14:
+
+                break;
+        }
+
+        tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity);//set location
+        tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
+        tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
+        tempSpawnedAlien.transform.localScale = Scale;//set scale
+
+        MouseTracking_scr.currentAlienClone = tempSpawnedAlien;//ensuring mouse has acess to clones animator
 
     }
 

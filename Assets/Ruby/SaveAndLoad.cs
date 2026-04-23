@@ -82,19 +82,19 @@ public class SaveAndLoad : MonoBehaviour
                     print("getting here");
                     break;
                 case 1:
-                    alienThumbnailHolders[1].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[1].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[1].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 2:
-                    alienThumbnailHolders[2].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[2].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[2].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 3:
-                    alienThumbnailHolders[3].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[3].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[3].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 4:
-                    alienThumbnailHolders[4].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[4].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[4].gameObject.GetComponent<Image>().sprite;
                     break;
                 case 5:
-                    alienThumbnailHolders[5].transform.GetComponentInChildren<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    alienThumbnailHolders[5].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[5].gameObject.GetComponent<Image>().sprite;
                     break;
 
             }
