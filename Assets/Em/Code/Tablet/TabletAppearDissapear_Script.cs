@@ -92,18 +92,17 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         if (mapOnScreenBool == true)
         {
             levelMapAnimator.SetBool("MapOnScreen", false);
-            levelMapGO.SetActive(false);
         }
         else 
         {
             levelMapAnimator.SetBool("MapOnScreen", true);
-            levelMapGO.SetActive(true);
         }
         mapCharacterMovementAnimScript.MapCharacterMovementAnims();        
     }
 
     public void MapOnOff(bool OnOff) //called once matched txt anim ends
     {
+     
         levelMapAnimator.SetBool("MapOnScreen", OnOff);
 
         if (levelMapAnimator.GetBool("MapOnScreen") == true)

@@ -1999,11 +1999,11 @@ GameObject:
   - component: {fileID: 5325577201960751710}
   m_Layer: 5
   m_Name: LocationDetails (3)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3612908924853584558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2773,11 +2773,11 @@ GameObject:
   - component: {fileID: 2136039990088127589}
   m_Layer: 5
   m_Name: LocationDetails (4)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &8037682387139560423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4059,11 +4059,11 @@ GameObject:
   - component: {fileID: 2193261479936134176}
   m_Layer: 5
   m_Name: LocationDetails (2)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3291470699437308173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4348,11 +4348,11 @@ GameObject:
   - component: {fileID: 8775556728839208456}
   m_Layer: 5
   m_Name: LocationDetails (5)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1565111682210417668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4613,11 +4613,11 @@ GameObject:
   - component: {fileID: 6284958613539814602}
   m_Layer: 5
   m_Name: LocationDetails (6)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2837764041094942661
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4894,11 +4894,11 @@ GameObject:
   - component: {fileID: 2099852739191181514}
   m_Layer: 5
   m_Name: LocationDetails (1)
-  m_TagString: Untagged
+  m_TagString: Thumbnail
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3119483629788739935
 RectTransform:
   m_ObjectHideFlags: 0
