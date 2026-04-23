@@ -9,13 +9,11 @@ public class Music_SceneChange_Script : MonoBehaviour
 
     private FullScreenToggle_Script screenToggle_Script;
     private TaskBar_DateOpenAnim_Script taskBar_DateOpenAnim;
-    private Ambience_Script ambi_script;
 
     private void Start()
     {
         bkMusic = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
         settingsBGScript = GameObject.Find("Settings_Background").GetComponent<settingsBackgroundAnim_Script>();
-        ambi_script = GameObject.Find("BackgroundMusic_Holder").GetComponent<Ambience_Script>();
 
         sceneChanged_music();
     }
@@ -45,15 +43,6 @@ public class Music_SceneChange_Script : MonoBehaviour
         {
             bkMusic.bgmStartLoc_b = false;
             bkMusic.bgmStartLoc();
-        }
-
-        if (currentSceneName == "Date_Scene")
-        {
-            ambi_script.startAmbience();
-        }
-        else 
-        {
-            ambi_script.stopAmbience();
         }
     }
 }

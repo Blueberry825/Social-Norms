@@ -5,7 +5,7 @@
 			<value>QueenAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -218,7 +218,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{e378be47-2709-4433-8694-a5dbb0821e07}">
 		<property name="overridingInputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c0023a6d-b413-4612-901d-581319926701}</destination>
@@ -778,7 +778,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{5a2ea0e4-7501-44fe-a0de-fdee2d1d0553}">
 		<property name="overridingOutputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{785c20d1-f2e9-491a-a64b-f582afcefe02}" />

@@ -53,12 +53,16 @@ public class BackgroundMusic_Script : MonoBehaviour
 
     #region Busses
     FMOD.Studio.Bus Master_Bus;
-    [SerializeField] private float Master_Volume = 1.0f;
+     private float Master_Volume = 1.0f;
     FMOD.Studio.Bus Music_Bus;
-    [SerializeField] private float Music_Volume = 1.0f;
+    private float Music_Volume = 1.0f;
     FMOD.Studio.Bus SFX_Bus;
-    [SerializeField] private float SFX_Volume = 1.0f;
+    private float SFX_Volume = 1.0f;
+
+    FMOD.Studio.Bus ambiBus;
     #endregion
+
+    private Ambience_Script ambiScript;
 
     private void Start()
     {
@@ -66,6 +70,9 @@ public class BackgroundMusic_Script : MonoBehaviour
         Master_Bus = Music_Bus = FMODUnity.RuntimeManager.GetBus("bus:/Master_Bus");
         Music_Bus = FMODUnity.RuntimeManager.GetBus("bus:/Master_Bus/BackgroundMusic_Bus");
         SFX_Bus = FMODUnity.RuntimeManager.GetBus("bus:/Master_Bus/SFX_Bus");
+        ambiBus = FMODUnity.RuntimeManager.GetBus("bus:/Master_Bus/Ambience_Bus");
+
+        ambiScript = GameObject.Find("Ambience_Holder").GetComponent<Ambience_Script>();
 
         GetAndSetSettings();
         SetTo_Title_Music();
@@ -146,9 +153,6 @@ public class BackgroundMusic_Script : MonoBehaviour
         }
     }
 
-
-
-
     public bool IsPlaying(FMOD.Studio.EventInstance instance) //checks if already playing
     {
         FMOD.Studio.PLAYBACK_STATE currentMusicState;
@@ -190,6 +194,8 @@ public class BackgroundMusic_Script : MonoBehaviour
 
         if (sceneName == "Date_Scene")
         {
+            ambiScript.startAmbience();
+
             dateRandomiser_Script = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
             alienOnScreen_ = dateRandomiser_Script.alienOnScreen;
             string alienColour_ = alienOnScreen_.GetComponent<AliensDated_Script>().alienColour;
@@ -208,9 +214,10 @@ public class BackgroundMusic_Script : MonoBehaviour
             }
         }
 
-        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene")
+        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene" || sceneName == "Queen_Scene")
         {
             SetTo_Title_Music();
+            ambiScript.stopAmbience();
         }
     }
 

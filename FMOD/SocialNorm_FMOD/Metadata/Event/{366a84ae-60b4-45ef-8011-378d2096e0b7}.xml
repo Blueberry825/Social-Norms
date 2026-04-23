@@ -5,7 +5,7 @@
 			<value>Title_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -236,7 +236,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{8f204979-92f7-417a-89d5-9d713cbee1a9}">
 		<property name="overridingInputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{66a536a5-14c8-4175-a596-835826852f47}</destination>
@@ -861,7 +861,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{22e70053-4ebb-49b4-baa4-4761da6ff7f4}">
 		<property name="overridingOutputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{a7676ffe-5ce7-4df9-8598-1f728e34a5bd}" />

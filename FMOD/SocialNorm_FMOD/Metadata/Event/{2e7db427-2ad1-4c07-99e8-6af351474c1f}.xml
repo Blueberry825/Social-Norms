@@ -154,6 +154,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{b289234c-7d46-422a-b540-881af7ade7ae}">
+		<property name="volume">
+			<value>-15</value>
+		</property>
 		<property name="overridingInputFormat">
 			<value>1</value>
 		</property>

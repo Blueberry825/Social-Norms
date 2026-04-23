@@ -5,7 +5,7 @@
 			<value>GreenAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -155,7 +155,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{29f2f7a2-2021-4bf1-a45c-26e8adf4bf93}">
 		<property name="overridingInputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{91a57277-57b3-4044-8931-cd8d03fd7f96}</destination>
@@ -510,7 +510,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{e47f8f47-329b-4b64-9e18-52b192d9644c}">
 		<property name="overridingOutputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{7179c1ab-dd84-4ad2-9a75-a1414cca1d0a}" />
@@ -852,7 +852,7 @@
 			<value>0.0041050903119868639</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{5705f000-c884-48c9-bf06-d57710452a9b}">
@@ -860,7 +860,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-2</value>
+			<value>-5.00000381</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{55f8847b-99ea-44e9-ac7d-7f4ba414e5a3}">
@@ -868,7 +868,7 @@
 			<value>0.0057471264367816091</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{b1a6c416-64da-44ec-a1f7-4526b4d2728a}">
@@ -876,7 +876,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-42</value>
+			<value>-49.5000076</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{adcaae51-52a1-4c9e-82e4-4cfc49a6e40e}">
@@ -884,7 +884,7 @@
 			<value>0.0032840722495894909</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ee1625f7-7eb4-4ac9-a5ab-1385b765eed8}">
@@ -892,7 +892,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{79333814-fbd2-4e9a-a4e9-c8d6603cc074}">
@@ -900,7 +900,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-6</value>
+			<value>-9</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{c94da90c-70e9-491e-8383-fc7d87050ef2}">
@@ -908,7 +908,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-3</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{98afaebf-5b56-45d9-9c27-7b18619754cd}">
@@ -916,7 +916,7 @@
 			<value>1</value>
 		</property>
 		<property name="value">
-			<value>-17</value>
+			<value>-20</value>
 		</property>
 	</object>
 </objects>

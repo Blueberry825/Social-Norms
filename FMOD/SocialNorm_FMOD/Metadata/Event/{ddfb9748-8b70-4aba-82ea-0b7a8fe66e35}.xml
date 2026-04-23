@@ -5,7 +5,7 @@
 			<value>OrangeAlien_Music</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{2e7db427-2ad1-4c07-99e8-6af351474c1f}</destination>
@@ -185,7 +185,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{61150fc1-9b68-446c-8739-9760aa13c70d}">
 		<property name="overridingInputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{53c5eb44-feab-4712-9a1b-b82e34a21ced}</destination>
@@ -629,7 +629,7 @@
 	</object>
 	<object class="MixerBusPanner" id="{38356fb4-161b-4b4c-979e-89f6d43dc668}">
 		<property name="overridingOutputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{0383aab4-1dbb-476b-9a3b-4ca203bb8245}" />
