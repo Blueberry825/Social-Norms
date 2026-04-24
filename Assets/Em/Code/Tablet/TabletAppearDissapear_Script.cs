@@ -101,10 +101,12 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         if (mapOnScreenBool == true)
         {
             levelMapAnimator.SetBool("MapOnScreen", false);
+            slideAnim_Script.playSlideAnim(false);
         }
         else 
         {
             levelMapAnimator.SetBool("MapOnScreen", true);
+            slideAnim_Script.playSlideAnim(true);
         }
         mapCharacterMovementAnimScript.MapCharacterMovementAnims();        
     }

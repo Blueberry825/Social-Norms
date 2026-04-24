@@ -33,6 +33,5 @@ public class PlaySlideAnim_Script : MonoBehaviour
     { 
         yield return new WaitForSeconds(1);
         slideAnimator.SetBool("played", true);
-
     }
 }
