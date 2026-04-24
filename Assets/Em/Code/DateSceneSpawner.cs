@@ -38,6 +38,8 @@ public class DateSceneSpawner : MonoBehaviour
             GameObject bg = Instantiate(currentBackground, gameObject.transform);
             bg.transform.localScale = new Vector3(100, 100, 1);
         }
+
+        CloneSizeAndLocation();
     }
 
     public void CloneSizeAndLocation()
@@ -51,50 +53,64 @@ public class DateSceneSpawner : MonoBehaviour
                 Scale = new Vector3(100, 100);
                 break;
             case 1:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 2:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 3:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 4:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 5:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 6:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 7:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 8:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 9:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 10:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 11:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 12:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 13:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
             case 14:
-
+                Location = new Vector3(0, 0, 0);
+                Scale = new Vector3(100, 100);
                 break;
         }
 
-        tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity);//set location
+        tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity, gameObject.transform);//set location
         tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
         tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
         tempSpawnedAlien.transform.localScale = Scale;//set scale

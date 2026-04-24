@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: cd15e68c2a3e48148b704d61afaa941c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8138266564730408650
+    second: Alien14_Positive_0009_0
+  - first:
+      213: -2137847253158953820
+    second: Alien14_Positive_0009_1
+  - first:
+      213: -8816213650672187461
+    second: Alien14_Positive_0009_2
+  - first:
+      213: 3079789480065078626
+    second: Alien14_Positive_0009_3
+  - first:
+      213: -863719866274864867
+    second: Alien14_Positive_0009_4
+  - first:
+      213: 250352301924308617
+    second: Alien14_Positive_0009_5
+  - first:
+      213: -4967763025252689727
+    second: Alien14_Positive_0009_6
+  - first:
+      213: 1761110620784080101
+    second: Alien14_Positive_0009_7
+  - first:
+      213: 579244348389401698
+    second: Alien14_Positive_0009_8
+  - first:
+      213: -1999253068399103943
+    second: Alien14_Positive_0009_9
+  - first:
+      213: 9007573089548218338
+    second: Alien14_Positive_0009_10
+  - first:
+      213: -8398508594299761310
+    second: Alien14_Positive_0009_11
+  - first:
+      213: -5030762914478421055
+    second: Alien14_Positive_0009_12
+  - first:
+      213: 4148213460592653272
+    second: Alien14_Positive_0009_13
+  - first:
+      213: -7692388285251476240
+    second: Alien14_Positive_0009_14
+  - first:
+      213: -8701934556615105215
+    second: Alien14_Positive_0009_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 0
+        width: 1849
+        height: 1060
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6313ec18da11f0f80800000000000000
+      internalID: -8138266564730408650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_1
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 285
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac7a630047d452e0800000000000000
+      internalID: -2137847253158953820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_2
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 149
+        width: 84
+        height: 225
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb70cbf156486a580800000000000000
+      internalID: -8816213650672187461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_3
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 311
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2659346f63c9dba20800000000000000
+      internalID: 3079789480065078626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_4
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 284
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d112d399b537304f0800000000000000
+      internalID: -863719866274864867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_5
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 290
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98656e8971e697300800000000000000
+      internalID: 250352301924308617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_6
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 281
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c85e7f49d5fe0bb0800000000000000
+      internalID: -4967763025252689727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_7
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 279
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e4b00267c8b07810800000000000000
+      internalID: 1761110620784080101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_8
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 281
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26427e77aa3e90800800000000000000
+      internalID: 579244348389401698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_9
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 265
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93036f14de93144e0800000000000000
+      internalID: -1999253068399103943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_10
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 272
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2efa3e23004510d70800000000000000
+      internalID: 9007573089548218338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_11
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 262
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26d82b14ee0827b80800000000000000
+      internalID: -8398508594299761310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_12
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 249
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cb0e4d88c32f2ab0800000000000000
+      internalID: -5030762914478421055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_13
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 251
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d37e1b0a2a619930800000000000000
+      internalID: 4148213460592653272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_14
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 233
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f4a53f4c952f3590800000000000000
+      internalID: -7692388285251476240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Alien14_Positive_0009_15
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 221
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 145a24620a48c3780800000000000000
+      internalID: -8701934556615105215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Alien14_Positive_0009_0: -8138266564730408650
+      Alien14_Positive_0009_1: -2137847253158953820
+      Alien14_Positive_0009_10: 9007573089548218338
+      Alien14_Positive_0009_11: -8398508594299761310
+      Alien14_Positive_0009_12: -5030762914478421055
+      Alien14_Positive_0009_13: 4148213460592653272
+      Alien14_Positive_0009_14: -7692388285251476240
+      Alien14_Positive_0009_15: -8701934556615105215
+      Alien14_Positive_0009_2: -8816213650672187461
+      Alien14_Positive_0009_3: 3079789480065078626
+      Alien14_Positive_0009_4: -863719866274864867
+      Alien14_Positive_0009_5: 250352301924308617
+      Alien14_Positive_0009_6: -4967763025252689727
+      Alien14_Positive_0009_7: 1761110620784080101
+      Alien14_Positive_0009_8: 579244348389401698
+      Alien14_Positive_0009_9: -1999253068399103943
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
