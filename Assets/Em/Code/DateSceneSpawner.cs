@@ -50,63 +50,63 @@ public class DateSceneSpawner : MonoBehaviour
         {
             case 0:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 1:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 2:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 3:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 4:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 5:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 6:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 7:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 8:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 9:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 10:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 11:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 12:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 13:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
             case 14:
                 Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
+                Scale = new Vector3(60, 60);
                 break;
         }
 

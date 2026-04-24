@@ -91,6 +91,11 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
             dateScript.GoOnDateWith();
         }
         ResetPosition();
+
+        //disable mouse here
+        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+        UnityEngine.Cursor.visible = false;
+        
     }
 
     private void ResetPosition() 

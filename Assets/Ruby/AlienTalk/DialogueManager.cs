@@ -35,10 +35,14 @@ public class DialogueManager : MonoBehaviour
 
     public bool LinesEmpty;
     public bool retryLocation;
+    public bool canSkip;
 
     private List<string> actions;
     private List<string> options;
     private List<string> respones;
+
+    [SerializeField]private float typingSpeed = 0.08f;
+
 
     private void Awake()
     {
@@ -48,6 +52,11 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
+        canSkip = false;//so the player cant click ahead early
+        //unhide mouse when date starts
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
@@ -177,8 +186,25 @@ public class DialogueManager : MonoBehaviour
     {
         var alienLines3 = alienLines * 3;//show animation in reponse? doing it on mouse tracking script
 
-        dialogueText.text = respones[selection + alienLines3];
+        string sentence = respones[selection + alienLines3];
+        StartCoroutine(DisplayResponseLine(sentence));
+
         alienLines++;
+    }
+
+    private IEnumerator DisplayResponseLine(string line)//type out reponse line
+    {
+
+        dialogueText.text = "";
+
+        foreach (char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        canSkip = true;
+        nextButton.SetActive(true);
     }
 
     public void StartDialogueRespones(Dialogue dialogue)
@@ -200,8 +226,6 @@ public class DialogueManager : MonoBehaviour
         {
             options.Add(sentence);
         }
-
-        OptionBubbles();
     }
 
     public void StartDialogueActions(Dialogue dialogue) //first spawn in opening dialogue and name
@@ -225,11 +249,9 @@ public class DialogueManager : MonoBehaviour
     {
         Mouse mouse = Mouse.current;
 
-
-        if (InteractionSelector_scr.optionTextBoxes[0].activeSelf == false && mouse.leftButton.wasPressedThisFrame)//if waiting for newbubbles and player clicks anywhere
+        if (InteractionSelector_scr.optionTextBoxes[0].activeSelf == false && mouse.leftButton.wasPressedThisFrame && canSkip)//if waiting for newbubbles and player clicks anywhere
         {
             DisplayNextAction();
-            OptionBubbles();
             nextButton.SetActive(false);
             nextButton.GetComponent<MusicUI_Click_Script>().ClickB_AudioCue();
         }
@@ -238,18 +260,34 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextAction()
     {
+        nextButton.SetActive(false);
+        canSkip = false;//starts false when action and becomes true when option bubble is spawned
         round++;
         Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
             string sentence = actions[round - 1];
-            dialogueText.text = sentence;
+            StartCoroutine(DisplayActionLine(sentence));
         }
         else
         {
             dialogueText.text = "i am getting tired of talking to you..";
         }
+    }
+
+    private IEnumerator DisplayActionLine(string line)//type out action line
+    {
+
+        dialogueText.text = "";
+
+        foreach(char letter in line.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        OptionBubbles();
     }
 
     //make function that can have option script pass info into to play a specific line

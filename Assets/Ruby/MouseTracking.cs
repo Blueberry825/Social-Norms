@@ -9,7 +9,6 @@ public class MouseTracking : MonoBehaviour
     private bool interactable;
 
     public GameObject currentOptionObj;
-    private GameObject nextButton;
     public GameObject currentAlienClone;
 
     private DialogueManager DialogueManager_scr;
@@ -26,7 +25,6 @@ public class MouseTracking : MonoBehaviour
     private void Start()
     {
         mainCamera = Camera.main;
-        nextButton = GameObject.Find("Next");
         DialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
         InteractionSelector_scr = GameObject.Find("GameManager").GetComponent<InteractionSelector>();
         LoveMeter_scr = GameObject.Find("LoveMeter").GetComponent<LoveMeter>();
@@ -52,7 +50,6 @@ public class MouseTracking : MonoBehaviour
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
             DialogueManager_scr.ResponseBox(optionID);
             LoveMeter_scr.LoveChange(optionID);
-            nextButton.SetActive(true);
 
             AnimationTrigger();//trigger animation depending on the ID of the option picked
         }
