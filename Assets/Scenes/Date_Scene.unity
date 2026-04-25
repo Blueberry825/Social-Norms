@@ -2009,18 +2009,6 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1668537519}
         m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
-        m_MethodName: OptionBubbles
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1668537519}
-        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
         m_MethodName: HideObj
         m_Mode: 2
         m_Arguments:
@@ -5774,10 +5762,13 @@ MonoBehaviour:
   round: 0
   meLines: 0
   alienLines: 0
-  meLinesAdd3: 0
+  minResponseElement: 0
+  minOptionElement: 0
+  maxOptionElement: 0
   LinesEmpty: 0
   retryLocation: 0
   canSkip: 0
+  tryingToSkip: 0
   typingSpeed: 0.04
 --- !u!114 &1668537520
 MonoBehaviour:
@@ -7050,7 +7041,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232, y: -243}
+  m_AnchoredPosition: {x: -231.99997, y: -243}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945645383

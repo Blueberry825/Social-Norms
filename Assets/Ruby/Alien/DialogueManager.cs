@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     public bool LinesEmpty;
     public bool retryLocation;
     public bool canSkip;
+    public bool tryingToSkip;
 
     private List<string> actions;
     private List<string> options;
@@ -53,7 +54,6 @@ public class DialogueManager : MonoBehaviour
 
     void Start()
     {
-        canSkip = false;//so the player cant click ahead early
         //unhide mouse when date starts
         UnityEngine.Cursor.lockState = CursorLockMode.None;
         UnityEngine.Cursor.visible = true;
@@ -144,6 +144,7 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
+        print("new options spawning");
         minOptionElement = meLines * 3;//lowest option element that we can be on
         maxOptionElement = minOptionElement + 3;//max option element that we can be on
         Debug.Log("maxlines: " + maxOptionElement + "count: " + options.Count);
@@ -187,6 +188,7 @@ public class DialogueManager : MonoBehaviour
         minResponseElement = alienLines * 3;//lowest response element we can be on
 
         string sentence = respones[selection + minResponseElement];
+        canSkip = true;//can skip when typing starts
         StartCoroutine(DisplayResponseLine(sentence));
 
         alienLines++;
@@ -194,16 +196,22 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
     {
-
         dialogueText.text = "";
 
         foreach (char letter in line.ToCharArray())
         {
+            //detect if player is trying to skip typing
+            if (tryingToSkip)
+            {
+                dialogueText.text = line;
+                canSkip = false;//cant skip until typing starts again
+                break;
+            }
+
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
 
-        canSkip = true;
         nextButton.SetActive(true);
     }
 
@@ -249,25 +257,26 @@ public class DialogueManager : MonoBehaviour
     {
         Mouse mouse = Mouse.current;
 
-        if (InteractionSelector_scr.optionTextBoxes[0].activeSelf == false && mouse.leftButton.wasPressedThisFrame && canSkip)//if waiting for newbubbles and player clicks anywhere
+        if (canSkip && mouse.leftButton.wasPressedThisFrame)//if bubbles are active
         {
-            DisplayNextAction();
-            nextButton.SetActive(false);
-            nextButton.GetComponent<MusicUI_Click_Script>().ClickB_AudioCue();
+            tryingToSkip = true;
+        }
+        else if (!canSkip)
+        {
+            tryingToSkip = false;
         }
     }
-
 
     public void DisplayNextAction()
     {
         nextButton.SetActive(false);
-        canSkip = false;//starts false when action and becomes true when option bubble is spawned
         round++;
         Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
             string sentence = actions[round - 1];
+            canSkip = true; //can skip once typing starts
             StartCoroutine(DisplayActionLine(sentence));
         }
         else
@@ -278,11 +287,18 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayActionLine(string line)//type out action line
     {
-
         dialogueText.text = "";
 
         foreach(char letter in line.ToCharArray())
         {
+            //detect if player is trying to skip typing
+            if (tryingToSkip)
+            {
+                dialogueText.text = line;
+                canSkip = false;//cant skip after typing ends
+                break;
+            }
+
             dialogueText.text += letter;
             yield return new WaitForSeconds(typingSpeed);
         }
