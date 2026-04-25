@@ -16,6 +16,7 @@ public class MouseTracking : MonoBehaviour
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private LoveMeter LoveMeter_scr;
     private BackgroundMusic_Script backgroundMusic_scr;
+    private EffectTiming EffectTiming_scr;
 
     public int optionID;
 
@@ -26,6 +27,8 @@ public class MouseTracking : MonoBehaviour
     {
         mainCamera = Camera.main;
         DialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        EffectTiming_scr = DialogueManager_scr.gameObject.GetComponent<EffectTiming>();
+
         InteractionSelector_scr = GameObject.Find("GameManager").GetComponent<InteractionSelector>();
         LoveMeter_scr = GameObject.Find("LoveMeter").GetComponent<LoveMeter>();
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
@@ -52,6 +55,7 @@ public class MouseTracking : MonoBehaviour
             LoveMeter_scr.LoveChange(optionID);
 
             AnimationTrigger();//trigger animation depending on the ID of the option picked
+            EffectTiming_scr.WhichAlienCurrently(optionID);//try to trigger an effect after every option picked
         }
     }
 

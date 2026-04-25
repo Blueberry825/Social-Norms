@@ -19,7 +19,7 @@ public class CRTEffectEditing : MonoBehaviour
     void Start()
     {
         frequency = 30;
-        effectTimer = 30;
+        effectTimer = 15;
         CRTCameraBehaviour_scr = GetComponent<CRTCameraBehaviour>();
     }
 
@@ -52,7 +52,7 @@ public class CRTEffectEditing : MonoBehaviour
         {
               case 0:
                 frequency = 30;
-                DistortEffect();
+                GlitchEffect();
               break;
               
               case 1:
@@ -67,7 +67,7 @@ public class CRTEffectEditing : MonoBehaviour
     }
 
 
-    public void DistortEffect()//set to new value when starting and reset to old value at end //effectNumber 0
+    public void GlitchEffect()//set to new value when starting and reset to old value at end //effectNumber 0
     {
         CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(0, 3);
         CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(0.4f, 1.4f);

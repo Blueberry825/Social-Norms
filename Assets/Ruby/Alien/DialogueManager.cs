@@ -26,12 +26,13 @@ public class DialogueManager : MonoBehaviour
     private SaveAndLoad SaveAndLoad_scr;
     private GameOverResultText_Script gameoverResultText_scr;
 
-    public int round = 0;
-    public int meLines = 0; //each round of talking ?
-    public int alienLines = 0;
-    private int maxlines;
+    public int round = 0; //amount of action lines - 1
+    public int meLines = 0; //each round of options?
+    public int alienLines = 0; //amount of response rounds
 
-    private int meLinesAdd3;
+    public int minResponseElement;
+    public int minOptionElement;
+    public int maxOptionElement;
 
     public bool LinesEmpty;
     public bool retryLocation;
@@ -143,19 +144,18 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
-        meLinesAdd3 = meLines * 3;
-        maxlines = meLinesAdd3 + 3;
-        Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
+        minOptionElement = meLines * 3;//lowest option element that we can be on
+        maxOptionElement = minOptionElement + 3;//max option element that we can be on
+        Debug.Log("maxlines: " + maxOptionElement + "count: " + options.Count);
        
-        if (options.Count >= maxlines)
+        if (options.Count >= maxOptionElement)//if the full options list still bigger(/equal) than the current max option element
         {
-            
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//show option boxes
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(true);
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
 
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//add text to option boxes
-                InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + minOptionElement];//set text to next 3 option lines
         }
         else
         {
@@ -184,9 +184,9 @@ public class DialogueManager : MonoBehaviour
 
     public void ResponseBox(int selection)//switch case 
     {
-        var alienLines3 = alienLines * 3;//show animation in reponse? doing it on mouse tracking script
+        minResponseElement = alienLines * 3;//lowest response element we can be on
 
-        string sentence = respones[selection + alienLines3];
+        string sentence = respones[selection + minResponseElement];
         StartCoroutine(DisplayResponseLine(sentence));
 
         alienLines++;

@@ -5733,6 +5733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668537518}
   - component: {fileID: 1668537519}
+  - component: {fileID: 1668537520}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -5773,10 +5774,23 @@ MonoBehaviour:
   round: 0
   meLines: 0
   alienLines: 0
+  meLinesAdd3: 0
   LinesEmpty: 0
   retryLocation: 0
   canSkip: 0
   typingSpeed: 0.04
+--- !u!114 &1668537520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1668537516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15db96ffa999ff441aefbdfe31d6a2f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1746105668
 GameObject:
   m_ObjectHideFlags: 0
@@ -7036,7 +7050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -232.00003, y: -243}
+  m_AnchoredPosition: {x: -232, y: -243}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945645383
