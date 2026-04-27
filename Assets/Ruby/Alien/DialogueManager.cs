@@ -87,6 +87,7 @@ public class DialogueManager : MonoBehaviour
     public void StuffToDoAfterDate()//when going back to date screen after date
     {
         SaveAndLoad_scr.LoadLocationsAndAliens();
+        DateRandomiser_Script_scr.RandomiseDate();
     }
 
     public void RestartDate()

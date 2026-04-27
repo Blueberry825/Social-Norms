@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 3857718693675610151}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1.1555}
-  m_LocalScale: {x: 0.89, y: 1.0171428, z: 1.0171428}
+  m_LocalPosition: {x: 0, y: 0, z: -0.33202}
+  m_LocalScale: {x: 0.6640194, y: 0.7588793, z: 0.7588793}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5766729695240611212}
@@ -64,8 +64,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.803825, y: 1.3610219, z: 0.73075}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: -0.98, y: -0.98, z: -0}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5001649676965147310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -113,7 +113,7 @@ SpriteRenderer:
   m_SortingLayerID: -487695655
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6266686700292481688, guid: 8a293ad1b9284274ca1b669660ca01e5, type: 3}
+  m_Sprite: {fileID: -4914534242326493172, guid: 1d6ed56d7ed9de04588cc69d27c5fbb4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -250,14 +250,14 @@ RectTransform:
   m_GameObject: {fileID: 7023349569027018041}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 6.45}
-  m_LocalScale: {x: 0.09637427, y: 0.09637427, z: 0.09637427}
+  m_LocalScale: {x: 0.066559926, y: 0.066559926, z: 0.066559926}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5001649676965147310}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00015019, y: 0.17088}
+  m_AnchoredPosition: {x: -0.0088839, y: 0.13772}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &3376520795251726689
@@ -352,8 +352,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44.2
-  m_fontSizeBase: 44.2
+  m_fontSize: 60.24
+  m_fontSizeBase: 60.24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -390,7 +390,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -9.404241, y: -8.037138, z: -8.793512, w: -9.660028}
+  m_margin: {x: -13.379068, y: -12.052563, z: -13.809174, w: -16.159304}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
