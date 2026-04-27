@@ -46,69 +46,8 @@ public class DateSceneSpawner : MonoBehaviour
     {
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
 
-        switch(alienNumber)//set individual location and scale for each 
-        {
-            case 0:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 1:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 2:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 3:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(60, 60);
-                break;
-            case 4:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 5:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 6:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 7:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 8:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 9:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 10:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 11:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 12:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 13:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-            case 14:
-                Location = new Vector3(0, 0, 0);
-                Scale = new Vector3(100, 100);
-                break;
-        }
+        Location = new Vector3(0, 0, 0);
+        Scale = new Vector3(100, 100);
 
         tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity, gameObject.transform);//set location
         tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
@@ -116,7 +55,5 @@ public class DateSceneSpawner : MonoBehaviour
         tempSpawnedAlien.transform.localScale = Scale;//set scale
 
         MouseTracking_scr.currentAlienClone = tempSpawnedAlien;//ensuring mouse has acess to clones animator
-
     }
-
 }
