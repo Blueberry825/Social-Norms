@@ -49,7 +49,6 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         armObject = GameObject.Find("Tentacle_0");
-        armObject.SetActive(true);
     }
 
     void Start()
