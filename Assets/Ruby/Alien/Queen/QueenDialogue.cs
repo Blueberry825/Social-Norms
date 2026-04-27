@@ -1,10 +1,11 @@
-using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class QueenDialogue : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class QueenDialogue : MonoBehaviour
     private GameObject GameOver;
     private GameObject tablet;
     private GameObject armObject;
+    private GameObject nextButton;
 
     private QueenDialogueTrigger QueenDialogueTrigger_scr;
     public QueenInteractionSelector QueenInteractionSelector_scr;
@@ -26,14 +28,20 @@ public class QueenDialogue : MonoBehaviour
     public int alienLines = 0;
     private int maxlines;
 
-    private int meLinesAdd3;
+    public int minResponseElement;
+    public int minOptionElement;
+    public int maxOptionElement;
 
     public bool LinesEmpty;
     public bool retryLocation;
+    public bool canSkip;
+    public bool tryingToSkip;
 
     private List<string> actions;
     private List<string> options;
     private List<string> respones;
+
+    [SerializeField] private float typingSpeed = 0.08f;
 
     private void Awake()
     {
@@ -55,6 +63,7 @@ public class QueenDialogue : MonoBehaviour
             StayOnLocation(false);
         }
 
+        nextButton = GameObject.Find("Next");
 
         for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
             QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
@@ -117,11 +126,11 @@ public class QueenDialogue : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
-        meLinesAdd3 = meLines * 5;
-        maxlines = meLinesAdd3 + 5;
+        minResponseElement = meLines * 5;
+        maxOptionElement = minResponseElement + 5;
         Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
        
-        if (options.Count >= maxlines)
+        if (options.Count >= maxOptionElement)
         {
             
             for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
@@ -129,7 +138,7 @@ public class QueenDialogue : MonoBehaviour
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/Interactions_Appear");
 
             for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
-                QueenInteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + meLinesAdd3];
+                QueenInteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + minResponseElement];
         }
         else
         {
@@ -158,11 +167,35 @@ public class QueenDialogue : MonoBehaviour
 
     public void ResponseBox(int selection)//switch case 
     {
-        var alienLines5 = alienLines * 5;//(if round one option 4, response will be 4 etc)
+        minResponseElement = alienLines * 5;//lowest response element we can be on
 
-        dialogueText.text = respones[selection + alienLines5];
+        string sentence = respones[selection + minResponseElement];
+        canSkip = true;//can skip when typing starts
+        StartCoroutine(DisplayResponseLine(sentence));
+
         alienLines++;
     }
+    private IEnumerator DisplayResponseLine(string line)//type out reponse line
+    {
+        dialogueText.text = "";
+
+        foreach (char letter in line.ToCharArray())
+        {
+            //detect if player is trying to skip typing
+            if (tryingToSkip)
+            {
+                dialogueText.text = line;
+                canSkip = false;//cant skip until typing starts again
+                break;
+            }
+
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        nextButton.SetActive(true);
+    }
+
 
     public void StartDialogueRespones(QueenDialogueHolder dialogue)
     {
@@ -205,20 +238,58 @@ public class QueenDialogue : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        Mouse mouse = Mouse.current;
+
+        if (canSkip && mouse.leftButton.wasPressedThisFrame)//if bubbles are active
+        {
+            tryingToSkip = true;
+        }
+        else if (!canSkip)
+        {
+            tryingToSkip = false;
+        }
+    }
+
     public void DisplayNextAction()
     {
+        nextButton.SetActive(false);
         round++;
         Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
             string sentence = actions[round - 1];
-            dialogueText.text = sentence;
+            canSkip = true; //can skip once typing starts
+            StartCoroutine(DisplayActionLine(sentence));
         }
         else
         {
             dialogueText.text = "i am getting tired of talking to you..";
+            OptionBubbles();
         }
+    }
+
+    private IEnumerator DisplayActionLine(string line)//type out action line
+    {
+        dialogueText.text = "";
+
+        foreach (char letter in line.ToCharArray())
+        {
+            //detect if player is trying to skip typing
+            if (tryingToSkip)
+            {
+                dialogueText.text = line;
+                canSkip = false;//cant skip after typing ends
+                break;
+            }
+
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(typingSpeed);
+        }
+
+        OptionBubbles();
     }
 
     //make function that can have option script pass info into to play a specific line

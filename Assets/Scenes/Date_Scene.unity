@@ -177,30 +177,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 13
+    name: fishpot
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
     - hii its roundf 1
     - its round2 nowww
     - round 333
     - round 4!!
---- !u!1 &36732119
+--- !u!1 &59400548
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -208,142 +195,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 36732120}
-  m_Layer: 3
-  m_Name: Efffector
+  - component: {fileID: 59400549}
+  m_Layer: 0
+  m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &36732120
+--- !u!4 &59400549
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36732119}
+  m_GameObject: {fileID: 59400548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.4853393, w: 0.87432593}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1357739573}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135.811}
---- !u!1 &44007281
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 44007282}
-  m_Layer: 3
-  m_Name: bone_11
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &44007282
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44007281}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.045499653, w: 0.99896437}
-  m_LocalPosition: {x: 0.9789714, y: 0.00000029245504, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.003774306, w: 0.9999929}
+  m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1506469142}
-  m_Father: {fileID: 1229045014}
+  - {fileID: 1869078822}
+  m_Father: {fileID: 146580657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &46276378
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2759150251612227273, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: interactionID
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_Name
-      value: OptionBubbles1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7562686
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.48731
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
---- !u!1 &46276379 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-  m_PrefabInstance: {fileID: 46276378}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &72858106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -410,7 +285,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
   m_PrefabInstance: {fileID: 72858106}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &99096071
+--- !u!1 &73059675
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -418,29 +293,93 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 99096072}
-  m_Layer: 3
-  m_Name: bone_10
+  - component: {fileID: 73059676}
+  m_Layer: 0
+  m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &99096072
+--- !u!4 &73059676
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99096071}
+  m_GameObject: {fileID: 73059675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.24418506, w: 0.96972865}
-  m_LocalPosition: {x: 0.9805682, y: -0.000000027825745, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.023293223, w: 0.9997287}
+  m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1034864497}
-  m_Father: {fileID: 1506469142}
+  - {fileID: 947320155}
+  m_Father: {fileID: 487031596}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &89359089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89359090}
+  m_Layer: 0
+  m_Name: bone_13
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89359090
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89359089}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.0010856806, w: 0.99999946}
+  m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1433223089}
+  m_Father: {fileID: 1434604159}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &132181660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 132181661}
+  m_Layer: 0
+  m_Name: bone_16
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &132181661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132181660}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.09194362, w: 0.99576426}
+  m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1523659608}
+  m_Father: {fileID: 1426248051}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &139309732
 GameObject:
@@ -517,7 +456,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 139309732}
   m_CullTransparentMesh: 1
---- !u!1 &157138089
+--- !u!1 &146580656
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -525,30 +464,95 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 157138090}
-  m_Layer: 3
-  m_Name: bone_11
+  - component: {fileID: 146580657}
+  m_Layer: 0
+  m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &157138090
+--- !u!4 &146580657
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157138089}
+  m_GameObject: {fileID: 146580656}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.045499653, w: 0.99896437}
-  m_LocalPosition: {x: 0.9789714, y: 0.00000029245504, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0062491517, w: 0.9999805}
+  m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1616428433}
-  m_Father: {fileID: 631914793}
+  - {fileID: 59400549}
+  m_Father: {fileID: 1433223089}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &176661703
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_Name
+      value: OptionBubbles
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1555
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+--- !u!1 &176661704 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+  m_PrefabInstance: {fileID: 176661703}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &181980523
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +621,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &215798292
+--- !u!1 &265333566
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -625,30 +629,143 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 215798293}
-  m_Layer: 3
-  m_Name: bone_12
+  - component: {fileID: 265333568}
+  - component: {fileID: 265333567}
+  - component: {fileID: 265333570}
+  - component: {fileID: 265333569}
+  m_Layer: 0
+  m_Name: Tentacle_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &215798293
+--- !u!212 &265333567
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265333566}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -2042823177
+  m_SortingLayer: 4
+  m_SortingOrder: 13
+  m_Sprite: {fileID: -230194567796169486, guid: f1b1ed02d4c91024fb466dd8062118f5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.46, y: 14.44}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &265333568
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 215798292}
+  m_GameObject: {fileID: 265333566}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.03625647, w: 0.99934256}
-  m_LocalPosition: {x: 1.0589303, y: -0.000000013509296, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -9720}
+  m_LocalScale: {x: 73.6344, y: 73.6344, z: 73.6344}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1229045014}
-  m_Father: {fileID: 2066607896}
+  - {fileID: 1426248051}
+  - {fileID: 1976037273}
+  m_Father: {fileID: 1359261235}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &265333569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265333566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097b551f2844b054290f18a39bf892e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Solvers:
+  - {fileID: 1976037272}
+  m_Weight: 1
+  m_AlwaysUpdate: 1
+  m_SolverEditorData:
+  - color: {r: 0, g: 1, b: 0, a: 1}
+    showGizmo: 1
+--- !u!114 &265333570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 265333566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RootBone: {fileID: 1426248051}
+  m_BoneTransforms:
+  - {fileID: 1426248051}
+  - {fileID: 1523659608}
+  - {fileID: 73059676}
+  - {fileID: 1434604159}
+  - {fileID: 1433223089}
+  - {fileID: 59400549}
+  - {fileID: 972852754}
+  - {fileID: 1285817506}
+  - {fileID: 1885652287}
+  - {fileID: 1463521502}
+  - {fileID: 1869078822}
+  - {fileID: 146580657}
+  - {fileID: 89359090}
+  - {fileID: 947320155}
+  - {fileID: 487031596}
+  - {fileID: 132181661}
+  m_Bounds:
+    m_Center: {x: -0.00081804395, y: 0.0000014305115, z: 0}
+    m_Extent: {x: 0.49689603, y: 4.922597, z: 0}
+  m_AlwaysUpdate: 1
+  m_AutoRebind: 0
 --- !u!1001 &267605925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -985,38 +1102,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   settingBackgroundAnim: {fileID: 267605931}
---- !u!1 &304603037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 304603038}
-  m_Layer: 3
-  m_Name: bone_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &304603038
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304603037}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.072455004, w: 0.99737173}
-  m_LocalPosition: {x: 1.0800847, y: -0.016527511, z: 0.00000018156564}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1512466756}
-  m_Father: {fileID: 2125781457}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &307068920
 GameObject:
   m_ObjectHideFlags: 0
@@ -1075,24 +1160,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 11
+    name: luma
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
     - hii its roundf 1
     - its round2 nowww
@@ -1173,38 +1245,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 454332723}
   m_CullTransparentMesh: 1
---- !u!1 &476742766
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 476742767}
-  m_Layer: 3
-  m_Name: bone_6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &476742767
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 476742766}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.1783232, w: -0.983972}
-  m_LocalPosition: {x: 0.7545943, y: -0.000000082635495, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1316954634}
-  m_Father: {fileID: 1872784371}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &484832034
 GameObject:
   m_ObjectHideFlags: 0
@@ -1446,32 +1486,96 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 10
+    name: finona
     options:
-    - no
-    - yes
-    - i prefer ham
-    - kinda
-    - i like to give them
-    - "only if its chocolate!\t\t"
-    - oh no this one?
-    - here use these eye drops
-    - it will pass
+    - Hello yourself, you look Fintastic gorgeous!
+    - .. Ohh wow.... Uhhhmm...... hi...
+    - I didn't realise I was going on a date with 3 people.
+    - Don't get cocky, I only knew your name from the app.
+    - Of course, The Offishal Finona.
+    - Finona, nope Doesn't ring a bell.
+    - Money Schmoney. I don't have any and I don't want any when I can have you.
+    - I already have money, but you're worth more than money can buy.
+    - Oh, I AM here for the money, but you're a very attractive bonus.
+    - I'd do all your dishes, your chores, and run you baths every day.
+    - I'd tell you how beautiful you look, and take you out to dinner every night.
+    - (give crown) I'd spoil you with gifts like this this every day.
+    - I'd take you to a luxury sushi resteraunt.
+    - I have a nice glorptalian place down glorpstreet
+    - I know a local place called 'Prima'
+    - With your busy lifestyle,  I'm not sure if this will work out.
+    - it's been a lovely date, lets do it again sometime.
+    - That's okay, thing one and thing two look like they need a nap anyway.
     respones:
-    - ok then!
-    - me too
-    - oo i like ham too
-    - thats ok
-    - but i want to give them to you
-    - what's chocolate
-    - thats not my eye!
-    - mm yummy
-    - i guess so...
+    - Ugh. disgusting. I expected differently from your profile.
+    - I'm not the Queen Honey, you don't have to be so nervous!
+    - Haha you're funny..  These are my bodyguards,
+    - I like witty, I DON'T like rude.
+    - Yes that's me.
+    - I guess you're gonna have to get to know me then...
+    - You DON'T have money? I'm not a shallow glorp but I want someone with ambition,
+      not a dead end...
+    - You're right, I am worth more than money. I have Gillionares chasing my fin
+      constantly, what makes you so special?
+    - You're a cheeky glorp arent you...
+    - Umm, ick, that's bare minimum... I said spoil me.
+    - Hm that does sound sweet... but not exactly princess teatment...
+    - A FANCY CROWN?!? aw you're saying I'm you're princess? Thats such a sweet gift,
+      it looks authentic as well! "made...in... China.." Oooh  where's that, sounds
+      expensive!
+    - Sushi, SUSHI?!? You have some nerve. *The bodyguards look like they want to
+      punch you *
+    - glorptalian is nice, but any suiter can take me to a nice resteraunt.
+    - '''Prima'' sounds, expensive... sounds..... Premium. And it''s local? You really
+      do know all the hidden gems.'
+    - Yeah, I wasn't really feeling the vibe anyway..
+    - Yeah, it has... okay, I'll get my manager to text you...
+    - Hahaha, okay funny glorp, I like you. Let's do it again sometime...
     actions:
-    - do you like cheese
-    - do you like gifts
-    - ow my eye hurts suddenly
---- !u!1001 &494449113
+    - '**Date start, you''re sitting in the booth of a cafe, when your date walks
+      in, closely followed by two bigger aliens... People start whispering and pointing
+      at your date, you''re almost.... hypnotised by the tail on your date...**'
+    - My name's Finona, but you already knew that.
+    - So. Prettyglorp, How do I know you're not trying to date me for my money...
+    - Now, I'm not the queen, but I do like to be spoiled sometimes, what would you
+      do to make me feel special?
+    - If you were to take me out for dinner, I want a true and honest choice from
+      you. I want to trust and rely on your opinion.
+    - Surprisingly, this date has gone pretty well, but as a celebrity, obviously
+      you know my schedule is VERY tight so we have to wrap it up here.
+--- !u!1 &487031595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487031596}
+  m_Layer: 0
+  m_Name: bone_15
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487031596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487031595}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.045695886, w: 0.9989554}
+  m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 73059676}
+  m_Father: {fileID: 1523659608}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &496201026
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1532,10 +1636,10 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf20473c6312e14586adab35b48bd75, type: 3}
---- !u!4 &494449114 stripped
+--- !u!4 &496201027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5127148376155258594, guid: 3bf20473c6312e14586adab35b48bd75, type: 3}
-  m_PrefabInstance: {fileID: 494449113}
+  m_PrefabInstance: {fileID: 496201026}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &570020976
 GameObject:
@@ -1635,7 +1739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a35ce856136ed6449da6813a70a98eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &631914792
+--- !u!1 &652159888
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1643,29 +1747,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 631914793}
-  m_Layer: 3
-  m_Name: bone_2
+  - component: {fileID: 652159889}
+  m_Layer: 0
+  m_Name: Effector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &631914793
+--- !u!4 &652159889
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 631914792}
+  m_GameObject: {fileID: 652159888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.012013143, w: 0.9999279}
-  m_LocalPosition: {x: 0.92132777, y: -0.00000008459463, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6205412, w: 0.7841739}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 157138090}
-  m_Father: {fileID: 2097706517}
+  m_Children: []
+  m_Father: {fileID: 1885652287}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &676352570 stripped
 GameObject:
@@ -1730,29 +1833,143 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: cake
+    name: bruce
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - I brought you some nice fish to cheer you up!
+    - What's your name?
+    - What are you looking for?
+    - Ouch, it looks really painful. Here, let me kiss it better!
+    - When did you lose your fin?
+    - Don't worry Bruce, everyone has bad days. I'm sure you'll find it!
+    - At least you still have your really cool spring! idk what it is, there's just
+      somefin about it that's really attractive!
+    - Will the fin not grow back?
+    - How about we look together? Maybe you just need a fresh pair of eyes to find
+      it.
+    - I think that was my ship. I'm so sorry Bruce.
+    - A giant metal ship? are you sure you didn't just hit your head and you didn't
+      realise it broke off?
+    - That's awful. Do you think it was an alien?
+    - Let's split up and search!
+    - 'How about we get go and eat '
+    - .I'll stay here as long as it takes to find your fin...
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - GET THAT AWAY FROM ME! I'm allergic to seafood. You tryna kill me?
+    - Oh.. Already rushing instead of asking if I need help? No manners...
+    - It's not something you'll be able to find, i've been looking everywhere...
+      Sorry, guess i'm just in a bad mood since I lost it.
+    - Don't kiss me you freak! Do you normally go around kissing people?
+    - It broke off my head only yesterday, But i've been looking for it ever since...
+    - I guess so. I've been looking for ages, I'm starting to lose hope.
+    - you think my missing fin is something to joke about? What if I cut off your
+      your tentacle and started joking about that?
+    - No, a Springshark fin doesn't grow back, obviously.. What are you an alien?
+      Have you never met a Springshark?
+    - .Nghh.. I guess it might be nice to have some company while looking for it...
+      Okay fine you can help me. Hey, You're kinder than you look, stranger. I'm
+      sorry about before.
+    - You... Did this? But... I was starting to like you... Why... WHY DID YOU DISFIGURE
+      ME?.... At least you were honest, but this DOESN'T mean
+    - You calling me a liar? Look, I know it sounds untrue, but it's what happened.
+      Nothing else to it.
+    - No... Probably some Glorp without a license who stole a ship and was going
+      for a joyride. Still... I'll eat them whole if I ever find them.
+    - Oh, you want to split up to search? okay then...
+    - I could go for some mountain tops right now.. Lets go, it's this way... OUGH,
+      careful there's a rock there... wait... is that... MY FIN!!!  I WAS LOSING
+      HOPE!
+    - I was wrong about you... You're a real treasure... Hey, what's that over there....
+      my... MY... MY FIN!!!!!! THANK YOU THANK YOU!! You're a really blessing.. I'm
+      so lucky I met you today, I think there's a reason we met today. It's meant
+      to me.
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - '**You''re at the spot where you were supposed to meet. When suddenly... You
+      feel the ground beneath you tremble, as one of the mountains begins to rise
+      up ** "Ughh.... Not under there either. Ahh I''ve checked every inch of this
+      landscape and not a single sight of my fin... Oh. It''s you."'
+    - Maybe I should've been a bit less harsh on you.. My name's Bruce.. I'm looking
+      for my fin... it broke off my head and I can't find it anywhere.
+    - I've been walking these fields for ages looking for my fin... It's hopeless...
+      I'll never be whole again...
+    - You wanna know how my fin broke off? I was hopping across this mountain  range,
+      when all of a sudden this giant metal rocket came out of nowhere and broke
+      my fin clean off. If I ever find out who was flying that ship i'll eat them
+      whole...
+    - I'm starting to lose hope... Do you think we'll ever find it?
+--- !u!1001 &715895052
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1986845191}
+    m_Modifications:
+    - target: {fileID: 117118530109838725, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_Name
+      value: SpawnLocationG3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -111
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+--- !u!4 &715895053 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3908782329194845619, guid: 62c5e05f6e72e0e43b1d5a35db8a4c8b, type: 3}
+  m_PrefabInstance: {fileID: 715895052}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728984413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1811,106 +2028,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 7
+    name: ugly
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
     - hii its roundf 1
     - its round2 nowww
     - round 333
     - round 4!!
---- !u!1001 &769629157
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_Name
-      value: OptionBubbles0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7562686
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.48731
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
---- !u!1 &769629158 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-  m_PrefabInstance: {fileID: 769629157}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &771678248
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,100 +2616,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 808825509}
   m_CullTransparentMesh: 1
---- !u!1 &814107474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 814107475}
-  - component: {fileID: 814107476}
-  m_Layer: 3
-  m_Name: New CCDSolver2D
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &814107475
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814107474}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.17, y: -15.96, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1746105669}
-  m_Father: {fileID: 1259410168}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &814107476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814107474}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef93bb9fe9d240e418a7fb8b476f3d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ConstrainRotation: 1
-  m_SolveFromDefaultPose: 0
-  m_Weight: 0.478
-  m_Chain:
-    m_EffectorTransform: {fileID: 1486483481}
-    m_TargetTransform: {fileID: 1746105669}
-    m_TransformCount: 12
-    m_Transforms:
-    - {fileID: 2097706517}
-    - {fileID: 631914793}
-    - {fileID: 157138090}
-    - {fileID: 1616428433}
-    - {fileID: 2125781457}
-    - {fileID: 304603038}
-    - {fileID: 1512466756}
-    - {fileID: 1836999056}
-    - {fileID: 1872784371}
-    - {fileID: 476742767}
-    - {fileID: 1316954634}
-    - {fileID: 1486483481}
-    m_DefaultLocalRotations:
-    - {x: 0, y: 0, z: -0, w: 1}
-    - {x: 0, y: 0, z: -0.2714559, w: 0.9624509}
-    - {x: 0, y: 0, z: 0, w: 1}
-    - {x: 0, y: 0, z: 0.29227167, w: 0.95633537}
-    - {x: 0, y: 0, z: -0.1099423, w: 0.99393797}
-    - {x: 0, y: 0, z: -0.39448202, w: 0.9189037}
-    - {x: 0, y: 0, z: -0.2036513, w: 0.97904354}
-    - {x: 0, y: 0, z: -0.28659064, w: 0.9580532}
-    - {x: 0, y: 0, z: -0.5978399, w: 0.8016156}
-    - {x: 0, y: 0, z: -0.41204584, w: 0.91116315}
-    - {x: 0, y: 0, z: 0.00000012784481, w: 1}
-    - {x: 0, y: 0, z: 0.9265657, w: 0.37613302}
-    m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.03625647, w: 0.99934256}
-    - {x: 0, y: 0, z: 0.012013143, w: 0.9999279}
-    - {x: 0, y: 0, z: -0.045499653, w: 0.99896437}
-    - {x: 0, y: 0, z: -0.18404636, w: 0.9829176}
-    - {x: 0, y: 0, z: -0.24418506, w: 0.96972865}
-    - {x: 0, y: 0, z: -0.072455004, w: 0.99737173}
-    - {x: 0, y: 0, z: 0.12577042, w: 0.9920594}
-    - {x: 0, y: 0, z: 0.20340787, w: 0.9790941}
-    - {x: 0, y: 0, z: -0.08094951, w: -0.9967182}
-    - {x: 0, y: 0, z: 0.1783232, w: -0.983972}
-    - {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-    - {x: 0, y: 0, z: -0.4853393, w: 0.87432593}
-  m_Iterations: 1
-  m_Tolerance: 0.0078
-  m_Velocity: 0.822
 --- !u!21 &873590109
 Material:
   serializedVersion: 8
@@ -2858,7 +2891,72 @@ RectTransform:
   m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1011201878
+--- !u!1001 &939961778
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_Name
+      value: OptionBubbles (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1555
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+--- !u!1 &939961779 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+  m_PrefabInstance: {fileID: 939961778}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &947320154
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2866,30 +2964,175 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1011201879}
-  m_Layer: 3
-  m_Name: bone_1
+  - component: {fileID: 947320155}
+  m_Layer: 0
+  m_Name: bone_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1011201879
+--- !u!4 &947320155
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1011201878}
+  m_GameObject: {fileID: 947320154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.76436126, w: 0.6447883}
-  m_LocalPosition: {x: -0.058391344, y: -5.02168, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.014657301, w: 0.9998926}
+  m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2097706517}
-  m_Father: {fileID: 1259410168}
+  - {fileID: 1434604159}
+  m_Father: {fileID: 73059676}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &972852753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972852754}
+  m_Layer: 0
+  m_Name: bone_7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &972852754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972852753}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.0000029642397, w: 1}
+  m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1463521502}
+  m_Father: {fileID: 1869078822}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1014073002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1014073003}
+  - component: {fileID: 1014073004}
+  - component: {fileID: 1014073006}
+  - component: {fileID: 1014073005}
+  m_Layer: 0
+  m_Name: Target
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1014073003
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014073002}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 10.97096, z: 0}
+  m_LocalScale: {x: 1.4667058, y: 1.4667058, z: 1.4667058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1976037273}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1014073004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014073002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b5bb439588fbe34188e6abf82ecd566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentOptionObj: {fileID: 0}
+  currentAlienClone: {fileID: 0}
+  optionID: 0
+  maxSpeed: 15.8
+--- !u!58 &1014073005
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014073002}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5
+--- !u!50 &1014073006
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014073002}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1019717582
 GameObject:
   m_ObjectHideFlags: 0
@@ -3026,38 +3269,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1019717582}
   m_CullTransparentMesh: 1
---- !u!1 &1034864496
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1034864497}
-  m_Layer: 3
-  m_Name: bone_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1034864497
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034864496}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.072455004, w: 0.99737173}
-  m_LocalPosition: {x: 1.0800847, y: -0.016527511, z: 0.00000018156564}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2079592259}
-  m_Father: {fileID: 99096072}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1037496896
 GameObject:
   m_ObjectHideFlags: 0
@@ -3243,147 +3454,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053337949}
   m_CullTransparentMesh: 1
---- !u!1 &1061182578
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1061182579}
-  - component: {fileID: 1061182582}
-  - component: {fileID: 1061182581}
-  - component: {fileID: 1061182580}
-  m_Layer: 3
-  m_Name: Tentacle_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1061182579
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061182578}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 618, y: -51, z: 0.14011383}
-  m_LocalScale: {x: 97.089264, y: 97.089264, z: 97.089264}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2066607896}
-  - {fileID: 1875610206}
-  m_Father: {fileID: 1359261235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1061182580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061182578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097b551f2844b054290f18a39bf892e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Solvers:
-  - {fileID: 1875610207}
-  m_Weight: 1
-  m_AlwaysUpdate: 1
-  m_SolverEditorData:
-  - color: {r: 0, g: 1, b: 0, a: 1}
-    showGizmo: 1
---- !u!114 &1061182581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061182578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 2066607896}
-  m_BoneTransforms:
-  - {fileID: 2066607896}
-  - {fileID: 1229045014}
-  - {fileID: 1506469142}
-  - {fileID: 1034864497}
-  - {fileID: 1083411891}
-  - {fileID: 1157653400}
-  - {fileID: 1357739573}
-  - {fileID: 1933146347}
-  - {fileID: 2079592259}
-  - {fileID: 99096072}
-  - {fileID: 44007282}
-  - {fileID: 215798293}
-  m_Bounds:
-    m_Center: {x: 0.00073993206, y: 0.0000009536743, z: 0}
-    m_Extent: {x: 0.7817202, y: 5.0150013, z: 0}
-  m_AlwaysUpdate: 1
-  m_AutoRebind: 0
---- !u!212 &1061182582
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1061182578}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2042823177
-  m_SortingLayer: 4
-  m_SortingOrder: 7
-  m_Sprite: {fileID: -230194567796169486, guid: 23e11660d45a3ac46ba500a7dc62fc47, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.57, y: 10.03}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1065961845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,38 +3726,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075631064}
   m_CullTransparentMesh: 1
---- !u!1 &1083411890
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1083411891}
-  m_Layer: 3
-  m_Name: bone_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1083411891
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083411890}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.20340787, w: 0.9790941}
-  m_LocalPosition: {x: 0.8630649, y: 0.00000012308834, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1933146347}
-  m_Father: {fileID: 2079592259}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116089243
 GameObject:
   m_ObjectHideFlags: 0
@@ -3879,29 +3917,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 14
+    name: hotel
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - .
 --- !u!1 &1137845837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3980,7 +4002,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137845837}
   m_CullTransparentMesh: 1
---- !u!1 &1157653399
+--- !u!1 &1285817505
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3988,203 +4010,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1157653400}
-  m_Layer: 3
-  m_Name: bone_6
+  - component: {fileID: 1285817506}
+  m_Layer: 0
+  m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1157653400
+--- !u!4 &1285817506
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157653399}
+  m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.1783232, w: -0.983972}
-  m_LocalPosition: {x: 0.7545943, y: -0.000000082635495, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00001925361, w: 1}
+  m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1357739573}
-  m_Father: {fileID: 1933146347}
+  - {fileID: 1885652287}
+  m_Father: {fileID: 1463521502}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1229045013
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1229045014}
-  m_Layer: 3
-  m_Name: bone_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1229045014
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229045013}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.012013143, w: 0.9999279}
-  m_LocalPosition: {x: 0.92132777, y: -0.00000008459463, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 44007282}
-  m_Father: {fileID: 215798293}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1259410167
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1259410168}
-  - component: {fileID: 1259410171}
-  - component: {fileID: 1259410170}
-  - component: {fileID: 1259410169}
-  m_Layer: 3
-  m_Name: Tentacle_0 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1259410168
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259410167}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -472, y: -51, z: 0.14011383}
-  m_LocalScale: {x: 97.089264, y: 97.089264, z: 97.089264}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1011201879}
-  - {fileID: 814107475}
-  m_Father: {fileID: 1359261235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1259410169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259410167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 097b551f2844b054290f18a39bf892e9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Solvers:
-  - {fileID: 814107476}
-  m_Weight: 1
-  m_AlwaysUpdate: 1
-  m_SolverEditorData:
-  - color: {r: 0, g: 1, b: 0, a: 1}
-    showGizmo: 1
---- !u!114 &1259410170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259410167}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 1011201879}
-  m_BoneTransforms:
-  - {fileID: 1011201879}
-  - {fileID: 631914793}
-  - {fileID: 1616428433}
-  - {fileID: 304603038}
-  - {fileID: 1836999056}
-  - {fileID: 476742767}
-  - {fileID: 1316954634}
-  - {fileID: 1872784371}
-  - {fileID: 1512466756}
-  - {fileID: 2125781457}
-  - {fileID: 157138090}
-  - {fileID: 2097706517}
-  m_Bounds:
-    m_Center: {x: 0.00073993206, y: 0.0000009536743, z: 0}
-    m_Extent: {x: 0.7817202, y: 5.0150013, z: 0}
-  m_AlwaysUpdate: 1
-  m_AutoRebind: 0
---- !u!212 &1259410171
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259410167}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -2042823177
-  m_SortingLayer: 4
-  m_SortingOrder: 7
-  m_Sprite: {fileID: -230194567796169486, guid: 23e11660d45a3ac46ba500a7dc62fc47, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1.57, y: 10.03}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!1 &1312195955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,38 +4306,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1316651202}
   m_CullTransparentMesh: 1
---- !u!1 &1316954633
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1316954634}
-  m_Layer: 3
-  m_Name: bone_7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1316954634
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316954633}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-  m_LocalPosition: {x: 0.44884717, y: 0.033046816, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1486483481}
-  m_Father: {fileID: 476742767}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.513}
 --- !u!1 &1320071321
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,63 +4364,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Whale
+    name: tarrant
     options:
-    - no
-    - yes
-    - i prefer ham
-    - kinda
-    - i like to give them
-    - "only if its chocolate!\t\t"
-    - oh no this one?
-    - here use these eye drops
-    - it will pass
+    - Your profile said you liked hats.... So I brought you a brand new hat!
+    - That's the coolest hat i've ever seen.
+    - (Politely Shake one of thier arms)
+    - If you want to be more approachable, try wear gloves
+    - I thought they were your ribcage!
+    - Your claws are so fashionable! I couldn't be afraid!
+    - (Give hat) Why don't you wear this hat I got you as a gift?
+    - Lose the hat, I want to see your beautiful hair!
+    - (touch tarrant's arm) a watch would fit with your style!
+    - You didn't poop yourself, did you?
+    - Tarrant, you're so kind, you could never be disgusted by you!
+    - (Hold Tarrant's hands) I'm ready.
+    - WE NEED TO TAKE YOU TO A DOCTOR!
+    - Aw that's not disgusting Tarrant!
+    - (poke Tarrants brain) Whoa..
+    - Tarrant, I have something to tell you too... I'm Actually.... A human.
+    - Your fashion, exposed brain, and 6 arms that give awesome hugs is exactly why
+      I like you!
+    - (Hug Tarrant) Yes!!
     respones:
-    - ok then!
-    - me too
-    - oo i like ham too
-    - thats ok
-    - but i want to give them to you
-    - what's chocolate
-    - thats not my eye!
-    - mm yummy
-    - i guess so...
+    - You don't like Tarrant's hat? but... tarrant worked hard on that :((
+    - Really?.... Tarrant feels.... happy..... :)
+    - Your tentacle feels... funny... Tarrant likes!! :33
+    - Tarrant is more fashionable than you, and will not take fashion advice from
+      you. >://
+    - Tarrant gets that a lot...
+    - Tarrant has studied fashion for this exact reason!! :DD
+    - Tarrant can't size down. and Tarrant will NOT size down >:I
+    - hmm... but Tarrant doesn't have any hair... :')
+    - Tarrant is feeling... Glorpflies but in Tarrants heart... :s
+    - NOOO TARRANT WOULD NEVER DO THAT!! >n<
+    - Hmm.. Okay... really? Tarrant isn't sure but will trust you anyway. :')
+    - O...okay.... :3
+    - NOOOO!!!! >-< TARRANT JUST HAS A CONDITION!!
+    - Tarrant is so happy you think that ^_^
+    - OooOo please be gentle! Tarrant's brain's sensitive! :3 .... That's why Tarrant
+      wears a hat all the time... Tarrant is so glad you don't mind it!
+    - Tarrant doesn't like when you joke about that kind of stuff. :// That's not
+      something to joke about.
+    - Aww, Tarrant is so glad you think that! Tarrant likes your strange tentacle
+      too!
+    - Ouhh >o< TARRANT WANTS TO SKIP DATING AND GET MARRIED!!1!!1!!!
     actions:
-    - do you like cheese
-    - do you like gifts
-    - ow my eye hurts suddenly
---- !u!1 &1357739572
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1357739573}
-  m_Layer: 3
-  m_Name: bone_7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1357739573
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357739572}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-  m_LocalPosition: {x: 0.44884717, y: 0.033046816, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 36732120}
-  m_Father: {fileID: 1157653400}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -2.513}
+    - You're at the date location, but nobody's there. You hear shuffling, and see
+      a large stylish hat shuffles across the floor. the hat looks up at you, and
+      you see an alien, with what looks to claws coming out of the side of it looking
+      up to you.
+    - You're not afraid of Tarrants hands? Normally people get disgusted or run away.
+    - Tarrant is SUUPER into fashion, do you know anything about it?! Doesnt really
+      look like it :/ ... but what would you do to improve Tarrant's style? :3
+    - Tarranat will be honest...  You are very Hattractive, and Tarrant wants to
+      get closer to you but is worried that you will be disgusted... :((
+    - (Tarrant takes their hat off their lack of hair  is not too surprising... but...
+      they're not just bald, there's a split in their head their brain is exposed?!?)
+    - Now that Tarrant has shared their secret with you... Do you still want to date
+      me? ://
+    - Your date with tarrant seemed to have gone well. Time to head back.
 --- !u!1 &1359261231
 GameObject:
   m_ObjectHideFlags: 0
@@ -4698,8 +4517,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1061182579}
-  - {fileID: 1259410168}
+  - {fileID: 265333568}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4707,87 +4525,102 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1001 &1372855404
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2759150251612227273, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: interactionID
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_Name
-      value: OptionBubbles2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7562686
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.8643069
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.48731
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
---- !u!1 &1372855405 stripped
+--- !u!1 &1426248050
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
-  m_PrefabInstance: {fileID: 1372855404}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1426248051}
+  m_Layer: 0
+  m_Name: bone_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1426248051
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1426248050}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.7727666, w: 0.63469034}
+  m_LocalPosition: {x: 0.06955933, y: -7.1879244, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 132181661}
+  m_Father: {fileID: 265333568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1433223088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1433223089}
+  m_Layer: 0
+  m_Name: bone_5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1433223089
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1433223088}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: -0.0065701073, w: 0.9999784}
+  m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 146580657}
+  m_Father: {fileID: 89359090}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1434604158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1434604159}
+  m_Layer: 0
+  m_Name: bone_4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1434604159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434604158}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0.021004185, w: 0.9997794}
+  m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 89359090}
+  m_Father: {fileID: 947320155}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451123638
 GameObject:
   m_ObjectHideFlags: 0
@@ -4947,7 +4780,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dateDescriptionText: {fileID: 0}
---- !u!1 &1486483480
+--- !u!1 &1463521501
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4955,29 +4788,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1486483481}
-  m_Layer: 3
-  m_Name: Efffector
+  - component: {fileID: 1463521502}
+  m_Layer: 0
+  m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1486483481
+--- !u!4 &1463521502
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1486483480}
+  m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.4853393, w: 0.87432593}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00031570805, w: 1}
+  m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1316954634}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 135.811}
+  m_Children:
+  - {fileID: 1285817506}
+  m_Father: {fileID: 972852754}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1506410745
 GameObject:
   m_ObjectHideFlags: 0
@@ -5041,9 +4875,9 @@ MonoBehaviour:
   - {fileID: 35070005}
   - {fileID: 1130998275}
   optionTextBoxes:
-  - {fileID: 769629158}
-  - {fileID: 46276379}
-  - {fileID: 1372855405}
+  - {fileID: 176661704}
+  - {fileID: 2075557924}
+  - {fileID: 939961779}
   textBox: {fileID: 1945645381}
   DialogueManager_scr: {fileID: 1668537519}
 --- !u!114 &1506410748
@@ -5061,38 +4895,6 @@ MonoBehaviour:
   pauseMenu: {fileID: 1137845837}
   isPaused: 0
   startAreaAnimator: {fileID: 0}
---- !u!1 &1506469141
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1506469142}
-  m_Layer: 3
-  m_Name: bone_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1506469142
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1506469141}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.18404636, w: 0.9829176}
-  m_LocalPosition: {x: 0.9975599, y: -0.000000078736086, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 99096072}
-  m_Father: {fileID: 44007282}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511832154
 GameObject:
   m_ObjectHideFlags: 0
@@ -5129,7 +4931,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1512466755
+--- !u!1 &1523659607
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5137,29 +4939,29 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1512466756}
-  m_Layer: 3
-  m_Name: bone_9
+  - component: {fileID: 1523659608}
+  m_Layer: 0
+  m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1512466756
+--- !u!4 &1523659608
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1512466755}
+  m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.12577042, w: 0.9920594}
-  m_LocalPosition: {x: 0.81501377, y: 0.05343226, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.032445252, w: 0.9994735}
+  m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1836999056}
-  m_Father: {fileID: 304603038}
+  - {fileID: 487031596}
+  m_Father: {fileID: 132181661}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1542802337
 GameObject:
@@ -5372,38 +5174,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550497501}
   m_CullTransparentMesh: 1
---- !u!1 &1616428432
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1616428433}
-  m_Layer: 3
-  m_Name: bone_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1616428433
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616428432}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.18404636, w: 0.9829176}
-  m_LocalPosition: {x: 0.9975599, y: -0.000000078736086, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2125781457}
-  m_Father: {fileID: 157138090}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649327145
 GameObject:
   m_ObjectHideFlags: 0
@@ -5782,119 +5552,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15db96ffa999ff441aefbdfe31d6a2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1746105668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1746105669}
-  - component: {fileID: 1746105672}
-  - component: {fileID: 1746105671}
-  - component: {fileID: 1746105670}
-  m_Layer: 3
-  m_Name: Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1746105669
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746105668}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.000000089406946, w: 1}
-  m_LocalPosition: {x: -15.76, y: 19.47, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 814107475}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &1746105670
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746105668}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!50 &1746105671
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746105668}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &1746105672
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746105668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5bb439588fbe34188e6abf82ecd566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentOptionObj: {fileID: 0}
-  currentAlienClone: {fileID: 0}
-  optionID: 0
-  maxSpeed: 9.41
 --- !u!95 &1787031697 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 6540499847544555162, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
@@ -5912,38 +5569,6 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_SortAtRoot: 0
---- !u!1 &1836999055
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1836999056}
-  m_Layer: 3
-  m_Name: bone_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1836999056
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836999055}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.20340787, w: 0.9790941}
-  m_LocalPosition: {x: 0.8630649, y: 0.00000012308834, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1872784371}
-  m_Father: {fileID: 1512466756}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1868600365
 GameObject:
   m_ObjectHideFlags: 0
@@ -6042,8 +5667,6 @@ RectTransform:
   - {fileID: 570020978}
   - {fileID: 1945645382}
   - {fileID: 1037496897}
-  - {fileID: 2037368693}
-  - {fileID: 494449114}
   - {fileID: 72858107}
   - {fileID: 1116089244}
   - {fileID: 935069598}
@@ -6051,6 +5674,8 @@ RectTransform:
   - {fileID: 1451123639}
   - {fileID: 2009632015}
   - {fileID: 267605926}
+  - {fileID: 2045067466}
+  - {fileID: 496201027}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6092,7 +5717,7 @@ MonoBehaviour:
   - {fileID: 4276200616546817990, guid: 180c3fd2e16cfdf4284ace7583c67b6b, type: 3}
   currentBackground: {fileID: 0}
   tempSpawnedAlien: {fileID: 0}
---- !u!1 &1872784370
+--- !u!1 &1869078821
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6100,31 +5725,31 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1872784371}
-  m_Layer: 3
-  m_Name: bone_8
+  - component: {fileID: 1869078822}
+  m_Layer: 0
+  m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1872784371
+--- !u!4 &1869078822
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872784370}
+  m_GameObject: {fileID: 1869078821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.08094951, w: -0.9967182}
-  m_LocalPosition: {x: 0.7067896, y: -0.00000007600241, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0011290709, w: 0.9999994}
+  m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 476742767}
-  m_Father: {fileID: 1836999056}
+  - {fileID: 972852754}
+  m_Father: {fileID: 59400549}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1875610205
+--- !u!1 &1885652286
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6132,92 +5757,30 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1875610206}
-  - component: {fileID: 1875610207}
-  m_Layer: 3
-  m_Name: New CCDSolver2D
+  - component: {fileID: 1885652287}
+  m_Layer: 0
+  m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1875610206
+--- !u!4 &1885652287
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875610205}
+  m_GameObject: {fileID: 1885652286}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.17, y: -15.96, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
+  m_LocalPosition: {x: 0.734647, y: 0.000000057909276, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2125010114}
-  m_Father: {fileID: 1061182579}
+  - {fileID: 652159889}
+  m_Father: {fileID: 1285817506}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1875610207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875610205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef93bb9fe9d240e418a7fb8b476f3d34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ConstrainRotation: 1
-  m_SolveFromDefaultPose: 0
-  m_Weight: 0.478
-  m_Chain:
-    m_EffectorTransform: {fileID: 36732120}
-    m_TargetTransform: {fileID: 2125010114}
-    m_TransformCount: 12
-    m_Transforms:
-    - {fileID: 215798293}
-    - {fileID: 1229045014}
-    - {fileID: 44007282}
-    - {fileID: 1506469142}
-    - {fileID: 99096072}
-    - {fileID: 1034864497}
-    - {fileID: 2079592259}
-    - {fileID: 1083411891}
-    - {fileID: 1933146347}
-    - {fileID: 1157653400}
-    - {fileID: 1357739573}
-    - {fileID: 36732120}
-    m_DefaultLocalRotations:
-    - {x: 0, y: 0, z: -0, w: 1}
-    - {x: 0, y: 0, z: -0.2714559, w: 0.9624509}
-    - {x: 0, y: 0, z: 0, w: 1}
-    - {x: 0, y: 0, z: 0.29227167, w: 0.95633537}
-    - {x: 0, y: 0, z: -0.1099423, w: 0.99393797}
-    - {x: 0, y: 0, z: -0.39448202, w: 0.9189037}
-    - {x: 0, y: 0, z: -0.2036513, w: 0.97904354}
-    - {x: 0, y: 0, z: -0.28659064, w: 0.9580532}
-    - {x: 0, y: 0, z: -0.5978399, w: 0.8016156}
-    - {x: 0, y: 0, z: -0.41204584, w: 0.91116315}
-    - {x: 0, y: 0, z: 0.00000012784481, w: 1}
-    - {x: 0, y: 0, z: 0.9265657, w: 0.37613302}
-    m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.03625647, w: 0.99934256}
-    - {x: 0, y: 0, z: 0.012013143, w: 0.9999279}
-    - {x: 0, y: 0, z: -0.045499653, w: 0.99896437}
-    - {x: 0, y: 0, z: -0.18404636, w: 0.9829176}
-    - {x: 0, y: 0, z: -0.24418506, w: 0.96972865}
-    - {x: 0, y: 0, z: -0.072455004, w: 0.99737173}
-    - {x: 0, y: 0, z: 0.12577042, w: 0.9920594}
-    - {x: 0, y: 0, z: 0.20340787, w: 0.9790941}
-    - {x: 0, y: 0, z: -0.08094951, w: -0.9967182}
-    - {x: 0, y: 0, z: 0.1783232, w: -0.983972}
-    - {x: 0, y: 0, z: -0.021929111, w: 0.9997596}
-    - {x: 0, y: 0, z: -0.4853393, w: 0.87432593}
-  m_Iterations: 1
-  m_Tolerance: 0.0078
-  m_Velocity: 0.822
 --- !u!1 &1893308615
 GameObject:
   m_ObjectHideFlags: 0
@@ -6511,24 +6074,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 8
+    name: fairy
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
     - hii its roundf 1
     - its round2 nowww
@@ -6592,29 +6142,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 12
+    name: kaleen
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - .
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - .
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - .
 --- !u!1 &1922451091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6773,38 +6307,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da901cfef22912a4096ed1329de79130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1933146346
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1933146347}
-  m_Layer: 3
-  m_Name: bone_8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1933146347
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933146346}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.08094951, w: -0.9967182}
-  m_LocalPosition: {x: 0.7067896, y: -0.00000007600241, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1157653400}
-  m_Father: {fileID: 1083411891}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942227418
 GameObject:
   m_ObjectHideFlags: 0
@@ -7041,7 +6543,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -231.99997, y: -243}
+  m_AnchoredPosition: {x: -232, y: -243}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1945645383
@@ -7082,6 +6584,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1945645381}
   m_CullTransparentMesh: 1
+--- !u!1 &1976037271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976037273}
+  - component: {fileID: 1976037272}
+  m_Layer: 0
+  m_Name: New CCDSolver2D
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1976037272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976037271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef93bb9fe9d240e418a7fb8b476f3d34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ConstrainRotation: 1
+  m_SolveFromDefaultPose: 0
+  m_Weight: 0.532
+  m_Chain:
+    m_EffectorTransform: {fileID: 652159889}
+    m_TargetTransform: {fileID: 1014073003}
+    m_TransformCount: 16
+    m_Transforms:
+    - {fileID: 132181661}
+    - {fileID: 1523659608}
+    - {fileID: 487031596}
+    - {fileID: 73059676}
+    - {fileID: 947320155}
+    - {fileID: 1434604159}
+    - {fileID: 89359090}
+    - {fileID: 1433223089}
+    - {fileID: 146580657}
+    - {fileID: 59400549}
+    - {fileID: 1869078822}
+    - {fileID: 972852754}
+    - {fileID: 1463521502}
+    - {fileID: 1285817506}
+    - {fileID: 1885652287}
+    - {fileID: 652159889}
+    m_DefaultLocalRotations:
+    - {x: 0, y: 0, z: -0.043244947, w: 0.99906456}
+    - {x: 0, y: 0, z: -0.18643634, w: 0.98246706}
+    - {x: 0, y: 0, z: 0.08954784, w: 0.9959826}
+    - {x: 0, y: 0, z: 0.15956426, w: 0.98718756}
+    - {x: 0, y: 0, z: -0.07874816, w: 0.99689454}
+    - {x: 0, y: 0, z: -0.15249707, w: 0.98830396}
+    - {x: 0, y: 0, z: 0.23566036, w: 0.9718355}
+    - {x: 0, y: 0, z: -0.010728309, w: 0.9999425}
+    - {x: 0, y: 0, z: -0.13442063, w: 0.9909244}
+    - {x: 0, y: 0, z: -0.07350317, w: 0.997295}
+    - {x: 0, y: 0, z: 0.06973384, w: 0.9975657}
+    - {x: 0, y: 0, z: 0.13686645, w: 0.9905895}
+    - {x: 0, y: 0, z: -0.079352565, w: 0.9968466}
+    - {x: 0, y: 0, z: -0.18137218, w: 0.98341453}
+    - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
+    - {x: 0, y: 0, z: 0, w: 1}
+    m_StoredLocalRotations:
+    - {x: 0, y: 0, z: -0.09194362, w: 0.99576426}
+    - {x: 0, y: 0, z: -0.032445252, w: 0.9994735}
+    - {x: 0, y: 0, z: 0.045695886, w: 0.9989554}
+    - {x: 0, y: 0, z: -0.023293223, w: 0.9997287}
+    - {x: 0, y: 0, z: -0.014657301, w: 0.9998926}
+    - {x: 0, y: 0, z: 0.021004185, w: 0.9997794}
+    - {x: 0, y: 0, z: -0.0010856806, w: 0.99999946}
+    - {x: 0, y: 0, z: -0.0065701073, w: 0.9999784}
+    - {x: 0, y: 0, z: 0.0062491517, w: 0.9999805}
+    - {x: 0, y: 0, z: -0.003774306, w: 0.9999929}
+    - {x: 0, y: 0, z: 0.0011290709, w: 0.9999994}
+    - {x: 0, y: 0, z: -0.0000029642397, w: 1}
+    - {x: 0, y: 0, z: -0.00031570805, w: 1}
+    - {x: 0, y: 0, z: -0.00001925361, w: 1}
+    - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
+    - {x: 0, y: 0, z: -0.6205412, w: 0.7841739}
+  m_Iterations: 1
+  m_Tolerance: 0.008
+  m_Velocity: 0.904
+--- !u!4 &1976037273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976037271}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1014073003}
+  m_Father: {fileID: 265333568}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986845190
 GameObject:
   m_ObjectHideFlags: 0
@@ -7111,7 +6719,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: -6.539063}
   m_LocalScale: {x: 0.026269125, y: 0.026269125, z: 0.026269125}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 715895053}
   m_Father: {fileID: 1037496897}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7140,29 +6749,65 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: lamb
+    name: mantis
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - (Dap up the alien)
+    - Hey there!
+    - (let the mantis touch your face)
+    - What do I do for fun? I like to watch Movies!
+    - What's my favorite food
+    - You want to touch my face ?
+    - Start belting some lyrics about loving a mantis!
+    - Politely wait for the mantis to finish. "That sounded lovely, you have a beautiful
+      whistle."
+    - Start whistling alongside the mantis, harmonising together.
+    - Pick up a broken stick from the ground and gift it to the Mantis
+    - Let the Mantis do what it wants to do without interuption.
+    - Hold the Mantis' arm and guide them to a tree.
+    - Applaud the amazing display of skill.
+    - Thank you, that is very kind of you.
+    - Gently hug the Mantis.
+    - I'm sorry, I don't think I can see a future with us.
+    - I would love to date you, yes.
+    - Draw a 'YES' on the Mantis' hand
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - The Mantis looks scared and confused.
+    - The Mantis clicks. It seemed polite.
+    - The Mantis clicks and smiles.
+    - The Mantis disapproves...
+    - The Mantis starts sniffing, then stares blankly. Maybe you don't smell as nice.
+    - The mantis clicks excitedly, as it gently brushes your face with its scythe-like
+      arms
+    - The Mantis cowers and covers its ears... Maybe you didn't sound as good as
+      you thought.
+    - The Mantis clicks politely, and does a little bow.
+    - The Mantis seems to be in bliss, as it continues to appreciate the harmonised
+      tune.
+    - The Mantis grabs it, shrieks, and drops the stick... Having a closer look,
+      the stick had a bunch of splinters in it. The mantis walks away, stopping at
+      a tree.
+    - The Mantis clicks, in a similar way to a bat, or dolphin. Eventually making
+      it's way to a tree.
+    - It seems satisfied with this.
+    - The Mantis flinches every time the sudden clap sound is made.
+    - The Mantis seems to appreciates the politeness.
+    - The Mantis seems to whistle with happiness.
+    - The Mantis looks sad, but nods politely.
+    - The Mantis seems happy.
+    - The Mantis gives you a hug, touches your face, and gently kisses you.
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - The most beautiful forest you've ever seen. The birds chirping, mixed with
+      the sounds of the wind in the trees sound angelic. You hear  a clicking, and
+      see a mantis-like creature hops towards you. It clicks inquisitively and reaches
+      its hand out)
+    - The mantis clicks and taps its staff and gestures to you.
+    - The Mantis starts whistling a pretty tune.
+    - The Mantis starts hopping around, impressively still using its staff for guidance,
+      seemingly searching for something.
+    - The Mantis uses its staff to become taller, and grab two pink fruits from a
+      tree. It methodically climbs down, and reaches out its hand to you.
+    - The Mantis draws a '<3' Into the ground, and then a '?', then holds out their
+      hand.
 --- !u!1001 &2009632014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7565,30 +7210,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: woody
+    name: flyynt
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - Were you just.. speaking to that rock? I didn't know geologists did that...
+    - Flynnt like Flint? Are you a geologist?
+    - That's me! I like your rock collection! You must be a pretty impressive geologist
+    - ' A "geologist" is somebody who studies rocks, not collects them, so they probably
+      know more, but their collection isnt as big.'
+    - How many rocks do you have?
+    - ' I don''t think anybody is as... in love... with rocks as you are.'
+    - Let me guess, Your Number 1 Is "The Rolling Stones"?
+    - That's amazing, i've never met anyone as passionate as you about rocks!
+    - There's a magazine called Rocks Monthly? I'll have to subscribe to that.
+    - Hey come on now, like you said, it's just one lousy emerald! Your collection
+      is still so impressive the queen wanted something!
+    - Wow, you got to meet the queen? I like a Glomp with status.
+    - How about this dusty rock on the floor here? it's not much but maybe it can
+      be a placeholder?
+    - My tentacle is great at cleaning gems!
+    - I will stick by you through all the rocky roads of life! I'll be the boulder
+      you can lean on.
+    - I can get you some super rare gemstones. Really rare and expensive stuff, like
+      Pyrite.
+    - Pick the RED RUBY
+    - Pick the BLUE DIAMOND
+    - Pick the GREEN EMERALD
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - Uhhhh... no.... I was speaking to.. that........ rock. Yeah the rock.
+    - The one and only! I know, I know... It must be pretty overwhelming meeting
+      the guy with the most impressive rock collection on Glorth.
+    - It's pretty awesome isnt it 571 shlooms I've been collecting rocks!
+    - NOBODY knows more about rocks than me. Especially not this "Geologist" guy...
+    - Exactly 87 right now. One unique rock of every type. Although I had 88 not
+      long ago, but I gave this alien a piece of broken quartz and told them it was
+      a shark tooth to make them shut up.
+    - ' I only know one rock collection better than my first one.... MY SECOND ONE!
+      BOOM!'
+    - What? Who's that? No. It's  Weezer.
+    - I know, I tell myself that Every day, It's all thanks to my rocks, every single
+      is Sedimental to me.
+    - Well it's more of a brochoure, but it's still Impressive! I'm their top reader!
+    - Just a "Lousy emerald"? NO GEM IS LOUSY!! Don't you EVER say that about a gemstone
+      in my presence.
+    - I know. I'm pretty famous around here... I mean,,, I didn't MEET with her,
+      it was someone picking it up for her, BUT STILL. I try not to take it for grantie.
+    - Ah thanks bud, but i doubt it'll replace an emer..... wait.. A HEART SHAPED
+      ROCK?!? YOU'RE SO ROMANTIC!
+    - Your tentacle is probably all SLIMY, I will not have my precious rocks be gooped
+      on because of you.
+    - hmm, okay, but I have a couple boulders already... Couldn't hurt to have one
+      more.
+    - Hmm... Pyrite... I've never heard of that, it must be SUPER RARE! Rarer than
+      my precious emerald... You got yourself a deal!
+    - Hmm... Ruby... usually the sign of love, but this time... not the right one...
+    - Hmm... Diamond, the strongest stone I have, it's nice but, not what I like...
+    - This... must be fate... IT'S MEANT TO BE!!! I know you feel the same, this
+      must be your dream to get with amazing Flyynt.
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
---- !u!1001 &2037368692
+    - '**A cave is a weird location for a first date... maybe this is normal in this
+      planet...  Up ahead you hear talking, and what looks to be humanoid volcano
+      polishing a rock.** Shh.... Shh.... Easy there..... Daddy''s got ya... OH UHHH
+      HEY! Didn''t see ya there, You must be my date from Glompartner.. I''m Flynnt!'
+    - Who's this "Geologist" anyway? does he have a better rock collection than me?
+      I have a rare GREEN SHINY stone like you've never seen... It's the rarest in
+      my collection...
+    - You know, my rock collection actually got me on the front page of Rocks Monthly!
+      You see, there's my interview, It has my rarest rocks, and my top 10 favourite
+      band!
+    - You know, the Queen once requested my best gem for her crown, You know what
+      I gave her? Just a lousy diamond!... Come to think of it... I only had one
+      diamond... AW DAMN IT!
+    - I'm looking for a sturdy relationship, something long term ya'know, you've
+      seen what I can provide, what do you bring to the table?
+    - I've had a rockin' time today... Okay then, this is the last test... the compatibility
+      test... Pick one of these three gems, and which one you pick will decide our
+      fate as a couple.
+--- !u!1001 &2045067465
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -7649,43 +7346,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
---- !u!4 &2037368693 stripped
+--- !u!4 &2045067466 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
-  m_PrefabInstance: {fileID: 2037368692}
+  m_PrefabInstance: {fileID: 2045067465}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2066607895
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2066607896}
-  m_Layer: 3
-  m_Name: bone_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2066607896
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066607895}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.76436126, w: 0.6447883}
-  m_LocalPosition: {x: -0.058391344, y: -5.02168, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 215798293}
-  m_Father: {fileID: 1061182579}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2072542796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7744,61 +7409,129 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: 9
+    name: frillish
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - Walk up to the alien
+    - Why are you standing behind a wall?
+    - Whisper hello.
+    - It's okay, maybe next time it can be just us!
+    - Of course, your friend seems lovely, just like you!
+    - It's okay, I struggle to talk sometimes too!
+    - Politely shake Frillish's hand
+    - You both have very lovely names!
+    - Nice to meet you Frillish :)
+    - I just wanna eat you! (touch their lightbulb)
+    - This place does the best pasta! You'll love it.
+    - You looked like a creamcake alien because you're sweet, so I'll get you that!
+    - They're just stars
+    - Hey, I was up there not long ago... with the stars...
+    - The stars glow almost as bright and beautiful as you.
+    - Out food hasn't arrived, I know you want to stay for that.
+    - It's been nice. I've had fun with you both.
+    - Frillish. I hope we can see eachother again soon.
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - The Alien suddenly turns transparent, almost invisible unless you knew they
+      were there in the first place.
+    - (My friend is Shy, You're so direct!!)
+    - '*The bulb of the alien glows as they shyly wave back *'
+    - N...Next time?? Eh Ehhhhh.... This is all moving...... way too fast..... I
+      want to dessert this date....
+    - Y-Yes.... They are.... You're...... very sweet...
+    - .Y-You do??.... That's reassuring..... You're sweet.....
+    - '.Frillish recoils and hides behind a wall... (A: STAY BACK PERVERT!)'
+    - 'T....Thank you..... (A: I know we do!)'
+    - N-Nice to...... meet you... too.....
+    - PLEASE...... don't..... touch my lightbulb...
+    - Oh..... um.... yeah... pasta.... sounds good...
+    - Frillish's bulb starts glowing bright, That's probably a good sign.
+    - Frillish goes invisible and hides behind the wall, and sniffling sounds start
+      coming from that direction.
+    - 'Yeah..... Sure you were......  (A: what a liar!! you''re funny with your crazy
+      stories.)'
+    - 'Y-.... you mean it....? (A: WHOA  GET A ROOM!!)'
+    - 'Umm.... Uhh..... I.... Can''t.... (A: GET THE HINT GLORPO!)'
+    - 'It has been..... nice... (A: This was FUN! Three friends hanging out! LOVE
+      IT!)'
+    - 'Frillish''s bulb glows, they get embarrased by this and covers their face
+      (A: Frillish and the tentacle, sitting in a tree, K.I.S.S.I.N.G!)'
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
---- !u!1 &2079592258
-GameObject:
+    - 'You''re in the back of an alleyway, A sketchy place for a first date... You
+      think they decided not to show up, but peeking out from behind a wall, you
+      see your date, and on your date''s shoulder, a smaller alien? (Smaller alien:
+      HELLO my friend is shy, so i''m here to support her!!!)'
+    - I... hope its okay.... that I brought my friend... I struggle...... to talk...
+      sometimes....
+    - 'My names... Frillish... (A: AND MY NAMES Angy!)'
+    - 'Shall we.... get some food?..... (A: Ooo food! what shall we get?!)'
+    - 'Wow... look at..... the stars... aren''t they beautiful... (A: Frillish is
+      OBSESSED with stars, they wont shut up about them!) Angy... be quiet....'
+    - This is..... draining..... my social battery...... But it was.....................
+      Fun....
+--- !u!1001 &2075557923
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2079592259}
-  m_Layer: 3
-  m_Name: bone_9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2079592259
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2079592258}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.12577042, w: 0.9920594}
-  m_LocalPosition: {x: 0.81501377, y: 0.05343226, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1083411891}
-  m_Father: {fileID: 1034864497}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_Name
+      value: OptionBubbles (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.1555
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5001649676965147310, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7023349569027018041, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+--- !u!1 &2075557924 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3857718693675610151, guid: a51a816175e321a4f8ba518fd5564a7f, type: 3}
+  m_PrefabInstance: {fileID: 2075557923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2082592475
 GameObject:
   m_ObjectHideFlags: 0
@@ -7935,183 +7668,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082592475}
   m_CullTransparentMesh: 1
---- !u!1 &2097706516
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2097706517}
-  m_Layer: 3
-  m_Name: bone_12
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2097706517
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097706516}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.03625647, w: 0.99934256}
-  m_LocalPosition: {x: 1.0589303, y: -0.000000013509296, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 631914793}
-  m_Father: {fileID: 1011201879}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2125010113
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125010114}
-  - component: {fileID: 2125010115}
-  - component: {fileID: 2125010118}
-  - component: {fileID: 2125010119}
-  m_Layer: 3
-  m_Name: Target
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2125010114
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125010113}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.000000089406946, w: 1}
-  m_LocalPosition: {x: -15.76, y: 19.47, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1875610206}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2125010115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125010113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b5bb439588fbe34188e6abf82ecd566, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentOptionObj: {fileID: 0}
-  currentAlienClone: {fileID: 0}
-  optionID: 0
-  maxSpeed: 9.41
---- !u!50 &2125010118
-Rigidbody2D:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125010113}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!58 &2125010119
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125010113}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!1 &2125781456
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125781457}
-  m_Layer: 3
-  m_Name: bone_10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2125781457
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125781456}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.24418506, w: 0.96972865}
-  m_LocalPosition: {x: 0.9805682, y: -0.000000027825745, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 304603038}
-  m_Father: {fileID: 1616428433}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!222 &3417954922194425954
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8241,29 +7797,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: lamb
+    name: will
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - 'Gently shake their shoulder to wake them up '
+    - Wait for them to wake up
+    - Excuse me... Do you want me to come back later?
+    - 'napping ruins my sleep schedule. '
+    - You're funny hehe
+    - I love a good nap, you seem like a good napping companion
+    - 'No thanks, I don''t like tea. '
+    - Tea? how are you going to make it? with what?
+    - I'd love some! but are you sure its okay to... Steep... together on the first
+      date?
+    - '**Add the red grass**'
+    - '**Add the tree leaves**'
+    - '**Add the little herbs**'
+    - '*take the cup, and brush his hand flirtatiously *'
+    - '**Don''t take the cup** '
+    - '**Take a sip from the cup**'
+    - Does it itch? **reach out to itch Wills skin**
+    - ' Is it reversable? I can get you some steroid cream? '
+    - 'or you could say you used to not like mushrooms, but they''re growing on you
+      now. '
+    - ' I prefer singing **start belting your favourite song** '
+    - My tentacle also has a condition where I can't control it.
+    - 'You''re the only person I want to dance with '
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - Hey gluhh dont you know it's rude to touch a sleeping glomp?
+    - '*the whale keeps sleeping for a long while, but eventually slowly opens its
+      eyes, takes a moment to realise whats happening, and then smiles *'
+    - '*The whale slowly opens its eyes, takes a moment to realise whats happening,
+      and then smiles *'
+    - Gluh, you're too strung up, on this date, just let yourself relax with me...
+    - Laughing is such a good vibe gluhh
+    - You're welcome to come nap with me anytime gluhh *Will winks at you *
+    - Oh... really? okay then, but at least you wouldn't  mind helping me make it
+      then. **Will starts pouting and tapping his foot**
+    - What? gluhh are you an alien or something? We'll make it normally.
+    - HAHAHAHA I could get used to you,,, come help me make it!
+    - Umm...  you know that's Glerble food... right? I'll just do it myself...
+    - Gluh those are TREE leaves, not TEA leaves! never mind, i'll get it myself..
+    - mmm I can smell the herbs already, thanks gluhh
+    - '**Will recoils.** I know my skin is diffent but don''t touch me..'
+    - Oh... Well, it's okay if someone doesn't want tea....
+    - ahhhh... It doesn't get better than this gluhh. Just you, me, and a nice herbal
+      tea...
+    - NO GLUH WHY DID YOU TOUCH ME?! IT'S CONTAGEOUS!!!..... Only joking, but please
+      don't touch me without my permission.
+    - Steroid cream?... is that similar to glorp cream? I looooove glorp cream but
+      it gives me a brainfreeze...
+    - You're a really fun-guy you know, I hope we can get along more...
+    - '**Will recoils and puts their hands over their ears**  That''s a bit too loud
+      for me gluhh. Let''s just dance in silence...'
+    - Embrace what your body is trying to tell you gluhh.. Come and dance with me!
+    - Gluhh, this is pretty fast for me, but come hold my hand and dance with me!
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - '*You see a purple whale asleep in the shade under a tree, a small snot bubble,
+      rises and falls from a blowhole on the top of their head *'
+    - Oh... Hey gluhh! I'm Will. Sorry about earlier, It's just so relaxing in this
+      park that I fell asleep, I'm so good at relaxing that I could do it in my sleep!
+    - Hey gluhh, how about a cup of lovely herbal tea? I'm sure it will make this
+      date even better than it already is. **(Will it make your avatar malfunction?)**
+    - Okay, here's the pot, add our tea in.
+    - Mmm I love a good cup of herbal tea... Go on have a cup **Will offers you a
+      cup**
+    - Hey Gluhh... Are you looking at my skin? it's okay, I dont mind. I have a skin
+      condition which causes a fungus like texture to spread, pretty cool right.
+    - that tentacle of yours is trying to dance away from you, let's dance with it
+      together!
+    - Phew, I'm tired after all that dancing... I think.... I need another.... cup
+      of....... **snore ** (Will falls asleep.)
 --- !u!224 &8547519496724020379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8296,29 +7899,63 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: lizard
+    name: big b
     options:
-    - option 1
-    - option 2
-    - option 3
-    - option 4
-    - option 5
-    - option 6
+    - I'm so sorry! you were so small that I didn't see you through the grass.
+    - Sorry about that, i should be more careful.
+    - Grab the alien and hug them in apology
+    - You'd look handsome clean shaven.
+    - It's very majestic
+    - Comb your fingers through the aliens beard "I like it."
+    - I got a joke for you!.... You'd have to be really low to pickpocket a midget.
+    - You're a real comedian!
+    - Laugh so hard you fall into them.
+    - It's not big, it's only a small complex!
+    - I'll love you despite anything you have.
+    - Can't be as big as your beard.
+    - it's just that your eyes are so small
+    - I was just surprised that you have 4 eyes.
+    - I'd kiss your eyes if I could.
+    - I think it is time to cut this date short...
+    - It has, but it's been so fun.
+    - '*Caress the alien''s beard* I''ll see you around... BIG B...'
     respones:
-    - yees
-    - noo
-    - maybe
-    - nooooo
-    - yeeess
-    - maybeee
-    - yayayayaya
-    - nooo
-    - maybeee
+    - Small? SMALL? WHO ARE YOU CALLING SMALL, GLORPHOLE?! My name's BIG B, not Small
+      B...
+    - Nooo you couldn't see me it's okay... Call me Big B...
+    - Okay Okay I forgive you.. Jeez. You didn't have to do all that,,  My name's
+      Big B...
+    - I'll have you know, I spent time and effort into this beard. and I will NOT
+      be shaving it for a glorp with one tentacle.
+    - I didn't like it at first, but it grew on me!
+    - OOoohh it seems love is in the hair.
+    - What are you trying to say... That I'm a midget? HUH? EXPLAIN YOURSELF!
+    - They all laughed when I said I wanted to be a comedian... Well  they're not
+      laughing now.
+    - Whoa there! Didn't know I was THAT funny... You really like my jokes?
+    - I'M SMALL?? SMALL HUH? I'LL SHOW YOU SMALL WHEN I MAKE A SMALL DENT IN YOUR
+      FACE!!
+    - Thank you friend, or maybe more than that by the end of this...
+    - It is pretty big and magnificent isn't it...
+    - SMALLLLLLL?!?!?!?!?!?!? HOW DARE YOUUUUUU!!!! NOTHING ABOUT ME IS SMALL!!!
+      HEAR ME?? NOTHING!!!!!!!!
+    - 4 eyes? that's normal for my species..... Are you okay?
+    - Hey... If we go on a second date... it's on the table...
+    - Short.. haha... funny.... I don't want to act out of character, I urge you
+      to leave.... NOW...
+    - It has, but all good things gotta come to an end, y'know?
+    - Oh my.... Yes... I'll be seeing you around. you know your way around a beard...
     actions:
-    - hii its roundf 1
-    - its round2 nowww
-    - round 333
-    - round 4!!
+    - You haven't walked far from your ship looking for your date, you're strolling
+      through a field of tall yellow grass. When you accidentally kick something
+      and hear an "OOF".... An alien, which you realise is your date, flies up in
+      front of you."HEY WHATS THE BIG IDEA?!"
+    - Hey what do you think of my beard? Do you like it? Should I shave it? Be Honest...
+    - ".Hey you know, I haven\u2019t slept for ten days.... because that would be
+      too long."
+    - I'm gonna be honest, I have a height complex, and it's a big one.
+    - I noticed you were looking at my eyes... I like that you have intense eye contact.
+    - Hmmm.. This HAS gone pretty well... but it's getting pretty late...
 --- !u!114 &9214801998530200788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8332,76 +7969,77 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: Whale
+    name: Jane
     options:
-    - Gently shake their shoulder to wake them up
-    - Wait for them to wake up
-    - 'Excuse me... Do you want me to come back later? '
-    - napping ruins my sleep schedule.
-    - You're funny hehe
-    - 'I love a good nap, you seem like a good napping companion '
-    - No thanks, I don't like tea.
-    - 'Tea? how are you going to make it? with what? '
-    - I'd love some! but are you sure its okay to... Steep... together on the first
-      date?
-    - '**Add the red grass** '
-    - '**Add the tree leaves** '
-    - '**Add the little herbs** '
-    - '*take the cup, and brush his hand flirtatiously *'
-    - '**Don''t take the cup**'
-    - '**succeed in taking the cup**'
-    - ' Does it itch? **reach out to itch Wills skin** '
-    - ' Is it reversable? I can get you some steroid cream?'
-    - 'or you could say you used to not like mushrooms, but they''re growing on you
-      now. '
-    - 'I prefer singing **start belting your favourite song** '
-    - 'My tentacle also has a condition where I can''t control it. '
-    - You're the only person I want to dance with
+    - Careful, you could crash!
+    - That was dangerous.
+    - Radical!
+    - Looks like a really bad incident happened here...
+    - I wonder who owned it.
+    - Wouldn't it be awesome if we could fly it?
+    - Hey I collect stamps! Maybe we could share
+    - I didn't know you had a nerdy side Jane.
+    - What other stuff have you found?
+    - Is that like Mcdonalds? Sorry I don't eat fast food!
+    - When you come and deliver it, can you feed it to me as well? ;D
+    - (pick up a piece of broken off rocketship) I have a gift for you too... It's
+      uhhh... A rare piece of alien tech!
+    - What's this 'incident' you're on about? Why make it sound so mysterious?
+    - The glorpolimpics? What's that?
+    - That's INCREDIBLE! Did you win Jane?
+    - As long as you'd be able to slow down from time to time, I'm sure we could
+      cherish a bunch of moments together
+    - When you put it like that, How could I say no (sarcastically)
+    - Let's live life in the fast lane together!
     respones:
-    - Hey gluhh dont you know it's rude to touch a sleeping glomp?
-    - '*the whale keeps sleeping for a long while, but eventually slowly opens its
-      eyes, takes a moment to realise whats happening, and then smiles *'
-    - '*The whale slowly opens its eyes, takes a moment to realise whats happening,
-      and then smiles *'
-    - Gluh, you're too strung up, on this date, just let yourself relax with me...
-    - laughing is such a good vibe gluhh
-    - You're welcome to come nap with me anytime gluhh *Will winks at you *
-    - Oh... really? okay then, but at least you wouldn't  mind helping me make it
-      then. **Will starts pouting and tapping his foot**
-    - What? gluhh are you an alien or something? We'll make it normally.
-    - HAHAHAHA I could get used to you,,, come help me make it!
-    - Umm...  you know that's Glerble food... right? I'll just do it myself...
-    - Gluh those are TREE leaves, not TEA leaves! never mind, i'll get it myself..
-    - mmm I can smell the herbs already, thanks gluhh
-    - (Will recoils...) I know my skin is diffent but don't touch me..
-    - Oh... Well, it's okay if someone doesn't want tea....
-    - ahhhh... It doesn't get better than this gluhh. Just you, me, and a nice herbal
-      tea...
-    - NO GLUH WHY DID YOU TOUCH ME?! IT'S CONTAGEOUS!!!..... Only joking, but please
-      don't touch me without my permission.
-    - Steroid cream?... is that similar to glorp cream? I looooove glorp cream but
-      it gives me a brainfreeze...
-    - You're a really fun-guy you know, I hope we can get along more...
-    - (Will recoils and puts their hands over their ears)That's a bit too loud for
-      me gluhh. Let's just dance in silence...
-    - Embrace what your body is trying to tell you gluhh.. Come and dance with me!
-    - Gluhh, this is pretty fast for me, but come hold my hand and dance with me!
+    - I've lived through worse than you can imagine amigorp... You weren't here when
+      I had 'the incident'. "You'll never recover, Jane." they said...
+    - Dangerous is my middle name, amigorp. My first is Jane.
+    - Thank you amigorp, do you want an autograph? The amazing Jane will do anything
+      for her fans! Jane always has time for a fan!... OH! YOU are my date..... not
+    - Bad... 'Incident'? Lets- Not talk about bad incidents... Lets change the subject,
+      Hey look at this cool rubble..
+    - Man, that glorp must be AWESOME!! I gotta meet them one day.
+    - That would be SO COOL!! Should we try?? I bet the owner would never know it
+      was gone!!
+    - You have very... Boring hobbies....  Bottle caps? I mean at least my stuff
+      is alien and mysterious... yours is just................ yeah.....
+    - It's not nerdy to collect cool things collectors items.
+    - I found a cool clyindical thing, this rubber scarf that i'm wearing, and recently
+      this rock guy gave me a real shark tooth!! He said it was super rare!
+    - Well.... I'm a fast person amigorp... I deliver FAST food, when i'm not eating
+      i'm FASTing. Fast is my middle name. So is dangerous.
+    - Feed it to you? Ehhh... You can't do it yourself? Strange...
+    - This.... Is.... INCREDIBLE!!!!! WHOAOAOAH SO COOL! THIS IS ONE OF A KIND! THANK
+      YOU AMIGORP!
+    - Please... Let's not talk about 'the incident'....
+    - You dont know what the GLORLPOLIMPICS are?!? Where all the  most daring competitions
+      go on?!? Thats where my.... 'incident' happened
+    - I KNOW RIGHT!! I would've won, it was the most incredible run in glorpolimpics
+      history! But... 'The incident'... stopped everything..
+    - As long as you'd be able to slow down from time to time, I'm sure we could
+      cherish a bunch of moments together
+    - Great! I'm glad we're on the same page amigorp!
+    - Now you're spreaking my language amigorp!
     actions:
-    - '*You see a purple whale asleep in the shade under a tree, a small snot bubble,
-      rises and falls from a blowhole on the top of their head *'
-    - Oh... Hey gluhh! I'm Will. Sorry about earlier, It's just so relaxing in this
-      park that I fell asleep, I'm so good at relaxing that I could do it in my sleep!
-    - Hey gluhh, how about a cup of lovely herbal tea? I'm sure it will make this
-      date even better than it already is.
-    - Okay, here's the pot, add our tea in.
-    - Mmm I love a good cup of herbal tea... Go on have a cup **Will offers you a
-      cup**
-    - Hey Gluhh... Are you looking at my skin? it's okay, I dont mind. I have a skin
-      condition which causes a fungus like texture to spread, pretty cool right.
-    - That tentacle of yours is trying to dance away from you, let's dance with it
-      together!
-    - Phew, I'm tired after all that dancing... I think.... I need another.... cup
-      of....... ***snore ***
+    - From the distance, you see a cloud of dust rapidly approaching you... No...
+      Thats... YOUR DATE?!? They're approaching you dangerously fast, and looks like
+      they're going to hit you! They start braking and a huge dust wave tails them
+      as they impressively drift to a halt beside you, the dust flowing behind the,...
+      "Hey."
+    - Cool place for a Speed Date right amigorp? You seen this rocket? isn't it AWESOME?!
+      Wonder what it was for, maybe an AWESOME stunt!
+    - I love finding stuff like this... I collect interesting things, or stuff not
+      from this planet so this looks so cool.
+    - Hey, I have a gift for you! Since it's  our first date and all, it's only polite!
+      I gift you..... A coupon for one free meal at McGlorps! My job as a delivery
+      glorp means that I get free vouchers! AND, I will personally deliver it to
+      you.
+    - I was once in the glorpolimpics you know.. I would've been in it again this
+      year if it wasn't for.... 'The incident'...
+    - Well... Enough of 'the incident'... I've had a great time today... Will you
+      be willing to date me, despite my glaring trauma avoidance, extreme arrogance,
+      and  undiagnosed ADHD?
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -8412,6 +8050,6 @@ SceneRoots:
   - {fileID: 1506410746}
   - {fileID: 1668537518}
   - {fileID: 1359261235}
-  - {fileID: 769629157}
-  - {fileID: 46276378}
-  - {fileID: 1372855404}
+  - {fileID: 176661703}
+  - {fileID: 2075557923}
+  - {fileID: 939961778}

@@ -49,7 +49,6 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         armObject = GameObject.Find("Tentacle_0");
-        armObject.SetActive(true);
     }
 
     void Start()
@@ -188,14 +187,25 @@ public class DialogueManager : MonoBehaviour
         minResponseElement = alienLines * 3;//lowest response element we can be on
 
         string sentence = respones[selection + minResponseElement];
-        canSkip = true;//can skip when typing starts
-        StartCoroutine(DisplayResponseLine(sentence));
+
+        StartCoroutine(WaitToSkip(sentence));
 
         alienLines++;
     }
 
+    IEnumerator WaitToSkip(string line)
+    {
+        // suspend execution for 5 seconds
+        yield return new WaitForSeconds(.1f);
+
+        StartCoroutine(DisplayResponseLine(line));
+
+        print("WaitAndPrint " + Time.time);
+    }
+
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
     {
+        canSkip = true;//can skip when typing starts
         dialogueText.text = "";
 
         foreach (char letter in line.ToCharArray())
@@ -276,17 +286,18 @@ public class DialogueManager : MonoBehaviour
         if (round <= actions.Count)
         {
             string sentence = actions[round - 1];
-            canSkip = true; //can skip once typing starts
             StartCoroutine(DisplayActionLine(sentence));
         }
         else
         {
             dialogueText.text = "i am getting tired of talking to you..";
+            OptionBubbles();
         }
     }
 
     private IEnumerator DisplayActionLine(string line)//type out action line
     {
+        canSkip = true; //can skip once typing starts
         dialogueText.text = "";
 
         foreach(char letter in line.ToCharArray())
