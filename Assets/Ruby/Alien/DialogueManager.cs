@@ -282,6 +282,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             dialogueText.text = "i am getting tired of talking to you..";
+            OptionBubbles();
         }
     }
 
