@@ -214,10 +214,15 @@ public class BackgroundMusic_Script : MonoBehaviour
             }
         }
 
-        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene" || sceneName == "Queen_Scene")
+        if (sceneName == "Title_Scene" || sceneName == "Opening_Scene")
         {
             SetTo_Title_Music();
             ambiScript.stopAmbience();
+        }
+
+        if (sceneName == "Queen_Scene") 
+        {
+            SetTo_QueenAlien_Music();
         }
     }
 

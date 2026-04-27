@@ -117,7 +117,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{42e82c2a-b2bf-49c0-93ee-bd4b4b866232}" />
 	<object class="EventSound" id="{c5377fd9-93d1-418b-adf7-98b6a06f88ee}">
-		<property name="name" />
 		<relationship name="event">
 			<destination>{366a84ae-60b4-45ef-8011-378d2096e0b7}</destination>
 		</relationship>
@@ -156,7 +155,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{b289234c-7d46-422a-b540-881af7ade7ae}">
 		<property name="volume">
-			<value>-15</value>
+			<value>-7</value>
 		</property>
 		<property name="overridingInputFormat">
 			<value>1</value>
