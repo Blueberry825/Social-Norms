@@ -51,6 +51,7 @@ public class MouseTracking : MonoBehaviour
             optionID = currentOptionObj.GetComponent<OptionSelector>().interactionID;
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
                 InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
+
             DialogueManager_scr.ResponseBox(optionID);
             LoveMeter_scr.LoveChange(optionID);
 
