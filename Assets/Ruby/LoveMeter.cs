@@ -11,8 +11,12 @@ public class LoveMeter : MonoBehaviour
     private DialogueManager dialogueManager_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
+    private int currentLocation;
 
     public int result;
+    public int decreaseAmount;
+    public int increaseAmount;
+    private int alienNumber;
 
     public bool isLoveFull;
 
@@ -24,65 +28,128 @@ public class LoveMeter : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        currentLocation = GameObject.Find("Tablet").GetComponent<Level_Location_Script>().currentLocation;
+
         isLoveFull = false;
         loveAmount = 50f;
         decaying = true;
 
-        Scene scene = SceneManager.GetActiveScene();
-        if(scene.name != "Queen_Scene")
+        dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        var currentAlien = ListOfAliens_Script_scr.currentDate;
+        alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
+
+        loveMeter.value = loveAmount;//set to default love amount
+
+        DecaySpeed();//when level starts, set decay speed depending on current level
+    }
+
+    private void DecaySpeed()
+    {
+        switch (currentLocation)
         {
-            dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-            DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        }
-        else //during queen scene
-        {
+            case 0:// starting area
+                break;
+            case 1:  //first location  
+                decayTime = 2f;
+                decayAmount = 0.3f;
+                break;
+
+            case 2:
+                decayTime = 2f;
+                decayAmount = 0.3f;
+                break;
+
+            case 3:
+                break;
+
+            case 4:
+                break;
+
+            case 5:
+                break;
+
+            case 6://queen?
+                break;
 
         }
+    }
 
-            loveMeter.value = loveAmount;//set to default love amount
+    public void WhichAlien()//how many options do they need to get correct to win?
+    {
+        switch (alienNumber)
+        {
+            case 0:
+                break;
+            case 1:
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+            case 11:
+                break;
+            case 12:
+                break;
+            case 13:
+                break;
+            case 14:
+                break;
+            case 15://queen?
+                break;
+        }
     }
 
     // Update is called once per frame
     void Update() // decrease love amount each frame
     {
+        print(Time.deltaTime);
+
         loveMeter.value = loveAmount;
 
-        if (loveAmount >= 100 || isLoveFull)
+        if (loveAmount >= 80)
         {
-            loveAmount = 100;
+            if (loveAmount >= 100)
+            {
+                loveAmount = 100;
+                decaying = false;
+            }      
             isLoveFull = true;
-            result = 1;
-            decaying = false;
+        }
+        else if (loveAmount <= 70)
+        {
+            isLoveFull = false;
         }
 
+
         if (decaying)
-        {       
-            loveAmount -= decayAmount * Time.deltaTime;
+        {
+            loveAmount -= decayAmount * (Time.deltaTime * decayTime);//?
 
             if (loveAmount <= 0)
             {
                 dialogueManager_scr.LoseState();
-                result = 0;
                 decaying = false;
-            }         
+            }
         }
 
     }
 
-    public void AfterLevel()//anthing that changes based on result?
-    {
-        switch (result)// passed through from win or lose
-        {
-            case 0:
-                
-                break;
-
-            case 1: 
-
-                break;
-        }
-    }
 
     public void RestartLevel()
     {
@@ -98,7 +165,7 @@ public class LoveMeter : MonoBehaviour
         switch(option)// optionID
         {
             case 0://love decrease
-                loveAmount -= 15;
+                loveAmount -= 9f;
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
                 break;
 
@@ -107,7 +174,7 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 100;//TEMP 100 FOR TESTING
+                loveAmount += 27f;//TEMP 100 FOR TESTING
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
             case 3://for queen only

@@ -6,6 +6,7 @@ using UnityEngine;
 public class CRTEffectEditing : MonoBehaviour
 {
     public bool isEffectActive;
+    private bool titleSceneActive;
 
     private float effectTimer;
     private float timerDecreaseAmount = 2;
@@ -20,7 +21,7 @@ public class CRTEffectEditing : MonoBehaviour
     {
         frequency = 30;
         effectTimer = 15;
-        CRTCameraBehaviour_scr = GetComponent<CRTCameraBehaviour>();
+        CRTCameraBehaviour_scr = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
     }
 
     // Update is called once per frame
@@ -34,6 +35,7 @@ public class CRTEffectEditing : MonoBehaviour
 
             if (randInt == 4)
             {
+                print("1 in " + frequency + " chance");
                 EffectChooser();
             }
 
@@ -43,7 +45,21 @@ public class CRTEffectEditing : MonoBehaviour
                 effectTimer = 30;
                 ResetEffects();// reset crt
             }
-        }       
+        }
+
+        if (titleSceneActive)
+        {
+            var randInt = UnityEngine.Random.Range(0, frequency);//keep spawing new numbers every frame, if frame is certain number, trigger distortion effect to change
+
+            if (randInt == 4)
+            {
+                print("1 in " + frequency + " chance");
+                TitleSceneEffects();
+                Invoke("TitleSceneEffects", 0.05f);
+                Invoke("ResetEffects", 0.3f);//wait and then reset?
+            }
+        }
+
     }
 
     public void EffectChooser()
@@ -63,6 +79,10 @@ public class CRTEffectEditing : MonoBehaviour
               case 2:
                 WaterDistortEffect();
               break;
+
+              case 3:
+
+              break;
         }
     }
 
@@ -81,11 +101,19 @@ public class CRTEffectEditing : MonoBehaviour
         CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, 0);
     }
 
-    public void WaterDistortEffect()//set to new value when starting and reset to old value at end //effectNumber 1
+    public void WaterDistortEffect()//set to new value when starting and reset to old value at end //effectNumber 2
     {
         CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(0, 3);
         CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(4f, 8f);
         CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, 0);
+    }
+
+    public void TitleSceneEffects()//set to new value when starting and reset to old value at end //effectNumber 3
+    {
+        CRTCameraBehaviour_scr.data.colorScans.sizeMultiplier = UnityEngine.Random.Range(2.17f, 1.30f);
+        CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0.01f, 0.05f);
+        effectTimer = 1000;
+        print("triggered");
     }
 
     public void ResetEffects() 
@@ -93,6 +121,7 @@ public class CRTEffectEditing : MonoBehaviour
         CRTCameraBehaviour_scr.data.pixelationAmount = 0;
         CRTCameraBehaviour_scr.data.vignette = 0.112f;
         CRTCameraBehaviour_scr.data.dithering4 = 0;
+        CRTCameraBehaviour_scr.data.colorScans.sizeMultiplier = 2.17f;
     }
 
     public void ActivateEffect(int number)//set to new value when starting and reset to old value at end
@@ -100,5 +129,11 @@ public class CRTEffectEditing : MonoBehaviour
         isEffectActive = true;
         effectNumber = number;
         //SET EFFECT NUMBER HERE?
+    }
+
+    public void ActivateTitleEffects()//set to new value when starting and reset to old value at end
+    {
+        frequency = 1200;
+        titleSceneActive = true;
     }
 }

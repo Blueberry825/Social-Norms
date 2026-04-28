@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EffectTiming : MonoBehaviour
@@ -8,6 +9,8 @@ public class EffectTiming : MonoBehaviour
 
     private int alienNumber;
     private int currentOptionElement;
+
+    public GameObject[] giftList;
 
     void Start()
     {
@@ -26,7 +29,11 @@ public class EffectTiming : MonoBehaviour
         switch (alienNumber)//sort through the aliens 
         {
             case 0:
-                break;
+                if (currentOptionElement == 11)
+                {
+                    //instantiate gift prefab
+                }
+                    break;
             case 1://if on alien 1
                 if(currentOptionElement == 2)//and player just clicked option element 14
                 {
@@ -38,6 +45,10 @@ public class EffectTiming : MonoBehaviour
             case 3:
                 break;
             case 4:
+                if (currentOptionElement == 11)
+                {
+                    //instantiate gift prefab
+                }
                 break;
             case 5:
                 break;
@@ -50,6 +61,10 @@ public class EffectTiming : MonoBehaviour
             case 9:
                 break;
             case 10:
+                if (currentOptionElement == 11)
+                {
+                    //instantiate gift prefab
+                }
                 break;
             case 11:
                 break;
