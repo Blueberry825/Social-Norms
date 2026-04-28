@@ -118,7 +118,6 @@ public class LoveMeter : MonoBehaviour
     // Update is called once per frame
     void Update() // decrease love amount each frame
     {
-        print(Time.deltaTime);
 
         loveMeter.value = loveAmount;
 
