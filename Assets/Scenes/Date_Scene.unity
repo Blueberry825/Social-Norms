@@ -212,7 +212,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59400548}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.00067308627, w: 0.9999998}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.0013674533, w: 0.9999991}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -310,7 +314,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73059675}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.010187692, w: 0.99994814}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.012610033, w: 0.99992055}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -342,7 +350,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89359089}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0.0006630008, w: 0.9999998}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.000516306, w: 0.9999999}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -374,7 +386,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132181660}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.0962789, w: 0.9953545}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.094359, w: 0.9955383}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -481,7 +497,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146580656}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0.0011874381, w: 0.9999993}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.0013098724, w: 0.99999917}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1630,48 +1650,50 @@ MonoBehaviour:
     - Finona, nope Doesn't ring a bell.
     - Money Schmoney. I don't have any and I don't want any when I can have you.
     - I already have money, but you're worth more than money can buy.
-    - Oh, I AM here for the money, but you're a very attractive bonus.
+    - Oh, I AM here for the money. But you're a very attractive bonus ;).
     - I'd do all your dishes, your chores, and run you baths every day.
     - I'd tell you how beautiful you look, and take you out to dinner every night.
-    - (give crown) I'd spoil you with gifts like this this every day.
+    - '*Give crown.*
+
+      I''d spoil you with gifts like this this every day.'
     - I'd take you to a luxury sushi resteraunt.
-    - I have a nice glorptalian place down glorpstreet
-    - I know a local place called 'Prima'
-    - With your busy lifestyle,  I'm not sure if this will work out.
-    - it's been a lovely date, lets do it again sometime.
-    - That's okay, thing one and thing two look like they need a nap anyway.
+    - I have a nice glorptalian place down glorpstreet.
+    - I know a local place called 'Prima'.
+    - With your busy lifestyle, I'm not sure if this will work out.
+    - It's been a lovely date. Lets do it again sometime.
+    - That's okay. Thing one and thing two look like they need a nap anyway.
     respones:
-    - Ugh. disgusting. I expected differently from your profile.
+    - Ugh. Disgusting. I expected differently from your profile.
     - I'm not the Queen Honey, you don't have to be so nervous!
-    - Haha you're funny..  These are my bodyguards,
-    - I like witty, I DON'T like rude.
-    - Yes that's me.
+    - Haha you're funny... These are my bodyguards.
+    - I like witty. I DON'T like rude.
+    - Yes, that's me.
     - I guess you're gonna have to get to know me then...
     - You DON'T have money? I'm not a shallow glorp but I want someone with ambition,
       not a dead end...
     - You're right, I am worth more than money. I have Gillionares chasing my fin
       constantly, what makes you so special?
     - You're a cheeky glorp arent you...
-    - Umm, ick, that's bare minimum... I said spoil me.
-    - Hm that does sound sweet... but not exactly princess teatment...
-    - A FANCY CROWN?!? aw you're saying I'm you're princess? Thats such a sweet gift,
-      it looks authentic as well! "made...in... China.." Oooh  where's that, sounds
-      expensive!
-    - Sushi, SUSHI?!? You have some nerve. *The bodyguards look like they want to
-      punch you *
-    - glorptalian is nice, but any suiter can take me to a nice resteraunt.
+    - Umm, ick, that's bare minimum. I said spoil me.
+    - Hm that does sound sweet... but not exactly princess teatment.
+    - A FANCY CROWN?!? Aw you're saying I'm you're princess? That's such a sweet
+      gift. It looks authentic as well! "Made...in... China.." Oooh where's that,
+      sounds expensive!
+    - "Sushi, SUSHI?!? You have some nerve. \n*The bodyguards look like they want
+      to punch you.*"
+    - Glorptalian is nice, but any suiter can take me to a nice resteraunt.
     - '''Prima'' sounds, expensive... sounds..... Premium. And it''s local? You really
       do know all the hidden gems.'
-    - Yeah, I wasn't really feeling the vibe anyway..
-    - Yeah, it has... okay, I'll get my manager to text you...
-    - Hahaha, okay funny glorp, I like you. Let's do it again sometime...
+    - Yeah, I wasn't really feeling the vibe anyway...
+    - Yeah, it has... okay, I'll get my manager to text you.
+    - Hahaha, okay funny glorp, I like you. Let's do it again sometime.
     actions:
-    - '**Date start, you''re sitting in the booth of a cafe, when your date walks
-      in, closely followed by two bigger aliens... People start whispering and pointing
-      at your date, you''re almost.... hypnotised by the tail on your date...**'
+    - '*Date start, you''re sitting in the booth of a cafe, when your date walks
+      in, closely followed by two bigger aliens. People start whispering and pointing
+      at your date, you''re almost.... hypnotised by the tail on your date.*'
     - My name's Finona, but you already knew that.
-    - So. Prettyglorp, How do I know you're not trying to date me for my money...
-    - Now, I'm not the queen, but I do like to be spoiled sometimes, what would you
+    - So, Prettyglorp, how do I know you're not trying to date me for my money?
+    - Now, I'm not the queen, but I do like to be spoiled sometimes. What would you
       do to make me feel special?
     - If you were to take me out for dinner, I want a true and honest choice from
       you. I want to trust and rely on your opinion.
@@ -1701,7 +1723,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487031595}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0.015345891, w: 0.9998823}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.017690446, w: 0.99984354}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1831,7 +1857,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652159888}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.62057066, w: 0.7841506}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.6201007, w: 0.7845223}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1908,62 +1938,63 @@ MonoBehaviour:
     - What are you looking for?
     - Ouch, it looks really painful. Here, let me kiss it better!
     - When did you lose your fin?
-    - Don't worry Bruce, everyone has bad days. I'm sure you'll find it!
-    - At least you still have your really cool spring! idk what it is, there's just
-      somefin about it that's really attractive!
+    - Don't worry, Bruce, everyone has bad days. I'm sure you'll find it!
+    - At least you still have your really cool spring! I don't know what it is, there's
+      just somefin about it that's really attractive!
     - Will the fin not grow back?
     - How about we look together? Maybe you just need a fresh pair of eyes to find
       it.
-    - I think that was my ship. I'm so sorry Bruce.
-    - A giant metal ship? are you sure you didn't just hit your head and you didn't
+    - I think that was my ship. I'm so sorry, Bruce.
+    - A giant metal ship? Are you sure you didn't just hit your head and you didn't
       realise it broke off?
     - That's awful. Do you think it was an alien?
     - Let's split up and search!
-    - 'How about we get go and eat '
-    - .I'll stay here as long as it takes to find your fin...
+    - How about we get go and eat?
+    - I'll stay here as long as it takes to find your fin.
     respones:
     - GET THAT AWAY FROM ME! I'm allergic to seafood. You tryna kill me?
     - Oh.. Already rushing instead of asking if I need help? No manners...
-    - It's not something you'll be able to find, i've been looking everywhere...
-      Sorry, guess i'm just in a bad mood since I lost it.
-    - Don't kiss me you freak! Do you normally go around kissing people?
-    - It broke off my head only yesterday, But i've been looking for it ever since...
+    - It's not something you'll be able to find, I've been looking everywhere...
+      Sorry, guess I'm just in a bad mood since I lost it.
+    - Don't kiss me you freak! Do you normally go around kissing people? Pervert.
+    - It broke off my head only yesterday, but I've been looking for it ever since...
     - I guess so. I've been looking for ages, I'm starting to lose hope.
-    - you think my missing fin is something to joke about? What if I cut off your
+    - You think my missing fin is something to joke about? What if I cut off your
       your tentacle and started joking about that?
-    - No, a Springshark fin doesn't grow back, obviously.. What are you an alien?
+    - No, a Springshark fin doesn't grow back, obviously. What are you an alien?
       Have you never met a Springshark?
-    - .Nghh.. I guess it might be nice to have some company while looking for it...
+    - Nghh.. I guess it might be nice to have some company while looking for it...
       Okay fine you can help me. Hey, You're kinder than you look, stranger. I'm
       sorry about before.
     - You... Did this? But... I was starting to like you... Why... WHY DID YOU DISFIGURE
-      ME?.... At least you were honest, but this DOESN'T mean
+      ME?.... At least you were honest. This DOESN'T mean I forgive you!
     - You calling me a liar? Look, I know it sounds untrue, but it's what happened.
       Nothing else to it.
     - No... Probably some Glorp without a license who stole a ship and was going
       for a joyride. Still... I'll eat them whole if I ever find them.
-    - Oh, you want to split up to search? okay then...
-    - I could go for some mountain tops right now.. Lets go, it's this way... OUGH,
+    - Oh, you want to split up to search? Okay then...
+    - I could go for some mountain tops right now.. Let's go, it's this way... OUGH,
       careful there's a rock there... wait... is that... MY FIN!!!  I WAS LOSING
       HOPE!
     - I was wrong about you... You're a real treasure... Hey, what's that over there....
       my... MY... MY FIN!!!!!! THANK YOU THANK YOU!! You're a really blessing.. I'm
       so lucky I met you today, I think there's a reason we met today. It's meant
-      to me.
+      to be.
     actions:
-    - '**You''re at the spot where you were supposed to meet. When suddenly... You
+    - "*You're at the spot where you were supposed to meet. When suddenly... You
       feel the ground beneath you tremble, as one of the mountains begins to rise
-      up ** "Ughh.... Not under there either. Ahh I''ve checked every inch of this
-      landscape and not a single sight of my fin... Oh. It''s you."'
+      up.* \nUghh.... Not under there either. Ahh I've checked every inch of this
+      landscape and not a single sight of my fin... Oh. It's you."
     - Maybe I should've been a bit less harsh on you.. My name's Bruce.. I'm looking
-      for my fin... it broke off my head and I can't find it anywhere.
-    - I've been walking these fields for ages looking for my fin... It's hopeless...
+      for my fin. It broke off my head and I can't find it anywhere.
+    - I've been walking these fields for ages looking for my fin. It's hopeless...
       I'll never be whole again...
-    - You wanna know how my fin broke off? I was hopping across this mountain  range,
+    - You wanna know how my fin broke off? I was hopping across this mountain range,
       when all of a sudden this giant metal rocket came out of nowhere and broke
       my fin clean off. If I ever find out who was flying that ship i'll eat them
-      whole...
+      whole!
     - I'm starting to lose hope... Do you think we'll ever find it?
+    - I'll see you around then. Thanks for helping me look.
 --- !u!1 &728984413
 GameObject:
   m_ObjectHideFlags: 0
@@ -3192,7 +3223,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947320154}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0.007806076, w: 0.99996954}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.010081058, w: 0.9999492}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3224,7 +3259,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972852753}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.000048365677, w: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.0005040752, w: 0.9999999}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4242,7 +4281,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.000045407767, w: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.00030008727, w: 0.99999994}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4582,41 +4625,47 @@ MonoBehaviour:
   dialogue:
     name: tarrant
     options:
-    - Your profile said you liked hats.... So I brought you a brand new hat!
+    - Your profile said you liked hats. So I brought you a brand new hat!
     - That's the coolest hat i've ever seen.
-    - (Politely Shake one of thier arms)
-    - If you want to be more approachable, try wear gloves
+    - '*Politely shake one of their arms.*'
+    - If you want to be more approachable, try wearing gloves.
     - I thought they were your ribcage!
     - Your claws are so fashionable! I couldn't be afraid!
-    - (Give hat) Why don't you wear this hat I got you as a gift?
+    - '*Give hat.*
+
+      Why don''t you wear this hat I got you as a gift?'
     - Lose the hat, I want to see your beautiful hair!
-    - (touch tarrant's arm) a watch would fit with your style!
+    - '*Touch Tarrant''s arm.*
+
+      A watch would fit with your style!'
     - You didn't poop yourself, did you?
-    - Tarrant, you're so kind, you could never be disgusted by you!
-    - (Hold Tarrant's hands) I'm ready.
+    - Tarrant, you're so kind, I could never be disgusted by you!
+    - "*Hold Tarrant's hands.* \nI'm ready."
     - WE NEED TO TAKE YOU TO A DOCTOR!
-    - Aw that's not disgusting Tarrant!
-    - (poke Tarrants brain) Whoa..
-    - Tarrant, I have something to tell you too... I'm Actually.... A human.
+    - Aw that's not disgusting, Tarrant!
+    - "*Poke Tarrants brain.* \nWhoa..."
+    - Tarrant, I have something to tell you too. I'm actually.... A human.
     - Your fashion, exposed brain, and 6 arms that give awesome hugs is exactly why
       I like you!
-    - (Hug Tarrant) Yes!!
+    - '*Hug Tarrant.*
+
+      Yes!!'
     respones:
-    - You don't like Tarrant's hat? but... tarrant worked hard on that :((
+    - You don't like Tarrant's hat? But... Tarrant worked hard on that :((
     - Really?.... Tarrant feels.... happy..... :)
     - Your tentacle feels... funny... Tarrant likes!! :33
     - Tarrant is more fashionable than you, and will not take fashion advice from
       you. >://
     - Tarrant gets that a lot...
     - Tarrant has studied fashion for this exact reason!! :DD
-    - Tarrant can't size down. and Tarrant will NOT size down >:I
-    - hmm... but Tarrant doesn't have any hair... :')
-    - Tarrant is feeling... Glorpflies but in Tarrants heart... :s
+    - Tarrant can't size down. And Tarrant will NOT size down >:I
+    - Hmm... but Tarrant doesn't have any hair... :')
+    - Tarrant is feeling... Glorpflies but in Tarrant's heart... :s
     - NOOO TARRANT WOULD NEVER DO THAT!! >n<
-    - Hmm.. Okay... really? Tarrant isn't sure but will trust you anyway. :')
+    - Hmm.. Okay... really? Tarrant isn't sure. But will trust you anyway. :')
     - O...okay.... :3
     - NOOOO!!!! >-< TARRANT JUST HAS A CONDITION!!
-    - Tarrant is so happy you think that ^_^
+    - Tarrant is so happy you think that! ^_^
     - OooOo please be gentle! Tarrant's brain's sensitive! :3 .... That's why Tarrant
       wears a hat all the time... Tarrant is so glad you don't mind it!
     - Tarrant doesn't like when you joke about that kind of stuff. :// That's not
@@ -4625,17 +4674,18 @@ MonoBehaviour:
       too!
     - Ouhh >o< TARRANT WANTS TO SKIP DATING AND GET MARRIED!!1!!1!!!
     actions:
-    - You're at the date location, but nobody's there. You hear shuffling, and see
-      a large stylish hat shuffles across the floor. the hat looks up at you, and
-      you see an alien, with what looks to claws coming out of the side of it looking
-      up to you.
+    - '*You arrive at the date location, but nobody''s there. You hear shuffling,
+      and see a large stylish hat shuffles across the floor. the hat looks up at
+      you, and you see an alien, with what looks to claws coming out of the side
+      of it looking up to you.*'
     - You're not afraid of Tarrants hands? Normally people get disgusted or run away.
-    - Tarrant is SUUPER into fashion, do you know anything about it?! Doesnt really
-      look like it :/ ... but what would you do to improve Tarrant's style? :3
+    - Tarrant is SUUPER into fashion, do you know anything about it?! Doesn't really
+      look like it :/ But what would you do to improve Tarrant's style? :3
     - Tarranat will be honest...  You are very Hattractive, and Tarrant wants to
       get closer to you but is worried that you will be disgusted... :((
-    - (Tarrant takes their hat off their lack of hair  is not too surprising... but...
-      they're not just bald, there's a split in their head their brain is exposed?!?)
+    - '*Tarrant takes their hat off their lack of hair  is not too surprising...
+      but... they''re not just bald, there''s a split in their head their brain is
+      exposed?!?*'
     - Now that Tarrant has shared their secret with you... Do you still want to date
       me? ://
     - Your date with tarrant seemed to have gone well. Time to head back.
@@ -4797,7 +4847,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433223088}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.00023425787, w: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: 0.00087761774, w: 0.99999964}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4829,7 +4883,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434604158}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.0056162155, w: 0.99998426}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.0070926505, w: 0.9999749}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5020,7 +5078,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: 0.0003604636, w: 0.99999994}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.0003107715, w: 0.99999994}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5171,7 +5233,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.0120137045, w: 0.9999279}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.015027997, w: 0.9998871}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6095,7 +6161,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869078821}
   serializedVersion: 2
+<<<<<<< HEAD
   m_LocalRotation: {x: 0, y: 0, z: -0.00022842556, w: 1}
+=======
+  m_LocalRotation: {x: 0, y: 0, z: -0.0005978687, w: 0.9999998}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6936,6 +7006,7 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
+<<<<<<< HEAD
     - {x: 0, y: 0, z: -0.0962789, w: 0.9953545}
     - {x: 0, y: 0, z: -0.0120137045, w: 0.9999279}
     - {x: 0, y: 0, z: 0.015345891, w: 0.9998823}
@@ -6952,6 +7023,24 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.000045407767, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: -0.62057066, w: 0.7841506}
+=======
+    - {x: 0, y: 0, z: -0.094359, w: 0.9955383}
+    - {x: 0, y: 0, z: -0.015027997, w: 0.9998871}
+    - {x: 0, y: 0, z: 0.017690446, w: 0.99984354}
+    - {x: 0, y: 0, z: -0.012610033, w: 0.99992055}
+    - {x: 0, y: 0, z: 0.010081058, w: 0.9999492}
+    - {x: 0, y: 0, z: -0.0070926505, w: 0.9999749}
+    - {x: 0, y: 0, z: 0.000516306, w: 0.9999999}
+    - {x: 0, y: 0, z: 0.00087761774, w: 0.99999964}
+    - {x: 0, y: 0, z: -0.0013098724, w: 0.99999917}
+    - {x: 0, y: 0, z: 0.0013674533, w: 0.9999991}
+    - {x: 0, y: 0, z: -0.0005978687, w: 0.9999998}
+    - {x: 0, y: 0, z: 0.0005040752, w: 0.9999999}
+    - {x: 0, y: 0, z: -0.0003107715, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.00030008727, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
+    - {x: 0, y: 0, z: -0.6201007, w: 0.7845223}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
@@ -7031,25 +7120,27 @@ MonoBehaviour:
   dialogue:
     name: mantis
     options:
-    - (Dap up the alien)
+    - '*Dap up the alien.*'
     - Hey there!
-    - (let the mantis touch your face)
+    - '*Let the mantis touch your face.*'
     - What do I do for fun? I like to watch Movies!
-    - What's my favorite food
-    - You want to touch my face ?
-    - Start belting some lyrics about loving a mantis!
-    - Politely wait for the mantis to finish. "That sounded lovely, you have a beautiful
-      whistle."
-    - Start whistling alongside the mantis, harmonising together.
-    - Pick up a broken stick from the ground and gift it to the Mantis
-    - Let the Mantis do what it wants to do without interuption.
-    - Hold the Mantis' arm and guide them to a tree.
-    - Applaud the amazing display of skill.
+    - What's my favorite food?
+    - You want to touch my face?
+    - '*Start belting some lyrics about loving a mantis!*'
+    - '*Politely wait for the mantis to finish.*
+
+      That sounded lovely, you
+      have a beautiful whistle.'
+    - '*Start whistling alongside the mantis, harmonising together.*'
+    - '*Pick up a broken stick from the ground and gift it to the Mantis.*'
+    - '*Let the Mantis do what it wants to do without interuption.*'
+    - '*Hold the Mantis'' arm and guide them to a tree.*'
+    - '*Applaud the amazing display of skill.*'
     - Thank you, that is very kind of you.
-    - Gently hug the Mantis.
+    - '*Gently hug the Mantis.*'
     - I'm sorry, I don't think I can see a future with us.
     - I would love to date you, yes.
-    - Draw a 'YES' on the Mantis' hand
+    - '*Draw a ''YES'' on the Mantis'' hand*'
     respones:
     - The Mantis looks scared and confused.
     - The Mantis clicks. It seemed polite.
@@ -7057,16 +7148,16 @@ MonoBehaviour:
     - The Mantis disapproves...
     - The Mantis starts sniffing, then stares blankly. Maybe you don't smell as nice.
     - The mantis clicks excitedly, as it gently brushes your face with its scythe-like
-      arms
+      arms.
     - The Mantis cowers and covers its ears... Maybe you didn't sound as good as
       you thought.
     - The Mantis clicks politely, and does a little bow.
-    - The Mantis seems to be in bliss, as it continues to appreciate the harmonised
+    - The Mantis seems to be in bliss as it continues to appreciate the harmonised
       tune.
-    - The Mantis grabs it, shrieks, and drops the stick... Having a closer look,
-      the stick had a bunch of splinters in it. The mantis walks away, stopping at
-      a tree.
-    - The Mantis clicks, in a similar way to a bat, or dolphin. Eventually making
+    - The Mantis grabs it, shrieks, and drops the stick. Having a closer look, the
+      stick had a bunch of splinters in it. The mantis walks away, stopping at a
+      tree.
+    - The Mantis clicks in a similar way to a bat, or dolphin. It eventually makes
       it's way to a tree.
     - It seems satisfied with this.
     - The Mantis flinches every time the sudden clap sound is made.
@@ -7076,18 +7167,20 @@ MonoBehaviour:
     - The Mantis seems happy.
     - The Mantis gives you a hug, touches your face, and gently kisses you.
     actions:
-    - The most beautiful forest you've ever seen. The birds chirping, mixed with
-      the sounds of the wind in the trees sound angelic. You hear  a clicking, and
+    - '*The most beautiful forest you''ve ever seen. The birds chirping, mixed with
+      the sounds of the wind in the trees sound angelic. You hear a clicking, and
       see a mantis-like creature hops towards you. It clicks inquisitively and reaches
-      its hand out)
-    - The mantis clicks and taps its staff and gestures to you.
-    - The Mantis starts whistling a pretty tune.
-    - The Mantis starts hopping around, impressively still using its staff for guidance,
-      seemingly searching for something.
-    - The Mantis uses its staff to become taller, and grab two pink fruits from a
-      tree. It methodically climbs down, and reaches out its hand to you.
-    - The Mantis draws a '<3' Into the ground, and then a '?', then holds out their
-      hand.
+      its hand out.*'
+    - '*The mantis clicks and taps its staff and gestures to you.*'
+    - '*The Mantis starts whistling a pretty tune.*'
+    - '*The Mantis starts hopping around, impressively still using its staff for
+      guidance, seemingly searching for something.*'
+    - '*The Mantis uses its staff to become taller, and grab two pink fruits from
+      a tree. It methodically climbs down, and reaches out its hand to you.*'
+    - '*The Mantis draws a ''<3'' Into the ground, and then a ''?'', then holds out
+      their hand.*'
+    - '*The Mantis hops twice, giving a series of clicks before hopping away into
+      the forest.*'
 --- !u!1001 &2009632014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7494,77 +7587,147 @@ MonoBehaviour:
     options:
     - Were you just.. speaking to that rock? I didn't know geologists did that...
     - Flynnt like Flint? Are you a geologist?
-    - That's me! I like your rock collection! You must be a pretty impressive geologist
-    - ' A "geologist" is somebody who studies rocks, not collects them, so they probably
-      know more, but their collection isnt as big.'
+    - That's me! I like your rock collection! You must be a pretty impressive geologist.
+    - A "geologist" is somebody who studies rocks, not collects them. They probably
+      know more, but their collection isn't as big.
     - How many rocks do you have?
-    - ' I don''t think anybody is as... in love... with rocks as you are.'
-    - Let me guess, Your Number 1 Is "The Rolling Stones"?
-    - That's amazing, i've never met anyone as passionate as you about rocks!
+    - I don't think anybody is as... in love... with rocks as you are.
+    - Let me guess, your Number 1 is "The Rolling Stones"?
+    - That's amazing, I've never met anyone as passionate as you about rocks!
     - There's a magazine called Rocks Monthly? I'll have to subscribe to that.
     - Hey come on now, like you said, it's just one lousy emerald! Your collection
-      is still so impressive the queen wanted something!
+      is still so impressive. No wonder the queen wanted something from it!
     - Wow, you got to meet the queen? I like a Glomp with status.
-    - How about this dusty rock on the floor here? it's not much but maybe it can
+    - How about this dusty rock on the floor here? It's not much, but maybe it can
       be a placeholder?
     - My tentacle is great at cleaning gems!
     - I will stick by you through all the rocky roads of life! I'll be the boulder
       you can lean on.
     - I can get you some super rare gemstones. Really rare and expensive stuff, like
       Pyrite.
-    - Pick the RED RUBY
-    - Pick the BLUE DIAMOND
-    - Pick the GREEN EMERALD
+    - '*Pick the RED RUBY.*'
+    - '*Pick the BLUE DIAMOND.*'
+    - '*Pick the GREEN EMERALD.*'
     respones:
-    - Uhhhh... no.... I was speaking to.. that........ rock. Yeah the rock.
+    - Uhhhh... no.... I was speaking to.. that........ rock. Yeah, the rock.
     - The one and only! I know, I know... It must be pretty overwhelming meeting
       the guy with the most impressive rock collection on Glorth.
-    - It's pretty awesome isnt it 571 shlooms I've been collecting rocks!
+    - It's pretty awesome isn't it? I've been collecting rocks for 571 shlooms!
     - NOBODY knows more about rocks than me. Especially not this "Geologist" guy...
     - Exactly 87 right now. One unique rock of every type. Although I had 88 not
       long ago, but I gave this alien a piece of broken quartz and told them it was
       a shark tooth to make them shut up.
-    - ' I only know one rock collection better than my first one.... MY SECOND ONE!
-      BOOM!'
-    - What? Who's that? No. It's  Weezer.
+    - I only know one rock collection better than my first one.... MY SECOND ONE!
+      BOOM!
+    - What? Who's that? No. It's Gleezer.
     - I know, I tell myself that Every day, It's all thanks to my rocks, every single
       is Sedimental to me.
     - Well it's more of a brochoure, but it's still Impressive! I'm their top reader!
     - Just a "Lousy emerald"? NO GEM IS LOUSY!! Don't you EVER say that about a gemstone
       in my presence.
-    - I know. I'm pretty famous around here... I mean,,, I didn't MEET with her,
-      it was someone picking it up for her, BUT STILL. I try not to take it for grantie.
-    - Ah thanks bud, but i doubt it'll replace an emer..... wait.. A HEART SHAPED
+    - I know. I'm pretty famous around here. I mean, I didn't MEET with her, it was
+      someone picking it up for her. BUT STILL. I try not to take it for granted.
+    - Ah thanks bud, but I doubt it'll replace an emer..... wait.. A HEART SHAPED
       ROCK?!? YOU'RE SO ROMANTIC!
-    - Your tentacle is probably all SLIMY, I will not have my precious rocks be gooped
+    - Your tentacle is probably all SLIMY! I will not have my precious rocks be gooped
       on because of you.
-    - hmm, okay, but I have a couple boulders already... Couldn't hurt to have one
+    - Hmm, okay, but I have a couple boulders already. Couldn't hurt to have one
       more.
     - Hmm... Pyrite... I've never heard of that, it must be SUPER RARE! Rarer than
       my precious emerald... You got yourself a deal!
-    - Hmm... Ruby... usually the sign of love, but this time... not the right one...
-    - Hmm... Diamond, the strongest stone I have, it's nice but, not what I like...
-    - This... must be fate... IT'S MEANT TO BE!!! I know you feel the same, this
-      must be your dream to get with amazing Flyynt.
+    - Hmm... Ruby... usually the sign of love, but this time... not the right one.
+    - Hmm... Diamond, the strongest stone I have. It's nice but, not what I like...
+    - This... must be fate... IT'S MEANT TO BE!!! I know you feel the same. This
+      must be your dream - to get with amazing Flyynt.
     actions:
-    - '**A cave is a weird location for a first date... maybe this is normal in this
-      planet...  Up ahead you hear talking, and what looks to be humanoid volcano
-      polishing a rock.** Shh.... Shh.... Easy there..... Daddy''s got ya... OH UHHH
-      HEY! Didn''t see ya there, You must be my date from Glompartner.. I''m Flynnt!'
-    - Who's this "Geologist" anyway? does he have a better rock collection than me?
-      I have a rare GREEN SHINY stone like you've never seen... It's the rarest in
-      my collection...
+    - "*A cave is a weird location for a first date... maybe this is normal in this
+      planet. Up ahead you hear talking, and what looks to be humanoid volcano polishing
+      a rock.* \nShh.... Shh.... Easy there..... Daddy's got ya... OH UHHH HEY! Didn't
+      see ya there, You must be my date from Glompartner.. I'm Flynnt!"
+    - Who's this "Geologist" anyway? Does he have a better rock collection than me?
+      I have a rare GREEN SHINY stone like you've never seen. It's the rarest in
+      my collection.
     - You know, my rock collection actually got me on the front page of Rocks Monthly!
-      You see, there's my interview, It has my rarest rocks, and my top 10 favourite
+      You see, there's my interview. It has my rarest rocks, and my top 10 favourite
       band!
-    - You know, the Queen once requested my best gem for her crown, You know what
-      I gave her? Just a lousy diamond!... Come to think of it... I only had one
-      diamond... AW DAMN IT!
-    - I'm looking for a sturdy relationship, something long term ya'know, you've
+    - You know, the Queen once requested my best gem for her crown. You know what
+      I gave her? Just a lousy diamond! Come to think of it... I only had one diamond.........
+      AW DAMN IT!
+    - I'm looking for a sturdy relationship, something long term ya'know. You've
       seen what I can provide, what do you bring to the table?
-    - I've had a rockin' time today... Okay then, this is the last test... the compatibility
-      test... Pick one of these three gems, and which one you pick will decide our
+    - I've had a rockin' time today. Okay then, this is the last test - the compatibility
+      test. Pick one of these three gems, and which one you pick will decide our
       fate as a couple.
+<<<<<<< HEAD
+=======
+    - Hey, that was fun. Maybe next time, bring me a big, shiny rock ;)
+--- !u!1001 &2045067465
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1868600369}
+    m_Modifications:
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 281
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005968258464212375, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_Name
+      value: SpawnLocation
+      objectReference: {fileID: 0}
+    - target: {fileID: 4005968258464212375, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+--- !u!4 &2045067466 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3298170729767083573, guid: dc540cdfa5a2515478f2f354c254c569, type: 3}
+  m_PrefabInstance: {fileID: 2045067465}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> 9dffd9abf9d010dca1c02773c3cd4023da2341d9
 --- !u!1 &2072542796
 GameObject:
   m_ObjectHideFlags: 0
@@ -7625,60 +7788,66 @@ MonoBehaviour:
   dialogue:
     name: frillish
     options:
-    - Walk up to the alien
+    - '*Walk up to the alien.*'
     - Why are you standing behind a wall?
-    - Whisper hello.
-    - It's okay, maybe next time it can be just us!
+    - '*Whisper hello.*'
+    - It's okay. Maybe next time it can be just us!
     - Of course, your friend seems lovely, just like you!
     - It's okay, I struggle to talk sometimes too!
-    - Politely shake Frillish's hand
+    - '*Politely shake Frillish''s hand.*'
     - You both have very lovely names!
     - Nice to meet you Frillish :)
-    - I just wanna eat you! (touch their lightbulb)
+    - 'I just wanna eat you!
+
+      *Touch their lightbulb.*'
     - This place does the best pasta! You'll love it.
     - You looked like a creamcake alien because you're sweet, so I'll get you that!
-    - They're just stars
-    - Hey, I was up there not long ago... with the stars...
+    - They're just stars.
+    - Hey, I was up there not long ago... with the stars.
     - The stars glow almost as bright and beautiful as you.
-    - Out food hasn't arrived, I know you want to stay for that.
+    - Our food hasn't arrived, I know you want to stay for that.
     - It's been nice. I've had fun with you both.
     - Frillish. I hope we can see eachother again soon.
     respones:
-    - The Alien suddenly turns transparent, almost invisible unless you knew they
-      were there in the first place.
-    - (My friend is Shy, You're so direct!!)
-    - '*The bulb of the alien glows as they shyly wave back *'
+    - '*The Alien suddenly turns transparent, almost invisible unless you knew they
+      were there in the first place.*'
+    - '(A: My friend is shy, you''re so direct!!)'
+    - '*The bulb of the alien glows as they shyly wave back.*'
     - N...Next time?? Eh Ehhhhh.... This is all moving...... way too fast..... I
       want to dessert this date....
     - Y-Yes.... They are.... You're...... very sweet...
-    - .Y-You do??.... That's reassuring..... You're sweet.....
-    - '.Frillish recoils and hides behind a wall... (A: STAY BACK PERVERT!)'
-    - 'T....Thank you..... (A: I know we do!)'
+    - Y-You do??.... That's reassuring..... You're sweet.....
+    - "Frillish recoils and hides behind a wall... \n(A: STAY BACK PERVERT!)"
+    - "T....Thank you..... \n(A: I know we do!)"
     - N-Nice to...... meet you... too.....
     - PLEASE...... don't..... touch my lightbulb...
     - Oh..... um.... yeah... pasta.... sounds good...
-    - Frillish's bulb starts glowing bright, That's probably a good sign.
-    - Frillish goes invisible and hides behind the wall, and sniffling sounds start
-      coming from that direction.
-    - 'Yeah..... Sure you were......  (A: what a liar!! you''re funny with your crazy
-      stories.)'
-    - 'Y-.... you mean it....? (A: WHOA  GET A ROOM!!)'
-    - 'Umm.... Uhh..... I.... Can''t.... (A: GET THE HINT GLORPO!)'
-    - 'It has been..... nice... (A: This was FUN! Three friends hanging out! LOVE
-      IT!)'
-    - 'Frillish''s bulb glows, they get embarrased by this and covers their face
-      (A: Frillish and the tentacle, sitting in a tree, K.I.S.S.I.N.G!)'
+    - '*Frillish''s bulb starts glowing bright. That''s probably a good sign.*'
+    - '*Frillish goes invisible and hides behind the wall, and sniffling sounds start
+      coming from that direction.*'
+    - "Yeah..... Sure you were......  \n(A: what a liar!! you're funny with your
+      crazy stories.)"
+    - "Y-.... you mean it....? \n(A: WHOA  GET A ROOM!!)"
+    - "Umm.... Uhh..... I.... Can't.... \n(A: GET THE HINT GLORPO!)"
+    - "It has been..... nice... \n(A: This was FUN! Three friends hanging out! LOVE
+      IT!)"
+    - '*Frillish''s bulb glows, they get embarrased by this and covers their face.*
+
+      (A:
+      Frillish and the tentacle, sitting in a tree, K.I.S.S.I.N.G!)'
     actions:
-    - 'You''re in the back of an alleyway, A sketchy place for a first date... You
+    - '*You''re in the back of an alleyway, a sketchy place for a first date... You
       think they decided not to show up, but peeking out from behind a wall, you
-      see your date, and on your date''s shoulder, a smaller alien? (Smaller alien:
-      HELLO my friend is shy, so i''m here to support her!!!)'
-    - I... hope its okay.... that I brought my friend... I struggle...... to talk...
+      see your date, and on your date''s shoulder, a smaller alien?*
+
+      (Smaller
+      alien: HELLO! My friend is shy, so I''m here to support her!!!)'
+    - I... hope it's okay.... that I brought my friend... I struggle...... to talk...
       sometimes....
-    - 'My names... Frillish... (A: AND MY NAMES Angy!)'
-    - 'Shall we.... get some food?..... (A: Ooo food! what shall we get?!)'
-    - 'Wow... look at..... the stars... aren''t they beautiful... (A: Frillish is
-      OBSESSED with stars, they wont shut up about them!) Angy... be quiet....'
+    - "My name's... Frillish... \n(A: AND MY NAMES Angy!)"
+    - "Shall we.... get some food?..... \n(A: Ooo food! What shall we get?!)"
+    - "Wow... look at..... the stars... aren't they beautiful... \n(A: Frillish is
+      OBSESSED with stars, they wont shut up about them!) \nAngy... be quiet...."
     - This is..... draining..... my social battery...... But it was.....................
       Fun....
 --- !u!1001 &2075557923
@@ -8017,74 +8186,88 @@ MonoBehaviour:
   dialogue:
     name: will
     options:
-    - 'Gently shake their shoulder to wake them up '
-    - Wait for them to wake up
+    - '*Gently shake their shoulder to wake them up.*'
+    - '*Wait for them to wake up.*'
     - Excuse me... Do you want me to come back later?
-    - 'napping ruins my sleep schedule. '
-    - You're funny hehe
-    - I love a good nap, you seem like a good napping companion
+    - 'Napping ruins my sleep schedule. '
+    - You're funny hehe.
+    - I love a good nap, you seem like a good napping companion.
     - 'No thanks, I don''t like tea. '
-    - Tea? how are you going to make it? with what?
-    - I'd love some! but are you sure its okay to... Steep... together on the first
+    - Tea? How are you going to make it? With what?
+    - I'd love some! But are you sure it's okay to... Steep... together on the first
       date?
-    - '**Add the red grass**'
-    - '**Add the tree leaves**'
-    - '**Add the little herbs**'
-    - '*take the cup, and brush his hand flirtatiously *'
-    - '**Don''t take the cup** '
-    - '**Take a sip from the cup**'
-    - Does it itch? **reach out to itch Wills skin**
+    - '*Add the red grass.*'
+    - '*Add the tree leaves.*'
+    - '*Add the little herbs.*'
+    - '*Take the cup, and brush his hand flirtatiously.*'
+    - '*Don''t take the cup.* '
+    - '*Take a sip from the cup.*'
+    - "Does it itch? \n*Reach out to itch their skin.*"
     - ' Is it reversable? I can get you some steroid cream? '
-    - 'or you could say you used to not like mushrooms, but they''re growing on you
+    - 'Or you could say you used to not like mushrooms, but they''re growing on you
       now. '
-    - ' I prefer singing **start belting your favourite song** '
-    - My tentacle also has a condition where I can't control it.
-    - 'You''re the only person I want to dance with '
+    - ' I prefer singing.
+
+      *Start belting your favourite song.* '
+    - My tentacle also has a condition where I can't control it. It's called 'Alien
+      Hand Syndrome'.
+    - You're the only person I want to dance with.
     respones:
-    - Hey gluhh dont you know it's rude to touch a sleeping glomp?
-    - '*the whale keeps sleeping for a long while, but eventually slowly opens its
-      eyes, takes a moment to realise whats happening, and then smiles *'
+    - Hey, Gluhh don't you know it's rude to touch a sleeping glomp?
+    - '*The whale keeps sleeping for a long while, but eventually slowly opens its
+      eyes. They take a moment to realise what''s happening, and then smiles.*'
     - '*The whale slowly opens its eyes, takes a moment to realise whats happening,
-      and then smiles *'
-    - Gluh, you're too strung up, on this date, just let yourself relax with me...
-    - Laughing is such a good vibe gluhh
-    - You're welcome to come nap with me anytime gluhh *Will winks at you *
-    - Oh... really? okay then, but at least you wouldn't  mind helping me make it
-      then. **Will starts pouting and tapping his foot**
-    - What? gluhh are you an alien or something? We'll make it normally.
-    - HAHAHAHA I could get used to you,,, come help me make it!
+      and then smiles.*'
+    - Gluh, you're too strung up. On this date, just let yourself relax with me...
+    - Laughing is such a good vibe, Gluhh.
+    - 'You''re welcome to come nap with me anytime, Gluhh.
+
+      *Will winks at
+      you.*'
+    - 'Oh... really? Okay then, but at least you wouldn''t mind helping me make it
+      then.
+
+      *Will starts pouting and tapping his foot.*'
+    - What? Gluhh are you an alien or something? We'll make it normally.
+    - HAHAHAHA, I could get used to you, come help me make it!
     - Umm...  you know that's Glerble food... right? I'll just do it myself...
-    - Gluh those are TREE leaves, not TEA leaves! never mind, i'll get it myself..
-    - mmm I can smell the herbs already, thanks gluhh
-    - '**Will recoils.** I know my skin is diffent but don''t touch me..'
+    - Gluh those are TREE leaves, not TEA leaves! never mind, I'll get it myself..
+    - Mmm, I can smell the herbs already. Thanks, Gluhh.
+    - "*They recoil.* \nI know my skin is diffent but don't touch me.."
     - Oh... Well, it's okay if someone doesn't want tea....
-    - ahhhh... It doesn't get better than this gluhh. Just you, me, and a nice herbal
+    - Ahhhh... It doesn't get better than this, Gluhh. Just you, me, and a nice herbal
       tea...
-    - NO GLUH WHY DID YOU TOUCH ME?! IT'S CONTAGEOUS!!!..... Only joking, but please
-      don't touch me without my permission.
-    - Steroid cream?... is that similar to glorp cream? I looooove glorp cream but
-      it gives me a brainfreeze...
-    - You're a really fun-guy you know, I hope we can get along more...
-    - '**Will recoils and puts their hands over their ears**  That''s a bit too loud
-      for me gluhh. Let''s just dance in silence...'
-    - Embrace what your body is trying to tell you gluhh.. Come and dance with me!
+    - 'NO GLUH WHY DID YOU TOUCH ME?! IT''S CONTAGEOUS!!!.....
+
+      Only joking,
+      but please don''t touch me without my permission.'
+    - Steroid cream?... Is that similar to glorp cream? I looooove glorp cream but
+      it gives me brainfreeze...
+    - You're a really fun-guy you know, I hope we can get along more.
+    - "*They recoil and puts their hands over their ears.* \nThat's a bit too loud
+      for me gluhh. Let's just dance in silence."
+    - Embrace what your body is trying to tell you, Gluhh. Come and dance with me!
     - Gluhh, this is pretty fast for me, but come hold my hand and dance with me!
     actions:
     - '*You see a purple whale asleep in the shade under a tree, a small snot bubble,
-      rises and falls from a blowhole on the top of their head *'
-    - Oh... Hey gluhh! I'm Will. Sorry about earlier, It's just so relaxing in this
-      park that I fell asleep, I'm so good at relaxing that I could do it in my sleep!
-    - Hey gluhh, how about a cup of lovely herbal tea? I'm sure it will make this
-      date even better than it already is. **(Will it make your avatar malfunction?)**
-    - Okay, here's the pot, add our tea in.
-    - Mmm I love a good cup of herbal tea... Go on have a cup **Will offers you a
-      cup**
-    - Hey Gluhh... Are you looking at my skin? it's okay, I dont mind. I have a skin
-      condition which causes a fungus like texture to spread, pretty cool right.
-    - that tentacle of yours is trying to dance away from you, let's dance with it
+      rises and falls from a blowhole on the top of their head.*'
+    - Oh... Hey, Gluhh! Sorry about earlier, it's just so relaxing in this park that
+      I fell asleep. I'm so good at relaxing that I could do it in my sleep!
+    - Hey, Gluhh, how about a cup of lovely herbal tea? I'm sure it will make this
+      date even better than it already is.
+    - Okay, here's the pot. Add our tea in.
+    - 'Mmm, I love a good cup of herbal tea... Go on have a cup.
+
+      *They offer
+      you a cup.*'
+    - Hey Gluhh... Are you looking at my skin? It's okay, I don't mind. I have a
+      skin condition which causes a fungus-like texture to spread. Pretty cool right?
+    - That tentacle of yours is trying to dance away from you. Let's dance with it
       together!
-    - Phew, I'm tired after all that dancing... I think.... I need another.... cup
-      of....... **snore ** (Will falls asleep.)
+    - 'Phew, I''m tired after all that dancing... I think.... I need another....
+      cup of.......
+
+      *Snore.* (They seem to have fallen asleep.)'
 --- !u!224 &8547519496724020379
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8119,61 +8302,67 @@ MonoBehaviour:
   dialogue:
     name: big b
     options:
-    - I'm so sorry! you were so small that I didn't see you through the grass.
-    - Sorry about that, i should be more careful.
-    - Grab the alien and hug them in apology
+    - I'm so sorry! You were so small that I didn't see you through the grass.
+    - Sorry about that, I should be more careful.
+    - Grab the alien and hug them in apology.
     - You'd look handsome clean shaven.
-    - It's very majestic
-    - Comb your fingers through the aliens beard "I like it."
+    - It's very majestic.
+    - '*Comb your fingers through the aliens beard.*
+
+      I like it.'
     - I got a joke for you!.... You'd have to be really low to pickpocket a midget.
     - You're a real comedian!
     - Laugh so hard you fall into them.
     - It's not big, it's only a small complex!
     - I'll love you despite anything you have.
     - Can't be as big as your beard.
-    - it's just that your eyes are so small
+    - it's just that your eyes are so small!
     - I was just surprised that you have 4 eyes.
     - I'd kiss your eyes if I could.
     - I think it is time to cut this date short...
     - It has, but it's been so fun.
-    - '*Caress the alien''s beard* I''ll see you around... BIG B...'
+    - '*Caress the alien''s beard.*
+
+      I''ll see you around... BIG B...'
     respones:
     - Small? SMALL? WHO ARE YOU CALLING SMALL, GLORPHOLE?! My name's BIG B, not Small
       B...
-    - Nooo you couldn't see me it's okay... Call me Big B...
-    - Okay Okay I forgive you.. Jeez. You didn't have to do all that,,  My name's
-      Big B...
-    - I'll have you know, I spent time and effort into this beard. and I will NOT
+    - Nooo you couldn't see me, it's okay... Call me Big B.
+    - Okay, okay. I forgive you.. Jeez. You didn't have to do all that. My name's
+      Big B.
+    - I'll have you know, I spent time and effort into this beard, and I will NOT
       be shaving it for a glorp with one tentacle.
     - I didn't like it at first, but it grew on me!
     - OOoohh it seems love is in the hair.
     - What are you trying to say... That I'm a midget? HUH? EXPLAIN YOURSELF!
-    - They all laughed when I said I wanted to be a comedian... Well  they're not
+    - They all laughed when I said I wanted to be a comedian... Well, they're not
       laughing now.
     - Whoa there! Didn't know I was THAT funny... You really like my jokes?
     - I'M SMALL?? SMALL HUH? I'LL SHOW YOU SMALL WHEN I MAKE A SMALL DENT IN YOUR
       FACE!!
     - Thank you friend, or maybe more than that by the end of this...
-    - It is pretty big and magnificent isn't it...
+    - It is pretty big and magnificent isn't it.
     - SMALLLLLLL?!?!?!?!?!?!? HOW DARE YOUUUUUU!!!! NOTHING ABOUT ME IS SMALL!!!
       HEAR ME?? NOTHING!!!!!!!!
-    - 4 eyes? that's normal for my species..... Are you okay?
-    - Hey... If we go on a second date... it's on the table...
-    - Short.. haha... funny.... I don't want to act out of character, I urge you
+    - 4 eyes? That's normal for my species..... Are you okay?
+    - Hey... If we go on a second date... It's on the table...
+    - Short.. Haha... funny.... I don't want to act out of character. I urge you
       to leave.... NOW...
     - It has, but all good things gotta come to an end, y'know?
-    - Oh my.... Yes... I'll be seeing you around. you know your way around a beard...
+    - Oh my.... Yes... I'll be seeing you around. You know your way around a beard.
+      ;)
     actions:
-    - You haven't walked far from your ship looking for your date, you're strolling
+    - '*You haven''t walked far from your ship looking for your date, you''re strolling
       through a field of tall yellow grass. When you accidentally kick something
       and hear an "OOF".... An alien, which you realise is your date, flies up in
-      front of you."HEY WHATS THE BIG IDEA?!"
-    - Hey what do you think of my beard? Do you like it? Should I shave it? Be Honest...
-    - ".Hey you know, I haven\u2019t slept for ten days.... because that would be
+      front of you.*'
+    - Hey what do you think of my beard? Do you like it? Should I shave it? Be honest...
+    - "Hey, you know, I haven\u2019t slept for ten days.... because that would be
       too long."
     - I'm gonna be honest, I have a height complex, and it's a big one.
     - I noticed you were looking at my eyes... I like that you have intense eye contact.
-    - Hmmm.. This HAS gone pretty well... but it's getting pretty late...
+    - Hmmm.. This HAS gone pretty well. But it's getting pretty late...
+    - Maybe I'll see ya around.
 --- !u!114 &9214801998530200788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8195,69 +8384,71 @@ MonoBehaviour:
     - Looks like a really bad incident happened here...
     - I wonder who owned it.
     - Wouldn't it be awesome if we could fly it?
-    - Hey I collect stamps! Maybe we could share
-    - I didn't know you had a nerdy side Jane.
+    - Hey, I collect stamps! Maybe we could share.
+    - I didn't know you had a nerdy side, Jane.
     - What other stuff have you found?
-    - Is that like Mcdonalds? Sorry I don't eat fast food!
+    - Is that like McDonalds? Sorry, I don't eat fast food!
     - When you come and deliver it, can you feed it to me as well? ;D
-    - (pick up a piece of broken off rocketship) I have a gift for you too... It's
-      uhhh... A rare piece of alien tech!
+    - "*Pick up a piece of broken off rocketship.* \nI have a gift for you too...
+      It's uhhh... A rare piece of alien tech!"
     - What's this 'incident' you're on about? Why make it sound so mysterious?
     - The glorpolimpics? What's that?
-    - That's INCREDIBLE! Did you win Jane?
+    - That's INCREDIBLE! Did you win, Jane?
     - As long as you'd be able to slow down from time to time, I'm sure we could
-      cherish a bunch of moments together
-    - When you put it like that, How could I say no (sarcastically)
+      cherish a bunch of moments together.
+    - When you put it like that, how could I say no? (sarcastically)
     - Let's live life in the fast lane together!
     respones:
-    - I've lived through worse than you can imagine amigorp... You weren't here when
-      I had 'the incident'. "You'll never recover, Jane." they said...
-    - Dangerous is my middle name, amigorp. My first is Jane.
-    - Thank you amigorp, do you want an autograph? The amazing Jane will do anything
-      for her fans! Jane always has time for a fan!... OH! YOU are my date..... not
-    - Bad... 'Incident'? Lets- Not talk about bad incidents... Lets change the subject,
-      Hey look at this cool rubble..
+    - I've lived through worse than you can imagine Amigorp... You weren't here when
+      I had 'The Incident'. "You'll never recover, Jane." they said...
+    - Dangerous is my middle name, Amigorp. My first is Jane.
+    - Thank you Amigorp, do you want an autograph? The amazing, Jane will do anything
+      for her fans! Jane always has time for a fan!... OH! YOU are my date... Not
+      a fan.
+    - Bad... 'Incident'? Lets- Not talk about bad incidents... Lets change the subject.
+      Hey look at this cool rubble.
     - Man, that glorp must be AWESOME!! I gotta meet them one day.
     - That would be SO COOL!! Should we try?? I bet the owner would never know it
       was gone!!
     - You have very... Boring hobbies....  Bottle caps? I mean at least my stuff
       is alien and mysterious... yours is just................ yeah.....
-    - It's not nerdy to collect cool things collectors items.
+    - It's not nerdy to collect cool things, like collectors items.
     - I found a cool clyindical thing, this rubber scarf that i'm wearing, and recently
       this rock guy gave me a real shark tooth!! He said it was super rare!
-    - Well.... I'm a fast person amigorp... I deliver FAST food, when i'm not eating
+    - Well.... I'm a fast person Amigorp... I deliver FAST food, when i'm not eating
       i'm FASTing. Fast is my middle name. So is dangerous.
     - Feed it to you? Ehhh... You can't do it yourself? Strange...
     - This.... Is.... INCREDIBLE!!!!! WHOAOAOAH SO COOL! THIS IS ONE OF A KIND! THANK
       YOU AMIGORP!
-    - Please... Let's not talk about 'the incident'....
-    - You dont know what the GLORLPOLIMPICS are?!? Where all the  most daring competitions
-      go on?!? Thats where my.... 'incident' happened
+    - Please... Let's not talk about 'The Incident'....
+    - You dont know what the GLORLPOLIMPICS are?!? Where all the most daring competitions
+      go on?!? Thats where 'The Incident' happened.
     - I KNOW RIGHT!! I would've won, it was the most incredible run in glorpolimpics
-      history! But... 'The incident'... stopped everything..
+      history! But... 'The Incident'... stopped everything.
     - As long as you'd be able to slow down from time to time, I'm sure we could
-      cherish a bunch of moments together
-    - Great! I'm glad we're on the same page amigorp!
-    - Now you're spreaking my language amigorp!
+      cherish a bunch of moments together.
+    - Great! I'm glad we're on the same page, Amigorp!
+    - Now you're spreaking my language, Amigorp!
     actions:
-    - From the distance, you see a cloud of dust rapidly approaching you... No...
-      Thats... YOUR DATE?!? They're approaching you dangerously fast, and looks like
-      they're going to hit you! They start braking and a huge dust wave tails them
-      as they impressively drift to a halt beside you, the dust flowing behind the,...
-      "Hey."
-    - Cool place for a Speed Date right amigorp? You seen this rocket? isn't it AWESOME?!
-      Wonder what it was for, maybe an AWESOME stunt!
-    - I love finding stuff like this... I collect interesting things, or stuff not
-      from this planet so this looks so cool.
-    - Hey, I have a gift for you! Since it's  our first date and all, it's only polite!
+    - '*From the distance, you see a cloud of dust rapidly approaching you... No...
+      Thats... YOUR DATE?!? They''re approaching you dangerously fast, and looks
+      like they''re going to hit you! They start braking and a huge dust wave tails
+      them as they impressively drift to a halt beside you, the dust flowing behind
+      them*'
+    - Cool place for a Speed Date right, Amigorp? You seen this rocket? Isn't it
+      AWESOME?! Wonder what it was for, maybe an AWESOME stunt!
+    - I love finding stuff like this... I collect interesting things, or alien items.
+      So this looks cool.
+    - Hey, I have a gift for you! Since it's our first date and all, it's only polite!
       I gift you..... A coupon for one free meal at McGlorps! My job as a delivery
       glorp means that I get free vouchers! AND, I will personally deliver it to
       you.
     - I was once in the glorpolimpics you know.. I would've been in it again this
-      year if it wasn't for.... 'The incident'...
-    - Well... Enough of 'the incident'... I've had a great time today... Will you
+      year if it wasn't for.... 'The Incident'...
+    - Well... Enough of 'The Incident'... I've had a great time today... Will you
       be willing to date me, despite my glaring trauma avoidance, extreme arrogance,
-      and  undiagnosed ADHD?
+      and undiagnosed ADHD?
+    - It's been a blast, but I've gotta dash!
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
