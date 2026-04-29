@@ -73,7 +73,7 @@ public class TabletAppearDissapear_Script : MonoBehaviour
 
 
             datingApp.Taskbar_SwapDatingAppClose();
-            matchedTXTAnimator.SetTrigger("Reset");
+            //matchedTXTAnimator.SetTrigger("Reset");
         }
         else 
         {
