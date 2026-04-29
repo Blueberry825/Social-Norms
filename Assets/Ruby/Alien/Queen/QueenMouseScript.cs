@@ -8,7 +8,7 @@ public class QueenMouseScript : MonoBehaviour
 
     public GameObject currentOptionObj;
     private GameObject nextButton;
-    private GameObject currentAlien;
+    public GameObject queen;
 
     private QueenDialogue QueenDialogue_scr;
     private QueenInteractionSelector QueenInteractionSelector_scr;
@@ -31,8 +31,6 @@ public class QueenMouseScript : MonoBehaviour
         //backgroundMusic_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>(); //TEMPORARY
 
         //maxSpeed = backgroundMusic_scr.mouseSensitivity * 10; TEMP
-
-        //currentAlien = ListOfAliens_Script_scr.currentDate;//when scene starts get current alien 
     }
 
     private void Update()
@@ -50,7 +48,7 @@ public class QueenMouseScript : MonoBehaviour
             LoveMeter_scr.LoveChange(optionID);
             nextButton.SetActive(true);
 
-            //AnimationTrigger();//trigger animation depending on the ID of the option picked //add queen stuff later
+            AnimationTrigger();
         }
     }
 
@@ -59,15 +57,15 @@ public class QueenMouseScript : MonoBehaviour
         switch (optionID)//0 NEGATIVE | 1 NEUTRAL | 2 POSITIVE
         {
             case 0:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 0);
+                queen.GetComponent<Animator>().SetTrigger("Negative");
 
                 break;
             case 1:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 1);
+                queen.GetComponent<Animator>().SetTrigger("Neutral");
 
                 break;
             case 2:
-                currentAlien.GetComponent<Animator>().SetInteger("Mood", 2);
+                queen.GetComponent<Animator>().SetTrigger("Positive");
 
                 break;
         }

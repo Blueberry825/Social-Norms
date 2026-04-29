@@ -14,7 +14,9 @@ public class QueenDialogue : MonoBehaviour
     private GameObject GameOver;
     private GameObject tablet;
     private GameObject armObject;
+
     private GameObject nextButton;
+    public GameObject endButton;
 
     private QueenDialogueTrigger QueenDialogueTrigger_scr;
     public QueenInteractionSelector QueenInteractionSelector_scr;
@@ -142,21 +144,26 @@ public class QueenDialogue : MonoBehaviour
         }
         else
         {
-            Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
 
             armObject.SetActive(false);
-
-            if (LoveMeter_scr.isLoveFull)
-            {
-                WinState();
-            }
-            else
-            {
-                LoseState2();
-            }            
+           
+            endButton.SetActive(true);
         }
         meLines++;
+    }
+
+    public void DecideWinLos()
+    {
+
+        if (LoveMeter_scr.isLoveFull)
+        {
+            WinState();
+        }
+        else
+        {
+            LoseState2();
+        }
     }
 
     public void HideObj(GameObject Obj)
@@ -266,7 +273,6 @@ public class QueenDialogue : MonoBehaviour
         }
         else
         {
-            dialogueText.text = "i am getting tired of talking to you..";
             OptionBubbles();
         }
     }
