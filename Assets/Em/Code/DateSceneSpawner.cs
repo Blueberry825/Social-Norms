@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
@@ -20,6 +21,7 @@ public class DateSceneSpawner : MonoBehaviour
     private MouseTracking MouseTracking_scr;
 
     public GameObject tempSpawnedAlien;
+    private Scene scene;
 
     private void Start()
     {
@@ -30,13 +32,17 @@ public class DateSceneSpawner : MonoBehaviour
 
     private void BackgroundPicker()
     {
-        currentAlienDate = listAlien_Script.currentDate;
-        if (currentAlienDate.name != "Queen")
+        scene = SceneManager.GetActiveScene();
+        if (scene.name != "Queen_Scene") 
         {
-            alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-            currentBackground = backgroundList[alienNumber];
-            GameObject bg = Instantiate(currentBackground, gameObject.transform);
-            bg.transform.localScale = new Vector3(100, 100, 1);
+            currentAlienDate = listAlien_Script.currentDate;
+            if (currentAlienDate.name != "Queen")
+            {
+                alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
+                currentBackground = backgroundList[alienNumber];
+                GameObject bg = Instantiate(currentBackground, gameObject.transform);
+                bg.transform.localScale = new Vector3(100, 100, 1);
+            }
         }
 
         CloneSizeAndLocation();
@@ -44,9 +50,10 @@ public class DateSceneSpawner : MonoBehaviour
 
     public void CloneSizeAndLocation()
     {
-        alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
-
-        print("alien number is: " + alienNumber);
+        if (scene.name != "Queen_Scene") 
+        {
+            alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
+        }
 
         switch (alienNumber)
         {

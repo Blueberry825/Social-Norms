@@ -12,6 +12,7 @@ public class LoveMeter : MonoBehaviour
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
     private int currentLocation;
+    private Scene scene;
 
     public int result;
     public int decreaseAmount;
@@ -34,11 +35,17 @@ public class LoveMeter : MonoBehaviour
         loveAmount = 50f;
         decaying = true;
 
-        dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        scene = SceneManager.GetActiveScene();
+        if (scene.name != "Queen_Scene") 
+        {
+            dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+            var currentAlien = ListOfAliens_Script_scr.currentDate;
+            alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
+        }
+
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        var currentAlien = ListOfAliens_Script_scr.currentDate;
-        alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
+
 
         loveMeter.value = loveAmount;//set to default love amount
 

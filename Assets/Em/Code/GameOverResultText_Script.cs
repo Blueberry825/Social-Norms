@@ -1,5 +1,7 @@
 using TMPro;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOverResultText_Script : MonoBehaviour
 {
@@ -8,10 +10,22 @@ public class GameOverResultText_Script : MonoBehaviour
     private int alienNumber;
     private string alienLocation;
 
+    private Animator gameOverBackgroundAnim;
+    private Animator endTextAnim_Good;
+    private Animator endTextAnim_Bad;
+
+    private UnityEngine.SceneManagement.Scene scene;
+
 
     private void Start()
     {
-        dateDescriptionText = GameObject.Find("DateInfo").GetComponent<TextMeshProUGUI>();
+        scene = SceneManager.GetActiveScene();
+        if (scene.name != "Queen_Scene") 
+        {
+            dateDescriptionText = GameObject.Find("DateInfo").GetComponent<TextMeshProUGUI>();
+        }
+
+        gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
     }
 
     private void GetLocation(int alienNum) 
@@ -68,6 +82,9 @@ public class GameOverResultText_Script : MonoBehaviour
 
     public void GoodDate() 
     {
+        gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
+
+        gameOverBackgroundAnim.SetBool("Background", false);
         Debug.Log("Good date");
         alien = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>().currentDate;
         alienNumber = alien.GetComponent<AliensDated_Script>().alienNumber;
@@ -79,11 +96,35 @@ public class GameOverResultText_Script : MonoBehaviour
 
     public void BadDate() 
     {
-        Debug.Log("Bad date");
+        gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
+
+
+        gameOverBackgroundAnim.SetBool("EnBackgrounddText", false);
         alien = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>().currentDate;
         alienNumber = alien.GetComponent<AliensDated_Script>().alienNumber;
 
         GetLocation(alienNumber);
         dateDescriptionText.text = "You and " + alien.name + " had a bad date " + alienLocation + ".";
+    }
+
+    public void QueenGoodDate() 
+    {
+        gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
+
+        gameOverBackgroundAnim.SetBool("Background", true);
+
+        endTextAnim_Good = GameObject.Find("EndText").GetComponent<Animator>();
+        endTextAnim_Good.SetTrigger("EndText");
+    }
+
+    public void BadQueenGood() 
+    {
+        gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
+
+        gameOverBackgroundAnim.SetBool("Background", true);
+
+        endTextAnim_Bad = GameObject.Find("EndText_Bad").GetComponent<Animator>();
+        endTextAnim_Bad.SetTrigger("EndText");
+
     }
 }

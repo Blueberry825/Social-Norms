@@ -21,9 +21,10 @@ public class QueenDialogue : MonoBehaviour
     private QueenDialogueTrigger QueenDialogueTrigger_scr;
     public QueenInteractionSelector QueenInteractionSelector_scr;
     private LoveMeter LoveMeter_scr;
-    private Level_Location_Script Level_Location_Script_scr;
+    [Serialize] private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
+    private GameOverResultText_Script gameovertext_scr;
 
     public int round = 0;
     public int meLines = 0; //each round of talking ?
@@ -53,19 +54,15 @@ public class QueenDialogue : MonoBehaviour
 
     void Start()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        if (scene.name != "Queen_Scene")//TEMP
-        {
+        gameovertext_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        tablet = GameObject.Find("Tablet");
+        Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
+        TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+        StayOnLocation(false);
 
-            tablet = GameObject.Find("Tablet");
-            Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
-            TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-            DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
-            StayOnLocation(false);
-        }
-
-        nextButton = GameObject.Find("Next");
+            nextButton = GameObject.Find("Next");
 
         for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
             QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
@@ -95,7 +92,8 @@ public class QueenDialogue : MonoBehaviour
     {
         armObject.SetActive(false);
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Failed";
+        gameovertext_scr.BadQueenGood();
+
         Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
@@ -105,7 +103,8 @@ public class QueenDialogue : MonoBehaviour
     public void LoseState2()
     {
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You";
+        gameovertext_scr.BadQueenGood();
+
         Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
@@ -120,10 +119,14 @@ public class QueenDialogue : MonoBehaviour
 
     public void WinState()
     {
-        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
-        GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
+
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
         StayOnLocation(false);
+
+        GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
+        gameovertext_scr.QueenGoodDate();
+
+
     }//tell table that hasWon is true
 
     public void OptionBubbles()//switch case 
