@@ -54,18 +54,15 @@ public class QueenDialogue : MonoBehaviour
 
     void Start()
     {
-        //unhide mouse when date starts
-        UnityEngine.Cursor.lockState = CursorLockMode.None;
-        UnityEngine.Cursor.visible = true;
-
+        gameovertext_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-
         StayOnLocation(false);
 
-        nextButton = GameObject.Find("Next");
+
+            nextButton = GameObject.Find("Next");
 
         for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
             QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
@@ -78,6 +75,7 @@ public class QueenDialogue : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
+        //Debug.Log("count of options: " + options.Count);
     }
 
     public void LoadTabletScreenTemp()

@@ -22,7 +22,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -43,7 +43,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -62,27 +62,27 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0
-      value: {fileID: 21300000, guid: 851879ddcae99ba47b37a84ed9def44e, type: 3}
-    - time: 0.083333336
-      value: {fileID: 21300000, guid: 39cda181a151b1947bfe32575e69f9df, type: 3}
-    - time: 0.16666667
-      value: {fileID: 21300000, guid: a2f526212ccf8ac4aa612025cefeb3ab, type: 3}
     - time: 0.25
-      value: {fileID: 21300000, guid: 86d0d77850ce7e3479c70f40a417a6a8, type: 3}
+      value: {fileID: 21300000, guid: 851879ddcae99ba47b37a84ed9def44e, type: 3}
     - time: 0.33333334
-      value: {fileID: 21300000, guid: 47f25392f8195c344b4bd15195f34431, type: 3}
+      value: {fileID: 21300000, guid: 39cda181a151b1947bfe32575e69f9df, type: 3}
     - time: 0.41666666
-      value: {fileID: 21300000, guid: 1038af9c7065b8b49bfb51f0d36a7dc3, type: 3}
+      value: {fileID: 21300000, guid: a2f526212ccf8ac4aa612025cefeb3ab, type: 3}
     - time: 0.5
-      value: {fileID: 21300000, guid: 7ab856baf423b4846a7bfa45e1b259b0, type: 3}
+      value: {fileID: 21300000, guid: 86d0d77850ce7e3479c70f40a417a6a8, type: 3}
     - time: 0.5833333
-      value: {fileID: 21300000, guid: 70b3f53c2b98c5f4cb60bc29797f62bd, type: 3}
+      value: {fileID: 21300000, guid: 47f25392f8195c344b4bd15195f34431, type: 3}
     - time: 0.6666667
-      value: {fileID: 21300000, guid: 89b5dc65908d178489505225019295ca, type: 3}
+      value: {fileID: 21300000, guid: 1038af9c7065b8b49bfb51f0d36a7dc3, type: 3}
     - time: 0.75
-      value: {fileID: 21300000, guid: d1194eccbe44b8a4d9ccfb0e276ffd2f, type: 3}
+      value: {fileID: 21300000, guid: 7ab856baf423b4846a7bfa45e1b259b0, type: 3}
     - time: 0.8333333
+      value: {fileID: 21300000, guid: 70b3f53c2b98c5f4cb60bc29797f62bd, type: 3}
+    - time: 0.9166667
+      value: {fileID: 21300000, guid: 89b5dc65908d178489505225019295ca, type: 3}
+    - time: 1
+      value: {fileID: 21300000, guid: d1194eccbe44b8a4d9ccfb0e276ffd2f, type: 3}
+    - time: 1.0833334
       value: {fileID: 21300000, guid: 5cca2fa4dbb10e3489546edf32355528, type: 3}
     attribute: m_Sprite
     path: 
@@ -140,7 +140,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.9166666
+    m_StopTime: 1.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -161,7 +161,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -182,7 +182,7 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0
+        time: 0.25
         value: 0
         inSlope: 0
         outSlope: 0
@@ -201,4 +201,25 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0
+    functionName: GetNormalSize
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.083333336
+    functionName: SetFullScreen
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 1.25
+    functionName: ReturnNormalSize
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
