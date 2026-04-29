@@ -36,7 +36,7 @@ public class DateSceneSpawner : MonoBehaviour
             alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
             currentBackground = backgroundList[alienNumber];
             GameObject bg = Instantiate(currentBackground, gameObject.transform);
-            //bg.transform.localScale = new Vector3(100, 100, 1);
+            bg.transform.localScale = new Vector3(100, 100, 1);
         }
 
         CloneSizeAndLocation();

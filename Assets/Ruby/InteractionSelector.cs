@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI; 
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class InteractionSelector : MonoBehaviour
 {
     public GameObject[] currentTransformPositions; //empty objects that act as coordinates for the interaction points to spawn in
     public GameObject[] Dialogues;
-    public List<GameObject> optionTextBoxes;
+    public List<GameObject> optionTextBoxes, currentBoxPos;
     public GameObject textBox;
 
     public DialogueManager DialogueManager_scr;
@@ -44,8 +45,61 @@ public class InteractionSelector : MonoBehaviour
     {
         currentTransformPositions = GameObject.FindGameObjectsWithTag("transformLocation");
 
+        foreach (GameObject go in currentTransformPositions)
+        {
+            currentBoxPos.Add(go);
+        }
+
         optionTextBoxes[0].transform.position = currentTransformPositions[0].transform.position;
         optionTextBoxes[1].transform.position = currentTransformPositions[1].transform.position;
         optionTextBoxes[2].transform.position = currentTransformPositions[2].transform.position;
     }
+
+    public void ResetLocationList()
+    {
+        currentBoxPos.Clear();
+        foreach (GameObject go in currentTransformPositions)
+        {
+            currentBoxPos.Add(go);
+        }
+        print("This list has " + currentBoxPos.Count + " number of elements");
+    }
+
+    private List<GameObject> shuffleGOList(List<GameObject> inputList)
+    {    //take any list of GameObjects and return it with Fischer-Yates shuffle
+        int i = 0;
+        int t = inputList.Count;
+        int r = 0;
+        GameObject p = null;
+        List<GameObject> tempList = new List<GameObject>();
+        tempList.AddRange(inputList);
+
+        while (i < t)
+        {
+            r = Random.Range(i, tempList.Count);
+            p = tempList[i];
+            tempList[i] = tempList[r];
+            tempList[r] = p;
+            i++;
+        }
+
+        return tempList;
+    }
+
+    public void ShuffleLocationList()
+    {
+        List<GameObject> tempList = shuffleGOList(currentBoxPos);
+        currentBoxPos = tempList;
+        print(currentBoxPos[0] +""+ currentBoxPos[1] +""+ currentBoxPos[2]);
+
+        SpawnLocationSet();
+    }
+
+    public void SpawnLocationSet() //add to id of each spawn point each time? so they spawn 1,2,3,4,5,6? 
+    {
+        optionTextBoxes[0].transform.position = currentBoxPos[0].transform.position;
+        optionTextBoxes[1].transform.position = currentBoxPos[1].transform.position;
+        optionTextBoxes[2].transform.position = currentBoxPos[2].transform.position;
+    }
 }
+

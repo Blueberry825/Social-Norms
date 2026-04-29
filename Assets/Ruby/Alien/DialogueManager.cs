@@ -157,6 +157,8 @@ public class DialogueManager : MonoBehaviour
 
             for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)//add text to option boxes
                 InteractionSelector_scr.optionTextBoxes[i].GetComponentInChildren<TMP_Text>().text = options[i + minOptionElement];//set text to next 3 option lines
+
+                InteractionSelector_scr.ShuffleLocationList();
         }
         else
         {

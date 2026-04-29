@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7308270587694283562}
   - component: {fileID: 198526973571079065}
   - component: {fileID: 1900248147776650248}
-  - component: {fileID: 308760369414378889}
+  - component: {fileID: 9055400092969709269}
   - component: {fileID: -1510239703306483976}
   - component: {fileID: -5461743050168287140}
   m_Layer: 5
@@ -55,7 +55,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603048764201989246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -93,7 +93,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0.4431373, g: 0.4431373, b: 0.4431373, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -103,7 +103,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &308760369414378889
+--- !u!95 &9055400092969709269
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ Animator:
   m_GameObject: {fileID: 1603048764201989246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 947893e59c37ae041ad62593f7f0af67, type: 2}
+  m_Controller: {fileID: 9100000, guid: c651df24766172640a97b46951044708, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
