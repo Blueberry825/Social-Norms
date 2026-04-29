@@ -46,10 +46,71 @@ public class DateSceneSpawner : MonoBehaviour
     {
         alienNumber = currentAlienDate.GetComponent<AliensDated_Script>().alienNumber;
 
-        Location = new Vector3(0, 0, 0);
-        Scale = new Vector3(100, 100);
+        switch (alienNumber)
+        {
+            case 0:
+                Location = new Vector3(0, 0.58f, 0);
+                Scale = new Vector3(0.55f, 0.55f);
+                break;
+            case 1:
+                Location = new Vector3(0, 1, 0);
+                Scale = new Vector3(0.5f, 0.5f);
+                break;
+            case 2:
+                Location = new Vector3(0.15f, 0.18f, 0);
+                Scale = new Vector3(0.7f, 0.7f);
+                break;
+            case 3:
+                Location = new Vector3(0, -0.27f, 0);
+                Scale = new Vector3(0.927f, 0.926f);
+                break;
+            case 4:
+                Location = new Vector3(0.82f, 1.31f, 0);
+                Scale = new Vector3(0.8f, 0.8f);
+                break;
+            case 5://has changed scale and location on animation 
+                Location = new Vector3(-0.64f, 2.22f, 0);
+                Scale = new Vector3(0.74f, 0.74f);
+                break;
+            case 6:
+                Location = new Vector3(0, 0f, 0);
+                Scale = new Vector3(0.927f, 0.926f);
+                break;
+            case 7:
+                Location = new Vector3(0, 0.58f, 0);
+                Scale = new Vector3(0.632f, 0.63f);
+                break;
+            case 8:
+                Location = new Vector3(0.69f, 0.29f, 0);
+                Scale = new Vector3(0.89f, 0.89f);
+                break;
+            case 9:
+                Location = new Vector3(0.18f, 1.08f, 0);
+                Scale = new Vector3(1f, 1f);
+                break;
+            case 10://raised the table height
+                Location = new Vector3(0f, 0.77f, 0);
+                Scale = new Vector3(0.927f, 0.926f);
+                break;
+            case 11:
+                Location = new Vector3(0f, 0.67f, 0);
+                Scale = new Vector3(0.54f, 0.54f);
+                break;
+            case 12:
+                Location = new Vector3(-2.41f, 0.17f, 0);
+                Scale = new Vector3(0.74f, 0.74f);
+                break;
+            case 13:
+                Location = new Vector3(-1.18f, 1.69f, 0);
+                Scale = new Vector3(0.69f, 0.69f);
+                break;
+            case 14:
+                Location = new Vector3(0.15f, 1.11f, 0);
+                Scale = new Vector3(0.68f, 0.68f);
+                break;
+        }
 
-        tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity, gameObject.transform);//set location
+        tempSpawnedAlien = Instantiate(currentAlienDate, Location, Quaternion.identity);//set location
         tempSpawnedAlien.GetComponent<SpriteRenderer>().enabled = true;
         tempSpawnedAlien.GetComponent<UnityEngine.UI.Image>().enabled = false;
         tempSpawnedAlien.transform.localScale = Scale;//set scale

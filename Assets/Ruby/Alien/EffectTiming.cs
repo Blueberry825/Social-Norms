@@ -29,6 +29,7 @@ public class EffectTiming : MonoBehaviour
         switch (alienNumber)//sort through the aliens 
         {
             case 0:
+
                 if (currentOptionElement == 11)
                 {
                     //instantiate gift prefab
