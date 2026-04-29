@@ -68,6 +68,10 @@ public class EffectTiming : MonoBehaviour
                 }
                 break;
             case 7:
+                if (currentOptionElement == 14)
+                {
+                    Instantiate(giftList[2], Vector3.zero, Quaternion.identity);
+                }
                 if (currentOptionElement == 14)//and player just clicked option element 14
                 {
                     CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
@@ -132,6 +136,10 @@ public class EffectTiming : MonoBehaviour
                 }
                 break;
             case 13:
+                if (currentOptionElement == 14)
+                {
+                    Instantiate(giftList[4], Vector3.zero, Quaternion.identity);
+                }
                 if (currentOptionElement == 0)//and player just clicked option element 14
                 {
                     CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)

@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     private DateRandomiser_Script DateRandomiser_Script_scr;
     private SaveAndLoad SaveAndLoad_scr;
     private GameOverResultText_Script gameoverResultText_scr;
+    private ListOfAliens_Script ListOfAliens_Script_scr;
 
     public int round = 0; //amount of action lines - 1
     public int meLines = 0; //each round of options?
@@ -65,6 +66,7 @@ public class DialogueManager : MonoBehaviour
 
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
 
         nextButton = GameObject.Find("Next");
 
@@ -99,6 +101,8 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.BadDate();
 
@@ -114,6 +118,8 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState2()
     {
+        ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.BadDate();
 

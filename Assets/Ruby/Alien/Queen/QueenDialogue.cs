@@ -53,17 +53,16 @@ public class QueenDialogue : MonoBehaviour
 
     void Start()
     {
-        Scene scene = SceneManager.GetActiveScene();
-        if (scene.name != "Queen_Scene")//TEMP
-        {
+        //unhide mouse when date starts
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
 
-            tablet = GameObject.Find("Tablet");
-            Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
-            TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
-            DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        tablet = GameObject.Find("Tablet");
+        Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
+        TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
-            StayOnLocation(false);
-        }
+        StayOnLocation(false);
 
         nextButton = GameObject.Find("Next");
 
@@ -78,7 +77,6 @@ public class QueenDialogue : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
-        //Debug.Log("count of options: " + options.Count);
     }
 
     public void LoadTabletScreenTemp()

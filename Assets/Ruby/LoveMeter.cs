@@ -53,7 +53,7 @@ public class LoveMeter : MonoBehaviour
                 break;
             case 1:  //first location  
                 decayTime = 2f;
-                decayAmount = 0.3f;
+                decayAmount = 0.2f;
                 break;
 
             case 2:
@@ -62,58 +62,28 @@ public class LoveMeter : MonoBehaviour
                 break;
 
             case 3:
+                decayTime = 2f;
+                decayAmount = 0.5f;
                 break;
 
             case 4:
+                decayTime = 2f;
+                decayAmount = 0.7f;
                 break;
 
             case 5:
+                decayTime = 2f;
+                decayAmount = 0.8f;
                 break;
 
             case 6://queen?
+                decayTime = 2f;
+                decayAmount = 0.6f;
                 break;
 
         }
     }
 
-    public void WhichAlien()//how many options do they need to get correct to win?
-    {
-        switch (alienNumber)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-            case 10:
-                break;
-            case 11:
-                break;
-            case 12:
-                break;
-            case 13:
-                break;
-            case 14:
-                break;
-            case 15://queen?
-                break;
-        }
-    }
 
     // Update is called once per frame
     void Update() // decrease love amount each frame
@@ -173,7 +143,7 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 27f;//TEMP 100 FOR TESTING
+                loveAmount += 18f;//TEMP 100 FOR TESTING
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
             case 3://for queen only

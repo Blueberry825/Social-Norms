@@ -44,7 +44,11 @@ public class ListOfAliens_Script : MonoBehaviour
 
     public void PlayerFailedDate_RemoveAlien() 
     {
-        datedAlienList.Remove(currentDate);
-        singleAlienList.Add(currentDate);
+        if(currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien == true)//player has swiped right
+        {
+            datedAlienList.Remove(currentDate);
+            singleAlienList.Add(currentDate);
+            currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = false;
+        }
     }
 }
