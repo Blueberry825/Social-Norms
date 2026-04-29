@@ -32,7 +32,7 @@ public class EffectTiming : MonoBehaviour
 
                 if (currentOptionElement == 11)
                 {
-                    //instantiate gift prefab
+                    Instantiate(giftList[0], Vector3.zero, Quaternion.identity);
                 }
                     break;
             case 1://if on alien 1
@@ -48,7 +48,7 @@ public class EffectTiming : MonoBehaviour
             case 4:
                 if (currentOptionElement == 11)
                 {
-                    //instantiate gift prefab
+                    Instantiate(giftList[1], Vector3.zero, Quaternion.identity);
                 }
                 break;
             case 5:
@@ -64,7 +64,7 @@ public class EffectTiming : MonoBehaviour
             case 10:
                 if (currentOptionElement == 11)
                 {
-                    //instantiate gift prefab
+                    Instantiate(giftList[3], Vector3.zero, Quaternion.identity);
                 }
                 break;
             case 11:

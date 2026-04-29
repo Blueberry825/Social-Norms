@@ -5801,7 +5801,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15db96ffa999ff441aefbdfe31d6a2f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  giftList: []
+  giftList:
+  - {fileID: 8100182320720054038, guid: 726aa554ebd0a9b42ba23167b4a3463b, type: 3}
+  - {fileID: 2610563754007686521, guid: 1e9c689e1a8aee84ba738c1fac5ba03a, type: 3}
+  - {fileID: 2085884334613617426, guid: 75ed18ea34b23c64285b101fdc5c262f, type: 3}
+  - {fileID: 5502631563240180170, guid: 1e43979977a48a1469e833558e46dbb2, type: 3}
+  - {fileID: 1102444913847484340, guid: 447682ff259979e47923d6b6a3e354db, type: 3}
 --- !u!1 &1691858576
 GameObject:
   m_ObjectHideFlags: 0
