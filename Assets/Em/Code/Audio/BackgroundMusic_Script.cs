@@ -2,7 +2,6 @@ using FMOD;
 using FMOD.Studio;
 using FMODUnity;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 
