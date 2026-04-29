@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2527391768744325280}
   - component: {fileID: 7964986124284400236}
   - component: {fileID: 4143508632737026501}
+  - component: {fileID: -2284386438085146135}
   m_Layer: 0
   m_Name: Alien10_Giftanim00
   m_TagString: Untagged
@@ -110,3 +111,15 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2284386438085146135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5502631563240180170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b26bef55eb195843b59eafbda0411ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
