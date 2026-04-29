@@ -281,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59400548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0010190351, w: 0.9999995}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0017504182, w: 0.9999985}
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -379,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73059675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.009246893, w: 0.99995726}
+  m_LocalRotation: {x: 0, y: 0, z: -0.008603118, w: 0.999963}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89359089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0004235934, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0020727722, w: 0.99999785}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -443,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132181660}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.096865214, w: 0.99529755}
+  m_LocalRotation: {x: 0, y: 0, z: -0.09704802, w: 0.9952797}
   m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -550,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146580656}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0010940507, w: 0.9999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0012671123, w: 0.9999992}
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1978,7 +1978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487031595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.013550945, w: 0.9999082}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012909703, w: 0.9999167}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2108,7 +2108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652159888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6206401, w: 0.7840956}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6206715, w: 0.7840708}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2288,8 +2288,9 @@ MonoBehaviour:
     - Nghh.. I guess it might be nice to have some company while looking for it...
       Okay fine you can help me. Hey, You're kinder than you look, stranger. I'm
       sorry about before.
-    - You... Did this? But... I was starting to like you... Why... WHY DID YOU DISFIGURE
-      ME?.... At least you were honest. This DOESN'T mean I forgive you!
+    - "You... Did this? But... I was starting to like you... Why... WHY DID YOU DISFIGURE
+      ME? \n*Bruce roars at you*\n.... At least you were honest. This DOESN'T mean
+      I forgive you!"
     - You calling me a liar? Look, I know it sounds untrue, but it's what happened.
       Nothing else to it.
     - No... Probably some Glorp without a license who stole a ship and was going
@@ -3470,7 +3471,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947320154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.009395757, w: 0.9999559}
+  m_LocalRotation: {x: 0, y: 0, z: 0.008872022, w: 0.99996066}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3502,7 +3503,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972852753}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00019643428, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00039689365, w: 0.99999994}
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4756,7 +4757,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.000017533937, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.000086824686, w: 1}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5318,7 +5319,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433223088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00022582902, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0001883243, w: 1}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5350,7 +5351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434604158}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.007329915, w: 0.9999732}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0074533145, w: 0.9999722}
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5541,7 +5542,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00028866512, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00014200502, w: 1}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5693,7 +5694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.010720994, w: 0.99994254}
+  m_LocalRotation: {x: 0, y: 0, z: -0.010432055, w: 0.9999456}
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6486,7 +6487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869078821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00072976865, w: 0.99999976}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00018104697, w: 1}
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6819,7 +6820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: Scar
     options:
     - I can see your glitter.
     - Fairy dust?
@@ -6842,8 +6843,8 @@ MonoBehaviour:
     respones:
     - 'OH MY GLORP! NOOO! That''s just my natural sparkle!
 
-      I could never
-      use fairy dust like all the other fairies.'
+      I could never use
+      fairy dust like all the other fairies.'
     - Yeah! the stuff that makes most fairies sparkle! I don't use any of that though.
     - That's just my natural sparkle that you can see! That's what you meant right,
       That I'm pretty without fairy dust! Teehee!
@@ -7424,22 +7425,22 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.096865214, w: 0.99529755}
-    - {x: 0, y: 0, z: -0.010720994, w: 0.99994254}
-    - {x: 0, y: 0, z: 0.013550945, w: 0.9999082}
-    - {x: 0, y: 0, z: -0.009246893, w: 0.99995726}
-    - {x: 0, y: 0, z: 0.009395757, w: 0.9999559}
-    - {x: 0, y: 0, z: -0.007329915, w: 0.9999732}
-    - {x: 0, y: 0, z: 0.0004235934, w: 0.99999994}
-    - {x: 0, y: 0, z: 0.00022582902, w: 1}
-    - {x: 0, y: 0, z: 0.0010940507, w: 0.9999994}
-    - {x: 0, y: 0, z: -0.0010190351, w: 0.9999995}
-    - {x: 0, y: 0, z: 0.00072976865, w: 0.99999976}
-    - {x: 0, y: 0, z: 0.00019643428, w: 1}
-    - {x: 0, y: 0, z: -0.00028866512, w: 1}
-    - {x: 0, y: 0, z: -0.000017533937, w: 1}
+    - {x: 0, y: 0, z: -0.09704802, w: 0.9952797}
+    - {x: 0, y: 0, z: -0.010432055, w: 0.9999456}
+    - {x: 0, y: 0, z: 0.012909703, w: 0.9999167}
+    - {x: 0, y: 0, z: -0.008603118, w: 0.999963}
+    - {x: 0, y: 0, z: 0.008872022, w: 0.99996066}
+    - {x: 0, y: 0, z: -0.0074533145, w: 0.9999722}
+    - {x: 0, y: 0, z: 0.0020727722, w: 0.99999785}
+    - {x: 0, y: 0, z: -0.0001883243, w: 1}
+    - {x: 0, y: 0, z: 0.0012671123, w: 0.9999992}
+    - {x: 0, y: 0, z: -0.0017504182, w: 0.9999985}
+    - {x: 0, y: 0, z: 0.00018104697, w: 1}
+    - {x: 0, y: 0, z: 0.00039689365, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.00014200502, w: 1}
+    - {x: 0, y: 0, z: 0.000086824686, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6206401, w: 0.7840956}
+    - {x: 0, y: 0, z: -0.6206715, w: 0.7840708}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
