@@ -20,35 +20,35 @@ AnimationClip:
   m_PPtrCurves:
   - serializedVersion: 2
     curve:
-    - time: 0.25
+    - time: 0
       value: {fileID: 21300000, guid: 4f3d0aed403caa94bb6ad0c12784e381, type: 3}
-    - time: 0.33333334
+    - time: 0.083333336
       value: {fileID: 21300000, guid: c158cb0b7154712448bb636a2522abd1, type: 3}
-    - time: 0.41666666
+    - time: 0.16666667
       value: {fileID: 21300000, guid: e21fc33acff4d74408b666d34f0cb80c, type: 3}
-    - time: 0.5
+    - time: 0.25
       value: {fileID: 21300000, guid: 4bccbf1f6e38d474694e9cdf129daa45, type: 3}
-    - time: 0.5833333
+    - time: 0.33333334
       value: {fileID: 21300000, guid: f1455d2d544748e4a88b82779f4930b2, type: 3}
-    - time: 0.6666667
+    - time: 0.41666666
       value: {fileID: 21300000, guid: 6d9f848a38d9ae7449ee9a53c80a4e2d, type: 3}
-    - time: 0.75
+    - time: 0.5
       value: {fileID: 21300000, guid: ccbaa540ad8a58f41804529cb1921bb6, type: 3}
-    - time: 0.8333333
+    - time: 0.5833333
       value: {fileID: 21300000, guid: c51f6c1a25e66fe4396daf2f7dc42a28, type: 3}
-    - time: 0.9166667
+    - time: 0.6666667
       value: {fileID: 21300000, guid: 20e1ab88791ed9041825191753da71d2, type: 3}
-    - time: 1
+    - time: 0.75
       value: {fileID: 21300000, guid: 070dff2240843bb44b531ac909c47173, type: 3}
-    - time: 1.0833334
+    - time: 0.8333333
       value: {fileID: 21300000, guid: f04f22ea077d6d946847d2d36daefd59, type: 3}
-    - time: 1.1666666
+    - time: 0.9166667
       value: {fileID: 21300000, guid: 7ddd8d64a6998da4ba7dfb01c630b193, type: 3}
-    - time: 1.25
+    - time: 1
       value: {fileID: 21300000, guid: 0b6582392b560e74cafc3c37803adaa8, type: 3}
-    - time: 1.3333334
+    - time: 1.0833334
       value: {fileID: 21300000, guid: 20685cdda4ef8e548b4902046f9f26bb, type: 3}
-    - time: 1.4166666
+    - time: 1.1666666
       value: {fileID: 21300000, guid: 554bba77d743e2745b949effbd07b05c, type: 3}
     attribute: m_Sprite
     path: 
@@ -92,7 +92,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.6666666
+    m_StopTime: 1.25
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -111,25 +111,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: GetNormalSize
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.083333336
-    functionName: SetFullScreen
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
-  - time: 1.6666666
-    functionName: ReturnNormalSize
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 0
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []

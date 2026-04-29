@@ -211,8 +211,6 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(.1f);
 
         StartCoroutine(DisplayResponseLine(line));
-
-        print("WaitAndPrint " + Time.time);
     }
 
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
@@ -260,8 +258,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogueActions(Dialogue dialogue) //first spawn in opening dialogue and name
     {
-        Debug.Log("starting convo with " + dialogue.name);
-
         nameText.text = dialogue.name;
 
         actions.Clear();
@@ -293,7 +289,6 @@ public class DialogueManager : MonoBehaviour
     {
         nextButton.SetActive(false);
         round++;
-        Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
