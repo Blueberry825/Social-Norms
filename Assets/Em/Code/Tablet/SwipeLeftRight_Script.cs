@@ -79,14 +79,11 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
         //check if retry, if retrying, load date, else, do that
         retry_Q = dateScript.getRetryLocation;
 
-        if (retry_Q)
+        if (retry_Q == true)
         {
-            //SceneManager.LoadScene("Date_Scene");
             dateScript.RetryDateArea();
-            //swap map
-            //right alien?
         }
-        else 
+        if (retry_Q == false) 
         {
             dateScript.GoOnDateWith();
         }
