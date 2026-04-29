@@ -20,7 +20,7 @@ public class CRTEffectEditing : MonoBehaviour
     void Start()
     {
         frequency = 30;
-        effectTimer = 15;
+        effectTimer = 4;
         CRTCameraBehaviour_scr = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
     }
 
@@ -30,6 +30,7 @@ public class CRTEffectEditing : MonoBehaviour
         if (isEffectActive)
         {
             effectTimer -= timerDecreaseAmount * Time.deltaTime;
+            print(effectTimer);
 
             var randInt = UnityEngine.Random.Range(0, frequency);//keep spawing new numbers every frame, if frame is certain number, trigger distortion effect to change
 
@@ -42,7 +43,6 @@ public class CRTEffectEditing : MonoBehaviour
             if (effectTimer <= 0)//if timer is over
             {
                 isEffectActive = false;//stop effect
-                effectTimer = 30;
                 ResetEffects();// reset crt
             }
         }
@@ -126,6 +126,7 @@ public class CRTEffectEditing : MonoBehaviour
 
     public void ActivateEffect(int number)//set to new value when starting and reset to old value at end
     {
+        effectTimer = 4;
         isEffectActive = true;
         effectNumber = number;
         //SET EFFECT NUMBER HERE?

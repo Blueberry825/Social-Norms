@@ -36,7 +36,7 @@ public class EffectTiming : MonoBehaviour
                 }
                     break;
             case 1://if on alien 1
-                if(currentOptionElement == 2)//and player just clicked option element 14
+                if(currentOptionElement == 14)//and player just clicked option element 14
                 {
                     CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
                 }
@@ -44,6 +44,10 @@ public class EffectTiming : MonoBehaviour
             case 2:
                 break;
             case 3:
+                if (currentOptionElement == 9)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 4:
                 if (currentOptionElement == 11)
@@ -52,28 +56,112 @@ public class EffectTiming : MonoBehaviour
                 }
                 break;
             case 5:
+                if (currentOptionElement == 14)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 6:
+                if (currentOptionElement == 3)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 7:
+                if (currentOptionElement == 14)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 8:
+                if (currentOptionElement == 0)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 12)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 9:
+                if (currentOptionElement == 9)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 12)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 10:
                 if (currentOptionElement == 11)
                 {
                     Instantiate(giftList[3], Vector3.zero, Quaternion.identity);
                 }
+                else if(currentOptionElement == 12)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 11:
+                if (currentOptionElement == 5)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 14)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 20)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 12:
+                if (currentOptionElement == 5)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 8)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 14)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 13:
+                if (currentOptionElement == 0)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 9)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 4)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
             case 14:
+                if (currentOptionElement == 0)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if (currentOptionElement == 9)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if(currentOptionElement == 13)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
+                else if (currentOptionElement == 16)//and player just clicked option element 14
+                {
+                    CRTEffectEditing_scr.ActivateEffect(0);//activate effect number 0(glitch)
+                }
                 break;
         }
     }
