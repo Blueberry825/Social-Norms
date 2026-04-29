@@ -121,7 +121,7 @@ public class LoveMeter : MonoBehaviour
 
         loveMeter.value = loveAmount;
 
-        if (loveAmount >= 80)
+        if (loveAmount >= 70)
         {
             if (loveAmount >= 100)
             {
@@ -130,7 +130,7 @@ public class LoveMeter : MonoBehaviour
             }      
             isLoveFull = true;
         }
-        else if (loveAmount <= 70)
+        else if (loveAmount <= 60)
         {
             isLoveFull = false;
         }
@@ -177,9 +177,12 @@ public class LoveMeter : MonoBehaviour
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
             case 3://for queen only
+                
                 break;
 
             case 4://for queen only
+                loveAmount -= 9f;
+                FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
                 break;
         }
     }
