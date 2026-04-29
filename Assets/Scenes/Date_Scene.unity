@@ -177,17 +177,86 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: djinn
     options:
-    - 1
-    - 2
-    - 3
+    - '*Simulate a fart inside the bucket.*'
+    - Why were you waiting in a bucket?
+    - I'm so sorry, I had no idea you were in there!
+    - I wish to be able to travel through time!
+    - What happens If I say 'I wish for more wishes'.
+    - I wish for you to be happy!
+    - I wish for FEWER WISHES!
+    - I wish to double my genies!
+    - I wish to be lucky!
+    - I wish to date the queen!
+    - I wish for really awesome to happen to me!
+    - I wish to keep humanity safe!
+    - Let me try pull you out!
+    - Wait... Since I've already used 3 wishes, I cant wish any more times?
+    - Since you're stuck in there, Take this gift... Might be bored for a while.
+    - If only I could pick you up.
+    - I'll still date you.
+    - I'd love to have a second date!
     respones:
-    - 1
-    - 2
-    - 3
+    - '*You get punched hard in the butt so you get off the bucket. You''re lucky
+      the robot doesn''t bruise.*
+
+      ARE YOU TRYING TO SUFFOCATE ME? I can''t
+      just leave this bucket you know!'
+    - I can't just leave the bucket. I'm stuck here. I've been bound to this god
+      forsaken bucket for many schlooms.
+    - Ahh it's okay pal.  I've been bound to this god forsaken bucket for many schlooms.
+    - ShaBANG! You can now walk through objects that tell time!.... This also means
+      you can't wear a watch.
+    - You just wished for another wish, but I can't do that. Did you really expect
+      that to work? You're just down a wish now... You need to be more careful with
+      your wording.
+    - ShaBANG! That wish was so kind of you it made me happy... But now I'm sad you
+      just wasted a wish...
+    - Um... Okay...? Sha...bang... There wow you get one less wish, wow you're really
+      wasting my time.
+    - Well, I never said I was a genie, because I'm not... so you have zero genies,
+      and even if I WAS a genie, you don't own me. So... SHABANG, you went from ZERO
+      genies to... ZERO genies!
+    - Hey that was actually a cool wish! Okay here goes.. SHABANG! Oh.... there was
+      no downside to that wish... I guess that was your luck... and you didn't specify
+      how long for... Hey that was still a cool wish!
+    - SHABANG! Your next match on the dating app will be... The queen... Bit rude
+      that you wished that right in front of me though...
+    - SHABANG! So, What do you think? Pretty awesome, right?!
+    - Humanity? Maybe you mean you wish to keep a huge manatee safe! That's a nice
+      wish, you're so kind! SHABANG!!
+    - '*You try to pull the alien out the bucket, but they didn''t budge.*
+
+      Great,
+      now I''m stuck in a bucket AND I have slimy hands, thanks.'
+    - Exactly... The world is so cruel.
+    - Hey, this is pretty cool! It's hard to grip, and it's satisfying to squish!
+      I actually like this, thanks! I've been so used to giving wishes, I've never
+      really recieved anything.
+    - But you can't, why? Because I'm too heavy? Whatever.
+    - Well I DID grant you three wishes. so it's the least you can do.
+    - Well, I hope you'll come back then, I'll just wait right here.
     actions:
-    - 1
+    - '*Walking along the beach is getting tiring, there''s a bucket on the beach,
+      so you decide to sit and have a rest... When suddenly.*
+
+      Hey! Who turned
+      out the lights?'
+    - The only way I can be set free, is for me to grant someone THREE wishes to
+      one glomp! Pretty cool, huh? So... What do you wish for?
+    - You know, thinking about it, I probably should've told you that my wish granting
+      comes with a drawback that all my wishes have a twist. It's not something I
+      can control, it just happens. Oh well, anyway... What is your SECOND wish!
+    - You're on your LAST wish! I'll finally be free! This has been fun... Thank
+      you for everything... Okay, what's your final wish?
+    - Wait, I'm not free from the bucket?  What...? So... I'm just a wish granting
+      glomp.... that's stuck in a bucket? AND YOU'VE ALREADY USED YOUR WISHES?!?
+      WHY IS THE WORLD SO CRUEL!?
+    - Well... I'm stuck in here, seemingly forever. So we'll have time for a second
+      date, but you will have to come to me.
+    - You go on ahead. Don't wait up. I'm gonna stay here for... forever I guess...
+      Have a good evening.
 --- !u!1 &59400548
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59400548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00019007426, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00041814742, w: 0.99999994}
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -310,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73059675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.010571288, w: 0.99994415}
+  m_LocalRotation: {x: 0, y: 0, z: -0.010251974, w: 0.9999475}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -342,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89359089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00074547227, w: 0.99999976}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0007826504, w: 0.9999997}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -374,7 +443,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132181660}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.09659098, w: 0.9953242}
+  m_LocalRotation: {x: 0, y: 0, z: -0.096956626, w: 0.99528867}
   m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -481,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146580656}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.001007883, w: 0.9999995}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00071260956, w: 0.99999976}
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1227,17 +1296,87 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: luma
     options:
-    - 1
-    - 2
-    - 3
+    - Oh my god, please don't scare me like that, I was entranced with them.
+    - '*Wait for the alien to notice you.*'
+    - '*Gently touch the alien on the shoulder.*'
+    - Is that Shakespeare?
+    - You have such a way with words Luma!
+    - "*Touch the alien's arm.* \nThat was beautiful."
+    - Bound to the stars?
+    - You sound very free, enlightened even.
+    - Your wisdom is as vast as the universe itself.
+    - I cant do that, but I can cook for you while you stargaze.
+    - We can engage in combat... of the mind.
+    - "*Touch the aliens head.* \nI can be or do anything you like."
+    - Experiencing the universe isn't really my thing...
+    - What do you mean?
+    - "*Hold the alien's hand.* \nI'll do anything with you."
+    - I'm not so sure about this...
+    - I'm so that you trust me enough... I'm ready.
+    - I love the stars enough to not fear the night... Think about it.
+    - As much as I want to help you, I'm sorry, I don't think we are compatible.
+      You seem to be more in love with the universe than me.
+    - Let's take things slow. You don't want to rush something as precious as this,
+      rome wasn't built in a day.
+    - '*Open the zip.*'
     respones:
-    - 1
-    - 2
-    - 3
+    - Oh my god, please don't scare me like that, I was entranced with them.
+    - The alien stargazes for a long while, Eventually they notice you, and smiles.
+    - Oh I'm sorry, I didn't hear you enter, I was just so mesmerised, thank you
+      for snapping me out of my hypnosis.
+    - Is what who? Shakespeare? Who is this that you speak of. That is the question.
+    - I do try my best!
+    - Oh- was it? hm... I guess it was...
+    - Yes, keep up. I like to date people with compassion and brains, not brutish
+      glorps. I meant bound in a metaphorical sense.
+    - I wish... They entrap me with their beauty, I am bound in a metaphorical sense.
+    - They enthrawl me with their beauty, I am bound in a metaphorical sense. I am
+      feeling something from you, also.
+    - I'm not just star 'gazing'... I am ADMIRING! APPRECIATING.
+    - Hmm... Yes... But why call it a combat, we are not debating, we are sharing
+      inteligence, and curiousity.. we are not BRUTES. Hmm 'Combat'.
+    - Oh, umm, yes... well..... I am not used to situations such as this. I have
+      only heard such tales in glorpio and glorpiette.
+    - Trust me, this is a unique experence you won't want to miss. The only thing
+      we have to fear, is fear itself.
+    - You'll see in a moment, at the moment, you are a small ant in a small garden,
+      after this, you will be enlightened, no longer an ant, but a cosmic god.
+    - That's what I like to hear. I like that you're not afraid of the unknown. The
+      only thing we have to fear, is fear itself. metaphorically, you are a small
+      ant in a small garden, after this, you will be enlightened, no longer an ant,
+      but a cosmic god.
+    - This lack of passion and curiousity will never reward you, be the cat... be
+      curious...
+    - I like this curiousity inside you, fascinating.
+    - SO THOUGHT PROVOKING! Wow, what a good proverb. I've been matched in my own
+      game...
+    - Hmm... You are correct, my love for you versus the stars is like a water droplet
+      in a vast ocean.
+    - Rome? I don't know a rome, but you do make a good point, maybe I was getting
+      carried away. I think this date is over, I must get back to the stars. Come
+      back again sometime...
+    - You slowly open the zip. and a mist with a mesmerising glimmer flows out...
+      the alien starts to maniacally laugh as the mist envelops them, maybe it's
+      best you don't touch the mist, the date has been successful but it's time to
+      leave.
     actions:
-    - 1
+    - There is an alien looking through a telescope, mesmerised, they don't notice
+      you enter.
+    - The stars, they are so beautiful, like cherry blossom petals in an infinitely
+      spanning lake... My name is.... Luma.
+    - I admire the stars because they were born with something I was not, freedom.
+      I have been bound to the stars for generations.
+    - Do you like poetry? Philosophy? I need a glorp with inteligence. Wisdom.
+    - We've gotten to know eachother well enough now I feel. Do you want to experience
+      the bliss of the universe together?
+    - I want to show you something, something so personal to me that I haven't shown
+      it to anyone in many schlooms. are you prepared for that?
+    - Here, open my zip, I can't reach it myself, and usually people don't trust
+      me enough to get close to me. Maybe I am rushing this, only do this if you're
+      sure..
+    - I'll look for your face in the stars... but for now... Goodbye.
 --- !u!1001 &334006890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1623,7 +1762,7 @@ MonoBehaviour:
     name: finona
     options:
     - Hello yourself, you look Fintastic gorgeous!
-    - .. Ohh wow.... Uhhhmm...... hi...
+    - '*Bow nervously.*'
     - I didn't realise I was going on a date with 3 people.
     - Don't get cocky, I only knew your name from the app.
     - Of course, The Offishal Finona.
@@ -1703,7 +1842,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487031595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.014678429, w: 0.9998923}
+  m_LocalRotation: {x: 0, y: 0, z: 0.013467293, w: 0.99990934}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1833,7 +1972,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652159888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6205905, w: 0.7841349}
+  m_LocalRotation: {x: 0, y: 0, z: -0.62046516, w: 0.78423405}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2025,17 +2164,73 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: swamp pick ne
     options:
-    - 1
-    - 2
-    - 3
+    - '*Jokingly.*
+
+      How did you know?'
+    - Why would I show up if it was an accident?
+    - No, It was on purpose.
+    - Why don't you try improve yourself?
+    - You have to stop putting yourself down! That's the only thing holding you back,
+      I promise!
+    - You're not that ugly.
+    - I need you to have more confidence in yourself.
+    - Are you sure that's the reason?
+    - I'd give you a chance.
+    - What a weird thing to say.
+    - So honourable of you!
+    - Respect.
+    - I don't believe you were reading that.
+    - I didn't know you read femiglorp literature.
+    - '*Reach into the lake, try grab a book and give it to the alien *'
+    - I'd love a second date, but you need more confidence!
+    - It has been... interesting!
+    - This date was better than I expected, but let's take it slow.
     respones:
-    - 1
-    - 2
-    - 3
+    - So I was right? I knew it... The ugly glorps don't even get a chance.
+    - Like I said, you just felt so bad for me. A pretty glorp like you would never
+      go on a date with someone as ugly as me.
+    - It was? You don't have to lie to me, I know you don't actually want to be here...
+      Right? You would never go on a date with someone as ugly as me.
+    - So you think I'm ugly? I knew it. Don't worry, everyone thinks that.
+    - Sorry. It's just hard to do when you're so ugly. Unless you don't think I'm
+      ugly?
+    - You don't have to lie to me... Wait... You really think I'm not ugly?
+    - Yep.. Everybody loves to be friends with the nice glorp, but nobody wants to
+      date the nice glorp... Typical.
+    - Why else would it be? Obviously I'm just so ugly that nobody likes me.
+    - You're just saying that to be nice. You don't mean that, right?
+    - Yet again, my kindness is seen as weird. Yep, typical nice glorps finish last.
+    - Is that sarcastic? Are you making fun of me? It's okay... I'm used to being
+      made fun of for being so nice...
+    - I'm so glad you understand, I knew I liked you for a reason... NOT LIKE THAT....
+      Unless... You feel the same way? NO, of course you dont...
+    - I WAS, but since it's in the lake I guess you'll have to trust me.
+    - Yeah, I just think that kind of literature is deeper and more meaningful than
+      most other books.
+    - NO IT'S OKAY! I-..... whats this? A rock? Wait no, thats... GOLD?!? YOU'RE
+      GIVING ME GOLD?!? I knew you were different from the other glorps! You really
+      do like how nice I am!
+    - I have confidence... I'm just realistic in my expectations. I know what I bring
+      to the table and it's nothing compared to someone like you.
+    - Interesting? Like you're interested in me?
+    - Better than expected? Finally, you really understand me. You see my kind personality
+      on the inside.
     actions:
-    - 1
+    - Hey... You probably swiped right by accident, and felt so bad for me that you
+      showed up out of pity, is that right?
+    - Maybe If I wasn't ugly, I'd get more chances at love.
+    - Hey, do you think you'd ever give a nice glorp a chance? Everyone else I've
+      tried to date breaks up with me because I'm too ugly, even though I treated
+      them better than anyone.
+    - If I could, I'd take all tentacle cramps away from every glorp, so only I'd
+      have to experience them. You don't deserve that pain.
+    - I've had the worst day, I was reading my book about femiglorp literature and
+      I dropped it in the swamp. YOU DONT HAVE TO GET IT, I was just telling you.
+    - I feel like we're getting pretty close! Not like you'd date me though.. Unless?
+      Nah I'm joking... Unless you DO like me?
+    - I know you probably don't want another date.. But if you do, I'll be here.
 --- !u!1 &771678248
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,7 +3390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947320154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.01024115, w: 0.9999476}
+  m_LocalRotation: {x: 0, y: 0, z: 0.010376983, w: 0.9999462}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3227,7 +3422,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972852753}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00020194132, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00024127065, w: 1}
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4134,15 +4329,70 @@ MonoBehaviour:
   dialogue:
     name: hotel
     options:
-    - 1
-    - 2
-    - 3
+    - Hello?
+    - Are you a Log?
+    - Oh I'm sorry I didn't see you.
+    - 'Ah well I brought flowers! You can decorate the hotel with them! '
+    - 'You''re the manager? What do you manage? '
+    - I've never seen a hotel so small before!
+    - 'Owning the hotel with you would being a dream! '
+    - 'Do i get free breakfast? '
+    - I like a cozy lifestyle!
+    - 'A Harem all for me? '
+    - 701? that's quite a lot, I will do my best.
+    - I can handle all of you. At once.
+    - 'Whatever is playing at the time is what I enjoy, I''m not picky! '
+    - It's a bit hard to hear the music from out here.
+    - I like a mix of trending generic songs!
+    - My tentacle might cramp up signing all of those, let's avoid it...
+    - I'd happily sign every one, as long as it means we can date.
+    - Don't worry, I'll pay for all our dates, for all of you. You'll never have
+      to worry about money again.
     respones:
-    - 1
-    - 2
-    - 3
+    - 'Hello? you almost kill 701 men with families and your only words are HELLO? '
+    - Do I look like a log? I'm the manager!
+    - Ahh its whatever pal. Just be more careful okay? One wrong step could crush
+      all of us.
+    - "Decorations Manager: Are you saying the hotel looks ugly? You think it needs
+      those huge ugly flowers? \n(Hotel Guest: I have hayfever.)"
+    - "Manager Manager: Can't you tell by my nametag, i'm the Manager Manager...
+      I manage the Managers. \n(The manager manager's assistant: it's true!)"
+    - 'Building manager: A very efficient building isn''t it! It''s my teams magnum
+      opus.'
+    - "Hiring Manager: Who said anything about owning the hotel? \n(Hotel Guest:
+      You haven't even set foot in the hotel yet... Not that you could.)"
+    - "Head Chef: Employees only... \n(Hotel Guest: Who does he think he is.)"
+    - 'Relations Manager: You sound like the perfect candidate for the role.'
+    - "Relations Manager: How Unprofessional!!! \n(Hotel Guest: I'm kinda into it.)"
+    - 'Relations manager: Not confident, but willing to try... Noted...'
+    - "Relations Manager: Did somebody turn up the AC in the hotel? \n(Hotel Guest:
+      Boss, are you sweating?)"
+    - "Lobby Manager: I asked for YOUR preference, and you don't even answer? Where's
+      your initiative. \n(Hotel Guest: How rude!)"
+    - 'Lobby Manager: Hmm,,, oh well!'
+    - "Lobby Manager: Perfect, that's exactly what we have queued for 14 more hours!
+      \n*Quiet groaning from people waiting in the lobby.*"
+    - We regret to inform you that it is a requirement for all employees- Sorry...
+      'Date applicants' to sign a prenup.
+    - Very willing to sign... Very willing? or very lacking trust. We shall see,
+      let's have another interview- I mean, DATE soon.
+    - All of us?.... This could boost business efficiency tenfold... PERECT! YOU'RE
+      HIRED! I mean- LETS GET MARRIED!
     actions:
-    - 1
+    - "*Walking by the river, you see a fallen tree in your way, you lift your foot
+      to step over it, when you hear a cacophony of screams.* \nHey watch where you're
+      stepping, would ya? Yeah, down here.\n \t"
+    - 'The manager manager: If you couldn''t already tell, this "log" is actually
+      a hotel where I and 700 others work. Now if you don''t mind I have to get back
+      to work.'
+    - "Relations Manager: So how do you feel about staying long term at the hotel?
+      \n*The hotel doesn't travel much... or at all.*"
+    - 'Relations Manager: We come in a full package. all 701 of us, are you okay
+      with polyamory?'
+    - 'Lobby Manager: What kind of music would you like to hear while in the lobby?'
+    - "Sales Manager: This date is pretty going pretty well, but now it's time to
+      talk business... Are you willing to get a prenup? \n*That's 701 signatures.*"
+    - 'Manager: This has been a very informative date. We shall be in contact.'
 --- !u!1 &1137845837
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,7 +4518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00003799847, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.000073820294, w: 1}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4830,7 +5080,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433223088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0005047426, w: 0.9999999}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0007144707, w: 0.99999976}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4862,7 +5112,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434604158}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0073080724, w: 0.9999733}
+  m_LocalRotation: {x: 0, y: 0, z: -0.008055297, w: 0.9999676}
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5053,7 +5303,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0003426208, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0000011182128, w: 1}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5204,7 +5454,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.011440841, w: 0.99993455}
+  m_LocalRotation: {x: 0, y: 0, z: -0.01017128, w: 0.99994826}
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6129,7 +6379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869078821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0005100694, w: 0.9999999}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00046378025, w: 0.9999999}
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6464,15 +6714,69 @@ MonoBehaviour:
   dialogue:
     name: hotel
     options:
-    - 1
-    - 2
-    - 3
+    - I can see your glitter.
+    - Fairy dust?
+    - Oh, I thought all fairies have fairy dust.
+    - Don't worry! You're not small at all, I promise!
+    - I've met smaller fairies, it's okay!
+    - You being so small is cute!
+    - She is.
+    - I'd never compare you!
+    - You are!
+    - '*Start fanning the fairy. *'
+    - Maybe because you're in the sun, move to the shade.
+    - Probably because you've got really long hair.
+    - You could get more dates if you stopped fishing for compliments.
+    - Yeah, I can see why.
+    - I'm surprised, you seem like you go on dates a lot.
+    - Yes as long as you stop trying to subtly look for compliments.
+    - Yes of course!
+    - If you start being your honest self next time and drop the act.
     respones:
-    - 1
-    - 2
-    - 3
+    - 'OH MY GLORP! NOOO! That''s just my natural sparkle!
+
+      I could never
+      use fairy dust like all the other fairies.'
+    - Yeah! the stuff that makes most fairies sparkle! I don't use any of that though.
+    - That's just my natural sparkle that you can see! That's what you meant right,
+      That I'm pretty without fairy dust! Teehee!
+    - I'm not? Well.. All the other glorps call me tiny and cute...
+    - You have...? Well I'm sure they use a bunch of artificial fairy dust.
+    - You think I'm cute? Teehee!
+    - Hahaha you're so funny, such a comedian! You don't have to say that just to
+      be nice! You can be honest with me!
+    - 3Aww you're so kind and thoughtful! But you can be honest! I think we both
+      know who you really think is prettier!
+    - Really? Ah well I guess that's because I don't use any of that artificial fairy
+      dust!
+    - Hey stop that!! You're gonna blow me away because I'm so tiny!
+    - Hmm noo it wouldn't be that, It's probably because my hair is so healthy and
+      luscious.
+    - Teehee so you're saying my hair is healthy and lucious? It's all natural you
+      know!
+    - WHAT?!? ME? I'd never fish for compliments... Other fairies may do that, but
+      not me, I'm not like other fairies.
+    - Yeah, Most fairies just don't appreciate natural beauty, inside and out.
+    - Why is that? Oh because you think I'm so pretty that everyone would want to
+      date me? Teehee stop being so silly!
+    - I told you I DON'T DO THAT! You're just like all the other glorps, you don't
+      see how unique I really am...
+    - Really!? I'm so happy! You wont forget me because I'm so unique!
+    - Okay.... I guess, I'll try... Next time, I'll properly open up to you...
     actions:
-    - 1
+    - I'm so glad you decided to date me! Most glorps don't choose to date a fairy
+      that doesn't use fairy dust. I'm not like the other fairies.
+    - Since this is our first time meeting in person, are you okay with how small
+      and petite I am? All the other fairies are so much bigger than I am...
+    - Have you talked to any other glorps other than me?.... Oh you have? Haha......
+      But out of the two of us, which one is prettier?
+    - I'm so warm! I don't know why, I'm just a vunerable fairy overheating!
+    - This date has gone AMAZING! I don't go on dates often because most glorps don't
+      like fairy that's so natural like me... Especially other fairies, I get along
+      so much better with you.
+    - So... Would you... Be willing to go on another date with me? Even though I'm
+      so small, and don't use fairy dust?
+    - Goodbye! Don't forget me!!!
 --- !u!1 &1920656224
 GameObject:
   m_ObjectHideFlags: 0
@@ -6531,17 +6835,60 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: kaleen
     options:
-    - 1
-    - 2
-    - 3
+    - I am, and you look so gorgeous!
+    - Did you bring a vaccum to our date?
+    - I am date.
+    - I deep clean once a week!
+    - I keep things tidy.
+    - (brush the aliens shoulder) I can tell, your outfit is so clean.
+    - No thanks, please don't touch.
+    - I will look presentable for our next date.
+    - Oh gosh, yes please!
+    - I like how hard working you are!
+    - How does it get power.
+    - '*Help pick up trash.*'
+    - Freaky party trick.
+    - Whoa! how did you do that?
+    - "*Touch their arm.* \nHow did you do that?"
+    - This has been quite tiring. Cleaning isn't a usual date.
+    - Thank you, Kaleen. It's been a pleasure.
+    - '*Hold Kaleen''s hand.*
+
+      Thank you for today.'
     respones:
-    - 1
-    - 2
-    - 3
+    - Too forward for Kaleen, you are dirty glorp.
+    - Kaleen did bring vaccum to date, Problem?
+    - Good, nice to meet. My name Kaleen.
+    - WEEK? No, No. This will not do.
+    - Hm. Acceptable. This is ok.
+    - Indeed. No wrinkles.
+    - You are dirty, and do not want me to clean? Dirty glorp. Kaleen do not like.
+    - Next date? You'd better be clean.
+    - There you go dear. You are now clean.
+    - This is not hard working. If this is your hard work, Kaleen does not want to
+      see your easy work.
+    - It doesn't need power, It's part of me! I control the suction, and all the
+      trash goes in my tummy!
+    - You are a kind glorp, but it is faster if I do it. The trash goes right to
+      my tummy!
+    - It is not trick. My body is... 'freaky'? That makes me so sad.
+    - My arms are connected, one goes in, other goes out.
+    - You touch me still? Nobody usually touch me after I show them that.
+    - Cleaning is good date. You don't like cleaning? You are messy Glorp.
+    - Indeed. I enjoyed.
+    - Wow. This has now make me flustered. I want second date.
     actions:
-    - 1
+    - Hello dear, are you date?
+    - I bring vaccum to clean, it brings me much joy. You like to clean also?
+    - There is messy, messy wires hanging out from your body. Let me clean.
+    - '*Kaleen vaccums up some trash on the beach, but the vaccum isn''t connected
+      to anything.*'
+    - '*Kaleen stretches their arm to pick up trash, but as one arm extends, the
+      other arm shrinks into their body.*'
+    - Kaleen is tired. I go home now. My bed calls.
+    - Clean your room when you get back. Goodbye.
 --- !u!1 &1922451091
 GameObject:
   m_ObjectHideFlags: 0
@@ -6970,22 +7317,22 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.09659098, w: 0.9953242}
-    - {x: 0, y: 0, z: -0.011440841, w: 0.99993455}
-    - {x: 0, y: 0, z: 0.014678429, w: 0.9998923}
-    - {x: 0, y: 0, z: -0.010571288, w: 0.99994415}
-    - {x: 0, y: 0, z: 0.01024115, w: 0.9999476}
-    - {x: 0, y: 0, z: -0.0073080724, w: 0.9999733}
-    - {x: 0, y: 0, z: 0.00074547227, w: 0.99999976}
-    - {x: 0, y: 0, z: -0.0005047426, w: 0.9999999}
-    - {x: 0, y: 0, z: 0.001007883, w: 0.9999995}
-    - {x: 0, y: 0, z: -0.00019007426, w: 1}
-    - {x: 0, y: 0, z: -0.0005100694, w: 0.9999999}
-    - {x: 0, y: 0, z: 0.00020194132, w: 1}
-    - {x: 0, y: 0, z: 0.0003426208, w: 0.99999994}
-    - {x: 0, y: 0, z: -0.00003799847, w: 1}
+    - {x: 0, y: 0, z: -0.096956626, w: 0.99528867}
+    - {x: 0, y: 0, z: -0.01017128, w: 0.99994826}
+    - {x: 0, y: 0, z: 0.013467293, w: 0.99990934}
+    - {x: 0, y: 0, z: -0.010251974, w: 0.9999475}
+    - {x: 0, y: 0, z: 0.010376983, w: 0.9999462}
+    - {x: 0, y: 0, z: -0.008055297, w: 0.9999676}
+    - {x: 0, y: 0, z: 0.0007826504, w: 0.9999997}
+    - {x: 0, y: 0, z: 0.0007144707, w: 0.99999976}
+    - {x: 0, y: 0, z: 0.00071260956, w: 0.99999976}
+    - {x: 0, y: 0, z: -0.00041814742, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.00046378025, w: 0.9999999}
+    - {x: 0, y: 0, z: 0.00024127065, w: 1}
+    - {x: 0, y: 0, z: 0.0000011182128, w: 1}
+    - {x: 0, y: 0, z: -0.000073820294, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6205905, w: 0.7841349}
+    - {x: 0, y: 0, z: -0.62046516, w: 0.78423405}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
