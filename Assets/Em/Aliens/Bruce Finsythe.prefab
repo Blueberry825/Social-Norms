@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 7308270587694283562}
   - component: {fileID: 198526973571079065}
   - component: {fileID: 3944442877414920579}
-  - component: {fileID: 1900248147776650248}
-  - component: {fileID: 7159024530736939832}
-  - component: {fileID: 7144434544770134526}
-  - component: {fileID: 1103704460062156116}
+  - component: {fileID: -2368774596785162777}
+  - component: {fileID: -8679744037827128448}
+  - component: {fileID: 1692290503204504636}
+  - component: {fileID: 6944004856677731969}
   m_Layer: 5
-  m_Name: Alien_6
+  m_Name: Bruce Finsythe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,10 +61,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd027e5835f9be4db2538a260fea182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPlayerDatedThisAlien: 0
-  alienNumber: 6
-  alienColour: Green
---- !u!212 &1900248147776650248
+  hasPlayerDatedThisAlien: 1
+  alienNumber: 3
+  alienColour: Purple
+--- !u!212 &-2368774596785162777
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,18 +108,18 @@ SpriteRenderer:
   m_SortingLayerID: 1730967801
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 4ee1a2c883d1e9e4d8ad72a20b5084c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 555a11e2e76c0f848bcfdf316e43a5f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 19.2, y: 10.8}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7159024530736939832
+--- !u!95 &-8679744037827128448
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ Animator:
   m_GameObject: {fileID: 1603048764201989246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: f507050941402b943bde89cb255a723a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 152b12a8a108ab749acab3da28c4b107, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,7 +141,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7144434544770134526
+--- !u!114 &1692290503204504636
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,14 +154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49803922, g: 0.84313726, b: 0.49803922, a: 1}
+  m_Color: {r: 0.6862745, g: 0.5294118, b: 0.8392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b9070d8fb1e57e346a9e26e3d26337bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c25c3beb5af21bc43ab59ac562c1f58b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1103704460062156116
+--- !u!114 &6944004856677731969
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

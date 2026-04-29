@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 7308270587694283562}
   - component: {fileID: 198526973571079065}
   - component: {fileID: 3944442877414920579}
-  - component: {fileID: 1900248147776650248}
-  - component: {fileID: 5517805965987740371}
-  - component: {fileID: -1682554966597489525}
-  - component: {fileID: 412366942899798430}
+  - component: {fileID: 8567792535608931213}
+  - component: {fileID: 7316931733053605200}
+  - component: {fileID: 5967836746696985787}
+  - component: {fileID: -3773770094263996329}
   m_Layer: 5
-  m_Name: Alien_5
+  m_Name: Jane Dangerous Doe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,9 +62,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPlayerDatedThisAlien: 0
-  alienNumber: 5
-  alienColour: Green
---- !u!212 &1900248147776650248
+  alienNumber: 0
+  alienColour: Orange
+--- !u!212 &8567792535608931213
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 1730967801
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: dc58f67486f276a4d867944d6d8b1588, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9c94e415df363248a0688985fe31708, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5517805965987740371
+--- !u!95 &7316931733053605200
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ Animator:
   m_GameObject: {fileID: 1603048764201989246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 16fba6f97384df6498a06b6173180db5, type: 2}
+  m_Controller: {fileID: 9100000, guid: e6433f21e6b8a344b94b99356f78cd0e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,7 +141,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-1682554966597489525
+--- !u!114 &5967836746696985787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,14 +154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.49803922, g: 0.84313726, b: 0.49803922, a: 1}
+  m_Color: {r: 0.98039216, g: 0.7058824, b: 0.32156864, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fde51a8ac7cb7ec469507e1ed97698f1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cb025677492046d48b598cff1467a5b8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &412366942899798430
+--- !u!114 &-3773770094263996329
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

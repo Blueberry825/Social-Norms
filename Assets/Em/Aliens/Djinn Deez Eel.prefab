@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 198526973571079065}
   - component: {fileID: 3944442877414920579}
   - component: {fileID: 1900248147776650248}
-  - component: {fileID: 5603697526492117215}
-  - component: {fileID: 2759706497462442726}
-  - component: {fileID: -6826617025672647614}
+  - component: {fileID: -5863370486253035220}
+  - component: {fileID: -7615284161492393011}
+  - component: {fileID: 1767971265080647827}
   m_Layer: 5
-  m_Name: Alien_4
+  m_Name: Djinn Deez Eel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,8 +61,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bd027e5835f9be4db2538a260fea182, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasPlayerDatedThisAlien: 1
-  alienNumber: 4
+  hasPlayerDatedThisAlien: 0
+  alienNumber: 13
   alienColour: Orange
 --- !u!212 &1900248147776650248
 SpriteRenderer:
@@ -108,7 +108,7 @@ SpriteRenderer:
   m_SortingLayerID: 1730967801
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 097653f27f501774188fcae90e156eff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 46b65c4edac8b924a9441ce44817f3a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,7 +119,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5603697526492117215
+--- !u!95 &-5863370486253035220
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ Animator:
   m_GameObject: {fileID: 1603048764201989246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 46a8b3b16f3169b4b8e2bd85eac9b73e, type: 2}
+  m_Controller: {fileID: 9100000, guid: aee677051dfe8a04ba98a3b2baabbcbd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,7 +141,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2759706497462442726
+--- !u!114 &-7615284161492393011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 010e26d02cf15e8488e7e24f58162efd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b019a2fe0c688cc49bfdae7cc0ec1ce4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-6826617025672647614
+--- !u!114 &1767971265080647827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

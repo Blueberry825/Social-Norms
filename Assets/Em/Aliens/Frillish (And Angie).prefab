@@ -12,11 +12,11 @@ GameObject:
   - component: {fileID: 198526973571079065}
   - component: {fileID: 3944442877414920579}
   - component: {fileID: 1900248147776650248}
-  - component: {fileID: -5863370486253035220}
-  - component: {fileID: -7615284161492393011}
-  - component: {fileID: 1767971265080647827}
+  - component: {fileID: -509130598158075092}
+  - component: {fileID: -4851033114009943929}
+  - component: {fileID: -6145078956024263334}
   m_Layer: 5
-  m_Name: Alien_13
+  m_Name: Frillish (And Angie)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,8 +62,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hasPlayerDatedThisAlien: 0
-  alienNumber: 13
-  alienColour: Orange
+  alienNumber: 9
+  alienColour: Purple
 --- !u!212 &1900248147776650248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,18 +108,18 @@ SpriteRenderer:
   m_SortingLayerID: 1730967801
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 46b65c4edac8b924a9441ce44817f3a2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 39a1b84db2cc39346aa5b80ca0ae0d0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &-5863370486253035220
+--- !u!95 &-509130598158075092
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -129,7 +129,7 @@ Animator:
   m_GameObject: {fileID: 1603048764201989246}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aee677051dfe8a04ba98a3b2baabbcbd, type: 2}
+  m_Controller: {fileID: 9100000, guid: 5a5a92a4282e56242950b5ede9ba3aba, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -141,7 +141,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &-7615284161492393011
+--- !u!114 &-4851033114009943929
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,14 +154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.98039216, g: 0.7058824, b: 0.32156864, a: 1}
+  m_Color: {r: 0.6862745, g: 0.5294118, b: 0.8392157, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b019a2fe0c688cc49bfdae7cc0ec1ce4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4471a3e47bb53141aaad2b70386e6d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1767971265080647827
+--- !u!114 &-6145078956024263334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
