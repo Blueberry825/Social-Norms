@@ -15,7 +15,9 @@ public class DialogueManager : MonoBehaviour
     private GameObject GameOver;
     private GameObject tablet;
     private GameObject armObject;
+
     private GameObject nextButton;
+    public GameObject endButton;
 
     private DialogueTrigger DialogueTrigger_scr;
     public InteractionSelector InteractionSelector_scr;
@@ -140,6 +142,7 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
         StayOnLocation(false);
+
     }//tell table that hasWon is true
 
     public void OptionBubbles()//switch case 
@@ -160,24 +163,30 @@ public class DialogueManager : MonoBehaviour
 
                 InteractionSelector_scr.ShuffleLocationList();
         }
-        else
+        else//end of date
         {
             Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
 
             armObject.SetActive(false);
 
-            if (LoveMeter_scr.isLoveFull)
-            {
-                WinState();
-            }
-            else
-            {
-                LoseState2();
-            }            
+            endButton.SetActive(true);
         }
         meLines++;
     }
+
+    public void DirectToWinLose()
+    {
+        if (LoveMeter_scr.isLoveFull)
+        {
+            WinState();
+        }
+        else
+        {
+            LoseState2();
+        }
+    }
+
 
     public void HideObj(GameObject Obj)
     {
@@ -293,7 +302,6 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            dialogueText.text = "i am getting tired of talking to you..";
             OptionBubbles();
         }
     }
