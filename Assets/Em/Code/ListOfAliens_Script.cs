@@ -14,12 +14,22 @@ public class ListOfAliens_Script : MonoBehaviour
 
     private Level_Location_Script levelLocationScript;
 
+    private Animator characterAnimator;
+
     private Scene scene;
+    [SerializeField] private List<GameObject> singleAlienListTemplate;
 
 
     private void Start()
     {
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
+        singleAlienListTemplate = new List<GameObject>();
+
+        foreach (GameObject go in singleAlienList) 
+        { 
+            singleAlienListTemplate.Add(go);
+        }
+
     }
 
     //function called once dated
@@ -72,14 +82,24 @@ public class ListOfAliens_Script : MonoBehaviour
 
     public void RestartGame()//empty dated list, fill single list and set location to 0 
     {
+        Time.timeScale = 1;
         levelLocationScript.currentLocation = 0;
+        characterAnimator = GameObject.Find("Character").GetComponent<Animator>();
+        characterAnimator.SetInteger("Location_INT_Anim", 0);
+        //may need to add refresh dates
 
-        for (int i = 0; datedAlienList.Count > 0; i++)
-        {
-            singleAlienList.Add(datedAlienList[i]);
-            datedAlienList.Remove(datedAlienList[i]);
-        }
         SceneManager.LoadScene("Opening_Scene");
+
+        datedAlienList.Clear();
+        singleAlienList.Clear();
+
+        foreach (GameObject go in singleAlienListTemplate)
+        {
+            singleAlienList.Add(go);
+        }
+
+        DateRandomiser_Script dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        dateScript.RefreshDatesButton();
     }
 
 }
