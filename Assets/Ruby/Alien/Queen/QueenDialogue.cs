@@ -109,7 +109,7 @@ public class QueenDialogue : MonoBehaviour
         gameovertext_scr.BadQueenGood();
 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
-        StayOnLocation(true);
+        
     }
 
     public void StayOnLocation(bool value) 
