@@ -36,7 +36,6 @@ public class LoveMeter : MonoBehaviour
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
-
         isLoveFull = false;
         loveAmount = 50f;
         decaying = true;
@@ -79,17 +78,17 @@ public class LoveMeter : MonoBehaviour
 
             case 4:
                 decayTime = 1.5f;
-                decayAmount = 0.4f;
+                decayAmount = 0.3f;
                 break;
 
             case 5:
                 decayTime = 1.5f;
-                decayAmount = 0.5f;
+                decayAmount = 0.3f;
                 break;
 
             case 6://queen?
                 decayTime = 2f;
-                decayAmount = 0.5f;
+                decayAmount = 0.4f;
                 break;
 
         }
