@@ -309,4 +309,10 @@ public class QueenDialogue : MonoBehaviour
     {
         Debug.Log("end convo");
     }
+
+    public void CallRestartFunction() 
+    { 
+        ListOfAliens_Script listAlien = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        listAlien.RestartGame();
+    }
 }

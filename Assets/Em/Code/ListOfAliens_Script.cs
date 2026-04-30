@@ -100,26 +100,6 @@ public class ListOfAliens_Script : MonoBehaviour
 
         DateRandomiser_Script dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         dateScript.RefreshDatesButton();
-
-        //foreach (GameObject alien in datedAlienList) 
-        //{
-        //    if (datedAlienList.Count > 0) 
-        //    {
-        //        //load new scene, remove as current date/refresh for area
-        //        singleAlienList.Add(alien);
-        //        datedAlienList.Clear();
-        //        //maybe need to remove as current date too
-        //    }
-
-        //}
-
-
-        //for (int i = 0; datedAlienList.Count > 0; i++)
-        //{
-        //    singleAlienList.Add(datedAlienList[i]);
-        //    datedAlienList.Remove(datedAlienList[i]);
-        //}
-
     }
 
 }
