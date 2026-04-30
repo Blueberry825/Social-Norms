@@ -25,8 +25,8 @@ public class LoveMeter : MonoBehaviour
     public bool isLoveFull;
 
     public float loveAmount = 50f;
-    public float decayAmount;
-    public float decayTime;// how low between each decrease 
+    private float decayAmount;
+    private float decayTime;// how low between each decrease 
     public bool decaying;//if decreasing over time or not
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -46,7 +46,12 @@ public class LoveMeter : MonoBehaviour
             dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
            
         }
-        currentAlien = ListOfAliens_Script_scr.currentDate;
+        else if (scene.name == "Queen_Scene")
+        {
+            decayTime = 2f;
+            decayAmount = 0.4f;
+        }
+       currentAlien = ListOfAliens_Script_scr.currentDate;
         alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
 
 
@@ -87,9 +92,14 @@ public class LoveMeter : MonoBehaviour
                 break;
 
             case 6://queen?
-                decayTime = 2f;
-                decayAmount = 0.4f;
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
+            case 7://queen?
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
+                break;
+
 
         }
     }
@@ -104,6 +114,10 @@ public class LoveMeter : MonoBehaviour
         if (loveAmount >= 70)
         {   
             isLoveFull = true;
+            if (loveAmount > 100)
+            {
+                loveAmount = 100;
+            }
         }
         else if (loveAmount <= 60)
         {
