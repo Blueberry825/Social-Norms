@@ -27,6 +27,8 @@ public class DateRandomiser_Script : MonoBehaviour
     private Animator refreshAnimator;
     private GameObject slider;
 
+    public bool retriedAlready;
+
     private GameObject current;
     private GetAlienName_Script sendNameScript;
 
