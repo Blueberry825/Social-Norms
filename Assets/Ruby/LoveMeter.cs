@@ -19,6 +19,8 @@ public class LoveMeter : MonoBehaviour
     public int increaseAmount;
     private int alienNumber;
 
+    public GameObject currentAlien;
+
     public bool isLoveFull;
 
     public float loveAmount = 50f;
@@ -30,6 +32,8 @@ public class LoveMeter : MonoBehaviour
     void Start()
     {
         currentLocation = GameObject.Find("Tablet").GetComponent<Level_Location_Script>().currentLocation;
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
         isLoveFull = false;
         loveAmount = 50f;
@@ -39,13 +43,9 @@ public class LoveMeter : MonoBehaviour
         if (scene.name != "Queen_Scene") 
         {
             dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            var currentAlien = ListOfAliens_Script_scr.currentDate;
+            currentAlien = ListOfAliens_Script_scr.currentDate;
             alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
         }
-
-        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-
 
         loveMeter.value = loveAmount;//set to default love amount
 
@@ -123,16 +123,12 @@ public class LoveMeter : MonoBehaviour
                 decaying = false;
             }
         }
-
     }
 
 
     public void RestartLevel()
     {
-        Start();
-        SceneManager.LoadScene("Date_Scene");
-        var currentAlien = DateRandomiser_Script_scr.alienOnScreen;
-        ListOfAliens_Script_scr.PlayerOnDateWith(currentAlien);
+        ListOfAliens_Script_scr.DateReset(currentAlien);
         Time.timeScale = 1;
     }
 

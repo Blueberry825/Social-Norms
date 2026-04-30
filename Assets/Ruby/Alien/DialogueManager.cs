@@ -25,7 +25,6 @@ public class DialogueManager : MonoBehaviour
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
-    private SaveAndLoad SaveAndLoad_scr;
     private GameOverResultText_Script gameoverResultText_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
 
@@ -65,7 +64,6 @@ public class DialogueManager : MonoBehaviour
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
 
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
 
         nextButton = GameObject.Find("Next");
@@ -90,7 +88,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StuffToDoAfterDate()//when going back to date screen after date
     {
-        SaveAndLoad_scr.LoadLocationsAndAliens();
         DateRandomiser_Script_scr.RandomiseDate();
     }
 
@@ -131,6 +128,11 @@ public class DialogueManager : MonoBehaviour
         StayOnLocation(true);
     }
 
+    public void CallRestartGameFunction()
+    {
+        ListOfAliens_Script_scr.RestartGame();
+    }
+
     public void StayOnLocation(bool value) 
     {
         retryLocation = value;
@@ -140,6 +142,8 @@ public class DialogueManager : MonoBehaviour
 
     public void WinState()
     {
+        ListOfAliens_Script_scr.PlayerWinDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.GoodDate();
 

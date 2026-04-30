@@ -98,7 +98,6 @@ public class QueenDialogue : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         gameovertext_scr.BadQueenGood();
 
-        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
 
@@ -109,7 +108,6 @@ public class QueenDialogue : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         gameovertext_scr.BadQueenGood();
 
-        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
     }

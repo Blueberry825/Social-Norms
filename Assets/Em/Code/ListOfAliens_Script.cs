@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 //hold dialogue for each alien
 public class ListOfAliens_Script : MonoBehaviour
@@ -12,12 +13,12 @@ public class ListOfAliens_Script : MonoBehaviour
     public List<GameObject> datedAlienList;
 
     private Level_Location_Script levelLocationScript;
-    private SaveAndLoad SaveAndLoad_scr;
+
+    private Scene scene;
 
 
     private void Start()
     {
-        SaveAndLoad_scr = gameObject.GetComponent<SaveAndLoad>();
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
     }
 
@@ -30,16 +31,23 @@ public class ListOfAliens_Script : MonoBehaviour
         singleAlienList.Remove(alien);
 
         levelLocationScript.MoveLocation();
+    }
 
-        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);//saves the alien number to the current location  
+    public void DateReset(GameObject alien)
+    {
+        scene = SceneManager.GetActiveScene();
+        alien.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = true;
+        currentDate = alien;
+        datedAlienList.Add(alien);
+        singleAlienList.Remove(alien);
+
+        SceneManager.LoadScene(scene.name);
     }
 
     public void PlayerDateQueen()
     {
         //remove as current date each time
         levelLocationScript.MoveLocation();
-
-        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
     }
 
     public void PlayerFailedDate_RemoveAlien() 
@@ -51,4 +59,27 @@ public class ListOfAliens_Script : MonoBehaviour
             currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = false;
         }
     }
+
+    public void PlayerWinDate_RemoveAlien()
+    {
+        if (currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien == false)//player has swiped right
+        {
+            datedAlienList.Add(currentDate);
+            singleAlienList.Remove(currentDate);
+            currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = true;
+        }
+    }
+
+    public void RestartGame()//empty dated list, fill single list and set location to 0 
+    {
+        levelLocationScript.currentLocation = 0;
+
+        for (int i = 0; datedAlienList.Count > 0; i++)
+        {
+            singleAlienList.Add(datedAlienList[i]);
+            datedAlienList.Remove(datedAlienList[i]);
+        }
+        SceneManager.LoadScene("Opening_Scene");
+    }
+
 }
