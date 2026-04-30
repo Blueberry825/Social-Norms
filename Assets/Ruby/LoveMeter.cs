@@ -39,13 +39,9 @@ public class LoveMeter : MonoBehaviour
         loveAmount = 50f;
         decaying = true;
 
-        scene = SceneManager.GetActiveScene();
-        if (scene.name != "Queen_Scene") 
-        {
-            dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            currentAlien = ListOfAliens_Script_scr.currentDate;
-            alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
-        }
+        dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        currentAlien = ListOfAliens_Script_scr.currentDate;
+        alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
 
         loveMeter.value = loveAmount;//set to default love amount
 

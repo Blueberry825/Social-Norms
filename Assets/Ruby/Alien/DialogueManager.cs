@@ -171,10 +171,8 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
-        print("new options spawning");
         minOptionElement = meLines * 3;//lowest option element that we can be on
         maxOptionElement = minOptionElement + 3;//max option element that we can be on
-        Debug.Log("maxlines: " + maxOptionElement + "count: " + options.Count);
        
         if (options.Count >= maxOptionElement)//if the full options list still bigger(/equal) than the current max option element
         {
@@ -189,7 +187,6 @@ public class DialogueManager : MonoBehaviour
         }
         else//end of date
         {
-            Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
 
             armObject.SetActive(false);

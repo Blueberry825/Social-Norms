@@ -7,7 +7,6 @@ public class QueenDialogueTrigger : MonoBehaviour
     public void TriggerDialogueOptions()
     {
         FindAnyObjectByType<QueenDialogue>().StartDialogueOptions(queenDialogue);
-        print("got here");
     }
 
     public void TriggerDialogueResponses()
