@@ -20,6 +20,7 @@ public class LoveMeter : MonoBehaviour
     private int alienNumber;
 
     public GameObject currentAlien;
+    private QueenDialogue queenDialogue_scr;
 
     public bool isLoveFull;
 
@@ -35,13 +36,20 @@ public class LoveMeter : MonoBehaviour
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
+
         isLoveFull = false;
         loveAmount = 50f;
         decaying = true;
 
-        dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+        scene = SceneManager.GetActiveScene();
+        if (scene.name != "Queen_Scene") 
+        {
+            dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
+           
+        }
         currentAlien = ListOfAliens_Script_scr.currentDate;
         alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
+
 
         loveMeter.value = loveAmount;//set to default love amount
 
@@ -55,33 +63,33 @@ public class LoveMeter : MonoBehaviour
             case 0:// starting area
                 break;
             case 1:  //first location  
-                decayTime = 2f;
-                decayAmount = 0.2f;
+                decayTime = 1.5f;
+                decayAmount = 0.1f;
                 break;
 
             case 2:
-                decayTime = 2f;
-                decayAmount = 0.3f;
+                decayTime = 1.5f;
+                decayAmount = 0.2f;
                 break;
 
             case 3:
-                decayTime = 2f;
-                decayAmount = 0.5f;
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
 
             case 4:
-                decayTime = 2f;
-                decayAmount = 0.7f;
+                decayTime = 1.5f;
+                decayAmount = 0.4f;
                 break;
 
             case 5:
-                decayTime = 2f;
-                decayAmount = 0.8f;
+                decayTime = 1.5f;
+                decayAmount = 0.5f;
                 break;
 
             case 6://queen?
                 decayTime = 2f;
-                decayAmount = 0.6f;
+                decayAmount = 0.5f;
                 break;
 
         }
@@ -95,12 +103,7 @@ public class LoveMeter : MonoBehaviour
         loveMeter.value = loveAmount;
 
         if (loveAmount >= 70)
-        {
-            if (loveAmount >= 100)
-            {
-                loveAmount = 100;
-                decaying = false;
-            }      
+        {   
             isLoveFull = true;
         }
         else if (loveAmount <= 60)
@@ -115,7 +118,19 @@ public class LoveMeter : MonoBehaviour
 
             if (loveAmount <= 0)
             {
-                dialogueManager_scr.LoseState();
+                //if queen
+                scene = SceneManager.GetActiveScene();
+
+                if (scene.name != "Queen_Scene")
+                {
+                    dialogueManager_scr.LoseState();
+
+                }
+                else if (scene.name == "Queen_Scene") 
+                {
+                    queenDialogue_scr = GameObject.Find("QueenDialogue").GetComponent<QueenDialogue>();
+                    queenDialogue_scr.LoseState();
+                }
                 decaying = false;
             }
         }
