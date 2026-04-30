@@ -70,4 +70,16 @@ public class ListOfAliens_Script : MonoBehaviour
         }
     }
 
+    public void RestartGame()//empty dated list, fill single list and set location to 0 
+    {
+        levelLocationScript.currentLocation = 0;
+
+        for (int i = 0; datedAlienList.Count > 0; i++)
+        {
+            singleAlienList.Add(datedAlienList[i]);
+            datedAlienList.Remove(datedAlienList[i]);
+        }
+        SceneManager.LoadScene("Opening_Scene");
+    }
+
 }

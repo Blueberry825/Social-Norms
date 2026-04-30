@@ -128,6 +128,11 @@ public class DialogueManager : MonoBehaviour
         StayOnLocation(true);
     }
 
+    public void CallRestartGameFunction()
+    {
+        ListOfAliens_Script_scr.RestartGame();
+    }
+
     public void StayOnLocation(bool value) 
     {
         retryLocation = value;
