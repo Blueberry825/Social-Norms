@@ -177,7 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: djinn
+    name: Djinn
     options:
     - '*Simulate a fart inside the bucket.*'
     - Why were you waiting in a bucket?
@@ -281,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 59400548}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0008258983, w: 0.9999997}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00030672585, w: 0.99999994}
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -379,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73059675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.009156958, w: 0.9999581}
+  m_LocalRotation: {x: 0, y: 0, z: -0.009721121, w: 0.9999528}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89359089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0019573022, w: 0.9999981}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0013438881, w: 0.9999991}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -550,7 +550,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146580656}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00071975216, w: 0.99999976}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00026222403, w: 1}
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1432,9 +1432,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: luma
+    name: Luma
     options:
-    - Oh my god, please don't scare me like that, I was entranced with them.
+    - Hello!!
     - '*Wait for the alien to notice you.*'
     - '*Gently touch the alien on the shoulder.*'
     - Is that Shakespeare?
@@ -1712,7 +1712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: finona
+    name: Finona
     options:
     - Hello yourself, you look Fintastic gorgeous!
     - '*Bow nervously.*'
@@ -1795,7 +1795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487031595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.013152348, w: 0.9999135}
+  m_LocalRotation: {x: 0, y: 0, z: 0.012996946, w: 0.99991554}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1925,7 +1925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652159888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6205182, w: 0.7841921}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6203731, w: 0.78430694}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: bruce
+    name: Bruce
     options:
     - I brought you some nice fish to cheer you up!
     - What's your name?
@@ -2329,7 +2329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: swamp pick ne
+    name: Bog
     options:
     - '*Jokingly.*
 
@@ -3425,7 +3425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947320154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.008127811, w: 0.99996704}
+  m_LocalRotation: {x: 0, y: 0, z: 0.008848452, w: 0.99996084}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3457,7 +3457,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972852753}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00024580612, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00045116898, w: 0.99999994}
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4520,7 +4520,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: hotel
+    name: Hotel
     options:
     - Hello?
     - Are you a Log?
@@ -4870,7 +4870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00012248517, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0002154245, w: 1}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5072,7 +5072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: tarrant
+    name: Tarrant
     options:
     - Your profile said you liked hats. So I brought you a brand new hat!
     - That's the coolest hat i've ever seen.
@@ -5296,7 +5296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433223088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00044769692, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00018825295, w: 1}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5328,7 +5328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434604158}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0071155783, w: 0.9999747}
+  m_LocalRotation: {x: 0, y: 0, z: -0.006700464, w: 0.9999776}
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5518,7 +5518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00031522283, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00009067396, w: 1}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5670,7 +5670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.010071619, w: 0.9999493}
+  m_LocalRotation: {x: 0, y: 0, z: -0.009522926, w: 0.9999547}
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6463,7 +6463,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1869078821}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00034887728, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00040328017, w: 0.99999994}
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6919,7 +6919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: kaleen
+    name: Kaleen
     options:
     - I am, and you look so gorgeous!
     - Did you bring a vaccum to our date?
@@ -7401,22 +7401,22 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.09695662, w: 0.9952886}
-    - {x: 0, y: 0, z: -0.010071619, w: 0.9999493}
-    - {x: 0, y: 0, z: 0.013152348, w: 0.9999135}
-    - {x: 0, y: 0, z: -0.009156958, w: 0.9999581}
-    - {x: 0, y: 0, z: 0.008127811, w: 0.99996704}
-    - {x: 0, y: 0, z: -0.0068210186, w: 0.99997675}
-    - {x: 0, y: 0, z: 0.0019573022, w: 0.9999981}
-    - {x: 0, y: 0, z: -0.00044769692, w: 0.99999994}
-    - {x: 0, y: 0, z: 0.00071975216, w: 0.99999976}
-    - {x: 0, y: 0, z: -0.0008258983, w: 0.9999997}
-    - {x: 0, y: 0, z: 0.00034887728, w: 0.99999994}
-    - {x: 0, y: 0, z: -0.00024580612, w: 1}
-    - {x: 0, y: 0, z: 0.00031522283, w: 0.99999994}
-    - {x: 0, y: 0, z: -0.00012248517, w: 1}
+    - {x: 0, y: 0, z: -0.097139426, w: 0.99527085}
+    - {x: 0, y: 0, z: -0.009522926, w: 0.9999547}
+    - {x: 0, y: 0, z: 0.012996946, w: 0.99991554}
+    - {x: 0, y: 0, z: -0.009721121, w: 0.9999528}
+    - {x: 0, y: 0, z: 0.008848452, w: 0.99996084}
+    - {x: 0, y: 0, z: -0.006700464, w: 0.9999776}
+    - {x: 0, y: 0, z: 0.0013438881, w: 0.9999991}
+    - {x: 0, y: 0, z: -0.00018825295, w: 1}
+    - {x: 0, y: 0, z: -0.00026222403, w: 1}
+    - {x: 0, y: 0, z: 0.00030672585, w: 0.99999994}
+    - {x: 0, y: 0, z: 0.00040328017, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.00045116898, w: 0.99999994}
+    - {x: 0, y: 0, z: 0.00009067396, w: 1}
+    - {x: 0, y: 0, z: -0.0002154245, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6205182, w: 0.7841921}
+    - {x: 0, y: 0, z: -0.6203731, w: 0.78430694}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
@@ -7494,7 +7494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: mantis
+    name: Mantis
     options:
     - '*Dap up the alien.*'
     - Hey there!
@@ -7959,7 +7959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: flyynt
+    name: Flyynt
     options:
     - Were you just.. speaking to that rock? I didn't know geologists did that...
     - Flynnt like Flint? Are you a geologist?
@@ -8093,7 +8093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: frillish
+    name: Frillish
     options:
     - '*Walk up to the alien.*'
     - Why are you standing behind a wall?
@@ -8491,7 +8491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: will
+    name: Will
     options:
     - '*Gently shake their shoulder to wake them up.*'
     - '*Wait for them to wake up.*'
@@ -8540,7 +8540,7 @@ MonoBehaviour:
     - Umm...  you know that's Glerble food... right? I'll just do it myself...
     - Gluh those are TREE leaves, not TEA leaves! never mind, I'll get it myself..
     - Mmm, I can smell the herbs already. Thanks, Gluhh.
-    - "*They recoil.* \nI know my skin is diffent but don't touch me.."
+    - "*They recoil.* \nI know my skin is different, but don't touch me.."
     - Oh... Well, it's okay if someone doesn't want tea....
     - Ahhhh... It doesn't get better than this, Gluhh. Just you, me, and a nice herbal
       tea...
@@ -8607,7 +8607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: big b
+    name: Big B.
     options:
     - I'm so sorry! You were so small that I didn't see you through the grass.
     - Sorry about that, I should be more careful.
