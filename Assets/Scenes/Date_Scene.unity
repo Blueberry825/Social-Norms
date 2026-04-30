@@ -379,7 +379,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 73059675}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.009721121, w: 0.9999528}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0098509975, w: 0.9999515}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89359089}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0013438881, w: 0.9999991}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0010929739, w: 0.9999994}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1443,14 +1443,14 @@ MonoBehaviour:
     - Bound to the stars?
     - You sound very free, enlightened even.
     - Your wisdom is as vast as the universe itself.
-    - I cant do that, but I can cook for you while you stargaze.
+    - I can't do that, but I can cook for you while you stargaze.
     - We can engage in combat... of the mind.
     - "*Touch the aliens head.* \nI can be or do anything you like."
     - Experiencing the universe isn't really my thing...
     - What do you mean?
     - "*Hold the alien's hand.* \nI'll do anything with you."
     - I'm not so sure about this...
-    - I'm so that you trust me enough... I'm ready.
+    - I'm so glad that you trust me enough... I'm ready.
     - I love the stars enough to not fear the night... Think about it.
     - As much as I want to help you, I'm sorry, I don't think we are compatible.
       You seem to be more in love with the universe than me.
@@ -1795,7 +1795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 487031595}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.012996946, w: 0.99991554}
+  m_LocalRotation: {x: 0, y: 0, z: 0.013126818, w: 0.9999139}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1925,7 +1925,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 652159888}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6203731, w: 0.78430694}
+  m_LocalRotation: {x: 0, y: 0, z: -0.62039936, w: 0.78428614}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3425,7 +3425,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947320154}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.008848452, w: 0.99996084}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0090321265, w: 0.99995923}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4870,7 +4870,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285817505}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0002154245, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00008554167, w: 1}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5296,7 +5296,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433223088}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00018825295, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00005837012, w: 1}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5518,7 +5518,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1463521501}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00009067396, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00006148347, w: 1}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5670,7 +5670,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523659607}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.009522926, w: 0.9999547}
+  m_LocalRotation: {x: 0, y: 0, z: -0.009652803, w: 0.99995345}
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7402,21 +7402,21 @@ MonoBehaviour:
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
     - {x: 0, y: 0, z: -0.097139426, w: 0.99527085}
-    - {x: 0, y: 0, z: -0.009522926, w: 0.9999547}
-    - {x: 0, y: 0, z: 0.012996946, w: 0.99991554}
-    - {x: 0, y: 0, z: -0.009721121, w: 0.9999528}
-    - {x: 0, y: 0, z: 0.008848452, w: 0.99996084}
+    - {x: 0, y: 0, z: -0.009652803, w: 0.99995345}
+    - {x: 0, y: 0, z: 0.013126818, w: 0.9999139}
+    - {x: 0, y: 0, z: -0.0098509975, w: 0.9999515}
+    - {x: 0, y: 0, z: 0.0090321265, w: 0.99995923}
     - {x: 0, y: 0, z: -0.006700464, w: 0.9999776}
-    - {x: 0, y: 0, z: 0.0013438881, w: 0.9999991}
-    - {x: 0, y: 0, z: -0.00018825295, w: 1}
+    - {x: 0, y: 0, z: 0.0010929739, w: 0.9999994}
+    - {x: 0, y: 0, z: -0.00005837012, w: 1}
     - {x: 0, y: 0, z: -0.00026222403, w: 1}
     - {x: 0, y: 0, z: 0.00030672585, w: 0.99999994}
     - {x: 0, y: 0, z: 0.00040328017, w: 0.99999994}
     - {x: 0, y: 0, z: -0.00045116898, w: 0.99999994}
-    - {x: 0, y: 0, z: 0.00009067396, w: 1}
-    - {x: 0, y: 0, z: -0.0002154245, w: 1}
+    - {x: 0, y: 0, z: 0.00006148347, w: 1}
+    - {x: 0, y: 0, z: -0.00008554167, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6203731, w: 0.78430694}
+    - {x: 0, y: 0, z: -0.62039936, w: 0.78428614}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
