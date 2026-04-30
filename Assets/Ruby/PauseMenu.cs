@@ -6,6 +6,8 @@ public class PauseMenu : MonoBehaviour
     private InputSystem_Actions inputSystem;
     private InputAction menu;
 
+    private BackgroundMusic_Script bgm_scr;
+
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private bool isPaused;
 
@@ -14,6 +16,7 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
+        bgm_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
     }
 
     void Awake()
@@ -69,6 +72,8 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = true;
         pauseMenu.SetActive(true);
         pauseMenu.transform.SetAsLastSibling();
+        bgm_scr.PauseMenuBackgroundMusic();
+
 
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
         startAreaAnimator.SetBool("OnScreen", false);
@@ -80,5 +85,6 @@ public class PauseMenu : MonoBehaviour
         AudioListener.pause = false;
         pauseMenu.SetActive(false);
         isPaused = false;
+        bgm_scr.PauseMenuBackgroundMusic();
     }
 }

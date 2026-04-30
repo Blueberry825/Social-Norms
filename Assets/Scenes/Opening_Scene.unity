@@ -997,7 +997,7 @@ GameObject:
   - component: {fileID: 211362675}
   m_Layer: 0
   m_Name: Ambience_Holder
-  m_TagString: Untagged
+  m_TagString: ambi_tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3637,7 +3637,7 @@ GameObject:
   - component: {fileID: 1162899313}
   m_Layer: 0
   m_Name: BackgroundMusic_Holder
-  m_TagString: Untagged
+  m_TagString: music_tag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4624,6 +4624,7 @@ GameObject:
   - component: {fileID: 1535719823}
   - component: {fileID: 1535719826}
   - component: {fileID: 1535719828}
+  - component: {fileID: 1535719830}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4782,6 +4783,20 @@ MonoBehaviour:
       sizeMultiplier: 2.17
     innerMonitorShineRadius: -0.087
     innerMonitorShineCurve: 10
+--- !u!114 &1535719830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1535719821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8ac86bba18fc648bb86e1e869e615d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  music_l: []
+  ambi_l: []
 --- !u!114 &1557465210 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1357311638840111669, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
