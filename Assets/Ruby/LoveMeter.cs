@@ -46,18 +46,15 @@ public class LoveMeter : MonoBehaviour
             dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
            
         }
-        else if (scene.name == "Queen_Scene")
-        {
-            decayTime = 2f;
-            decayAmount = 0.4f;
-        }
+
        currentAlien = ListOfAliens_Script_scr.currentDate;
         alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
 
 
         loveMeter.value = loveAmount;//set to default love amount
 
-        DecaySpeed();//when level starts, set decay speed depending on current level
+        decayTime = 1.4f;
+        decayAmount = 0.2f;
     }
 
     private void DecaySpeed()
