@@ -143,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109405438}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00010696393, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0010942492, w: 0.9999994}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -180,7 +180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147846481}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00040344126, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0003170891, w: 0.99999994}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -945,7 +945,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327549318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0009269713, w: 0.9999996}
+  m_LocalRotation: {x: 0, y: 0, z: 0.001056854, w: 0.99999946}
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2022,7 +2022,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472187442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.09759648, w: 0.9952261}
+  m_LocalRotation: {x: 0, y: 0, z: -0.09768788, w: 0.9952171}
   m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2396,7 +2396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559495648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00059415854, w: 0.9999998}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00026053627, w: 1}
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2662,7 +2662,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637214585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00045703497, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00018039887, w: 1}
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2807,7 +2807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665632846}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00011429808, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00041432367, w: 0.99999994}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5367,7 +5367,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115462851}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.004351324, w: 0.9999905}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0053490945, w: 0.9999857}
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6558,7 +6558,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357687538}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6205009, w: 0.7842058}
+  m_LocalRotation: {x: 0, y: 0, z: -0.6204148, w: 0.78427386}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6665,7 +6665,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1413567350}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.008461466, w: 0.99996424}
+  m_LocalRotation: {x: 0, y: 0, z: -0.008013451, w: 0.99996793}
   m_LocalPosition: {x: 1.4065185, y: -0.0000012700224, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7198,7 +7198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601335034}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.008679641, w: 0.9999624}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0076120277, w: 0.99997103}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7615,7 +7615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641361211}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.006296395, w: 0.9999802}
+  m_LocalRotation: {x: 0, y: 0, z: 0.005851339, w: 0.9999829}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8014,7 +8014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687426360}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0001941717, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00076739775, w: 0.9999997}
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8109,22 +8109,22 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.09759648, w: 0.9952261}
-    - {x: 0, y: 0, z: -0.008461466, w: 0.99996424}
-    - {x: 0, y: 0, z: 0.011775595, w: 0.9999307}
-    - {x: 0, y: 0, z: -0.008679641, w: 0.9999624}
-    - {x: 0, y: 0, z: 0.006296395, w: 0.9999802}
-    - {x: 0, y: 0, z: -0.004351324, w: 0.9999905}
-    - {x: 0, y: 0, z: -0.00010696393, w: 1}
-    - {x: 0, y: 0, z: 0.0007715803, w: 0.9999997}
-    - {x: 0, y: 0, z: 0.0009269713, w: 0.9999996}
-    - {x: 0, y: 0, z: -0.0001941717, w: 1}
-    - {x: 0, y: 0, z: 0.00045703497, w: 0.99999994}
-    - {x: 0, y: 0, z: -0.00059415854, w: 0.9999998}
-    - {x: 0, y: 0, z: -0.00040344126, w: 0.99999994}
-    - {x: 0, y: 0, z: 0.00011429808, w: 1}
+    - {x: 0, y: 0, z: -0.09768788, w: 0.9952171}
+    - {x: 0, y: 0, z: -0.008013451, w: 0.99996793}
+    - {x: 0, y: 0, z: 0.011121926, w: 0.9999382}
+    - {x: 0, y: 0, z: -0.0076120277, w: 0.99997103}
+    - {x: 0, y: 0, z: 0.005851339, w: 0.9999829}
+    - {x: 0, y: 0, z: -0.0053490945, w: 0.9999857}
+    - {x: 0, y: 0, z: 0.0010942492, w: 0.9999994}
+    - {x: 0, y: 0, z: 0.00032758774, w: 0.99999994}
+    - {x: 0, y: 0, z: 0.001056854, w: 0.99999946}
+    - {x: 0, y: 0, z: -0.00076739775, w: 0.9999997}
+    - {x: 0, y: 0, z: 0.00018039887, w: 1}
+    - {x: 0, y: 0, z: -0.00026053627, w: 1}
+    - {x: 0, y: 0, z: 0.0003170891, w: 0.99999994}
+    - {x: 0, y: 0, z: -0.00041432367, w: 0.99999994}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6205009, w: 0.7842058}
+    - {x: 0, y: 0, z: -0.6204148, w: 0.78427386}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
@@ -9139,7 +9139,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920815998}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.011775595, w: 0.9999307}
+  m_LocalRotation: {x: 0, y: 0, z: 0.011121926, w: 0.9999382}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9235,7 +9235,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 40.7
+  m_Value: 50.4
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -10281,7 +10281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079894575}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0007715803, w: 0.9999997}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00032758774, w: 0.99999994}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10523,7 +10523,7 @@ MonoBehaviour:
     - I'm not a human. but If I was, I'd hate to be destroyed.
     - I agree with you... And you know something... I'm human.
     - What if we threatened to destroy all the glorps? See, it's awful.
-    - I'm not the only one. There are billions of good, kind, innocent humans.
+    - This date has gone so well, please reconsider.
     - I'm not the only one. There are billions of good, kind, innocent humans.
     - I'll follow your leadership, My Queen.
     - You're an awful ruler if you go through with this!
