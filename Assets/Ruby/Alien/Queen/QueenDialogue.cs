@@ -49,7 +49,6 @@ public class QueenDialogue : MonoBehaviour
     private void Awake()
     {
         armObject = GameObject.Find("Tentacle_0");
-        armObject.SetActive(true);
     }
 
     void Start()
@@ -135,7 +134,6 @@ public class QueenDialogue : MonoBehaviour
     {
         minResponseElement = meLines * 5;
         maxOptionElement = minResponseElement + 5;
-        Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
        
         if (options.Count >= maxOptionElement)
         {
@@ -183,10 +181,20 @@ public class QueenDialogue : MonoBehaviour
 
         string sentence = respones[selection + minResponseElement];
         canSkip = true;//can skip when typing starts
-        StartCoroutine(DisplayResponseLine(sentence));
+
+        StartCoroutine(WaitToSkip(sentence));
 
         alienLines++;
     }
+
+    IEnumerator WaitToSkip(string line)
+    {
+        // suspend execution for 5 seconds
+        yield return new WaitForSeconds(.1f);
+
+        StartCoroutine(DisplayResponseLine(line));
+    }
+
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
     {
         dialogueText.text = "";
@@ -229,8 +237,6 @@ public class QueenDialogue : MonoBehaviour
         {
             options.Add(sentence);
         }
-
-        OptionBubbles();
     }
 
     public void StartDialogueActions(QueenDialogueHolder dialogue) //first spawn in opening dialogue and name
@@ -268,7 +274,6 @@ public class QueenDialogue : MonoBehaviour
     {
         nextButton.SetActive(false);
         round++;
-        Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
