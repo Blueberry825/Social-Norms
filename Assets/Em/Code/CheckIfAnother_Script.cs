@@ -29,8 +29,5 @@ public class CheckIfAnother_Script : MonoBehaviour
                 Destroy(alienList[1]);
             }
         }
-
-
-
     }
 }

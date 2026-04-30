@@ -167,6 +167,10 @@ public class BackgroundMusic_Script : MonoBehaviour
             backgroundMusic_Instance.start();
         }
     }
+    public void StopBackgroundMusic() 
+    {
+        backgroundMusic_Instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+    }
 
 
     public void PauseMenuBackgroundMusic()
