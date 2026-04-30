@@ -170,6 +170,8 @@ public class DateRandomiser_Script : MonoBehaviour
 
     public void RefreshDatesButton() 
     {
+        getLocation = levelLocationScript.currentLocation;
+
         aliensInLocation0.Clear();
         aliensInLocation1.Clear();
         aliensInLocation2.Clear();
