@@ -143,7 +143,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109405438}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0012393923, w: 0.9999992}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00093479047, w: 0.99999964}
   m_LocalPosition: {x: 1.4274806, y: 0.00000020071816, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -180,7 +180,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 147846481}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.000114485025, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.000056104072, w: 1}
   m_LocalPosition: {x: 0.7452212, y: 0.00000016973368, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -937,7 +937,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 327549318}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00035709562, w: 0.99999994}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00030329643, w: 0.99999994}
   m_LocalPosition: {x: 1.1031158, y: 0.0000033018116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2014,7 +2014,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 472187442}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.09759649, w: 0.9952261}
+  m_LocalRotation: {x: 0, y: 0, z: -0.097505085, w: 0.9952351}
   m_LocalPosition: {x: 0.7679677, y: -0.000000020787793, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2388,7 +2388,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 559495648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0002100173, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.00008013447, w: 1}
   m_LocalPosition: {x: 0.77391845, y: 0.0000001129388, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2654,7 +2654,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637214585}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.000038517726, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00003851774, w: 1}
   m_LocalPosition: {x: 0.9780835, y: -0.0000003078295, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2795,7 +2795,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 665632846}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00014398822, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.000030731113, w: 1}
   m_LocalPosition: {x: 0.7794077, y: -0.00000016563196, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5353,7 +5353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115462851}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.0043703164, w: 0.99999046}
+  m_LocalRotation: {x: 0, y: 0, z: -0.0040154736, w: 0.99999195}
   m_LocalPosition: {x: 0.7021367, y: -0.00000013488692, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6292,7 +6292,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357687538}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.6204763, w: 0.7842252}
+  m_LocalRotation: {x: 0, y: 0, z: -0.62060726, w: 0.7841216}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6932,7 +6932,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601335034}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.008508483, w: 0.9999638}
+  m_LocalRotation: {x: 0, y: 0, z: -0.008667551, w: 0.99996245}
   m_LocalPosition: {x: 1.0888063, y: -0.00000023837345, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7213,7 +7213,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1641361211}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.005859064, w: 0.99998283}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0058419653, w: 0.99998295}
   m_LocalPosition: {x: 1.145092, y: -0.00000018590414, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7612,7 +7612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687426360}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.00033911486, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.00052737864, w: 0.9999999}
   m_LocalPosition: {x: 0.7189399, y: 0.0000000058731437, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7707,22 +7707,22 @@ MonoBehaviour:
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
     - {x: 0, y: 0, z: 0, w: 1}
     m_StoredLocalRotations:
-    - {x: 0, y: 0, z: -0.09759649, w: 0.9952261}
+    - {x: 0, y: 0, z: -0.097505085, w: 0.9952351}
     - {x: 0, y: 0, z: -0.008880289, w: 0.9999606}
-    - {x: 0, y: 0, z: 0.01262633, w: 0.9999203}
-    - {x: 0, y: 0, z: -0.008508483, w: 0.9999638}
-    - {x: 0, y: 0, z: 0.005859064, w: 0.99998283}
-    - {x: 0, y: 0, z: -0.0043703164, w: 0.99999046}
-    - {x: 0, y: 0, z: 0.0012393923, w: 0.9999992}
-    - {x: 0, y: 0, z: -0.00028649328, w: 1}
-    - {x: 0, y: 0, z: -0.00035709562, w: 0.99999994}
-    - {x: 0, y: 0, z: 0.00033911486, w: 1}
-    - {x: 0, y: 0, z: 0.000038517726, w: 1}
-    - {x: 0, y: 0, z: -0.0002100173, w: 1}
-    - {x: 0, y: 0, z: -0.000114485025, w: 1}
-    - {x: 0, y: 0, z: 0.00014398822, w: 1}
+    - {x: 0, y: 0, z: 0.0122367125, w: 0.99992514}
+    - {x: 0, y: 0, z: -0.008667551, w: 0.99996245}
+    - {x: 0, y: 0, z: 0.0058419653, w: 0.99998295}
+    - {x: 0, y: 0, z: -0.0040154736, w: 0.99999195}
+    - {x: 0, y: 0, z: 0.00093479047, w: 0.99999964}
+    - {x: 0, y: 0, z: 0.000048752365, w: 1}
+    - {x: 0, y: 0, z: -0.00030329643, w: 0.99999994}
+    - {x: 0, y: 0, z: 0.00052737864, w: 0.9999999}
+    - {x: 0, y: 0, z: 0.00003851774, w: 1}
+    - {x: 0, y: 0, z: -0.00008013447, w: 1}
+    - {x: 0, y: 0, z: -0.000056104072, w: 1}
+    - {x: 0, y: 0, z: -0.000030731113, w: 1}
     - {x: 0, y: 0, z: -0.11336182, w: 0.9935538}
-    - {x: 0, y: 0, z: -0.6204763, w: 0.7842252}
+    - {x: 0, y: 0, z: -0.62060726, w: 0.7841216}
   m_Iterations: 1
   m_Tolerance: 0.008
   m_Velocity: 0.904
@@ -8737,7 +8737,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1920815998}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.01262633, w: 0.9999203}
+  m_LocalRotation: {x: 0, y: 0, z: 0.0122367125, w: 0.99992514}
   m_LocalPosition: {x: 1.0697323, y: -0.0000001440889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8865,6 +8865,7 @@ MonoBehaviour:
   result: 0
   decreaseAmount: 0
   increaseAmount: 0
+  currentAlien: {fileID: 0}
   isLoveFull: 0
   loveAmount: 100
   decayAmount: 0.5
@@ -9878,7 +9879,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079894575}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -0.00028649328, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.000048752365, w: 1}
   m_LocalPosition: {x: 0.59979373, y: -0.00000023633493, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -10087,72 +10088,173 @@ MonoBehaviour:
   queenDialogue:
     name: queen
     options:
-    - 0
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
-    - 21
-    - 22
-    - 23
-    - 24
-    - 25
-    - 26
-    - 27
-    - 28
-    - 29
-    - 30
+    - Hello!
+    - Good day, Your Majesty.
+    - '*Bow nervously. *
+
+      Good evening, Your Majesty.'
+    - Salute with your tentacle.
+    - '*Kiss the Queens hand. *'
+    - '*Shh the queen with your tentacle *'
+    - I'm a part of your kingdom too... I wanted to meet you.
+    - I've just loved every one of your kingdoms people.
+    - I'm a hopeless romantic.
+    - I didn't actually like them. I've always wanted you.
+    - '*Give the Queen some scrap from your ship. *'
+    - '*Give the Queen a fish from the beach. *'
+    - '*Give the Queen  rocks from the swamp. *'
+    - '*Give the Queen a heart shaped rock from a cave. *'
+    - That's not true. You're trying to trick me.
+    - You're so small and cute!
+    - Words cannot describe the admiration I have for you.
+    - I love your crown! That's an impressive diamond.
+    - You run your kingdom
+    - I was being respectful and polite.
+    - You don't know what you're talking about!
+    - You hit the nail on the head.
+    - You're right about all of that! But that doesn't justify a genocide.
+    - Why not leave them alone then?
+    - Glorth's dating societal norms aren't exactly simple either.
+    - Yeah, As a glorp. I hate humans too! I stand with you.
+    - Well... I have something to tell you... I am a human...
+    - Please rethink your decision, I'm a human and I genuinely like you...
+    - I'm not a human. but If I was, I'd hate to be destroyed.
+    - I agree with you... And you know something... I'm human.
+    - What if we threatened to destroy all the glorps? See, it's awful.
+    - You said you'd reconsider. Please at least do that.
+    - I'm not the only one. There are billions of good, kind, innocent humans.
+    - I'll follow your leadership, My Queen.
+    - You're an awful ruler if you go through with this!
+    - We're a stain, destroy us.
+    - 'If you go through with it... Yes...
+
+      But you can still change.'
+    - '*Attempt to hug the Queen. *'
+    - You know this isn't you...
+    - I love you, please don't do this.
+    - I love you.
+    - Shhh, It's all over now. It's okay.
+    - '*Hug the queen in silence *'
+    - It shouldn't have even been considered.
+    - Good. Now the only thing I have to say to you is GLORP YOU!
     respones:
-    - 0
-    - 1
-    - 2
-    - 3
-    - 4
-    - 5
-    - 6
-    - 7
-    - 8
-    - 9
-    - 11
-    - 12
-    - 13
-    - 14
-    - 15
-    - 16
-    - 17
-    - 18
-    - 19
-    - 20
-    - 21
-    - 22
-    - 23
-    - 24
-    - 25
-    - 26
-    - 27
-    - 28
-    - 29
-    - 30
+    - Hello? Not even a bow? Do you not know the first thing about glorp culture?
+    - It isn't good yet. You can change that, if you play your cards right.
+    - What a gentleglorp. Good evening to you too.
+    - I almost mistook you for one of my guards with that salute.
+    - What are you doing? Why would I let you kiss MY hand.
+    - Get your grubby tentacle off me!  DARE you touch royalty.
+    - Me? What could you possibly want with someone of MY status?... Curious.
+    - Yes... Well they are my people, of couse they would be likable.
+    - I believe you, but that doesn't give me confidence that you're a good match
+      for me.
+    - Let me get this straight... You've been stringing along my people just to get
+      to me? And you expect ME to like YOU?
+    - What an interesting relic... Where is it from... EARTH?! YOU GAVE ME SOMETHING
+      FROM THE PLANET I AM ONE DAY AWAY FROM DESTROYING!?
+    - A fish? Is this an insult? Well... I guess I am hungry. CHEFS! Cook this up
+      for me.
+    - Hmm.. Some rocks? What is this...? Oh it's gold! Maybe I underestimated you,
+      this is impressive.
+    - That's a cute gesture, but not exactly a fitting gift for ROYALTY.
+    - What? You ACTUALLY didn't know that was a rule? Are you even from Glorth?
+    - Small... and cute...? That's disgusting. Why is my size the thing you choose
+      to compliment, My crown is impressive, why couldn't you say something about
+      that?
+    - As nice as that sentiment is, I have a kingdom of glorps that compliment me,
+      admire me, and would die for me on command
+    - It's pretty cool right? I got the diamond from a glomp who lives in a cave!
+      Isn't it impressive!
+    - A compliment isn't too forward,
+    - Respectful and polite doesn't mean you can't compliment me. You can still make
+      me feel like you want to date me without disrespecting me.
+    - Excuse me? We're on a date, but DO NOT forget who you're on a date with. Royalty
+      will not tolerate your disrespect.
+    - I know. You should trust me unconditionally, I AM your queen.
+    - Hm... Usually glorps only ever agree with me... It's refreshing to have someone
+      be honest about me.
+    - They don't deserve to be left alone! You know one of those humans once tried
+      to put a flag of their country down on our planet! WHAT GIVES THEM THE RIGHT?
+    - What do you mean? It's as simple as it can be... If they're orange, they like
+      recieving gifts... If they're green, they like physical touch, and if they're
+      purple, words of affirmation... What's confusing about that???
+    - What I hate most, is a liar, and I know you're a human... Your disguise is
+      foolish, and my 'Human Detector 3000' scanned you as soon as you walked through
+      the castle walls.
+    - You're.... Human? You LIED to me... But not for malicious reasons? This is
+      conflicting...
+    - You're.... Human? But I was starting to like you, I don't know if you're being
+      genuine...
+    - It would be a tragic end... But they lie all the time. You just lied to me.
+      We have a 'Human Detector 3000' so we scanned you as soon as you walked in...
+      But I understand it, you were in danger...
+    - You're... a human?? It can't be.. WAIT, IT IS TRUE! You hate your own race?
+      you'd betray your people just like that, the people you grew up around?...
+      This has all but confirmed it... Humans are beyond redemption.
+    - Is that a challenge...? I wasn't planning to exterminate them until tomorrow,
+      but that can easily be brought forward. Don't test me Human. I do not play
+      games.
+    - As well as this date has been going, I've been considering this for schlooms.
+    - Please... Spare me the details. My heart can't take it if you keep talking.
+      Am i making the wrong choice?...
+    - I appreciate that you trust my judgement, but you're a human, and it's concerning
+      that you agree with my decision. I was hoping you'd persuade me out of it,
+      but I guess I was right all along.
+    - Just because you disagree with me, means I'm an awful ruler? You're ignorant,
+      like the rest of your people.
+    - You're right, I should go through with it. You may be the exception, but your
+      people are vile creatures. I DON'T KNOW ANYMORE, IM SO CONFUSED!
+    - I'd be... a monster... God, what was I thinking, I was really considering it...
+    - '*The Queen breaks down in your tentacle, crying *
+
+      I was really going
+      to do it, I didn''t realise humans were so complex... I''m a monster. I don''t
+      know who I am...'
+    - I'd be killing so many billions of innocent people... You're right... God,,,
+      I'm awful for even considering it. Who am i..
+    - I love Y-.... Wait.... YOU'RE TRYING TO MANIPULATE ME! In my moment of vunerability...
+      As soon as I let my guard down too! I DON'T KNOW, IM SO CONFUSED!
+    - I love Y-.... Wait.... YOU'RE TRYING TO MANIPULATE ME! In my moment of vunerability...
+      As soon as I let my guard down too... You're so cruel.
+    - I'm so sorry, I'm just so so sorry. I had no idea, I didn't even try to understand
+      your people. I'm so sorry.
+    - '*She sobs, and holds your tentacle softly. *'
+    - I'm still the queen. Why are you being so rude to me? I get that you're angry,
+      and I get that, but you don't have to be so mean.
+    - What...? You were... Manipulating me? I TRUSTED YOU! I HATE YOU, I HATE HUMANS,
+      KILL THEM, KILL THEM ALL!
     actions:
-    - line 1
-    - line 2
-    - line 3
-    - line 4
+    - '*You enter the palace, the walls are so thick it seems to be interfering with
+      your signal... Well, this is it. The queen controls the military, if you can
+      seduce her, maybe she''ll decide to call off the strike. *'
+    - Word on the street is that you've dated at least 5 aliens from my kingdom?
+      In truth, this is not a date. I am just curious about you.
+    - Now, As you know, it is customary to bring a gift for the queen.... So... Present
+      your gift to me.
+    - So...... Why haven't you complimented me? Am I not royal enough for you?
+    - Well, you're humouring me, so I'll tell you something. You know the reason
+      I'm going to destroy earth? Human society is so flawed. I mean the way they
+      date, it's so confusing, and some people aren't fit to date eachother, but
+      date anyway! They are a stain on their planet.
+    - 'It is my burden to bear, destroying a whole civilisation. It''s not easy to
+      live with a decision like that.
+
+      You know, I''ve never met a human who
+      I''ve liked... Not a single one, If I met ONE nice human, I''d rethink the
+      entire decision.'
+    - You're human, but this date has gone... Good.... I wasn't expecting to enjoy
+      a date with a glomp, let alone a human... But I've made my mind up about the
+      plan, One good human doesn't represent the whole race.
+    - It's tearing me up inside... I don't know what to do... I was raised to believe
+      the human species was a plague on civilised societies. And that vision is crumbling
+      in front of me... You're not evil, I don't even know anything about you, and
+      I'm going to exterminate everyone you love... Am... I...... Evil?
+    - '*The Queen, broken, unsure about anything, is crying. She never even considered
+      that humans were capable of this kind of love... And finally, through tears
+      and sniffles, she manages to mutter one tiny sentence. *
+
+      I''m sorry....
+      I''ll cancel the extinction.'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
