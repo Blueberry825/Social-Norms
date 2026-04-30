@@ -31,7 +31,6 @@ public class CRTEffectEditing : MonoBehaviour
         if (isEffectActive)
         {
             effectTimer -= timerDecreaseAmount * Time.deltaTime;
-            print(effectTimer);
 
             var randInt = UnityEngine.Random.Range(0, frequency);//keep spawing new numbers every frame, if frame is certain number, trigger distortion effect to change
 

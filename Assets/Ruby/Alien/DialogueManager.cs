@@ -107,7 +107,13 @@ public class DialogueManager : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission unsuccessful.";
-        Level_Location_Script_scr.currentLocation--;
+
+        if (Level_Location_Script_scr.currentLocation != 0)
+        {
+            Level_Location_Script_scr.currentLocation--;
+            print(DateRandomiser_Script_scr.retriedAlready + "| location is now: " + Level_Location_Script_scr.currentLocation);
+        }
+
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
 
@@ -123,7 +129,13 @@ public class DialogueManager : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion, soldier.";
-        Level_Location_Script_scr.currentLocation--;
+
+        if (Level_Location_Script_scr.currentLocation != 0)
+        {
+            Level_Location_Script_scr.currentLocation--;
+            print(DateRandomiser_Script_scr.retriedAlready + "| location is now: " + Level_Location_Script_scr.currentLocation);
+        }
+
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
     }
@@ -151,6 +163,8 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date successful";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
+        DateRandomiser_Script_scr.retriedAlready = false;
+       
         StayOnLocation(false);
 
     }//tell table that hasWon is true
