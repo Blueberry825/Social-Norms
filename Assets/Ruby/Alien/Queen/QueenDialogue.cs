@@ -58,6 +58,8 @@ public class QueenDialogue : MonoBehaviour
         UnityEngine.Cursor.lockState = CursorLockMode.None;
         UnityEngine.Cursor.visible = true;
 
+        gameovertext_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
+
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();

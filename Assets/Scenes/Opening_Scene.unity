@@ -2400,18 +2400,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 868159737}
-        m_TargetAssemblyTypeName: ExitButton_Script, Assembly-CSharp
-        m_MethodName: ExitGame
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 773328197}
         m_TargetAssemblyTypeName: MusicUI_Quit_Script, Assembly-CSharp
         m_MethodName: Quit_AudioCue
@@ -2427,6 +2415,18 @@ MonoBehaviour:
       - m_Target: {fileID: 773328198}
         m_TargetAssemblyTypeName: Music_QuietPause_Script, Assembly-CSharp
         m_MethodName: PauseMusic_Cue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 868159737}
+        m_TargetAssemblyTypeName: ExitButton_Script, Assembly-CSharp
+        m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6566,6 +6566,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5128534432671511519, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
+      propertyPath: settingBackgroundAnim
+      value: 
+      objectReference: {fileID: 1996693314}
     - target: {fileID: 5182705117190937541, guid: 12594e653574dfe4e93e5a7de7ba05b7, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0

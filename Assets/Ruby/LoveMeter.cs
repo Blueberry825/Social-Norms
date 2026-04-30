@@ -136,6 +136,13 @@ public class LoveMeter : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void RestartQueenLevel() 
+    {
+        Start();
+        SceneManager.LoadScene("Queen_Scene");
+        Time.timeScale = 1;
+    }
+
     public void LoveChange(int option)
     {
         switch(option)// optionID
