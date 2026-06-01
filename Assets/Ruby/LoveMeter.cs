@@ -19,17 +19,22 @@ public class LoveMeter : MonoBehaviour
     public int increaseAmount;
     private int alienNumber;
 
+    public GameObject currentAlien;
+    private QueenDialogue queenDialogue_scr;
+
     public bool isLoveFull;
 
     public float loveAmount = 50f;
-    public float decayAmount;
-    public float decayTime;// how low between each decrease 
+    private float decayAmount;
+    private float decayTime;// how low between each decrease 
     public bool decaying;//if decreasing over time or not
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentLocation = GameObject.Find("Tablet").GetComponent<Level_Location_Script>().currentLocation;
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
 
         isLoveFull = false;
         loveAmount = 50f;
@@ -39,17 +44,17 @@ public class LoveMeter : MonoBehaviour
         if (scene.name != "Queen_Scene") 
         {
             dialogueManager_scr = GameObject.Find("DialogueManager").GetComponent<DialogueManager>();
-            var currentAlien = ListOfAliens_Script_scr.currentDate;
-            alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
+           
         }
 
-        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+       currentAlien = ListOfAliens_Script_scr.currentDate;
+        alienNumber = currentAlien.GetComponent<AliensDated_Script>().alienNumber;
 
 
         loveMeter.value = loveAmount;//set to default love amount
 
-        DecaySpeed();//when level starts, set decay speed depending on current level
+        decayTime = 1.4f;
+        decayAmount = 0.2f;
     }
 
     private void DecaySpeed()
@@ -59,68 +64,43 @@ public class LoveMeter : MonoBehaviour
             case 0:// starting area
                 break;
             case 1:  //first location  
-                decayTime = 2f;
-                decayAmount = 0.3f;
+                decayTime = 1.5f;
+                decayAmount = 0.1f;
                 break;
 
             case 2:
-                decayTime = 2f;
-                decayAmount = 0.3f;
+                decayTime = 1.5f;
+                decayAmount = 0.2f;
                 break;
 
             case 3:
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
 
             case 4:
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
 
             case 5:
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
 
             case 6://queen?
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
                 break;
+            case 7://queen?
+                decayTime = 1.5f;
+                decayAmount = 0.3f;
+                break;
+
 
         }
     }
 
-    public void WhichAlien()//how many options do they need to get correct to win?
-    {
-        switch (alienNumber)
-        {
-            case 0:
-                break;
-            case 1:
-                break;
-            case 2:
-                break;
-            case 3:
-                break;
-            case 4:
-                break;
-            case 5:
-                break;
-            case 6:
-                break;
-            case 7:
-                break;
-            case 8:
-                break;
-            case 9:
-                break;
-            case 10:
-                break;
-            case 11:
-                break;
-            case 12:
-                break;
-            case 13:
-                break;
-            case 14:
-                break;
-            case 15://queen?
-                break;
-        }
-    }
 
     // Update is called once per frame
     void Update() // decrease love amount each frame
@@ -129,13 +109,12 @@ public class LoveMeter : MonoBehaviour
         loveMeter.value = loveAmount;
 
         if (loveAmount >= 70)
-        {
-            if (loveAmount >= 100)
+        {   
+            isLoveFull = true;
+            if (loveAmount > 100)
             {
                 loveAmount = 100;
-                decaying = false;
-            }      
-            isLoveFull = true;
+            }
         }
         else if (loveAmount <= 60)
         {
@@ -149,20 +128,35 @@ public class LoveMeter : MonoBehaviour
 
             if (loveAmount <= 0)
             {
-                dialogueManager_scr.LoseState();
+                //if queen
+                scene = SceneManager.GetActiveScene();
+
+                if (scene.name != "Queen_Scene")
+                {
+                    dialogueManager_scr.LoseState();
+
+                }
+                else if (scene.name == "Queen_Scene") 
+                {
+                    queenDialogue_scr = GameObject.Find("QueenDialogue").GetComponent<QueenDialogue>();
+                    queenDialogue_scr.LoseState();
+                }
                 decaying = false;
             }
         }
-
     }
 
 
     public void RestartLevel()
     {
+        ListOfAliens_Script_scr.DateReset(currentAlien);
+        Time.timeScale = 1;
+    }
+
+    public void RestartQueenLevel() 
+    {
         Start();
-        SceneManager.LoadScene("Date_Scene");
-        var currentAlien = DateRandomiser_Script_scr.alienOnScreen;
-        ListOfAliens_Script_scr.PlayerOnDateWith(currentAlien);
+        SceneManager.LoadScene("Queen_Scene");
         Time.timeScale = 1;
     }
 
@@ -180,7 +174,7 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 27f;//TEMP 100 FOR TESTING
+                loveAmount += 18f;//TEMP 100 FOR TESTING
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
             case 3://for queen only

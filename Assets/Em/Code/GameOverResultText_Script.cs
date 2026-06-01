@@ -1,5 +1,4 @@
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -99,7 +98,7 @@ public class GameOverResultText_Script : MonoBehaviour
         gameOverBackgroundAnim = gameObject.GetComponent<Animator>();
 
 
-        gameOverBackgroundAnim.SetBool("EnBackgrounddText", false);
+        gameOverBackgroundAnim.SetBool("Background", false);
         alien = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>().currentDate;
         alienNumber = alien.GetComponent<AliensDated_Script>().alienNumber;
 

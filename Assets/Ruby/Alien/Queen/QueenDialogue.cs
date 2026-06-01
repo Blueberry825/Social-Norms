@@ -49,20 +49,24 @@ public class QueenDialogue : MonoBehaviour
     private void Awake()
     {
         armObject = GameObject.Find("Tentacle_0");
-        armObject.SetActive(true);
     }
 
     void Start()
     {
+        //unhide mouse when date starts
+        UnityEngine.Cursor.lockState = CursorLockMode.None;
+        UnityEngine.Cursor.visible = true;
+
         gameovertext_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
-        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
+        DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+
         StayOnLocation(false);
 
-
-            nextButton = GameObject.Find("Next");
+        nextButton = GameObject.Find("Next");
 
         for (int i = 0; i < QueenInteractionSelector_scr.optionTextBoxes.Count; i++)
             QueenInteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
@@ -75,7 +79,6 @@ public class QueenDialogue : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
-        //Debug.Log("count of options: " + options.Count);
     }
 
     public void LoadTabletScreenTemp()
@@ -94,7 +97,6 @@ public class QueenDialogue : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         gameovertext_scr.BadQueenGood();
 
-        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
 
@@ -105,9 +107,8 @@ public class QueenDialogue : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         gameovertext_scr.BadQueenGood();
 
-        Level_Location_Script_scr.currentLocation--; 
         TabletAppearDissapear_Script_scr.isLevelOver = true;
-        StayOnLocation(true);
+        
     }
 
     public void StayOnLocation(bool value) 
@@ -133,7 +134,6 @@ public class QueenDialogue : MonoBehaviour
     {
         minResponseElement = meLines * 5;
         maxOptionElement = minResponseElement + 5;
-        Debug.Log("maxlines: " + maxlines + "count: " + options.Count);
        
         if (options.Count >= maxOptionElement)
         {
@@ -181,10 +181,20 @@ public class QueenDialogue : MonoBehaviour
 
         string sentence = respones[selection + minResponseElement];
         canSkip = true;//can skip when typing starts
-        StartCoroutine(DisplayResponseLine(sentence));
+
+        StartCoroutine(WaitToSkip(sentence));
 
         alienLines++;
     }
+
+    IEnumerator WaitToSkip(string line)
+    {
+        // suspend execution for 5 seconds
+        yield return new WaitForSeconds(.1f);
+
+        StartCoroutine(DisplayResponseLine(line));
+    }
+
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
     {
         dialogueText.text = "";
@@ -227,8 +237,6 @@ public class QueenDialogue : MonoBehaviour
         {
             options.Add(sentence);
         }
-
-        OptionBubbles();
     }
 
     public void StartDialogueActions(QueenDialogueHolder dialogue) //first spawn in opening dialogue and name
@@ -266,7 +274,6 @@ public class QueenDialogue : MonoBehaviour
     {
         nextButton.SetActive(false);
         round++;
-        Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {
@@ -306,5 +313,11 @@ public class QueenDialogue : MonoBehaviour
     public void EndDialogue()
     {
         Debug.Log("end convo");
+    }
+
+    public void CallRestartFunction() 
+    { 
+        ListOfAliens_Script listAlien = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
+        listAlien.RestartGame();
     }
 }

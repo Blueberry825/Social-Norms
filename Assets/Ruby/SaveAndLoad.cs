@@ -73,13 +73,15 @@ public class SaveAndLoad : MonoBehaviour
     {
         currentLocation = Level_Location_Script_scr.currentLocation;
 
-        if (listAlien_Script_scr.datedAlienList != null)//if player has dated anyone
+        if (listAlien_Script_scr.datedAlienList.Count > 0)//if player has dated anyone
         {
             switch (currentLocation - 1) //set the location images for each location here
             {
                 case 0://if location 0(1), 
-                    alienThumbnailHolders[0].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
-                    print("getting here");
+                    if (listAlien_Script_scr.datedAlienList.Count > 0)
+                    {
+                        alienThumbnailHolders[0].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[0].gameObject.GetComponent<Image>().sprite;
+                    }
                     break;
                 case 1:
                     alienThumbnailHolders[1].transform.GetComponent<Image>().sprite = listAlien_Script_scr.datedAlienList[1].gameObject.GetComponent<Image>().sprite;
@@ -99,8 +101,6 @@ public class SaveAndLoad : MonoBehaviour
 
             }
         }
-
-        print("back to home screen,location 1 date was: alien " + PlayerPrefs.GetInt("Location1"));
     }
 }
 

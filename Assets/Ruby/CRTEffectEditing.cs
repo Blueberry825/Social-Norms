@@ -7,6 +7,7 @@ public class CRTEffectEditing : MonoBehaviour
 {
     public bool isEffectActive;
     private bool titleSceneActive;
+    private bool queenSceneActive;
 
     private float effectTimer;
     private float timerDecreaseAmount = 2;
@@ -60,6 +61,19 @@ public class CRTEffectEditing : MonoBehaviour
             }
         }
 
+        if (queenSceneActive)
+        {
+            var randInt = UnityEngine.Random.Range(0, frequency);//keep spawing new numbers every frame, if frame is certain number, trigger distortion effect to change
+
+            if (randInt == 4)
+            {
+                print("1 in " + frequency + " chance");
+                QueenSceneEffects();
+                Invoke("QueenSceneEffects", 0.3f);
+                Invoke("ResetEffects", 0.3f);//wait and then reset?
+            }
+        }
+
     }
 
     public void EffectChooser()
@@ -70,19 +84,10 @@ public class CRTEffectEditing : MonoBehaviour
                 frequency = 30;
                 GlitchEffect();
               break;
-              
+
               case 1:
-                frequency = 50;
-                QueenDistortEffectn();
               break;
-
-              case 2:
-                WaterDistortEffect();
-              break;
-
-              case 3:
-
-              break;
+              
         }
     }
 
@@ -92,13 +97,6 @@ public class CRTEffectEditing : MonoBehaviour
         CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(0, 3);
         CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(0.4f, 1.4f);
         CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, 3);
-    }
-
-    public void QueenDistortEffectn()//set to new value when starting and reset to old value at end //effectNumber 1
-    {
-        CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(0, 3);
-        CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(4f, 8f);
-        CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, 0);
     }
 
     public void WaterDistortEffect()//set to new value when starting and reset to old value at end //effectNumber 2
@@ -112,6 +110,15 @@ public class CRTEffectEditing : MonoBehaviour
     {
         CRTCameraBehaviour_scr.data.colorScans.sizeMultiplier = UnityEngine.Random.Range(2.17f, 1.30f);
         CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0.01f, 0.05f);
+        effectTimer = 1000;
+        print("triggered");
+    }
+
+    public void QueenSceneEffects()//set to new value when starting and reset to old value at end //effectNumber 3
+    {
+        CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(3, 7);
+        CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(0.1f, 0.3f);
+        CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, .05f);
         effectTimer = 1000;
         print("triggered");
     }
@@ -135,5 +142,11 @@ public class CRTEffectEditing : MonoBehaviour
     {
         frequency = 1200;
         titleSceneActive = true;
+    }
+
+    public void ActivateQueenEffects()//set to new value when starting and reset to old value at end
+    {
+        frequency = 3000;
+        queenSceneActive = true;
     }
 }

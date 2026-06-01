@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
-using TMPro;
+using UnityEngine.SceneManagement;
 
 //hold dialogue for each alien
 public class ListOfAliens_Script : MonoBehaviour
@@ -12,13 +13,23 @@ public class ListOfAliens_Script : MonoBehaviour
     public List<GameObject> datedAlienList;
 
     private Level_Location_Script levelLocationScript;
-    private SaveAndLoad SaveAndLoad_scr;
+
+    private Animator characterAnimator;
+
+    private Scene scene;
+    [SerializeField] private List<GameObject> singleAlienListTemplate;
 
 
     private void Start()
     {
-        SaveAndLoad_scr = gameObject.GetComponent<SaveAndLoad>();
         levelLocationScript = GameObject.Find("Tablet").GetComponent<Level_Location_Script>();
+        singleAlienListTemplate = new List<GameObject>();
+
+        foreach (GameObject go in singleAlienList) 
+        { 
+            singleAlienListTemplate.Add(go);
+        }
+
     }
 
     //function called once dated
@@ -30,16 +41,23 @@ public class ListOfAliens_Script : MonoBehaviour
         singleAlienList.Remove(alien);
 
         levelLocationScript.MoveLocation();
+    }
 
-        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);//saves the alien number to the current location  
+    public void DateReset(GameObject alien)
+    {
+        scene = SceneManager.GetActiveScene();
+        alien.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = true;
+        currentDate = alien;
+        datedAlienList.Add(alien);
+        singleAlienList.Remove(alien);
+
+        SceneManager.LoadScene(scene.name);
     }
 
     public void PlayerDateQueen()
     {
         //remove as current date each time
         levelLocationScript.MoveLocation();
-
-        SaveAndLoad_scr.SaveLocationAndAlien(currentDate.GetComponent<AliensDated_Script>().alienNumber);
     }
 
     public void PlayerFailedDate_RemoveAlien() 
@@ -47,4 +65,37 @@ public class ListOfAliens_Script : MonoBehaviour
         datedAlienList.Remove(currentDate);
         singleAlienList.Add(currentDate);
     }
+
+    public void PlayerWinDate_RemoveAlien()
+    {
+        if (currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien == false)//player has swiped right
+        {
+            datedAlienList.Add(currentDate);
+            singleAlienList.Remove(currentDate);
+            currentDate.GetComponent<AliensDated_Script>().hasPlayerDatedThisAlien = true;
+        }
+    }
+
+    public void RestartGame()//empty dated list, fill single list and set location to 0 
+    {
+        Time.timeScale = 1;
+        levelLocationScript.currentLocation = 0;
+        characterAnimator = GameObject.Find("Character").GetComponent<Animator>();
+        characterAnimator.SetInteger("Location_INT_Anim", 0);
+        //may need to add refresh dates
+
+        SceneManager.LoadScene("Opening_Scene");
+
+        datedAlienList.Clear();
+        singleAlienList.Clear();
+
+        foreach (GameObject go in singleAlienListTemplate)
+        {
+            singleAlienList.Add(go);
+        }
+
+        DateRandomiser_Script dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        dateScript.RefreshDatesButton();
+    }
+
 }

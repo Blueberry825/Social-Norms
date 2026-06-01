@@ -25,8 +25,8 @@ public class DialogueManager : MonoBehaviour
     private Level_Location_Script Level_Location_Script_scr;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
-    private SaveAndLoad SaveAndLoad_scr;
     private GameOverResultText_Script gameoverResultText_scr;
+    private ListOfAliens_Script ListOfAliens_Script_scr;
 
     public int round = 0; //amount of action lines - 1
     public int meLines = 0; //each round of options?
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
 
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        SaveAndLoad_scr = GameObject.Find("AlienList_Save").GetComponent<SaveAndLoad>();
+        ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
 
         nextButton = GameObject.Find("Next");
 
@@ -88,7 +88,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StuffToDoAfterDate()//when going back to date screen after date
     {
-        SaveAndLoad_scr.LoadLocationsAndAliens();
         DateRandomiser_Script_scr.RandomiseDate();
     }
 
@@ -99,6 +98,8 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.BadDate();
 
@@ -106,7 +107,13 @@ public class DialogueManager : MonoBehaviour
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission unsuccessful.";
-        Level_Location_Script_scr.currentLocation--;
+
+        if (Level_Location_Script_scr.currentLocation != 0)
+        {
+            Level_Location_Script_scr.currentLocation--;
+            print(DateRandomiser_Script_scr.retriedAlready + "| location is now: " + Level_Location_Script_scr.currentLocation);
+        }
+
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
 
@@ -114,15 +121,28 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState2()
     {
+        ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.BadDate();
 
         GameOver.GetComponent<Animator>().SetBool("IsGameGoing", false);
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date Failed";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "You ran out of discussion, soldier.";
-        Level_Location_Script_scr.currentLocation--;
+
+        if (Level_Location_Script_scr.currentLocation != 0)
+        {
+            Level_Location_Script_scr.currentLocation--;
+            print(DateRandomiser_Script_scr.retriedAlready + "| location is now: " + Level_Location_Script_scr.currentLocation);
+        }
+
         TabletAppearDissapear_Script_scr.isLevelOver = true;
         StayOnLocation(true);
+    }
+
+    public void CallRestartGameFunction()
+    {
+        ListOfAliens_Script_scr.RestartGame();
     }
 
     public void StayOnLocation(bool value) 
@@ -134,6 +154,8 @@ public class DialogueManager : MonoBehaviour
 
     public void WinState()
     {
+        ListOfAliens_Script_scr.PlayerWinDate_RemoveAlien();
+
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
         gameoverResultText_scr.GoodDate();
 
@@ -141,16 +163,16 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("GameOver/DateOver").GetComponent<TextMeshProUGUI>().text = "Date successful";
         GameObject.Find("GameOver/Result").GetComponentInChildren<TextMeshProUGUI>().text = "Mission Complete!";
         TabletAppearDissapear_Script_scr.isLevelOver = true;//when player starts level they have no longer won
+        DateRandomiser_Script_scr.retriedAlready = false;
+       
         StayOnLocation(false);
 
     }//tell table that hasWon is true
 
     public void OptionBubbles()//switch case 
     {
-        print("new options spawning");
         minOptionElement = meLines * 3;//lowest option element that we can be on
         maxOptionElement = minOptionElement + 3;//max option element that we can be on
-        Debug.Log("maxlines: " + maxOptionElement + "count: " + options.Count);
        
         if (options.Count >= maxOptionElement)//if the full options list still bigger(/equal) than the current max option element
         {
@@ -165,7 +187,6 @@ public class DialogueManager : MonoBehaviour
         }
         else//end of date
         {
-            Debug.Log("ran out of options");
             LoveMeter_scr.decaying = false;
 
             armObject.SetActive(false);
@@ -211,8 +232,6 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(.1f);
 
         StartCoroutine(DisplayResponseLine(line));
-
-        print("WaitAndPrint " + Time.time);
     }
 
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
@@ -260,8 +279,6 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogueActions(Dialogue dialogue) //first spawn in opening dialogue and name
     {
-        Debug.Log("starting convo with " + dialogue.name);
-
         nameText.text = dialogue.name;
 
         actions.Clear();
@@ -293,7 +310,6 @@ public class DialogueManager : MonoBehaviour
     {
         nextButton.SetActive(false);
         round++;
-        Debug.Log("round: " + round);
 
         if (round <= actions.Count)
         {

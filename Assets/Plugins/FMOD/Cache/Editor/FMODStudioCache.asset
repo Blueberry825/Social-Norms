@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8759529150688006067
+--- !u!114 &-8462995969361810725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Click_Low
+  m_Name: event:/UI/Tablet/DatingApp/Refresh_Text
   m_EditorClassIdentifier: 
-  Path: event:/UI/Click_Low
+  Path: event:/UI/Tablet/DatingApp/Refresh_Text
   Guid:
-    Data1: 1627299699
-    Data2: 1236606451
-    Data3: 1205861786
-    Data4: 603087561
+    Data1: -1462685319
+    Data2: 1099503642
+    Data3: 1343493263
+    Data4: 1123653931
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 93
---- !u!114 &-8547606448730588564
+  Length: 1095
+--- !u!114 &-8196648897105303605
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -36,25 +36,44 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/SlideButton_Accept
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic_Music/skipTyping_Param
   m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/SlideButton_Accept
-  Guid:
-    Data1: -1419916651
-    Data2: 1337190723
-    Data3: -1619319363
-    Data4: -817025217
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 986
---- !u!114 &-8277613680620154574
+  Name: skipTyping_Param
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 600945497
+    data2: 2202546024
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - false
+  - true
+  Exists: 1
+--- !u!114 &-7738156286047610414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/BackgroundMusic_Bank.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
+  Name: BackgroundMusic_Bank
+  StudioPath: bank:/BackgroundMusic_Bank
+  lastModified: 639129169888506779
+  FileSizes:
+  - Name: Desktop
+    Value: 45874048
+  Exists: 1
+--- !u!114 &-7061057744857734188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,7 +92,7 @@ MonoBehaviour:
     Data3: 389092517
     Data4: 1296052936
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -81,7 +100,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 978
---- !u!114 &-8157016176561471733
+--- !u!114 &-5624540553664508188
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -91,24 +110,105 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
+  m_Name: event:/UI/PauseMenu/PauseMenu_Quit
   m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
+  Path: event:/UI/PauseMenu/PauseMenu_Quit
   Guid:
-    Data1: -86506322
-    Data2: 1251255362
-    Data3: 1849570696
-    Data4: -1469722330
+    Data1: 358379467
+    Data2: 1136952041
+    Data3: -935800394
+    Data4: 1250432394
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 289
---- !u!114 &-8022127788731245027
+  Length: 784
+--- !u!114 &-5374147846740993598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Dates/LoveMeter_Gain
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Dates/LoveMeter_Gain
+  Guid:
+    Data1: 2071124401
+    Data2: 1287135784
+    Data3: -1738797420
+    Data4: 1701735339
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 986
+--- !u!114 &-5148118206120443419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/DatingApp/Reset_Slider
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/DatingApp/Reset_Slider
+  Guid:
+    Data1: 874651536
+    Data2: 1217807221
+    Data3: 1603159182
+    Data4: -88450099
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 93
+--- !u!114 &-4630630920046471627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/Map/Character_Movement
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/Map/Character_Movement
+  Guid:
+    Data1: 922304847
+    Data2: 1264102075
+    Data3: -324975937
+    Data4: 313557374
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-2963858913663488705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +234,7 @@ MonoBehaviour:
   - OpenMap
   - CloseMap
   Exists: 1
---- !u!114 &-7472375646618720671
+--- !u!114 &-2635226110238497447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,229 +244,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/LoveMeter_Lose
+  m_Name: event:/UI/Tablet/DatingApp/MoveSlider
   m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/LoveMeter_Lose
+  Path: event:/UI/Tablet/DatingApp/MoveSlider
   Guid:
-    Data1: 1656011256
-    Data2: 1326350027
-    Data3: 61778600
-    Data4: -29658683
+    Data1: 2101846414
+    Data2: 1297277341
+    Data3: 225017529
+    Data4: -373901494
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 978
---- !u!114 &-7048535078465714171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/CharacterMovement
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/CharacterMovement
-  Guid:
-    Data1: -1080250224
-    Data2: 1236334287
-    Data3: -507721048
-    Data4: -675550037
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 669
---- !u!114 &-6579001748066530345
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/SFX_Bank.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
-  Name: SFX_Bank
-  StudioPath: bank:/SFX_Bank
-  lastModified: 639124576384485605
-  FileSizes:
-  - Name: Desktop
-    Value: 359616
-  Exists: 1
---- !u!114 &-6511690086580718601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/Map/Character_Movement
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/Map/Character_Movement
-  Guid:
-    Data1: 922304847
-    Data2: 1264102075
-    Data3: -324975937
-    Data4: 313557374
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-6280444929021203080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/PauseMenu/PauseMenu_Play
-  m_EditorClassIdentifier: 
-  Path: event:/UI/PauseMenu/PauseMenu_Play
-  Guid:
-    Data1: 1421420978
-    Data2: 1264106147
-    Data3: -1872901712
-    Data4: -1072387845
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1190
---- !u!114 &-5695040709430992837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/Tablet_Movement
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/Tablet_Movement
-  Guid:
-    Data1: 904145743
-    Data2: 1157391756
-    Data3: 2137217695
-    Data4: 1387507551
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: 8787200575858189614}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-5623864163052710988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/BackgroundMusic_Param
-  m_EditorClassIdentifier: 
-  Name: BackgroundMusic_Param
-  StudioPath: parameter:/BackgroundMusic_Param
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 2018341617
-    data2: 3391136101
-  Type: 2
-  IsGlobal: 1
-  Labels:
-  - Title_Music
-  - PurpleAlien_Music
-  - GreenAlien_Music
-  - OrangeAlien_Music
-  - QueenAlien_Music
-  Exists: 1
---- !u!114 &-5536874041318841673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 639129160680593740
-  FileSizes:
-  - Name: Desktop
-    Value: 2648
-  Exists: 1
---- !u!114 &-4482153671175393418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Clicking
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Clicking
-  Guid:
-    Data1: 1416335315
-    Data2: 1318474484
-    Data3: 869864382
-    Data4: 1734886804
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &-2647400077320424446
+  Length: 93
+--- !u!114 &-2578686749352155395
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -395,416 +290,7 @@ MonoBehaviour:
   - OrangeAlien_Music
   - QueenAlien_Music
   Exists: 1
---- !u!114 &-2006383260876074477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 639129160680581578
-  FileSizes:
-  - Name: Desktop
-    Value: 2872
-  Exists: 1
---- !u!114 &-1825926562263652339
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/Ambience
-  m_EditorClassIdentifier: 
-  Path: event:/Music/Ambience
-  Guid:
-    Data1: 11903197
-    Data2: 1129583992
-    Data3: 321605535
-    Data4: -1100235810
-  Banks:
-  - {fileID: 6351655283407847986}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -173866123441951546}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-1128420253483153281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Clicking_B
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Clicking_B
-  Guid:
-    Data1: -1006048063
-    Data2: 1134471850
-    Data3: 1747508406
-    Data4: 607453583
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 500
---- !u!114 &-736485012821028056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/Map/Map_Movement
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/Map/Map_Movement
-  Guid:
-    Data1: -654606854
-    Data2: 1120257670
-    Data3: -696096603
-    Data4: -710222063
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -8022127788731245027}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-173866123441951546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ambience/Ambi_AlienNum
-  m_EditorClassIdentifier: 
-  Name: Ambi_AlienNum
-  StudioPath: 
-  Min: 0
-  Max: 14
-  Default: 0
-  ID:
-    data1: 3252950821
-    data2: 684615197
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -5536874041318841673}
-  - {fileID: 6396792851387808322}
-  - {fileID: -2006383260876074477}
-  - {fileID: -6579001748066530345}
-  - {fileID: 6351655283407847986}
-  EditorEvents:
-  - {fileID: 5871136497930289836}
-  - {fileID: -8277613680620154574}
-  - {fileID: -5695040709430992837}
-  - {fileID: -6511690086580718601}
-  - {fileID: -7048535078465714171}
-  - {fileID: 1104449963269603779}
-  - {fileID: -8547606448730588564}
-  - {fileID: -8157016176561471733}
-  - {fileID: 1270880009700547184}
-  - {fileID: -7472375646618720671}
-  - {fileID: -736485012821028056}
-  - {fileID: 2299969404301433705}
-  - {fileID: 4357930538560421105}
-  - {fileID: 753582034450366461}
-  - {fileID: -6280444929021203080}
-  - {fileID: 8171030297965959245}
-  - {fileID: 3519887748338721951}
-  - {fileID: -1128420253483153281}
-  - {fileID: -4482153671175393418}
-  - {fileID: 3440624490083597143}
-  - {fileID: -8759529150688006067}
-  - {fileID: -1825926562263652339}
-  EditorParameters:
-  - {fileID: 3999072013393711020}
-  - {fileID: -5623864163052710988}
-  - {fileID: 785246453317909395}
-  MasterBanks:
-  - {fileID: -2006383260876074477}
-  StringsBanks:
-  - {fileID: -5536874041318841673}
-  cacheVersion: 131858
-  cacheTime: 639129169888506779
-  SerializableEventsDict:
-  - key: event:/Music/BackgroundMusic_Music
-    index: 0
-  - key: event:/UI/Tablet/DatingApp/SlideButton_Dismiss
-    index: 1
-  - key: event:/UI/Tablet/Tablet_Movement
-    index: 2
-  - key: event:/UI/Tablet/Map/Character_Movement
-    index: 3
-  - key: event:/UI/Dates/CharacterMovement
-    index: 4
-  - key: event:/UI/Dates/Interactions_Appear
-    index: 5
-  - key: event:/UI/Tablet/DatingApp/SlideButton_Accept
-    index: 6
-  - key: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
-    index: 7
-  - key: event:/UI/Dates/LoveMeter_Gain
-    index: 8
-  - key: event:/UI/Dates/LoveMeter_Lose
-    index: 9
-  - key: event:/UI/Tablet/Map/Map_Movement
-    index: 10
-  - key: event:/UI/Tablet/DatingApp/Refresh_Text
-    index: 11
-  - key: event:/UI/Tablet/DatingApp/MoveSlider
-    index: 12
-  - key: event:/UI/Tablet/DatingApp/Matched_Text
-    index: 13
-  - key: event:/UI/PauseMenu/PauseMenu_Play
-    index: 14
-  - key: event:/UI/PauseMenu/PauseMenu_Quit
-    index: 15
-  - key: event:/UI/PauseMenu/PauseMenu_AreYouSure
-    index: 16
-  - key: event:/UI/Clicking_B
-    index: 17
-  - key: event:/UI/Clicking
-    index: 18
-  - key: event:/UI/Tablet/DatingApp/Reset_Slider
-    index: 19
-  - key: event:/UI/Click_Low
-    index: 20
-  - key: event:/Music/Ambience
-    index: 21
---- !u!114 &753582034450366461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/Matched_Text
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/Matched_Text
-  Guid:
-    Data1: -1537937505
-    Data2: 1213790395
-    Data3: 470917565
-    Data4: 1860873272
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1531
---- !u!114 &785246453317909395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Ambi_AlienNum
-  m_EditorClassIdentifier: 
-  Name: Ambi_AlienNum
-  StudioPath: parameter:/Ambi_AlienNum
-  Min: 0
-  Max: 14
-  Default: 0
-  ID:
-    data1: 3252950821
-    data2: 684615197
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
---- !u!114 &1104449963269603779
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/Interactions_Appear
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/Interactions_Appear
-  Guid:
-    Data1: -1887665263
-    Data2: 1131419331
-    Data3: 1880774024
-    Data4: -1650467066
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 265
---- !u!114 &1270880009700547184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Dates/LoveMeter_Gain
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Dates/LoveMeter_Gain
-  Guid:
-    Data1: 2071124401
-    Data2: 1287135784
-    Data3: -1738797420
-    Data4: 1701735339
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 986
---- !u!114 &2299969404301433705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/Refresh_Text
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/Refresh_Text
-  Guid:
-    Data1: -1462685319
-    Data2: 1099503642
-    Data3: 1343493263
-    Data4: 1123653931
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1095
---- !u!114 &3440624490083597143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/Reset_Slider
-  m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/Reset_Slider
-  Guid:
-    Data1: 874651536
-    Data2: 1217807221
-    Data3: 1603159182
-    Data4: -88450099
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 93
---- !u!114 &3519887748338721951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/PauseMenu/PauseMenu_AreYouSure
-  m_EditorClassIdentifier: 
-  Path: event:/UI/PauseMenu/PauseMenu_AreYouSure
-  Guid:
-    Data1: -859034910
-    Data2: 1300715575
-    Data3: 358666670
-    Data4: -336503950
-  Banks:
-  - {fileID: -6579001748066530345}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1084
---- !u!114 &3999072013393711020
+--- !u!114 &-1816793887248229479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -828,7 +314,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &4357930538560421105
+--- !u!114 &-1346442731523670208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -838,100 +324,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/Tablet/DatingApp/MoveSlider
+  m_Name: event:/UI/Tablet/DatingApp/SlideButton_Accept
   m_EditorClassIdentifier: 
-  Path: event:/UI/Tablet/DatingApp/MoveSlider
+  Path: event:/UI/Tablet/DatingApp/SlideButton_Accept
   Guid:
-    Data1: 2101846414
-    Data2: 1297277341
-    Data3: 225017529
-    Data4: -373901494
+    Data1: -1419916651
+    Data2: 1337190723
+    Data3: -1619319363
+    Data4: -817025217
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 93
---- !u!114 &5871136497930289836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Music/BackgroundMusic_Music
-  m_EditorClassIdentifier: 
-  Path: event:/Music/BackgroundMusic_Music
-  Guid:
-    Data1: 779990055
-    Data2: 1275538129
-    Data3: -211097447
-    Data4: 525092689
-  Banks:
-  - {fileID: 6396792851387808322}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -2647400077320424446}
-  - {fileID: 6377423467239059409}
-  - {fileID: 5963222999327744575}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &5963222999327744575
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/BackgroundMusic_Music/skipTyping_Param
-  m_EditorClassIdentifier: 
-  Name: skipTyping_Param
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 600945497
-    data2: 2202546024
-  Type: 2
-  IsGlobal: 0
-  Labels:
-  - false
-  - true
-  Exists: 1
---- !u!114 &6351655283407847986
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Ambiance_Bank.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Ambiance_Bank.bank
-  Name: Ambiance_Bank
-  StudioPath: bank:/Ambiance_Bank
-  lastModified: 639129160677914566
-  FileSizes:
-  - Name: Desktop
-    Value: 14173568
-  Exists: 1
---- !u!114 &6377423467239059409
+  Length: 986
+--- !u!114 &-1323925041724044521
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -955,27 +365,7 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &6396792851387808322
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/BackgroundMusic_Bank.bank
-  m_EditorClassIdentifier: 
-  Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
-  Name: BackgroundMusic_Bank
-  StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639129169888506779
-  FileSizes:
-  - Name: Desktop
-    Value: 45874048
-  Exists: 1
---- !u!114 &8171030297965959245
+--- !u!114 &-1063942031698787467
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -985,24 +375,634 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/UI/PauseMenu/PauseMenu_Quit
+  m_Name: event:/UI/PauseMenu/PauseMenu_Play
   m_EditorClassIdentifier: 
-  Path: event:/UI/PauseMenu/PauseMenu_Quit
+  Path: event:/UI/PauseMenu/PauseMenu_Play
   Guid:
-    Data1: 358379467
-    Data2: 1136952041
-    Data3: -935800394
-    Data4: 1250432394
+    Data1: 1421420978
+    Data2: 1264106147
+    Data3: -1872901712
+    Data4: -1072387845
   Banks:
-  - {fileID: -6579001748066530345}
+  - {fileID: 8445220221356088660}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 784
---- !u!114 &8787200575858189614
+  Length: 1190
+--- !u!114 &-979538417620348529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
+  Guid:
+    Data1: -86506322
+    Data2: 1251255362
+    Data3: 1849570696
+    Data4: -1469722330
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 289
+--- !u!114 &-834225077579946841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 639129160680581578
+  FileSizes:
+  - Name: Desktop
+    Value: 2872
+  Exists: 1
+--- !u!114 &-379404553935225363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/PauseMenu/PauseMenu_AreYouSure
+  m_EditorClassIdentifier: 
+  Path: event:/UI/PauseMenu/PauseMenu_AreYouSure
+  Guid:
+    Data1: -859034910
+    Data2: 1300715575
+    Data3: 358666670
+    Data4: -336503950
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1084
+--- !u!114 &-235422743976263210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Dates/Interactions_Appear
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Dates/Interactions_Appear
+  Guid:
+    Data1: -1887665263
+    Data2: 1131419331
+    Data3: 1880774024
+    Data4: -1650467066
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 265
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 5056159657247729123}
+  - {fileID: 8898761025425331188}
+  - {fileID: -7738156286047610414}
+  - {fileID: -834225077579946841}
+  - {fileID: 8445220221356088660}
+  EditorEvents:
+  - {fileID: 4667339463643108530}
+  - {fileID: 8313429455350791700}
+  - {fileID: -7061057744857734188}
+  - {fileID: 6065986659872545260}
+  - {fileID: -4630630920046471627}
+  - {fileID: 247533377655997481}
+  - {fileID: -8462995969361810725}
+  - {fileID: -2635226110238497447}
+  - {fileID: -5148118206120443419}
+  - {fileID: 7669854935926377332}
+  - {fileID: -235422743976263210}
+  - {fileID: -1346442731523670208}
+  - {fileID: 8537983611029519005}
+  - {fileID: -979538417620348529}
+  - {fileID: -5374147846740993598}
+  - {fileID: -1063942031698787467}
+  - {fileID: 3545784766701177444}
+  - {fileID: -5624540553664508188}
+  - {fileID: 6843828059333862413}
+  - {fileID: -379404553935225363}
+  - {fileID: 5906589549125717972}
+  - {fileID: 6807582529365152617}
+  EditorParameters:
+  - {fileID: 8718411294275372700}
+  - {fileID: -1816793887248229479}
+  - {fileID: 2937761129274147794}
+  MasterBanks:
+  - {fileID: -834225077579946841}
+  StringsBanks:
+  - {fileID: 5056159657247729123}
+  cacheVersion: 131858
+  cacheTime: 639129169888506779
+  SerializableEventsDict:
+  - key: event:/Music/Ambience
+    index: 0
+  - key: event:/Music/BackgroundMusic_Music
+    index: 1
+  - key: event:/UI/Tablet/DatingApp/SlideButton_Dismiss
+    index: 2
+  - key: event:/UI/Tablet/Tablet_Movement
+    index: 3
+  - key: event:/UI/Tablet/Map/Character_Movement
+    index: 4
+  - key: event:/UI/Click_Low
+    index: 5
+  - key: event:/UI/Tablet/DatingApp/Refresh_Text
+    index: 6
+  - key: event:/UI/Tablet/DatingApp/MoveSlider
+    index: 7
+  - key: event:/UI/Tablet/DatingApp/Reset_Slider
+    index: 8
+  - key: event:/UI/Dates/CharacterMovement
+    index: 9
+  - key: event:/UI/Dates/Interactions_Appear
+    index: 10
+  - key: event:/UI/Tablet/DatingApp/SlideButton_Accept
+    index: 11
+  - key: event:/UI/Tablet/DatingApp/Matched_Text
+    index: 12
+  - key: event:/UI/Tablet/DatingApp/Alien_Tablet_Spawning
+    index: 13
+  - key: event:/UI/Dates/LoveMeter_Gain
+    index: 14
+  - key: event:/UI/PauseMenu/PauseMenu_Play
+    index: 15
+  - key: event:/UI/Clicking_B
+    index: 16
+  - key: event:/UI/PauseMenu/PauseMenu_Quit
+    index: 17
+  - key: event:/UI/Clicking
+    index: 18
+  - key: event:/UI/PauseMenu/PauseMenu_AreYouSure
+    index: 19
+  - key: event:/UI/Dates/LoveMeter_Lose
+    index: 20
+  - key: event:/UI/Tablet/Map/Map_Movement
+    index: 21
+--- !u!114 &247533377655997481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Click_Low
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Click_Low
+  Guid:
+    Data1: 1627299699
+    Data2: 1236606451
+    Data3: 1205861786
+    Data4: 603087561
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 93
+--- !u!114 &2937761129274147794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/BackgroundMusic_Param
+  m_EditorClassIdentifier: 
+  Name: BackgroundMusic_Param
+  StudioPath: parameter:/BackgroundMusic_Param
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 2018341617
+    data2: 3391136101
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - Title_Music
+  - PurpleAlien_Music
+  - GreenAlien_Music
+  - OrangeAlien_Music
+  - QueenAlien_Music
+  Exists: 1
+--- !u!114 &3545784766701177444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Clicking_B
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Clicking_B
+  Guid:
+    Data1: -1006048063
+    Data2: 1134471850
+    Data3: 1747508406
+    Data4: 607453583
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &3740788655089956990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambience/Ambi_AlienNum
+  m_EditorClassIdentifier: 
+  Name: Ambi_AlienNum
+  StudioPath: 
+  Min: 0
+  Max: 14
+  Default: 0
+  ID:
+    data1: 3252950821
+    data2: 684615197
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &4667339463643108530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Ambience
+  Guid:
+    Data1: 11903197
+    Data2: 1129583992
+    Data3: 321605535
+    Data4: -1100235810
+  Banks:
+  - {fileID: 8898761025425331188}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 3740788655089956990}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &5056159657247729123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 639129160680593740
+  FileSizes:
+  - Name: Desktop
+    Value: 2648
+  Exists: 1
+--- !u!114 &5906589549125717972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Dates/LoveMeter_Lose
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Dates/LoveMeter_Lose
+  Guid:
+    Data1: 1656011256
+    Data2: 1326350027
+    Data3: 61778600
+    Data4: -29658683
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 978
+--- !u!114 &6065986659872545260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/Tablet_Movement
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/Tablet_Movement
+  Guid:
+    Data1: 904145743
+    Data2: 1157391756
+    Data3: 2137217695
+    Data4: 1387507551
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 9103770581057315957}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6807582529365152617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/Map/Map_Movement
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/Map/Map_Movement
+  Guid:
+    Data1: -654606854
+    Data2: 1120257670
+    Data3: -696096603
+    Data4: -710222063
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2963858913663488705}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6843828059333862413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Clicking
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Clicking
+  Guid:
+    Data1: 1416335315
+    Data2: 1318474484
+    Data3: 869864382
+    Data4: 1734886804
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &7669854935926377332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Dates/CharacterMovement
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Dates/CharacterMovement
+  Guid:
+    Data1: -1080250224
+    Data2: 1236334287
+    Data3: -507721048
+    Data4: -675550037
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 669
+--- !u!114 &8313429455350791700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/BackgroundMusic_Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/BackgroundMusic_Music
+  Guid:
+    Data1: 779990055
+    Data2: 1275538129
+    Data3: -211097447
+    Data4: 525092689
+  Banks:
+  - {fileID: -7738156286047610414}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -8196648897105303605}
+  - {fileID: -1323925041724044521}
+  - {fileID: -2578686749352155395}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8445220221356088660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX_Bank.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
+  Name: SFX_Bank
+  StudioPath: bank:/SFX_Bank
+  lastModified: 639124576384485605
+  FileSizes:
+  - Name: Desktop
+    Value: 359616
+  Exists: 1
+--- !u!114 &8537983611029519005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Tablet/DatingApp/Matched_Text
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Tablet/DatingApp/Matched_Text
+  Guid:
+    Data1: -1537937505
+    Data2: 1213790395
+    Data3: 470917565
+    Data4: 1860873272
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1531
+--- !u!114 &8718411294275372700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Ambi_AlienNum
+  m_EditorClassIdentifier: 
+  Name: Ambi_AlienNum
+  StudioPath: parameter:/Ambi_AlienNum
+  Min: 0
+  Max: 14
+  Default: 0
+  ID:
+    data1: 3252950821
+    data2: 684615197
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8898761025425331188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambiance_Bank.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/SocialNorm_FMOD/Build/Desktop/Ambiance_Bank.bank
+  Name: Ambiance_Bank
+  StudioPath: bank:/Ambiance_Bank
+  lastModified: 639129160677914566
+  FileSizes:
+  - Name: Desktop
+    Value: 14173568
+  Exists: 1
+--- !u!114 &9103770581057315957
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

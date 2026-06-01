@@ -55,25 +55,16 @@ public class CRTToggle_Script : MonoBehaviour
         {
             on_TXT.gameObject.SetActive(true);
             off_TXT.gameObject.SetActive(false);
-
-            if (SceneManager.GetActiveScene().name != "Opening_Scene")
-            {
-                crtCam = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
-                crtCam.enabled = true;
-
-            }
+            crtCam = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
+            crtCam.enabled = true;
         }
+
         if (!crtToggle)
         {
             on_TXT.gameObject.SetActive(false);
             off_TXT.gameObject.SetActive(true);
-
-            if (SceneManager.GetActiveScene().name != "Opening_Scene")
-            {
-                crtCam = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
-                crtCam.enabled = false;
-
-            }
+            crtCam = GameObject.Find("Main Camera").GetComponent<CRTCameraBehaviour>();
+            crtCam.enabled = false;
         }
     }
 

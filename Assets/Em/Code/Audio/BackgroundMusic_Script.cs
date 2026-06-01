@@ -2,7 +2,6 @@ using FMOD;
 using FMOD.Studio;
 using FMODUnity;
 using TMPro;
-using UnityEditor.SearchService;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -167,6 +166,10 @@ public class BackgroundMusic_Script : MonoBehaviour
         {
             backgroundMusic_Instance.start();
         }
+    }
+    public void StopBackgroundMusic() 
+    {
+        backgroundMusic_Instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
 
