@@ -98,13 +98,16 @@
 		<property name="length">
 			<value>0.97818594104308387</value>
 		</property>
+		<property name="name">
+			<value>Dismiss</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{dbfb70e2-8495-4c58-bd20-1c4c2593bc71}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{5f06c4c7-6683-4ae7-ae90-cb2de82a2244}">
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Dismiss</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{d25e855b-8811-43e4-9c67-8cac0bdf4b8f}</destination>

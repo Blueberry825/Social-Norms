@@ -23,7 +23,7 @@
 			<destination>{3792f1d0-3103-4d17-81c6-0405ff8ce15c}</destination>
 		</relationship>
 		<relationship name="markerTracks">
-			<destination>{2726a84e-8bb3-4fd8-95f0-4f124859bffc}</destination>
+			<destination>{99fc9941-86b1-4d85-bb0f-efe01edada06}</destination>
 		</relationship>
 		<relationship name="groupTracks">
 			<destination>{68cb4793-2503-43b1-931d-7836bed5ea04}</destination>
@@ -52,7 +52,7 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{3792f1d0-3103-4d17-81c6-0405ff8ce15c}" />
-	<object class="MarkerTrack" id="{2726a84e-8bb3-4fd8-95f0-4f124859bffc}" />
+	<object class="MarkerTrack" id="{99fc9941-86b1-4d85-bb0f-efe01edada06}" />
 	<object class="GroupTrack" id="{68cb4793-2503-43b1-931d-7836bed5ea04}">
 		<relationship name="modules">
 			<destination>{c9f616cd-c198-4968-a81d-01db9b63424e}</destination>
@@ -73,6 +73,9 @@
 		<relationship name="modules">
 			<destination>{c9f616cd-c198-4968-a81d-01db9b63424e}</destination>
 			<destination>{14dacdb0-d929-444b-b710-0e87d7271dec}</destination>
+		</relationship>
+		<relationship name="markers">
+			<destination>{cffbe3e9-568c-4ce1-9ca9-01116beca801}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{10236d5d-e993-4f6a-9f6b-3e0bf3e4f856}">
@@ -192,6 +195,23 @@
 			<destination>{10236d5d-e993-4f6a-9f6b-3e0bf3e4f856}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{cffbe3e9-568c-4ce1-9ca9-01116beca801}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{87fea212-3ebe-4869-8b11-8d89b65bf55e}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{99fc9941-86b1-4d85-bb0f-efe01edada06}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{faff2153-0e5c-4ab6-811a-b571370e4b55}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{7bedda56-2d74-41a9-a932-dab0bb7ea312}">
 		<relationship name="effects">
 			<destination>{03cf7542-bdc6-4d6b-af27-bedf74bdfe82}</destination>
@@ -289,6 +309,17 @@
 		<property name="overridingOutputFormat">
 			<value>1</value>
 		</property>
+	</object>
+	<object class="ParameterCondition" id="{faff2153-0e5c-4ab6-811a-b571370e4b55}">
+		<property name="minimum">
+			<value>11</value>
+		</property>
+		<property name="maximum">
+			<value>11</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{b978a61f-972a-4519-b87e-10bf9c098a5b}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{03cf7542-bdc6-4d6b-af27-bedf74bdfe82}" />
 	<object class="SingleSound" id="{2a6f0b5f-75c4-4fb2-bf09-e4af6953ec29}">

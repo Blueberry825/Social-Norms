@@ -130,7 +130,7 @@
 			<value>0</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>Click</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{e2cb2f0a-b985-45ad-9ed5-850b1d7a1c97}</destination>
@@ -162,7 +162,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{29d2cda4-6962-4d91-8219-acaa81f3e360}">
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Boop</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{98cc2b34-1697-4a2b-b5ce-ad87e4de6b6e}</destination>

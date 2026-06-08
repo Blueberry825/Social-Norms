@@ -98,6 +98,9 @@
 		<property name="length">
 			<value>0.98632653061224485</value>
 		</property>
+		<property name="name">
+			<value>GoOnDate</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{3fd57196-8d20-44a5-ab53-2dc6b836fd59}</destination>
 		</relationship>
@@ -107,7 +110,7 @@
 			<value>-2</value>
 		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>GoOnDate</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{0adfe0e1-6030-41be-b30c-410dd7e39892}</destination>

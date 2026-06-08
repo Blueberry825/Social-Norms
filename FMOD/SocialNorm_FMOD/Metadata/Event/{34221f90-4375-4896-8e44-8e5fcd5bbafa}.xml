@@ -98,6 +98,9 @@
 		<property name="length">
 			<value>0.09375</value>
 		</property>
+		<property name="volume">
+			<value>-4.5</value>
+		</property>
 		<property name="pitch">
 			<value>-9.5</value>
 		</property>
@@ -113,11 +116,8 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{32268543-657e-4b97-909c-74b24e12d83b}">
-		<property name="volume">
-			<value>-13</value>
-		</property>
 		<property name="name">
-			<value>Audio 1</value>
+			<value>ResetSlider</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{34187abf-b080-4d5e-8c37-36c4c4e3bc11}</destination>

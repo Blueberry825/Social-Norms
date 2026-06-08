@@ -74,6 +74,9 @@
 			<destination>{3f867d03-b63f-4853-96fc-9e1ed4b63894}</destination>
 			<destination>{c9422322-af50-4176-af9f-27a6abeb78cd}</destination>
 		</relationship>
+		<relationship name="markers">
+			<destination>{e2fd2fe8-cc12-467b-9f87-c0273c9e548d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{54c55357-852c-410f-ab87-4fa04dea91e5}">
 		<property name="overridingInputFormat">
@@ -179,6 +182,23 @@
 			<destination>{54c55357-852c-410f-ab87-4fa04dea91e5}</destination>
 		</relationship>
 	</object>
+	<object class="LoopRegion" id="{e2fd2fe8-cc12-467b-9f87-c0273c9e548d}">
+		<property name="position">
+			<value>0</value>
+		</property>
+		<property name="length">
+			<value>48</value>
+		</property>
+		<relationship name="timeline">
+			<destination>{d00e1dc6-d9bc-4acc-b26a-e2abe7a862d5}</destination>
+		</relationship>
+		<relationship name="markerTrack">
+			<destination>{715f5792-384a-4514-a67e-aa4651c36ec7}</destination>
+		</relationship>
+		<relationship name="triggerConditions">
+			<destination>{fec572aa-0f61-4ea7-8c51-6b347465ae66}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{4f28d94a-dba9-48a3-85b7-52651ff560ee}">
 		<relationship name="effects">
 			<destination>{c05756bd-55fd-4023-a357-59063967e0fe}</destination>
@@ -261,6 +281,17 @@
 		<property name="overridingOutputFormat">
 			<value>1</value>
 		</property>
+	</object>
+	<object class="ParameterCondition" id="{fec572aa-0f61-4ea7-8c51-6b347465ae66}">
+		<property name="minimum">
+			<value>7</value>
+		</property>
+		<property name="maximum">
+			<value>7</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{b978a61f-972a-4519-b87e-10bf9c098a5b}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{c05756bd-55fd-4023-a357-59063967e0fe}" />
 	<object class="SingleSound" id="{d7bcc4fb-014d-4282-84b2-8f9f2cc5c27f}">
