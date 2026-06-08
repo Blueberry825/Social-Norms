@@ -1,6 +1,7 @@
 using FMOD;
 using FMOD.Studio;
 using FMODUnity;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,6 +38,9 @@ public class BackgroundMusic_Script : MonoBehaviour
     public bool bgm_crtToggle = true;
     public bool bgmStartLoc_b;
 
+    FMOD.Studio.EventInstance badReply_snapshot;
+    FMOD.Studio.EventInstance pauseMenu_snapshot;
+
     #region slider audio clicks
     private string lastNum;
     private string currentNum;
@@ -72,10 +76,24 @@ public class BackgroundMusic_Script : MonoBehaviour
         ambiBus = FMODUnity.RuntimeManager.GetBus("bus:/Master_Bus/Ambience_Bus");
 
         ambiScript = GameObject.Find("Ambience_Holder").GetComponent<Ambience_Script>();
+        badReply_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/BadReply_Snapshot");
+        pauseMenu_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause_Snapshot");
 
         GetAndSetSettings();
         SetTo_Title_Music();
         StartBackgroundMusic();
+    }
+
+    public void BadReplySnapshot() 
+    {
+        badReply_snapshot.start();
+        StartCoroutine(waitSeconds());
+    }
+
+    IEnumerator waitSeconds() 
+    { 
+        yield return new WaitForSeconds(2);
+        badReply_snapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     public void bgmStartLoc() 
@@ -180,10 +198,12 @@ public class BackgroundMusic_Script : MonoBehaviour
         if (pauseBool == false)
         {
             pauseValue = 0;
+            pauseMenu_snapshot.start();
         }
         else if (pauseBool == true)
         {
             pauseValue = 1;
+            pauseMenu_snapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
 
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", pauseValue);

@@ -172,6 +172,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{7a7e6a9c-1a3b-4af4-84ae-aab45fe44498}">
+		<relationship name="modulators">
+			<destination>{f399f9ef-013b-48bf-8cee-06d2f805caad}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{b0474667-1b5c-474a-923b-2ceec741dbda}</destination>
 		</relationship>
@@ -201,7 +204,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{f225abb5-ce42-4ff4-895e-72d0dcce4f10}">
 		<property name="name">
-			<value>Audio</value>
+			<value>Dialogue</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{8a025f90-b1fb-4e5f-913d-8dd6becdfd97}</destination>
@@ -226,7 +229,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e06c539d-22cf-4f4f-957e-01990e0fbe02}">
 		<property name="name">
-			<value>Audio 2</value>
+			<value>Drones</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{e0e4d4ac-f17b-4f62-9f5e-f63b997ca3ab}</destination>
@@ -251,7 +254,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{ce060aa9-ae82-457a-8dd2-f72c7e28ac10}">
 		<property name="name">
-			<value>Audio 3</value>
+			<value>Drones</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{b810bf60-10e1-4581-b490-d11252675ffc}</destination>
@@ -276,7 +279,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{63bd6929-0161-43c8-b4d3-ea48ff05c805}">
 		<property name="name">
-			<value>Audio 4</value>
+			<value>Drones and panic beep</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{ad8765f6-f9dc-4b52-9c23-e9a52e919db7}</destination>
@@ -301,7 +304,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{c89baa69-574f-40e3-b399-834cea651c1a}">
 		<property name="name">
-			<value>Audio 5</value>
+			<value>Panic beep</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{026a5f9f-1280-4ca3-b907-be6b84467f70}</destination>
@@ -326,7 +329,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{e972c429-de55-48d4-a792-2eb6be4bb559}">
 		<property name="name">
-			<value>Audio 6</value>
+			<value>Beeps and drones</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{cd3eb4f0-503f-4ffd-adc6-ad6d47a28d52}</destination>
@@ -351,7 +354,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{4c6478b6-387b-4783-9f48-555cddfa5f1f}">
 		<property name="name">
-			<value>Audio 7</value>
+			<value>Wooshes</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{c9fba7d6-249a-48cd-afdc-e4785e51f9d4}</destination>
@@ -376,7 +379,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{89f05e45-ce84-4092-a984-06847efb4cce}">
 		<property name="name">
-			<value>Audio 8</value>
+			<value>Short beep layered wooshes</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{062f5e93-712c-40dd-bce8-d73991ed5baf}</destination>
@@ -401,7 +404,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{adee7e4d-8f37-40c2-9313-d25b450a9402}">
 		<property name="name">
-			<value>Audio 9</value>
+			<value>Layered wooshes</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{8b73d06e-0a30-4ad8-9e5f-8113d2ef438c}</destination>
@@ -426,7 +429,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{5f021765-1dd6-4c27-aaeb-35aea5910e70}">
 		<property name="name">
-			<value>Audio 10</value>
+			<value>Panic beep layered wooshes</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{54802da7-e30a-4222-8b56-deb3f5c51faf}</destination>
@@ -451,7 +454,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{c20390f0-3762-4d93-841e-79cce892ac6e}">
 		<property name="name">
-			<value>Audio 11</value>
+			<value>Panic beep</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{73741dd3-33ed-45bd-ae3a-5cf9a0d42db5}</destination>
@@ -462,6 +465,17 @@
 		<relationship name="output">
 			<destination>{7a7e6a9c-1a3b-4af4-84ae-aab45fe44498}</destination>
 		</relationship>
+	</object>
+	<object class="ADSRModulator" id="{f399f9ef-013b-48bf-8cee-06d2f805caad}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>volume</value>
+		</property>
+		<property name="initialValue">
+			<value>-80</value>
+		</property>
+		<property name="finalValue">
+			<value>-80</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{b0474667-1b5c-474a-923b-2ceec741dbda}">
 		<relationship name="effects">

@@ -29,12 +29,16 @@ public class LoveMeter : MonoBehaviour
     private float decayTime;// how low between each decrease 
     public bool decaying;//if decreasing over time or not
 
+    private BackgroundMusic_Script bgm_scr;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentLocation = GameObject.Find("Tablet").GetComponent<Level_Location_Script>().currentLocation;
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+        bgm_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
+
 
         isLoveFull = false;
         loveAmount = 50f;
@@ -167,6 +171,7 @@ public class LoveMeter : MonoBehaviour
             case 0://love decrease
                 loveAmount -= 9f;
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
+                bgm_scr.BadReplySnapshot();
                 break;
 
             case 1: //love neutral?
@@ -184,6 +189,7 @@ public class LoveMeter : MonoBehaviour
             case 4://for queen only
                 loveAmount -= 9f;
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
+                bgm_scr.BadReplySnapshot();
                 break;
         }
     }

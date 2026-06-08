@@ -129,8 +129,8 @@ GameObject:
   m_Component:
   - component: {fileID: 841078821}
   - component: {fileID: 841078820}
-  - component: {fileID: 841078819}
   - component: {fileID: 841078822}
+  - component: {fileID: 841078823}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -138,14 +138,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &841078819
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 841078818}
-  m_Enabled: 1
 --- !u!20 &841078820
 Camera:
   m_ObjectHideFlags: 0
@@ -226,6 +218,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorIdle: {fileID: 2800000, guid: 8a15aaa29c8764647ba31c2967007fc8, type: 3}
   cursorPressed: {fileID: 2800000, guid: d87e80fe5de17be4aabd3c1cf34f5a92, type: 3}
+--- !u!114 &841078823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 841078818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &1109594335
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,6 +315,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1514316868}
+        m_TargetAssemblyTypeName: IntroAudio_Script, Assembly-CSharp
+        m_MethodName: stopIntroAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1514316865}
         m_TargetAssemblyTypeName: LoadMenu_Script, Assembly-CSharp
         m_MethodName: loadScene
@@ -504,6 +522,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1514316863}
+  - component: {fileID: 1514316868}
   - component: {fileID: 1514316865}
   - component: {fileID: 1514316867}
   - component: {fileID: 1514316866}
@@ -622,6 +641,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1514316868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514316862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2763f57f5fff443a6ddb5e234b756b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1672001489
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,6 +744,7 @@ GameObject:
   - component: {fileID: 2029035506}
   - component: {fileID: 2029035505}
   - component: {fileID: 2029035504}
+  - component: {fileID: 2029035508}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -804,6 +836,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2029035508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029035503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c2763f57f5fff443a6ddb5e234b756b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
