@@ -32,6 +32,10 @@ public class DateRandomiser_Script : MonoBehaviour
     private GameObject current;
     private GetAlienName_Script sendNameScript;
 
+    [TextArea(2, 5)]
+    public string[] alienBios;
+
+
     public bool getRetryLocation;
     private TextAppearHideTabletStuff_Scrpt textAnimScr;
 
@@ -161,7 +165,7 @@ public class DateRandomiser_Script : MonoBehaviour
         }
 
         sendNameScript.setAlienName(alienOnScreen.name);
-
+        sendNameScript.setAlienBio(alienBios[alienOnScreen.GetComponent<AliensDated_Script>().alienNumber]);
     }
 
     private void RefreshTXTAnim() 
