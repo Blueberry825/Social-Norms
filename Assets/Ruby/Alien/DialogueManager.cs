@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     private DateRandomiser_Script DateRandomiser_Script_scr;
     private GameOverResultText_Script gameoverResultText_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
+    private BackgroundMusic_Script bgm_scr;
 
     public int round = 0; //amount of action lines - 1
     public int meLines = 0; //each round of options?
@@ -45,6 +46,8 @@ public class DialogueManager : MonoBehaviour
     private List<string> options;
     private List<string> respones;
 
+    private FMOD.Studio.EventInstance textStreaming_instance;
+
     [SerializeField]private float typingSpeed = 0.08f;
 
 
@@ -59,6 +62,8 @@ public class DialogueManager : MonoBehaviour
         UnityEngine.Cursor.lockState = CursorLockMode.None;
         UnityEngine.Cursor.visible = true;
 
+
+        bgm_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
         tablet = GameObject.Find("Tablet");
         Level_Location_Script_scr = tablet.GetComponent<Level_Location_Script>();
         TabletAppearDissapear_Script_scr = tablet.GetComponent<TabletAppearDissapear_Script>();
@@ -78,12 +83,16 @@ public class DialogueManager : MonoBehaviour
         respones = new List<string>();
         actions = new List<string>();
 
+        textStreaming_instance = FMODUnity.RuntimeManager.CreateInstance("event:/UI/TextStreaming");
+
         StayOnLocation(false);
 
        //Debug.Log("count of options: " + options.Count);
 
         for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
             InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
+
+
     }
 
     public void StuffToDoAfterDate()//when going back to date screen after date
@@ -171,6 +180,8 @@ public class DialogueManager : MonoBehaviour
 
     public void OptionBubbles()//switch case 
     {
+        bgm_scr.TextStreamingSnapshot(false);
+
         minOptionElement = meLines * 3;//lowest option element that we can be on
         maxOptionElement = minOptionElement + 3;//max option element that we can be on
        
@@ -236,6 +247,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayResponseLine(string line)//type out reponse line
     {
+        bgm_scr.TextStreamingSnapshot(true);
         canSkip = true;//can skip when typing starts
         dialogueText.text = "";
 
@@ -250,6 +262,7 @@ public class DialogueManager : MonoBehaviour
             }
 
             dialogueText.text += letter;
+            textStreaming_instance.start();
             yield return new WaitForSeconds(typingSpeed);
         }
 
@@ -324,6 +337,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator DisplayActionLine(string line)//type out action line
     {
+        bgm_scr.TextStreamingSnapshot(true);
         canSkip = true; //can skip once typing starts
         dialogueText.text = "";
 
@@ -338,6 +352,8 @@ public class DialogueManager : MonoBehaviour
             }
 
             dialogueText.text += letter;
+            textStreaming_instance.start();
+            
             yield return new WaitForSeconds(typingSpeed);
         }
 

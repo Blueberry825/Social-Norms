@@ -68,7 +68,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/BackgroundMusic_Bank.bank
   Name: BackgroundMusic_Bank
   StudioPath: bank:/BackgroundMusic_Bank
-  lastModified: 639165175666115322
+  lastModified: 639165204223060627
   FileSizes:
   - Name: Desktop
     Value: 49211776
@@ -126,6 +126,35 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+  Length: 0
+--- !u!114 &-5812023449240446452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/TextStreaming
+  m_EditorClassIdentifier: 
+  Path: event:/UI/TextStreaming
+  Guid:
+    Data1: -1380649778
+    Data2: 1220971578
+    Data3: 1103273124
+    Data4: 2092850181
+  Banks:
+  - {fileID: 8445220221356088660}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 8841575006540925693}
+  - {fileID: -4541207344014114703}
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &-5624540553664508188
 MonoBehaviour:
@@ -208,6 +237,38 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 93
+--- !u!114 &-4541207344014114703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TextStreaming/TextStreaming_Param
+  m_EditorClassIdentifier: 
+  Name: TextStreaming_Param
+  StudioPath: 
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3088373622
+    data2: 761886186
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  Exists: 1
 --- !u!114 &-2963858913663488705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,10 +495,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639165175666234810
+  lastModified: 639165219856531816
   FileSizes:
   - Name: Desktop
-    Value: 4860
+    Value: 5902
   Exists: 1
 --- !u!114 &-481687735116428681
 MonoBehaviour:
@@ -562,16 +623,20 @@ MonoBehaviour:
   - {fileID: 8926925370559255512}
   - {fileID: -481687735116428681}
   - {fileID: -6589124083420364015}
+  - {fileID: 8043106281914595030}
+  - {fileID: -5812023449240446452}
   EditorParameters:
   - {fileID: 8718411294275372700}
   - {fileID: -1816793887248229479}
   - {fileID: 2937761129274147794}
+  - {fileID: 4408133279250005806}
+  - {fileID: 8731018917357780351}
   MasterBanks:
   - {fileID: -834225077579946841}
   StringsBanks:
   - {fileID: 5056159657247729123}
   cacheVersion: 131858
-  cacheTime: 639165175667793814
+  cacheTime: 639165219856558447
   SerializableEventsDict:
   - key: event:/Music/Ambience
     index: 0
@@ -619,6 +684,10 @@ MonoBehaviour:
     index: 21
   - key: snapshot:/Pause_Snapshot
     index: 22
+  - key: snapshot:/TextStreaming_Snapshot
+    index: 23
+  - key: event:/UI/TextStreaming
+    index: 24
 --- !u!114 &247533377655997481
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,6 +795,38 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &4408133279250005806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TextStreaming_Param
+  m_EditorClassIdentifier: 
+  Name: TextStreaming_Param
+  StudioPath: parameter:/TextStreaming_Param
+  Min: 0
+  Max: 7
+  Default: 0
+  ID:
+    data1: 3088373622
+    data2: 761886186
+  Type: 2
+  IsGlobal: 1
+  Labels:
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  Exists: 1
 --- !u!114 &4667339463643108530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,10 +870,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639165175666254699
+  lastModified: 639165219856558447
   FileSizes:
   - Name: Desktop
-    Value: 2696
+    Value: 2912
   Exists: 1
 --- !u!114 &5906589549125717972
 MonoBehaviour:
@@ -884,6 +985,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 500
+--- !u!114 &8043106281914595030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/TextStreaming_Snapshot
+  m_EditorClassIdentifier: 
+  Path: snapshot:/TextStreaming_Snapshot
+  Guid:
+    Data1: 1528136430
+    Data2: 1330995042
+    Data3: 1845413022
+    Data4: 527290768
+  Banks:
+  - {fileID: -834225077579946841}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &8313429455350791700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,10 +1057,10 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/SFX_Bank.bank
   Name: SFX_Bank
   StudioPath: bank:/SFX_Bank
-  lastModified: 639165175667793814
+  lastModified: 639165204224822491
   FileSizes:
   - Name: Desktop
-    Value: 342208
+    Value: 385984
   Exists: 1
 --- !u!114 &8537983611029519005
 MonoBehaviour:
@@ -985,6 +1113,54 @@ MonoBehaviour:
   IsGlobal: 1
   Labels: []
   Exists: 1
+--- !u!114 &8731018917357780351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TextStreaming_Pitch
+  m_EditorClassIdentifier: 
+  Name: TextStreaming_Pitch
+  StudioPath: parameter:/TextStreaming_Pitch
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 549086147
+    data2: 800347921
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &8841575006540925693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/TextStreaming/TextStreaming_Pitch
+  m_EditorClassIdentifier: 
+  Name: TextStreaming_Pitch
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 549086147
+    data2: 800347921
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &8898761025425331188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1000,7 +1176,7 @@ MonoBehaviour:
   Path: FMOD/SocialNorm_FMOD/Build/Desktop/Ambiance_Bank.bank
   Name: Ambiance_Bank
   StudioPath: bank:/Ambiance_Bank
-  lastModified: 639165175629118978
+  lastModified: 639165204219783404
   FileSizes:
   - Name: Desktop
     Value: 14177408

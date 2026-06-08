@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{913f0b24-e0e1-4551-8ef9-f1df527b408b}">
+		<property name="name">
+			<value>TextStreaming_Pitch</value>
+		</property>
+		<relationship name="folder">
+			<destination>{06245423-565d-4e6f-99b3-52acb31b49f8}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{0c14d2f8-c282-4466-8fdf-a56603395dfd}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{0c14d2f8-c282-4466-8fdf-a56603395dfd}">
+		<property name="isGlobal">
+			<value>true</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="isExposedRecursively">
+			<value>false</value>
+		</property>
+	</object>
+</objects>

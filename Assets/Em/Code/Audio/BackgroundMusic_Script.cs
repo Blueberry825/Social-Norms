@@ -40,6 +40,7 @@ public class BackgroundMusic_Script : MonoBehaviour
 
     FMOD.Studio.EventInstance badReply_snapshot;
     FMOD.Studio.EventInstance pauseMenu_snapshot;
+    FMOD.Studio.EventInstance textStreaming_snapshot;
 
     #region slider audio clicks
     private string lastNum;
@@ -78,10 +79,24 @@ public class BackgroundMusic_Script : MonoBehaviour
         ambiScript = GameObject.Find("Ambience_Holder").GetComponent<Ambience_Script>();
         badReply_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/BadReply_Snapshot");
         pauseMenu_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause_Snapshot");
+        textStreaming_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/TextStreaming_Snapshot");
 
         GetAndSetSettings();
         SetTo_Title_Music();
         StartBackgroundMusic();
+    }
+
+    public void TextStreamingSnapshot(bool value) 
+    {
+        if (value == true)
+        {
+            textStreaming_snapshot.start();
+        }
+
+        else if (value == false) 
+        { 
+            textStreaming_snapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        }
     }
 
     public void BadReplySnapshot() 
