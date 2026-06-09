@@ -10,7 +10,7 @@ public class IdleTimer : MonoBehaviour
     void Awake()
     {
         demoClip = GetComponentInChildren<UnityEngine.Video.VideoPlayer>();
-        demoClip.url = "file://D:/Rio Stuff/Year3/Collab game/GAMES REPUBLIC VERSION/Social Norm Gameplay.mp4";
+        demoClip.url = "file://E:/Assignments/Major-Project/Social-Norm-Gameplay.mp4";
         demoClip.gameObject.SetActive(false);
         LastIdleTime = Time.time;
     }
