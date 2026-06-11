@@ -11,6 +11,8 @@ public class LoveMeter : MonoBehaviour
     private DialogueManager dialogueManager_scr;
     private ListOfAliens_Script ListOfAliens_Script_scr;
     private DateRandomiser_Script DateRandomiser_Script_scr;
+    private CRTEffectEditing crtEditting_scr;
+    private Animator loveMeterAnimator;
     private int currentLocation;
     private Scene scene;
 
@@ -38,7 +40,8 @@ public class LoveMeter : MonoBehaviour
         ListOfAliens_Script_scr = GameObject.Find("AlienList_Save").GetComponent<ListOfAliens_Script>();
         DateRandomiser_Script_scr = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
         bgm_scr = GameObject.Find("BackgroundMusic_Holder").GetComponent<BackgroundMusic_Script>();
-
+        crtEditting_scr = GameObject.Find("Main Camera").GetComponent<CRTEffectEditing>();
+        loveMeterAnimator = GameObject.Find("LoveMeter").GetComponent<Animator>();
 
         isLoveFull = false;
         loveAmount = 50f;
@@ -169,7 +172,9 @@ public class LoveMeter : MonoBehaviour
         switch(option)// optionID
         {
             case 0://love decrease
+                loveMeterAnimator.SetTrigger("Decrease");
                 loveAmount -= 9f;
+                crtEditting_scr.WrongAnswerEffect();
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Lose");
                 bgm_scr.BadReplySnapshot();
                 break;
@@ -179,7 +184,8 @@ public class LoveMeter : MonoBehaviour
             break;
 
             case 2://love increase
-                loveAmount += 18f;//TEMP 100 FOR TESTING
+                loveMeterAnimator.SetTrigger("Increase");
+                loveAmount += 18f;
                 FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Dates/LoveMeter_Gain");
                 break;
             case 3://for queen only

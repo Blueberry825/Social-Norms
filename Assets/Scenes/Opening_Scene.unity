@@ -6009,7 +6009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2068957055}
-  - component: {fileID: 2068957054}
   - component: {fileID: 2068957053}
   - component: {fileID: 2068957056}
   m_Layer: 0
@@ -6031,19 +6030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07021cf87324fc048afe08534d1e6509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IdleTimeSetting: 120
---- !u!114 &2068957054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2068957052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce8192c01933e6c41916b6692479d657, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  IdleTimeSetting: 60
 --- !u!224 &2068957055
 RectTransform:
   m_ObjectHideFlags: 0

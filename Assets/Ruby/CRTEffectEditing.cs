@@ -91,6 +91,14 @@ public class CRTEffectEditing : MonoBehaviour
         }
     }
 
+    public void WrongAnswerEffect() 
+    {
+        CRTCameraBehaviour_scr.data.pixelationAmount = UnityEngine.Random.Range(0, 1);
+        CRTCameraBehaviour_scr.data.vignette = UnityEngine.Random.Range(0.4f, 0.6f);
+        CRTCameraBehaviour_scr.data.dithering4 = UnityEngine.Random.Range(0, 1);
+        Invoke("ResetEffects", 1f);
+    }
+
 
     public void GlitchEffect()//set to new value when starting and reset to old value at end //effectNumber 0
     {

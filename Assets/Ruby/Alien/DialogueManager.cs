@@ -1,3 +1,4 @@
+using FMODUnity;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -36,6 +37,7 @@ public class DialogueManager : MonoBehaviour
     public int minResponseElement;
     public int minOptionElement;
     public int maxOptionElement;
+    private int textStreamingParam_int;
 
     public bool LinesEmpty;
     public bool retryLocation;
@@ -92,7 +94,8 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < InteractionSelector_scr.optionTextBoxes.Count; i++)
             InteractionSelector_scr.optionTextBoxes[i].SetActive(false);//close option boxes
 
-
+        textStreamingParam_int = Random.Range(0, 8);
+        Debug.Log(textStreamingParam_int + " int. AAAAAA");
     }
 
     public void StuffToDoAfterDate()//when going back to date screen after date
@@ -107,6 +110,7 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState()//put different info for winning and losing
     {
+        textStreamingParam_int = Random.Range(0, 8);
         ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
 
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
@@ -130,6 +134,7 @@ public class DialogueManager : MonoBehaviour
 
     public void LoseState2()
     {
+        textStreamingParam_int = Random.Range(0, 8);
         ListOfAliens_Script_scr.PlayerFailedDate_RemoveAlien();
 
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
@@ -163,6 +168,7 @@ public class DialogueManager : MonoBehaviour
 
     public void WinState()
     {
+        textStreamingParam_int = Random.Range(0, 8);
         ListOfAliens_Script_scr.PlayerWinDate_RemoveAlien();
 
         gameoverResultText_scr = GameObject.Find("GameOver").GetComponent<GameOverResultText_Script>();
@@ -262,6 +268,8 @@ public class DialogueManager : MonoBehaviour
             }
 
             dialogueText.text += letter;
+
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("TextStreaming_Param", textStreamingParam_int);
             textStreaming_instance.start();
             yield return new WaitForSeconds(typingSpeed);
         }
@@ -352,8 +360,9 @@ public class DialogueManager : MonoBehaviour
             }
 
             dialogueText.text += letter;
+
+            FMODUnity.RuntimeManager.StudioSystem.setParameterByName("TextStreaming_Param", textStreamingParam_int);
             textStreaming_instance.start();
-            
             yield return new WaitForSeconds(typingSpeed);
         }
 
