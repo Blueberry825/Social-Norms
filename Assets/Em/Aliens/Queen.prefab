@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9055400092969709269}
   - component: {fileID: -1510239703306483976}
   - component: {fileID: -5461743050168287140}
+  - component: {fileID: 1297564422399042149}
   m_Layer: 5
   m_Name: Queen
   m_TagString: Untagged
@@ -37,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 95}
   m_SizeDelta: {x: 0.25, y: 0.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &198526973571079065
@@ -167,3 +168,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b48da65ebe126479c971eac001915f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1297564422399042149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603048764201989246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd027e5835f9be4db2538a260fea182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasPlayerDatedThisAlien: 0
+  alienNumber: 15
+  alienColour: 

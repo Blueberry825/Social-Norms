@@ -21,6 +21,8 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
     private ListOfAliens_Script listAlienScript;
     private TabletAppearDissapear_Script TabletAppearDissapear_Script_scr;
 
+    private Scene currentScene;
+
     private void Start()
     {
         TabletAppearDissapear_Script_scr = GameObject.Find("Tablet").GetComponent<TabletAppearDissapear_Script>();
@@ -66,38 +68,65 @@ public class SwipeLeftRight_Script : MonoBehaviour, IDragHandler, IEndDragHandle
 
     public void SwipedLeft() 
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Dismiss");
-        dateScript.RandomiseDate();
+        currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Date_Scene") //OR QUEEN!!
+        {
+            CantPickNewDate();
+        }
+        else if (currentScene.name == "Queen_Scene") 
+        {
+            CantPickNewDate();
+        }
+        else
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Dismiss");
+            dateScript.RandomiseDate();
+        }
         ResetPosition();
     }
 
     public void SwipedRight() 
     {
-        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
-        TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
-        dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
-        //check if retry, if retrying, load date, else, do that
-        retry_Q = dateScript.getRetryLocation;
-
-        if (retry_Q == true)
+        currentScene = SceneManager.GetActiveScene();
+        if (currentScene.name == "Date_Scene") //OR QUEEN!!
         {
-            dateScript.RetryDateArea();
+            CantPickNewDate();
         }
-        if (retry_Q == false) 
+        else if (currentScene.name == "Queen_Scene")
         {
-            dateScript.GoOnDateWith();
+            CantPickNewDate();
         }
-        ResetPosition();
+        else 
+        {
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/SlideButton_Accept");
+            TabletAppearDissapear_Script_scr.isLevelOver = false;//when player starts level they have no longer won
+            dateScript = GameObject.Find("AlienList_Save").GetComponent<DateRandomiser_Script>();
+            //check if retry, if retrying, load date, else, do that
+            retry_Q = dateScript.getRetryLocation;
 
-        //disable mouse here
-        UnityEngine.Cursor.lockState = CursorLockMode.Locked;
-        UnityEngine.Cursor.visible = false;
-        
+            if (retry_Q == true)
+            {
+                dateScript.RetryDateArea();
+            }
+            if (retry_Q == false)
+            {
+                dateScript.GoOnDateWith();
+            }
+            UnityEngine.Cursor.lockState = CursorLockMode.Locked;
+            UnityEngine.Cursor.visible = false;
+        }
+        ResetPosition();       
     }
 
     private void ResetPosition() 
     {
         transform.localPosition = new Vector3(0, 0, 0);
+    }
+
+    private void CantPickNewDate() 
+    {
+        TabletAppearDissapear_Script_scr.CantMatchNowAnims();
+        FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Tablet/DatingApp/Refresh_Text");
     }
 
 }

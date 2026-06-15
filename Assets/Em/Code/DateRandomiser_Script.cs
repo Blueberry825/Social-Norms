@@ -154,10 +154,9 @@ public class DateRandomiser_Script : MonoBehaviour
                 break;
         case 6:
                 alienOnScreen = queen;
-                Debug.Log("Case 6. Currently at the queen. location 7");  //queen time
+                Debug.Log("Case 6. Currently at the queen. location 7");  //queen time. 95y
                 break;
         }
-        //Debug.Log(alienOnScreen.name);
         current = Instantiate(alienOnScreen, spawnLocation.transform);
         if (tabletAnimsScript.tabletOnScreenBool == true) 
         {

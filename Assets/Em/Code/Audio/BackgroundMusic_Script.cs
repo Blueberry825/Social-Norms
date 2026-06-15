@@ -80,7 +80,10 @@ public class BackgroundMusic_Script : MonoBehaviour
         badReply_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/BadReply_Snapshot");
         pauseMenu_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause_Snapshot");
         textStreaming_snapshot = FMODUnity.RuntimeManager.CreateInstance("snapshot:/TextStreaming_Snapshot");
-
+        
+        
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+        pauseBool = false;
         GetAndSetSettings();
         SetTo_Title_Music();
         StartBackgroundMusic();
@@ -204,7 +207,7 @@ public class BackgroundMusic_Script : MonoBehaviour
     {
         backgroundMusic_Instance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
-
+    #endregion
 
     public void PauseMenuBackgroundMusic()
     {
@@ -212,24 +215,24 @@ public class BackgroundMusic_Script : MonoBehaviour
 
         if (pauseBool == false)
         {
-            pauseValue = 0;
+            pauseValue = 0; //pause music off
             pauseMenu_snapshot.start();
         }
         else if (pauseBool == true)
         {
-            pauseValue = 1;
+            pauseValue = 1; //pause music on
             pauseMenu_snapshot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
-
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", pauseValue);
-
     }
-    #endregion
+
 
     public void SceneChanged_AudioCheck(string sceneName)
     {
-        GetAndSetSettings();
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
+        pauseBool = false;
 
+        GetAndSetSettings();
         if (sceneName == "Date_Scene")
         {
             ambiScript.startAmbience();
@@ -300,39 +303,32 @@ public class BackgroundMusic_Script : MonoBehaviour
     #region Setting Background Music
     public void SetTo_PurpleAlien_Music()
     {
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", purpleAlien_Music);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
-
-        UnityEngine.Debug.Log("changing to purple music");
+        pauseBool = false;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", purpleAlien_Music);
     }
     public void SetTo_GreenAlien_Music()
     {
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", greenAlien_Music);
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
 
-        UnityEngine.Debug.Log("changing to green music");
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", greenAlien_Music);
     }
     public void SetTo_OrangeAlien_Music()
     {
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", orangeAlien_Music);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
-
-        UnityEngine.Debug.Log("changing to orange music");
+        pauseBool = false;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", orangeAlien_Music);
     }
     public void SetTo_QueenAlien_Music()
     {
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", queenAlien_Music);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
-
-        UnityEngine.Debug.Log("changing to queen music");
+        pauseBool = false;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", queenAlien_Music);
     }
     public void SetTo_Title_Music()
     {
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", title_Music);
         FMODUnity.RuntimeManager.StudioSystem.setParameterByName("IsGamePaused", 0);
-
-        UnityEngine.Debug.Log("changing to title music");
-
+        pauseBool = false;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("BackgroundMusic_Param", title_Music);
     }
     #endregion
 }

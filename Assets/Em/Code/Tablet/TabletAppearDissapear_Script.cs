@@ -19,6 +19,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
     [SerializeField] private Animator startAreaAnimator;
     private PlaySlideAnim_Script slideAnim_Script;
 
+    private Animator cantMatchNow_animator;
+
 
     //will also have home page, to allow swapping between 
     // - dating app (can't be accessed whilst on date)
@@ -40,6 +42,8 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         datingApp = GameObject.Find("Taskbar_AppOpen").GetComponent<Taskbar_AppOpenAnim_Script>();
         startAreaAnimator = GameObject.Find("StartArea").GetComponent<Animator>();
         slideAnim_Script = GameObject.Find("HeartShadowAnim").GetComponent<PlaySlideAnim_Script>();
+
+        cantMatchNow_animator = GameObject.Find("CantMatchNow").GetComponent<Animator>();
 
         MapOnOff(false);
 
@@ -127,5 +131,11 @@ public class TabletAppearDissapear_Script : MonoBehaviour
         {
             levelMapGO.GetComponent<GraphicRaycaster>().enabled = false;
         }
+    }
+
+    public void CantMatchNowAnims() 
+    {
+        //hide stuff, then reshow - in animator
+        cantMatchNow_animator.SetTrigger("CantMatchOnScreen");
     }
 }
